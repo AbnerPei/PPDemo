@@ -119,6 +119,8 @@
 		C6C6D1DD1D0F99CB00F82C39 /* MJBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C6D1DC1D0F99CB00F82C39 /* MJBaseViewController.m */; };
 		C6C6D1E01D0F9DE400F82C39 /* MJDefaultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C6D1DF1D0F9DE400F82C39 /* MJDefaultViewController.m */; };
 		C6C6D1E31D0FA50100F82C39 /* MJDefaultBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C6D1E21D0FA50100F82C39 /* MJDefaultBlockViewController.m */; };
+		C6D808A61D4B25E500C8B2FF /* AnimationBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D808A51D4B25E500C8B2FF /* AnimationBaseViewController.m */; };
+		C6D808A91D4B265200C8B2FF /* AnimationShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D808A81D4B265200C8B2FF /* AnimationShowViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -355,6 +357,10 @@
 		C6C6D1DF1D0F9DE400F82C39 /* MJDefaultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJDefaultViewController.m; sourceTree = "<group>"; };
 		C6C6D1E11D0FA50100F82C39 /* MJDefaultBlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJDefaultBlockViewController.h; sourceTree = "<group>"; };
 		C6C6D1E21D0FA50100F82C39 /* MJDefaultBlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJDefaultBlockViewController.m; sourceTree = "<group>"; };
+		C6D808A41D4B25E500C8B2FF /* AnimationBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationBaseViewController.h; sourceTree = "<group>"; };
+		C6D808A51D4B25E500C8B2FF /* AnimationBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationBaseViewController.m; sourceTree = "<group>"; };
+		C6D808A71D4B265200C8B2FF /* AnimationShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationShowViewController.h; sourceTree = "<group>"; };
+		C6D808A81D4B265200C8B2FF /* AnimationShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationShowViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -529,6 +535,7 @@
 		C6C6D0BA1D0F94DB00F82C39 /* C */ = {
 			isa = PBXGroup;
 			children = (
+				C6D808A31D4B255900C8B2FF /* Animations */,
 				C63B35961D1D3FE0006277E8 /* JavaScriptCore使用 */,
 				C63B35921D1D3EF6006277E8 /* PPLabel */,
 				C63B357E1D1BE60D006277E8 /* Masonry */,
@@ -888,6 +895,17 @@
 			path = MJRefresh;
 			sourceTree = "<group>";
 		};
+		C6D808A31D4B255900C8B2FF /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				C6D808A41D4B25E500C8B2FF /* AnimationBaseViewController.h */,
+				C6D808A51D4B25E500C8B2FF /* AnimationBaseViewController.m */,
+				C6D808A71D4B265200C8B2FF /* AnimationShowViewController.h */,
+				C6D808A81D4B265200C8B2FF /* AnimationShowViewController.m */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
 		C6F097561D265E6D008FD57D /* PPWaterFlow */ = {
 			isa = PBXGroup;
 			children = (
@@ -989,8 +1007,10 @@
 				C6C6D1A71D0F94DB00F82C39 /* MJRefreshComponent.m in Sources */,
 				C6C6D1B11D0F94DB00F82C39 /* MJRefreshNormalHeader.m in Sources */,
 				C6C6D1CC1D0F94DB00F82C39 /* UIView+PP_Frame.m in Sources */,
+				C6D808A91D4B265200C8B2FF /* AnimationShowViewController.m in Sources */,
 				C6C6D1D71D0F982700F82C39 /* PPBaseViewController.m in Sources */,
 				C683FBC21D29F73000D1BF6A /* YYClassInfo.m in Sources */,
+				C6D808A61D4B25E500C8B2FF /* AnimationBaseViewController.m in Sources */,
 				C6C6D1BE1D0F94DB00F82C39 /* SDWebImageDownloader.m in Sources */,
 				C6C6D1991D0F94DB00F82C39 /* MBProgressHUD.m in Sources */,
 				C6C6D1881D0F94DB00F82C39 /* UIButton+AFNetworking.m in Sources */,
