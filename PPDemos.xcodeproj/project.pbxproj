@@ -20,6 +20,10 @@
 		C677999A1D508F0F00007161 /* WholesaleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C67799991D508F0F00007161 /* WholesaleCell.m */; };
 		C677999D1D508F7700007161 /* MasonryBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C677999C1D508F7700007161 /* MasonryBaseViewController.m */; };
 		C67799A11D5095B800007161 /* YYCacheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C67799A01D5095B800007161 /* YYCacheViewController.m */; };
+		C67799AB1D50AC4B00007161 /* YYCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C67799A41D50AC4B00007161 /* YYCache.m */; };
+		C67799AC1D50AC4B00007161 /* YYDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C67799A61D50AC4B00007161 /* YYDiskCache.m */; };
+		C67799AD1D50AC4B00007161 /* YYKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = C67799A81D50AC4B00007161 /* YYKVStorage.m */; };
+		C67799AE1D50AC4B00007161 /* YYMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C67799AA1D50AC4B00007161 /* YYMemoryCache.m */; };
 		C683FBC11D29F73000D1BF6A /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C683FBBD1D29F73000D1BF6A /* NSObject+YYModel.m */; };
 		C683FBC21D29F73000D1BF6A /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C683FBBF1D29F73000D1BF6A /* YYClassInfo.m */; };
 		C683FBC51D29FF9900D1BF6A /* MJExtensionBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C683FBC41D29FF9900D1BF6A /* MJExtensionBaseViewController.m */; };
@@ -159,6 +163,14 @@
 		C677999C1D508F7700007161 /* MasonryBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasonryBaseViewController.m; sourceTree = "<group>"; };
 		C677999F1D5095B800007161 /* YYCacheViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCacheViewController.h; sourceTree = "<group>"; };
 		C67799A01D5095B800007161 /* YYCacheViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCacheViewController.m; sourceTree = "<group>"; };
+		C67799A31D50AC4B00007161 /* YYCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCache.h; sourceTree = "<group>"; };
+		C67799A41D50AC4B00007161 /* YYCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCache.m; sourceTree = "<group>"; };
+		C67799A51D50AC4B00007161 /* YYDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYDiskCache.h; sourceTree = "<group>"; };
+		C67799A61D50AC4B00007161 /* YYDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYDiskCache.m; sourceTree = "<group>"; };
+		C67799A71D50AC4B00007161 /* YYKVStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKVStorage.h; sourceTree = "<group>"; };
+		C67799A81D50AC4B00007161 /* YYKVStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYKVStorage.m; sourceTree = "<group>"; };
+		C67799A91D50AC4B00007161 /* YYMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYMemoryCache.h; sourceTree = "<group>"; };
+		C67799AA1D50AC4B00007161 /* YYMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYMemoryCache.m; sourceTree = "<group>"; };
 		C683FBBC1D29F73000D1BF6A /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
 		C683FBBD1D29F73000D1BF6A /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
 		C683FBBE1D29F73000D1BF6A /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
@@ -476,6 +488,21 @@
 			path = YYCache;
 			sourceTree = "<group>";
 		};
+		C67799A21D50AC3F00007161 /* YYCache */ = {
+			isa = PBXGroup;
+			children = (
+				C67799A31D50AC4B00007161 /* YYCache.h */,
+				C67799A41D50AC4B00007161 /* YYCache.m */,
+				C67799A51D50AC4B00007161 /* YYDiskCache.h */,
+				C67799A61D50AC4B00007161 /* YYDiskCache.m */,
+				C67799A71D50AC4B00007161 /* YYKVStorage.h */,
+				C67799A81D50AC4B00007161 /* YYKVStorage.m */,
+				C67799A91D50AC4B00007161 /* YYMemoryCache.h */,
+				C67799AA1D50AC4B00007161 /* YYMemoryCache.m */,
+			);
+			path = YYCache;
+			sourceTree = "<group>";
+		};
 		C683FBBA1D29F36600D1BF6A /* MJExtension和YYModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -631,6 +658,7 @@
 		C6C6D0C11D0F94DB00F82C39 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				C67799A21D50AC3F00007161 /* YYCache */,
 				C683FBBB1D29F73000D1BF6A /* YYModel */,
 				C6C6D0C21D0F94DB00F82C39 /* AFN */,
 				C6C6D0E61D0F94DB00F82C39 /* HYBNetworking */,
@@ -1067,6 +1095,7 @@
 				C63B35911D1D3CED006277E8 /* Person.m in Sources */,
 				C6C6D1B21D0F94DB00F82C39 /* MJRefreshStateHeader.m in Sources */,
 				C6C6D1AA1D0F94DB00F82C39 /* MJRefreshAutoGifFooter.m in Sources */,
+				C67799AE1D50AC4B00007161 /* YYMemoryCache.m in Sources */,
 				C6C6D18F1D0F94DB00F82C39 /* MASCompositeConstraint.m in Sources */,
 				C6C6D19B1D0F94DB00F82C39 /* MJExtensionConst.m in Sources */,
 				C6C6D1981D0F94DB00F82C39 /* ViewController+MASAdditions.m in Sources */,
@@ -1084,6 +1113,7 @@
 				C6D808A91D4B265200C8B2FF /* AnimationShowViewController.m in Sources */,
 				C6C6D1D71D0F982700F82C39 /* PPBaseViewController.m in Sources */,
 				C683FBC21D29F73000D1BF6A /* YYClassInfo.m in Sources */,
+				C67799AD1D50AC4B00007161 /* YYKVStorage.m in Sources */,
 				C6D808A61D4B25E500C8B2FF /* AnimationBaseViewController.m in Sources */,
 				C6C6D1BE1D0F94DB00F82C39 /* SDWebImageDownloader.m in Sources */,
 				C6C6D1991D0F94DB00F82C39 /* MBProgressHUD.m in Sources */,
@@ -1096,6 +1126,7 @@
 				C67799931D508E9000007161 /* MoreViewController.m in Sources */,
 				C6C6D1921D0F94DB00F82C39 /* MASLayoutConstraint.m in Sources */,
 				C6C6D1C41D0F94DB00F82C39 /* UIImage+MultiFormat.m in Sources */,
+				C67799AC1D50AC4B00007161 /* YYDiskCache.m in Sources */,
 				C6C6D1B41D0F94DB00F82C39 /* MJRefreshConst.m in Sources */,
 				C677999D1D508F7700007161 /* MasonryBaseViewController.m in Sources */,
 				C6C6D1951D0F94DB00F82C39 /* NSArray+MASAdditions.m in Sources */,
@@ -1132,6 +1163,7 @@
 				C6C6D1811D0F94DB00F82C39 /* AFURLRequestSerialization.m in Sources */,
 				C6C6D1831D0F94DB00F82C39 /* AFURLSessionManager.m in Sources */,
 				C6C6D1A01D0F94DB00F82C39 /* NSObject+MJClass.m in Sources */,
+				C67799AB1D50AC4B00007161 /* YYCache.m in Sources */,
 				C6C6D1851D0F94DB00F82C39 /* AFImageDownloader.m in Sources */,
 				C6C6D1AC1D0F94DB00F82C39 /* MJRefreshAutoStateFooter.m in Sources */,
 				C6AC8C231D124CF80008133E /* MJChiBaoZiHeader.m in Sources */,
