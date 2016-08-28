@@ -44,5 +44,6 @@
 #import "UIView+Toast.h"
 #import "UIView+PP_Frame.h"
 #import "RequestUrl.h"
+#import "YYCache.h"
 
 #endif /* PPDemos_pch */
