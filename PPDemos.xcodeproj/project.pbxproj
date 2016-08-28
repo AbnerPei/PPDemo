@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		575C1D621D4C930A00357B39 /* ShaHeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C1D611D4C930A00357B39 /* ShaHeViewController.m */; };
 		C63B358D1D1D3CA8006277E8 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = C63B358A1D1D3CA8006277E8 /* Foundation+Log.m */; };
 		C63B358E1D1D3CA8006277E8 /* PPLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C63B358C1D1D3CA8006277E8 /* PPLabel.m */; };
 		C63B35911D1D3CED006277E8 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = C63B35901D1D3CED006277E8 /* Person.m */; };
@@ -124,6 +125,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		575C1D601D4C930A00357B39 /* ShaHeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaHeViewController.h; sourceTree = "<group>"; };
+		575C1D611D4C930A00357B39 /* ShaHeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShaHeViewController.m; sourceTree = "<group>"; };
 		C63B358A1D1D3CA8006277E8 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		C63B358B1D1D3CA8006277E8 /* PPLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPLabel.h; sourceTree = "<group>"; };
 		C63B358C1D1D3CA8006277E8 /* PPLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLabel.m; sourceTree = "<group>"; };
@@ -374,6 +377,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		575C1D5F1D4C92D500357B39 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				575C1D601D4C930A00357B39 /* ShaHeViewController.h */,
+				575C1D611D4C930A00357B39 /* ShaHeViewController.m */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
 		C63B357E1D1BE60D006277E8 /* Masonry */ = {
 			isa = PBXGroup;
 			children = (
@@ -506,6 +518,7 @@
 		C6C6D0A21D0F94BB00F82C39 /* PPDemos */ = {
 			isa = PBXGroup;
 			children = (
+				575C1D5F1D4C92D500357B39 /* Notes */,
 				C683FBBA1D29F36600D1BF6A /* MJExtension和YYModel */,
 				C6F097561D265E6D008FD57D /* PPWaterFlow */,
 				C6C6D0BA1D0F94DB00F82C39 /* C */,
@@ -1090,6 +1103,7 @@
 				C63B358D1D1D3CA8006277E8 /* Foundation+Log.m in Sources */,
 				C6C6D1871D0F94DB00F82C39 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				C6C6D1861D0F94DB00F82C39 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				575C1D621D4C930A00357B39 /* ShaHeViewController.m in Sources */,
 				C6C6D18D1D0F94DB00F82C39 /* HYBNetworking.m in Sources */,
 				C6C6D1DD1D0F99CB00F82C39 /* MJBaseViewController.m in Sources */,
 				C683FBDD1D2A360000D1BF6A /* Student.m in Sources */,

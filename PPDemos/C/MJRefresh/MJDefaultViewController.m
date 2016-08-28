@@ -23,6 +23,11 @@
     
     //默认【上拉加载】
     self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMore)];
+    
+    //答简友FDZero问题【28--30，请打开运行】
+//    UIView *redv = [[UIView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 120)];
+//    redv.backgroundColor = [UIColor redColor];
+//    self.tableView.tableHeaderView = redv;
 }
 
 -(void)refresh
