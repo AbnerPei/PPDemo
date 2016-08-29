@@ -1492,8 +1492,14 @@ typedef OBJC_ENUM(uintptr_t, objc_AssociationPolicy) {
      * @see objc_setAssociatedObject
      * @see objc_removeAssociatedObjects
      */
-    OBJC_EXPORT void objc_setAssociatedObject(id object, const void *key, id value, objc_AssociationPolicy policy)
-    __OSX_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_3_1);
+    /**
+     *  将值value 跟对象object 关联起来（将值value 存储到对象object 中）
+     *  @param object 要关联的对象
+     *  @param key 关联的key
+     *  @param value 通过key关联到object的值（value）【传nil将会清除已经存在的关联】
+     *  @param policy <#policy description#>
+     */
+     void objc_setAssociatedObject(id object, const void *key, id value, objc_AssociationPolicy policy)
     
     /**
      * Returns the value associated with a given object for a given key.

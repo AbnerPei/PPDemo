@@ -10,6 +10,7 @@
 #import <objc/runtime.h>
 #import "User.h"
 #import "Student.h"
+#import "NSObject+PPName.h"
 @interface RuntimeViewController ()
 
 @end
@@ -32,11 +33,13 @@
     
     User *user = [[User alloc]init];
     
-    //获取给定对象的类名字符串
-    const char* ppName;
-    ppName = object_getClassName(user);
-    NSLog(@"ppName is ---- %s",ppName);
-    //2016-08-02 17:55:25.908 PPDemos[18127:506759] ppName is ---- User
+  
+    
+    
+   //创建一个分类，比如给任何一个对象都添加一个name属性，就是NSObject添加分类（NSObject+Category）
+    //详见 --- "NSObject+PPName.h"
+    //user.pp_name = @"pp";
+
 
 }
 #pragma mark --- 判断一些东东
@@ -73,6 +76,13 @@
     //2016-08-02 17:49:29.115 PPDemos[18039:503037] 是不是一个类对象1--1
     //2016-08-02 17:49:29.115 PPDemos[18039:503037] 是不是一个类对象2--1
     //2016-08-02 17:49:29.115 PPDemos[18039:503037] 是不是一个类对象3--0
+    
+    
+    //获取给定对象的类名字符串
+    const char* ppName;
+    ppName = object_getClassName(user);
+    NSLog(@"ppName is ---- %s",ppName);
+    //2016-08-02 17:55:25.908 PPDemos[18127:506759] ppName is ---- User
 }
 /**
  *  交换两个方法的实现

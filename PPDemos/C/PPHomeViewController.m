@@ -27,9 +27,11 @@
                  @"Masonry使用Demos",
                  @"label垂直位置（居上，居中，居下）",
                  @"JavaScriptCore使用",
-//                 @"长按图片保存到本地",
+                 @"一些功能性的demos",
                  @"Animation Demos",
-                 @"Runtime学习"
+                 @"Runtime学习",
+                 @"百度地图使用",
+                 @"Present和Push各种混用返回rootVC总结"
                  ] mutableCopy];
     
     self.vcs = [@[
@@ -38,10 +40,11 @@
               @"MasonryBaseViewController",
               @"PPLabelViewController",
               @"JSViewController",
-//              @"TwoMoreViewController",
-//              @"LongPressToSaveViewController",
+              @"FunctionalViewController",
               @"AnimationBaseViewController",
-              @"RuntimeViewController"
+              @"RuntimeViewController",
+              @"BaiduMapViewController",
+              @"PP1ViewController"
               ] mutableCopy];
     
 }
