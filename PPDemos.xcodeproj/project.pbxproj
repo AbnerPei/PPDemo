@@ -13,6 +13,42 @@
 		575C1D721D73269300357B39 /* YYKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C1D6D1D73269300357B39 /* YYKVStorage.m */; };
 		575C1D731D73269300357B39 /* YYMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C1D6F1D73269300357B39 /* YYMemoryCache.m */; };
 		575C1D751D7326F200357B39 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 575C1D741D7326F200357B39 /* libsqlite3.0.tbd */; };
+		575C1D7B1D84F86A00357B39 /* UIApplication+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C1D7A1D84F86A00357B39 /* UIApplication+PPSets.m */; };
+		575C1D7E1D84FEAF00357B39 /* UIScreen+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C1D7D1D84FEAF00357B39 /* UIScreen+PPSets.m */; };
+		575C1D851D85021D00357B39 /* UIGestureRecognizer+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C1D821D85021D00357B39 /* UIGestureRecognizer+BlocksKit.m */; };
+		575C1D861D85021D00357B39 /* UIView+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C1D841D85021D00357B39 /* UIView+BlocksKit.m */; };
+		575C1D931D85029600357B39 /* LPLevelView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 575C1D891D85029600357B39 /* LPLevelView.bundle */; };
+		575C1D941D85029600357B39 /* LPLevelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C1D8B1D85029600357B39 /* LPLevelView.m */; };
+		575C1D951D85029600357B39 /* b27_icon_star_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 575C1D8D1D85029600357B39 /* b27_icon_star_gray@2x.png */; };
+		575C1D961D85029600357B39 /* b27_icon_star_gray@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 575C1D8E1D85029600357B39 /* b27_icon_star_gray@3x.png */; };
+		575C1D971D85029600357B39 /* b27_icon_star_yellow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 575C1D8F1D85029600357B39 /* b27_icon_star_yellow@2x.png */; };
+		575C1D981D85029600357B39 /* b27_icon_star_yellow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 575C1D901D85029600357B39 /* b27_icon_star_yellow@3x.png */; };
+		575C1D991D85029600357B39 /* CWStarRateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C1D921D85029600357B39 /* CWStarRateView.m */; };
+		575C1DB31D85033500357B39 /* PP_CameraManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C1DA01D85033500357B39 /* PP_CameraManager.m */; };
+		575C1DB41D85033500357B39 /* PP_NSArrayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C1DA41D85033500357B39 /* PP_NSArrayManager.m */; };
+		575C1DB51D85033500357B39 /* PP_NSDateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C1DA71D85033500357B39 /* PP_NSDateManager.m */; };
+		575C1DB61D85033500357B39 /* PP_NSStringManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C1DAA1D85033500357B39 /* PP_NSStringManager.m */; };
+		575C1DB71D85033500357B39 /* PPMTHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C1DAE1D85033500357B39 /* PPMTHandle.m */; };
+		575C1DE11D8503F000357B39 /* AutoLayout相对处理pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 575C1DC71D8503F000357B39 /* AutoLayout相对处理pin.png */; };
+		575C1DE21D8503F000357B39 /* iOS沙盒图.png in Resources */ = {isa = PBXBuildFile; fileRef = 575C1DC81D8503F000357B39 /* iOS沙盒图.png */; };
+		575C1DE31D8503F000357B39 /* SDWebImage原理图.png in Resources */ = {isa = PBXBuildFile; fileRef = 575C1DC91D8503F000357B39 /* SDWebImage原理图.png */; };
+		575C1DE41D8503F000357B39 /* tujieGCD.png in Resources */ = {isa = PBXBuildFile; fileRef = 575C1DCA1D8503F000357B39 /* tujieGCD.png */; };
+		575C1DE51D8503F000357B39 /* yi.gif in Resources */ = {isa = PBXBuildFile; fileRef = 575C1DCB1D8503F000357B39 /* yi.gif */; };
+		575C1DE61D8503F000357B39 /* 响应者链条示意图.png in Resources */ = {isa = PBXBuildFile; fileRef = 575C1DCC1D8503F000357B39 /* 响应者链条示意图.png */; };
+		575C1DFC1D85044900357B39 /* frame_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 575C1DE81D85044900357B39 /* frame_icon.png */; };
+		575C1DFD1D85044900357B39 /* frame_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 575C1DE91D85044900357B39 /* frame_icon@2x.png */; };
+		575C1DFE1D85044900357B39 /* frame_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 575C1DEA1D85044900357B39 /* frame_icon@3x.png */; };
+		575C1DFF1D85044900357B39 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 575C1DEB1D85044900357B39 /* line.png */; };
+		575C1E001D85044900357B39 /* line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 575C1DEC1D85044900357B39 /* line@2x.png */; };
+		575C1E011D85044900357B39 /* line@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 575C1DED1D85044900357B39 /* line@3x.png */; };
+		575C1E021D85044900357B39 /* PP_QRCodeBgView.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C1DEF1D85044900357B39 /* PP_QRCodeBgView.m */; };
+		575C1E031D85044900357B39 /* PP_QRCodeScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C1DF11D85044900357B39 /* PP_QRCodeScanView.m */; };
+		575C1E041D85044900357B39 /* PP_QRCodeScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C1DF31D85044900357B39 /* PP_QRCodeScanViewController.m */; };
+		575C1E051D85044900357B39 /* prev.png in Resources */ = {isa = PBXBuildFile; fileRef = 575C1DF41D85044900357B39 /* prev.png */; };
+		575C1E061D85044900357B39 /* prev@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 575C1DF51D85044900357B39 /* prev@2x.png */; };
+		575C1E071D85044900357B39 /* prev@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 575C1DF61D85044900357B39 /* prev@3x.png */; };
+		575C1E081D85044900357B39 /* UIView+PP_Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C1DF81D85044900357B39 /* UIView+PP_Frame.m */; };
+		575C1E091D85044900357B39 /* PAWaterflowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C1DFB1D85044900357B39 /* PAWaterflowLayout.m */; };
 		C62DA8FE1D816B790003945C /* UIImage+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = C62DA8FD1D816B790003945C /* UIImage+PPSets.m */; };
 		C62DA9011D816DAB0003945C /* UIView+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = C62DA9001D816DAB0003945C /* UIView+PPSets.m */; };
 		C62DA9041D816E970003945C /* NSString+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = C62DA9031D816E970003945C /* NSString+PPSets.m */; };
@@ -158,6 +194,87 @@
 		575C1D6E1D73269300357B39 /* YYMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYMemoryCache.h; sourceTree = "<group>"; };
 		575C1D6F1D73269300357B39 /* YYMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYMemoryCache.m; sourceTree = "<group>"; };
 		575C1D741D7326F200357B39 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		575C1D791D84F86A00357B39 /* UIApplication+PPSets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+PPSets.h"; sourceTree = "<group>"; };
+		575C1D7A1D84F86A00357B39 /* UIApplication+PPSets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+PPSets.m"; sourceTree = "<group>"; };
+		575C1D7C1D84FEAF00357B39 /* UIScreen+PPSets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+PPSets.h"; sourceTree = "<group>"; };
+		575C1D7D1D84FEAF00357B39 /* UIScreen+PPSets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+PPSets.m"; sourceTree = "<group>"; };
+		575C1D811D85021D00357B39 /* UIGestureRecognizer+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+BlocksKit.h"; sourceTree = "<group>"; };
+		575C1D821D85021D00357B39 /* UIGestureRecognizer+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+BlocksKit.m"; sourceTree = "<group>"; };
+		575C1D831D85021D00357B39 /* UIView+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BlocksKit.h"; sourceTree = "<group>"; };
+		575C1D841D85021D00357B39 /* UIView+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BlocksKit.m"; sourceTree = "<group>"; };
+		575C1D891D85029600357B39 /* LPLevelView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LPLevelView.bundle; sourceTree = "<group>"; };
+		575C1D8A1D85029600357B39 /* LPLevelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPLevelView.h; sourceTree = "<group>"; };
+		575C1D8B1D85029600357B39 /* LPLevelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPLevelView.m; sourceTree = "<group>"; };
+		575C1D8D1D85029600357B39 /* b27_icon_star_gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "b27_icon_star_gray@2x.png"; sourceTree = "<group>"; };
+		575C1D8E1D85029600357B39 /* b27_icon_star_gray@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "b27_icon_star_gray@3x.png"; sourceTree = "<group>"; };
+		575C1D8F1D85029600357B39 /* b27_icon_star_yellow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "b27_icon_star_yellow@2x.png"; sourceTree = "<group>"; };
+		575C1D901D85029600357B39 /* b27_icon_star_yellow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "b27_icon_star_yellow@3x.png"; sourceTree = "<group>"; };
+		575C1D911D85029600357B39 /* CWStarRateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWStarRateView.h; sourceTree = "<group>"; };
+		575C1D921D85029600357B39 /* CWStarRateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWStarRateView.m; sourceTree = "<group>"; };
+		575C1D9F1D85033500357B39 /* PP_CameraManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PP_CameraManager.h; sourceTree = "<group>"; };
+		575C1DA01D85033500357B39 /* PP_CameraManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PP_CameraManager.m; sourceTree = "<group>"; };
+		575C1DA11D85033500357B39 /* 拍照三部曲.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "拍照三部曲.h"; sourceTree = "<group>"; };
+		575C1DA31D85033500357B39 /* PP_NSArrayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PP_NSArrayManager.h; sourceTree = "<group>"; };
+		575C1DA41D85033500357B39 /* PP_NSArrayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PP_NSArrayManager.m; sourceTree = "<group>"; };
+		575C1DA61D85033500357B39 /* PP_NSDateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PP_NSDateManager.h; sourceTree = "<group>"; };
+		575C1DA71D85033500357B39 /* PP_NSDateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PP_NSDateManager.m; sourceTree = "<group>"; };
+		575C1DA91D85033500357B39 /* PP_NSStringManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PP_NSStringManager.h; sourceTree = "<group>"; };
+		575C1DAA1D85033500357B39 /* PP_NSStringManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PP_NSStringManager.m; sourceTree = "<group>"; };
+		575C1DAD1D85033500357B39 /* PPMTHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPMTHandle.h; sourceTree = "<group>"; };
+		575C1DAE1D85033500357B39 /* PPMTHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPMTHandle.m; sourceTree = "<group>"; };
+		575C1DB91D8503F000357B39 /* MyPlans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPlans.h; sourceTree = "<group>"; };
+		575C1DBB1D8503F000357B39 /* PLAN_English_One.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLAN_English_One.h; sourceTree = "<group>"; };
+		575C1DBC1D8503F000357B39 /* PPWords1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPWords1.h; sourceTree = "<group>"; };
+		575C1DBE1D8503F000357B39 /* textfiled限制“.”和以后2位数.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "textfiled限制“.”和以后2位数.h"; sourceTree = "<group>"; };
+		575C1DC01D8503F000357B39 /* CWStarRateView使用指导.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CWStarRateView使用指导.h"; sourceTree = "<group>"; };
+		575C1DC11D8503F000357B39 /* LPLevelView使用指导.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LPLevelView使用指导.h"; sourceTree = "<group>"; };
+		575C1DC21D8503F000357B39 /* PP_SearchBar使用指导.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PP_SearchBar使用指导.h"; sourceTree = "<group>"; };
+		575C1DC31D8503F000357B39 /* UIApplictionNet指示器使用指导.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplictionNet指示器使用指导.h"; sourceTree = "<group>"; };
+		575C1DC41D8503F000357B39 /* UIImage+DSRoundImage使用指导.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DSRoundImage使用指导.h"; sourceTree = "<group>"; };
+		575C1DC51D8503F000357B39 /* WXPay说明.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WXPay说明.h"; sourceTree = "<group>"; };
+		575C1DC71D8503F000357B39 /* AutoLayout相对处理pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AutoLayout相对处理pin.png"; sourceTree = "<group>"; };
+		575C1DC81D8503F000357B39 /* iOS沙盒图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS沙盒图.png"; sourceTree = "<group>"; };
+		575C1DC91D8503F000357B39 /* SDWebImage原理图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SDWebImage原理图.png"; sourceTree = "<group>"; };
+		575C1DCA1D8503F000357B39 /* tujieGCD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tujieGCD.png; sourceTree = "<group>"; };
+		575C1DCB1D8503F000357B39 /* yi.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = yi.gif; sourceTree = "<group>"; };
+		575C1DCC1D8503F000357B39 /* 响应者链条示意图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "响应者链条示意图.png"; sourceTree = "<group>"; };
+		575C1DCE1D8503F000357B39 /* AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayout.h; sourceTree = "<group>"; };
+		575C1DCF1D8503F000357B39 /* Block学习指导.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Block学习指导.h"; sourceTree = "<group>"; };
+		575C1DD01D8503F000357B39 /* GCD学习1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GCD学习1.h"; sourceTree = "<group>"; };
+		575C1DD11D8503F000357B39 /* GCD由浅入深笔记.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GCD由浅入深笔记.h"; sourceTree = "<group>"; };
+		575C1DD21D8503F000357B39 /* iOS API学习【NEW1】.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iOS API学习【NEW1】.h"; sourceTree = "<group>"; };
+		575C1DD31D8503F000357B39 /* iOS多线程学习1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iOS多线程学习1.h"; sourceTree = "<group>"; };
+		575C1DD41D8503F000357B39 /* iOS开发基础知识.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iOS开发基础知识.h"; sourceTree = "<group>"; };
+		575C1DD51D8503F000357B39 /* iOS开发基础知识2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iOS开发基础知识2.h"; sourceTree = "<group>"; };
+		575C1DD61D8503F000357B39 /* iOS开发基础知识3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iOS开发基础知识3.h"; sourceTree = "<group>"; };
+		575C1DD71D8503F000357B39 /* Runtime知识集中营.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Runtime知识集中营.h"; sourceTree = "<group>"; };
+		575C1DD81D8503F000357B39 /* 【API】NSString学习.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "【API】NSString学习.h"; sourceTree = "<group>"; };
+		575C1DD91D8503F000357B39 /* 【API】UICollectionView学习.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "【API】UICollectionView学习.h"; sourceTree = "<group>"; };
+		575C1DDA1D8503F000357B39 /* 你不知道的开源库ONE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "你不知道的开源库ONE.h"; sourceTree = "<group>"; };
+		575C1DDB1D8503F000357B39 /* 开发经验与技巧.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "开发经验与技巧.h"; sourceTree = "<group>"; };
+		575C1DDD1D8503F000357B39 /* 公司中用到的第三方框架.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "公司中用到的第三方框架.h"; sourceTree = "<group>"; };
+		575C1DDE1D8503F000357B39 /* 待确定是否非常值得收藏.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "待确定是否非常值得收藏.h"; sourceTree = "<group>"; };
+		575C1DDF1D8503F000357B39 /* 源码解析1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "源码解析1.h"; sourceTree = "<group>"; };
+		575C1DE01D8503F000357B39 /* 非常值得收藏1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "非常值得收藏1.h"; sourceTree = "<group>"; };
+		575C1DE81D85044900357B39 /* frame_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame_icon.png; sourceTree = "<group>"; };
+		575C1DE91D85044900357B39 /* frame_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "frame_icon@2x.png"; sourceTree = "<group>"; };
+		575C1DEA1D85044900357B39 /* frame_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "frame_icon@3x.png"; sourceTree = "<group>"; };
+		575C1DEB1D85044900357B39 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
+		575C1DEC1D85044900357B39 /* line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "line@2x.png"; sourceTree = "<group>"; };
+		575C1DED1D85044900357B39 /* line@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "line@3x.png"; sourceTree = "<group>"; };
+		575C1DEE1D85044900357B39 /* PP_QRCodeBgView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PP_QRCodeBgView.h; sourceTree = "<group>"; };
+		575C1DEF1D85044900357B39 /* PP_QRCodeBgView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PP_QRCodeBgView.m; sourceTree = "<group>"; };
+		575C1DF01D85044900357B39 /* PP_QRCodeScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PP_QRCodeScanView.h; sourceTree = "<group>"; };
+		575C1DF11D85044900357B39 /* PP_QRCodeScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PP_QRCodeScanView.m; sourceTree = "<group>"; };
+		575C1DF21D85044900357B39 /* PP_QRCodeScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PP_QRCodeScanViewController.h; sourceTree = "<group>"; };
+		575C1DF31D85044900357B39 /* PP_QRCodeScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PP_QRCodeScanViewController.m; sourceTree = "<group>"; };
+		575C1DF41D85044900357B39 /* prev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prev.png; sourceTree = "<group>"; };
+		575C1DF51D85044900357B39 /* prev@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "prev@2x.png"; sourceTree = "<group>"; };
+		575C1DF61D85044900357B39 /* prev@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "prev@3x.png"; sourceTree = "<group>"; };
+		575C1DF71D85044900357B39 /* UIView+PP_Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PP_Frame.h"; sourceTree = "<group>"; };
+		575C1DF81D85044900357B39 /* UIView+PP_Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PP_Frame.m"; sourceTree = "<group>"; };
+		575C1DFA1D85044900357B39 /* PAWaterflowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAWaterflowLayout.h; sourceTree = "<group>"; };
+		575C1DFB1D85044900357B39 /* PAWaterflowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAWaterflowLayout.m; sourceTree = "<group>"; };
 		C62DA8FC1D816B790003945C /* UIImage+PPSets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+PPSets.h"; sourceTree = "<group>"; };
 		C62DA8FD1D816B790003945C /* UIImage+PPSets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PPSets.m"; sourceTree = "<group>"; };
 		C62DA8FF1D816DAB0003945C /* UIView+PPSets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PPSets.h"; sourceTree = "<group>"; };
@@ -446,6 +563,13 @@
 		575C1D5F1D4C92D500357B39 /* Notes */ = {
 			isa = PBXGroup;
 			children = (
+				575C1DB91D8503F000357B39 /* MyPlans.h */,
+				575C1DBA1D8503F000357B39 /* NewWords */,
+				575C1DBD1D8503F000357B39 /* PPExperience */,
+				575C1DBF1D8503F000357B39 /* PPGuide */,
+				575C1DC61D8503F000357B39 /* PPImages */,
+				575C1DCD1D8503F000357B39 /* PPLearn */,
+				575C1DDC1D8503F000357B39 /* PPLinks */,
 				575C1D601D4C930A00357B39 /* ShaHeViewController.h */,
 				575C1D611D4C930A00357B39 /* ShaHeViewController.m */,
 			);
@@ -468,6 +592,231 @@
 			path = YYCache;
 			sourceTree = "<group>";
 		};
+		575C1D7F1D85021100357B39 /* PPLibs */ = {
+			isa = PBXGroup;
+			children = (
+				575C1D801D85021D00357B39 /* BlocksKit */,
+			);
+			path = PPLibs;
+			sourceTree = "<group>";
+		};
+		575C1D801D85021D00357B39 /* BlocksKit */ = {
+			isa = PBXGroup;
+			children = (
+				575C1D811D85021D00357B39 /* UIGestureRecognizer+BlocksKit.h */,
+				575C1D821D85021D00357B39 /* UIGestureRecognizer+BlocksKit.m */,
+				575C1D831D85021D00357B39 /* UIView+BlocksKit.h */,
+				575C1D841D85021D00357B39 /* UIView+BlocksKit.m */,
+			);
+			path = BlocksKit;
+			sourceTree = "<group>";
+		};
+		575C1D871D85029600357B39 /* Score */ = {
+			isa = PBXGroup;
+			children = (
+				575C1D881D85029600357B39 /* LPLevelView */,
+				575C1D8C1D85029600357B39 /* starRateView */,
+			);
+			path = Score;
+			sourceTree = "<group>";
+		};
+		575C1D881D85029600357B39 /* LPLevelView */ = {
+			isa = PBXGroup;
+			children = (
+				575C1D891D85029600357B39 /* LPLevelView.bundle */,
+				575C1D8A1D85029600357B39 /* LPLevelView.h */,
+				575C1D8B1D85029600357B39 /* LPLevelView.m */,
+			);
+			path = LPLevelView;
+			sourceTree = "<group>";
+		};
+		575C1D8C1D85029600357B39 /* starRateView */ = {
+			isa = PBXGroup;
+			children = (
+				575C1D8D1D85029600357B39 /* b27_icon_star_gray@2x.png */,
+				575C1D8E1D85029600357B39 /* b27_icon_star_gray@3x.png */,
+				575C1D8F1D85029600357B39 /* b27_icon_star_yellow@2x.png */,
+				575C1D901D85029600357B39 /* b27_icon_star_yellow@3x.png */,
+				575C1D911D85029600357B39 /* CWStarRateView.h */,
+				575C1D921D85029600357B39 /* CWStarRateView.m */,
+			);
+			path = starRateView;
+			sourceTree = "<group>";
+		};
+		575C1D9A1D85033500357B39 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				575C1D9D1D85033500357B39 /* PP_Manager */,
+				575C1DAC1D85033500357B39 /* PPMTHandle */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		575C1D9D1D85033500357B39 /* PP_Manager */ = {
+			isa = PBXGroup;
+			children = (
+				575C1D9E1D85033500357B39 /* PP_CameraManager */,
+				575C1DA21D85033500357B39 /* PP_NSArrayManager */,
+				575C1DA51D85033500357B39 /* PP_NSDateManager */,
+				575C1DA81D85033500357B39 /* PP_NSStringManager */,
+			);
+			path = PP_Manager;
+			sourceTree = "<group>";
+		};
+		575C1D9E1D85033500357B39 /* PP_CameraManager */ = {
+			isa = PBXGroup;
+			children = (
+				575C1D9F1D85033500357B39 /* PP_CameraManager.h */,
+				575C1DA01D85033500357B39 /* PP_CameraManager.m */,
+				575C1DA11D85033500357B39 /* 拍照三部曲.h */,
+			);
+			path = PP_CameraManager;
+			sourceTree = "<group>";
+		};
+		575C1DA21D85033500357B39 /* PP_NSArrayManager */ = {
+			isa = PBXGroup;
+			children = (
+				575C1DA31D85033500357B39 /* PP_NSArrayManager.h */,
+				575C1DA41D85033500357B39 /* PP_NSArrayManager.m */,
+			);
+			path = PP_NSArrayManager;
+			sourceTree = "<group>";
+		};
+		575C1DA51D85033500357B39 /* PP_NSDateManager */ = {
+			isa = PBXGroup;
+			children = (
+				575C1DA61D85033500357B39 /* PP_NSDateManager.h */,
+				575C1DA71D85033500357B39 /* PP_NSDateManager.m */,
+			);
+			path = PP_NSDateManager;
+			sourceTree = "<group>";
+		};
+		575C1DA81D85033500357B39 /* PP_NSStringManager */ = {
+			isa = PBXGroup;
+			children = (
+				575C1DA91D85033500357B39 /* PP_NSStringManager.h */,
+				575C1DAA1D85033500357B39 /* PP_NSStringManager.m */,
+			);
+			path = PP_NSStringManager;
+			sourceTree = "<group>";
+		};
+		575C1DAC1D85033500357B39 /* PPMTHandle */ = {
+			isa = PBXGroup;
+			children = (
+				575C1DAD1D85033500357B39 /* PPMTHandle.h */,
+				575C1DAE1D85033500357B39 /* PPMTHandle.m */,
+			);
+			path = PPMTHandle;
+			sourceTree = "<group>";
+		};
+		575C1DBA1D8503F000357B39 /* NewWords */ = {
+			isa = PBXGroup;
+			children = (
+				575C1DBB1D8503F000357B39 /* PLAN_English_One.h */,
+				575C1DBC1D8503F000357B39 /* PPWords1.h */,
+			);
+			path = NewWords;
+			sourceTree = "<group>";
+		};
+		575C1DBD1D8503F000357B39 /* PPExperience */ = {
+			isa = PBXGroup;
+			children = (
+				575C1DBE1D8503F000357B39 /* textfiled限制“.”和以后2位数.h */,
+			);
+			path = PPExperience;
+			sourceTree = "<group>";
+		};
+		575C1DBF1D8503F000357B39 /* PPGuide */ = {
+			isa = PBXGroup;
+			children = (
+				575C1DC01D8503F000357B39 /* CWStarRateView使用指导.h */,
+				575C1DC11D8503F000357B39 /* LPLevelView使用指导.h */,
+				575C1DC21D8503F000357B39 /* PP_SearchBar使用指导.h */,
+				575C1DC31D8503F000357B39 /* UIApplictionNet指示器使用指导.h */,
+				575C1DC41D8503F000357B39 /* UIImage+DSRoundImage使用指导.h */,
+				575C1DC51D8503F000357B39 /* WXPay说明.h */,
+			);
+			path = PPGuide;
+			sourceTree = "<group>";
+		};
+		575C1DC61D8503F000357B39 /* PPImages */ = {
+			isa = PBXGroup;
+			children = (
+				575C1DC71D8503F000357B39 /* AutoLayout相对处理pin.png */,
+				575C1DC81D8503F000357B39 /* iOS沙盒图.png */,
+				575C1DC91D8503F000357B39 /* SDWebImage原理图.png */,
+				575C1DCA1D8503F000357B39 /* tujieGCD.png */,
+				575C1DCB1D8503F000357B39 /* yi.gif */,
+				575C1DCC1D8503F000357B39 /* 响应者链条示意图.png */,
+			);
+			path = PPImages;
+			sourceTree = "<group>";
+		};
+		575C1DCD1D8503F000357B39 /* PPLearn */ = {
+			isa = PBXGroup;
+			children = (
+				575C1DCE1D8503F000357B39 /* AutoLayout.h */,
+				575C1DCF1D8503F000357B39 /* Block学习指导.h */,
+				575C1DD01D8503F000357B39 /* GCD学习1.h */,
+				575C1DD11D8503F000357B39 /* GCD由浅入深笔记.h */,
+				575C1DD21D8503F000357B39 /* iOS API学习【NEW1】.h */,
+				575C1DD31D8503F000357B39 /* iOS多线程学习1.h */,
+				575C1DD41D8503F000357B39 /* iOS开发基础知识.h */,
+				575C1DD51D8503F000357B39 /* iOS开发基础知识2.h */,
+				575C1DD61D8503F000357B39 /* iOS开发基础知识3.h */,
+				575C1DD71D8503F000357B39 /* Runtime知识集中营.h */,
+				575C1DD81D8503F000357B39 /* 【API】NSString学习.h */,
+				575C1DD91D8503F000357B39 /* 【API】UICollectionView学习.h */,
+				575C1DDA1D8503F000357B39 /* 你不知道的开源库ONE.h */,
+				575C1DDB1D8503F000357B39 /* 开发经验与技巧.h */,
+			);
+			path = PPLearn;
+			sourceTree = "<group>";
+		};
+		575C1DDC1D8503F000357B39 /* PPLinks */ = {
+			isa = PBXGroup;
+			children = (
+				575C1DDD1D8503F000357B39 /* 公司中用到的第三方框架.h */,
+				575C1DDE1D8503F000357B39 /* 待确定是否非常值得收藏.h */,
+				575C1DDF1D8503F000357B39 /* 源码解析1.h */,
+				575C1DE01D8503F000357B39 /* 非常值得收藏1.h */,
+			);
+			path = PPLinks;
+			sourceTree = "<group>";
+		};
+		575C1DE71D85044900357B39 /* PPQRCode */ = {
+			isa = PBXGroup;
+			children = (
+				575C1DE81D85044900357B39 /* frame_icon.png */,
+				575C1DE91D85044900357B39 /* frame_icon@2x.png */,
+				575C1DEA1D85044900357B39 /* frame_icon@3x.png */,
+				575C1DEB1D85044900357B39 /* line.png */,
+				575C1DEC1D85044900357B39 /* line@2x.png */,
+				575C1DED1D85044900357B39 /* line@3x.png */,
+				575C1DEE1D85044900357B39 /* PP_QRCodeBgView.h */,
+				575C1DEF1D85044900357B39 /* PP_QRCodeBgView.m */,
+				575C1DF01D85044900357B39 /* PP_QRCodeScanView.h */,
+				575C1DF11D85044900357B39 /* PP_QRCodeScanView.m */,
+				575C1DF21D85044900357B39 /* PP_QRCodeScanViewController.h */,
+				575C1DF31D85044900357B39 /* PP_QRCodeScanViewController.m */,
+				575C1DF41D85044900357B39 /* prev.png */,
+				575C1DF51D85044900357B39 /* prev@2x.png */,
+				575C1DF61D85044900357B39 /* prev@3x.png */,
+				575C1DF71D85044900357B39 /* UIView+PP_Frame.h */,
+				575C1DF81D85044900357B39 /* UIView+PP_Frame.m */,
+			);
+			path = PPQRCode;
+			sourceTree = "<group>";
+		};
+		575C1DF91D85044900357B39 /* PPWaterFlow */ = {
+			isa = PBXGroup;
+			children = (
+				575C1DFA1D85044900357B39 /* PAWaterflowLayout.h */,
+				575C1DFB1D85044900357B39 /* PAWaterflowLayout.m */,
+			);
+			path = PPWaterFlow;
+			sourceTree = "<group>";
+		};
 		C62DA8F91D816AFD0003945C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -479,6 +828,10 @@
 		C62DA8FA1D816B050003945C /* PPSets */ = {
 			isa = PBXGroup;
 			children = (
+				575C1DE71D85044900357B39 /* PPQRCode */,
+				575C1DF91D85044900357B39 /* PPWaterFlow */,
+				575C1D9A1D85033500357B39 /* Tools */,
+				575C1D7F1D85021100357B39 /* PPLibs */,
 				C62DA90B1D8176220003945C /* Manager */,
 				C62DA8FB1D816B3E0003945C /* Category */,
 			);
@@ -500,6 +853,10 @@
 				C62DA9091D81745C0003945C /* UIButton+PPSets.m */,
 				C62DA90F1D81772A0003945C /* NSObject+PPSets.h */,
 				C62DA9101D81772A0003945C /* NSObject+PPSets.m */,
+				575C1D791D84F86A00357B39 /* UIApplication+PPSets.h */,
+				575C1D7A1D84F86A00357B39 /* UIApplication+PPSets.m */,
+				575C1D7C1D84FEAF00357B39 /* UIScreen+PPSets.h */,
+				575C1D7D1D84FEAF00357B39 /* UIScreen+PPSets.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -744,6 +1101,7 @@
 		C6C6D0C11D0F94DB00F82C39 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				575C1D871D85029600357B39 /* Score */,
 				575C1D661D73269300357B39 /* YYCache */,
 				C683FBBB1D29F73000D1BF6A /* YYModel */,
 				C6C6D0C21D0F94DB00F82C39 /* AFN */,
@@ -1159,10 +1517,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6C6D18E1D0F94DB00F82C39 /* Info.plist in Resources */,
+				575C1D971D85029600357B39 /* b27_icon_star_yellow@2x.png in Resources */,
 				C6C6D0B31D0F94BB00F82C39 /* LaunchScreen.storyboard in Resources */,
+				575C1D931D85029600357B39 /* LPLevelView.bundle in Resources */,
+				575C1D961D85029600357B39 /* b27_icon_star_gray@3x.png in Resources */,
+				575C1DE11D8503F000357B39 /* AutoLayout相对处理pin.png in Resources */,
+				575C1E061D85044900357B39 /* prev@2x.png in Resources */,
+				575C1DE61D8503F000357B39 /* 响应者链条示意图.png in Resources */,
 				C6C6D1B31D0F94DB00F82C39 /* MJRefresh.bundle in Resources */,
+				575C1E051D85044900357B39 /* prev.png in Resources */,
+				575C1E011D85044900357B39 /* line@3x.png in Resources */,
+				575C1E001D85044900357B39 /* line@2x.png in Resources */,
+				575C1DFF1D85044900357B39 /* line.png in Resources */,
+				575C1DFC1D85044900357B39 /* frame_icon.png in Resources */,
+				575C1D951D85029600357B39 /* b27_icon_star_gray@2x.png in Resources */,
 				C6C6D0B01D0F94BB00F82C39 /* Assets.xcassets in Resources */,
+				575C1DFD1D85044900357B39 /* frame_icon@2x.png in Resources */,
 				C6C6D19A1D0F94DB00F82C39 /* Info.plist in Resources */,
+				575C1DE41D8503F000357B39 /* tujieGCD.png in Resources */,
+				575C1D981D85029600357B39 /* b27_icon_star_yellow@3x.png in Resources */,
+				575C1DE51D8503F000357B39 /* yi.gif in Resources */,
+				575C1DE31D8503F000357B39 /* SDWebImage原理图.png in Resources */,
+				575C1DE21D8503F000357B39 /* iOS沙盒图.png in Resources */,
+				575C1DFE1D85044900357B39 /* frame_icon@3x.png in Resources */,
+				575C1E071D85044900357B39 /* prev@3x.png in Resources */,
 				C6C6D0AE1D0F94BB00F82C39 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1175,24 +1553,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				C683FBCB1D2A00AF00D1BF6A /* User.m in Sources */,
+				575C1D991D85029600357B39 /* CWStarRateView.m in Sources */,
 				C63B35991D1D3FFF006277E8 /* JSViewController.m in Sources */,
 				C6AC8C211D124CF80008133E /* MJChiBaoZiFooter.m in Sources */,
 				C6C6D18A1D0F94DB00F82C39 /* UIProgressView+AFNetworking.m in Sources */,
 				C63B35911D1D3CED006277E8 /* Person.m in Sources */,
+				575C1E021D85044900357B39 /* PP_QRCodeBgView.m in Sources */,
 				C6C6D1B21D0F94DB00F82C39 /* MJRefreshStateHeader.m in Sources */,
 				C6C6D1AA1D0F94DB00F82C39 /* MJRefreshAutoGifFooter.m in Sources */,
 				C6C6D18F1D0F94DB00F82C39 /* MASCompositeConstraint.m in Sources */,
+				575C1E081D85044900357B39 /* UIView+PP_Frame.m in Sources */,
 				C6C6D19B1D0F94DB00F82C39 /* MJExtensionConst.m in Sources */,
 				C6C6D1981D0F94DB00F82C39 /* ViewController+MASAdditions.m in Sources */,
 				C6C6D1A21D0F94DB00F82C39 /* NSObject+MJKeyValue.m in Sources */,
 				C6C6D1C31D0F94DB00F82C39 /* UIImage+GIF.m in Sources */,
+				575C1DB61D85033500357B39 /* PP_NSStringManager.m in Sources */,
 				C6AC8C221D124CF80008133E /* MJChiBaoZiFooter2.m in Sources */,
 				C6C6D1A11D0F94DB00F82C39 /* NSObject+MJCoding.m in Sources */,
+				575C1E031D85044900357B39 /* PP_QRCodeScanView.m in Sources */,
 				C6C6D19E1D0F94DB00F82C39 /* MJPropertyKey.m in Sources */,
+				575C1E041D85044900357B39 /* PP_QRCodeScanViewController.m in Sources */,
 				C62DA8FE1D816B790003945C /* UIImage+PPSets.m in Sources */,
+				575C1E091D85044900357B39 /* PAWaterflowLayout.m in Sources */,
 				C6C6D1971D0F94DB00F82C39 /* View+MASAdditions.m in Sources */,
+				575C1D861D85021D00357B39 /* UIView+BlocksKit.m in Sources */,
 				C6C6D1C71D0F94DB00F82C39 /* UIImageView+WebCache.m in Sources */,
 				C6C6D1A71D0F94DB00F82C39 /* MJRefreshComponent.m in Sources */,
+				575C1DB51D85033500357B39 /* PP_NSDateManager.m in Sources */,
 				C6C6D1B11D0F94DB00F82C39 /* MJRefreshNormalHeader.m in Sources */,
 				C6C6D1CC1D0F94DB00F82C39 /* UIView+PP_Frame.m in Sources */,
 				C67799911D508E9000007161 /* CenterOneViewController.m in Sources */,
@@ -1221,18 +1608,23 @@
 				C6C6D1BA1D0F94DB00F82C39 /* NSData+ImageContentType.m in Sources */,
 				C6C6D1901D0F94DB00F82C39 /* MASConstraint.m in Sources */,
 				C6C6D1821D0F94DB00F82C39 /* AFURLResponseSerialization.m in Sources */,
+				575C1D7B1D84F86A00357B39 /* UIApplication+PPSets.m in Sources */,
 				C6C6D1941D0F94DB00F82C39 /* MASViewConstraint.m in Sources */,
 				C6C1CC121D4EF9660082A717 /* RuntimeViewController.m in Sources */,
 				C6C6D1D41D0F97EB00F82C39 /* MJViewController.m in Sources */,
 				C6C6D0A81D0F94BB00F82C39 /* AppDelegate.m in Sources */,
 				C6AC8C251D124CF80008133E /* MJDIYBackFooter.m in Sources */,
 				C6C6D1B71D0F94DB00F82C39 /* UIScrollView+MJRefresh.m in Sources */,
+				575C1D941D85029600357B39 /* LPLevelView.m in Sources */,
 				C6C6D1AF1D0F94DB00F82C39 /* MJRefreshBackStateFooter.m in Sources */,
 				C6C6D1891D0F94DB00F82C39 /* UIImageView+AFNetworking.m in Sources */,
+				575C1DB71D85033500357B39 /* PPMTHandle.m in Sources */,
 				C6C6D1931D0F94DB00F82C39 /* MASViewAttribute.m in Sources */,
+				575C1DB31D85033500357B39 /* PP_CameraManager.m in Sources */,
 				C683FBC11D29F73000D1BF6A /* NSObject+YYModel.m in Sources */,
 				C6C6D1C81D0F94DB00F82C39 /* UIView+WebCacheOperation.m in Sources */,
 				575C1D711D73269300357B39 /* YYDiskCache.m in Sources */,
+				575C1D851D85021D00357B39 /* UIGestureRecognizer+BlocksKit.m in Sources */,
 				C6C6D1CA1D0F94DB00F82C39 /* MJPicture.m in Sources */,
 				C63B358E1D1D3CA8006277E8 /* PPLabel.m in Sources */,
 				C6C6D1AE1D0F94DB00F82C39 /* MJRefreshBackNormalFooter.m in Sources */,
@@ -1240,6 +1632,7 @@
 				C6C6D17E1D0F94DB00F82C39 /* AFHTTPSessionManager.m in Sources */,
 				575C1D701D73269300357B39 /* YYCache.m in Sources */,
 				575C1D721D73269300357B39 /* YYKVStorage.m in Sources */,
+				575C1DB41D85033500357B39 /* PP_NSArrayManager.m in Sources */,
 				C6C6D1841D0F94DB00F82C39 /* AFAutoPurgingImageCache.m in Sources */,
 				C683FBD11D2A0DB700D1BF6A /* Status.m in Sources */,
 				C6C6D1B81D0F94DB00F82C39 /* UIView+MJExtension.m in Sources */,
@@ -1283,6 +1676,7 @@
 				C62DA9011D816DAB0003945C /* UIView+PPSets.m in Sources */,
 				C6C6D1C21D0F94DB00F82C39 /* UIButton+WebCache.m in Sources */,
 				C683FBCE1D2A012B00D1BF6A /* MJExtensionViewController.m in Sources */,
+				575C1D7E1D84FEAF00357B39 /* UIScreen+PPSets.m in Sources */,
 				C6C6D1C91D0F94DB00F82C39 /* UIView+Toast.m in Sources */,
 				C6C6D1E01D0F9DE400F82C39 /* MJDefaultViewController.m in Sources */,
 				C63B35951D1D3F13006277E8 /* PPLabelViewController.m in Sources */,

@@ -7,6 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+//blur<
+#import <Accelerate/Accelerate.h>
+#import <QuartzCore/QuartzCore.h>
+//blur>
 
 @interface UIImage (PPSets)
 /**001-全屏截图*/
@@ -41,6 +45,16 @@
 // CIMotionBlur   ---> 运动模糊, 用于模拟相机移动拍摄时的扫尾效果(Available in iOS 9.0 and later)
 + (UIImage *)pp_blurWithOriginalImage:(UIImage *)image blurName:(NSString *)name radius:(NSInteger)radius;
 
+
+@end
+
+
+@interface UIImage (PPColor)
++ (UIImage *)pp_imageWithColor:(UIColor *)color size:(CGSize)size;
+
+/** 根据颜色返回一张图片 */
++ (UIImage *)pp_imageWithColor:(UIColor *)color;
+
 /**
  *  008-调整图片饱和度, 亮度, 对比度
  *
@@ -51,12 +65,37 @@
  *
  */
 + (UIImage *)pp_colorControlsWithOriginalImage:(UIImage *)image
-                                 saturation:(CGFloat)saturation
-                                 brightness:(CGFloat)brightness
+                                    saturation:(CGFloat)saturation
+                                    brightness:(CGFloat)brightness
                                       contrast:(CGFloat)contrast;
+
 @end
 
 
-@interface UIImage (PPColor)
-+ (UIImage *)pp_imageWithColor:(UIColor *)color size:(CGSize)size;
+static const NSString *DSRoundImagePreString = @"DSIsRound";
+
+@interface UIImage (Blurr)
+
+/** 图片模糊效果 */
+- (UIImage*)PP_blurredImage:(CGFloat)blurAmount;// 0.0 to 1.0
+
 @end
+
+@interface UIImage (DSRoundImage)
+//  简书链接：http://www.jianshu.com/p/c509d7b1ef54
+//  GitHub: https://github.com/walkdianzi/DSRoundedImageArticle/tree/master
+
+/**
+ *  主要SDWebImage里使用，key会缓存key
+ *
+ *  @param image 原始图片
+ *  @param key   缓存key
+ *
+ *  @return 圆角图片
+ */
++ (id)pp_createRoundedRectImage:(UIImage*)image withKey:(NSString *)key;
+
+
++ (id)pp_createRoundedRectImage:(UIImage*)image size:(CGSize)size radius:(int)radius;
+@end
+

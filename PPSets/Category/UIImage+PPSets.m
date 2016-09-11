@@ -113,6 +113,41 @@
         return nil;
     }
 }
+
+
+@end
+
+
+@implementation UIImage (PPColor)
+
++ (UIImage *)pp_imageWithColor:(UIColor *)color size:(CGSize)size
+{
+    CGRect rect = CGRectMake(0, 0, size.width, size.height);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context,color.CGColor);
+    CGContextFillRect(context, rect);
+    UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return img;
+}
+
++ (UIImage *)pp_imageWithColor:(UIColor *)color
+{
+    CGRect rect = CGRectMake(0, 0, 1, 1);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
+
 /**
  *  调整图片饱和度, 亮度, 对比度
  *
@@ -124,9 +159,9 @@
  */
 /**调整图片饱和度、亮度、对比度*/
 + (UIImage *)pp_colorControlsWithOriginalImage:(UIImage *)image
-                                 saturation:(CGFloat)saturation
-                                 brightness:(CGFloat)brightness
-                                   contrast:(CGFloat)contrast{
+                                    saturation:(CGFloat)saturation
+                                    brightness:(CGFloat)brightness
+                                      contrast:(CGFloat)contrast{
     CIContext *context = [CIContext contextWithOptions:nil];
     CIImage *inputImage = [[CIImage alloc] initWithImage:image];
     CIFilter *filter = [CIFilter filterWithName:@"CIColorControls"];
@@ -146,19 +181,196 @@
 @end
 
 
-@implementation UIImage (PPColor)
+@implementation UIImage (Blurr)
 
-+ (UIImage *)pp_imageWithColor:(UIColor *)color size:(CGSize)size
+- (UIImage*)PP_blurredImage:(CGFloat)blurAmount
 {
-    CGRect rect = CGRectMake(0, 0, size.width, size.height);
-    UIGraphicsBeginImageContext(rect.size);
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetFillColorWithColor(context,color.CGColor);
-    CGContextFillRect(context, rect);
-    UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
+    if (blurAmount < 0.0 || blurAmount > 1.0) {
+        blurAmount = 0.5;
+    }
     
+    int boxSize = (int)(blurAmount * 40);
+    boxSize = boxSize - (boxSize % 2) + 1;
+    
+    CGImageRef img = self.CGImage;
+    
+    vImage_Buffer inBuffer, outBuffer;
+    vImage_Error error;
+    
+    void *pixelBuffer;
+    
+    CGDataProviderRef inProvider = CGImageGetDataProvider(img);
+    CFDataRef inBitmapData = CGDataProviderCopyData(inProvider);
+    
+    inBuffer.width = CGImageGetWidth(img);
+    inBuffer.height = CGImageGetHeight(img);
+    inBuffer.rowBytes = CGImageGetBytesPerRow(img);
+    
+    inBuffer.data = (void*)CFDataGetBytePtr(inBitmapData);
+    
+    pixelBuffer = malloc(CGImageGetBytesPerRow(img) * CGImageGetHeight(img));
+    
+    outBuffer.data = pixelBuffer;
+    outBuffer.width = CGImageGetWidth(img);
+    outBuffer.height = CGImageGetHeight(img);
+    outBuffer.rowBytes = CGImageGetBytesPerRow(img);
+    
+    error = vImageBoxConvolve_ARGB8888(&inBuffer, &outBuffer, NULL, 0, 0, boxSize, boxSize, NULL, kvImageEdgeExtend);
+    
+    if (!error) {
+        error = vImageBoxConvolve_ARGB8888(&outBuffer, &inBuffer, NULL, 0, 0, boxSize, boxSize, NULL, kvImageEdgeExtend);
+    }
+    
+    if (error) {
+#ifdef DEBUG
+        NSLog(@"%s error: %zd", __PRETTY_FUNCTION__, error);
+#endif
+        
+        return self;
+    }
+    
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    
+    CGContextRef ctx = CGBitmapContextCreate(outBuffer.data,
+                                             outBuffer.width,
+                                             outBuffer.height,
+                                             8,
+                                             outBuffer.rowBytes,
+                                             colorSpace,
+                                             (CGBitmapInfo)kCGImageAlphaNoneSkipLast);
+    
+    CGImageRef imageRef = CGBitmapContextCreateImage (ctx);
+    
+    UIImage *returnImage = [UIImage imageWithCGImage:imageRef];
+    
+    CGContextRelease(ctx);
+    CGColorSpaceRelease(colorSpace);
+    
+    free(pixelBuffer);
+    CFRelease(inBitmapData);
+    
+    CGImageRelease(imageRef);
+    
+    return returnImage;
+}
+
+@end
+
+@implementation UIImage (DSRoundImage)
+
+static void addRoundedRectToPath(CGContextRef context, CGRect rect, float ovalWidth,
+                                 float ovalHeight)
+{
+    float fw, fh;
+    
+    if (ovalWidth == 0 || ovalHeight == 0)
+    {
+        CGContextAddRect(context, rect);
+        return;
+    }
+    
+    CGContextSaveGState(context);
+    CGContextTranslateCTM(context, CGRectGetMinX(rect), CGRectGetMinY(rect));
+    CGContextScaleCTM(context, ovalWidth, ovalHeight);
+    fw = CGRectGetWidth(rect) / ovalWidth;
+    fh = CGRectGetHeight(rect) / ovalHeight;
+    
+    CGContextMoveToPoint(context, fw, fh/2);  // Start at lower right corner
+    CGContextAddArcToPoint(context, fw, fh, fw/2, fh, 1);  // Top right corner
+    CGContextAddArcToPoint(context, 0, fh, 0, fh/2, 1); // Top left corner
+    CGContextAddArcToPoint(context, 0, 0, fw/2, 0, 1); // Lower left corner
+    CGContextAddArcToPoint(context, fw, 0, fw, fh/2, 1); // Back to lower right
+    
+    CGContextClosePath(context);
+    CGContextRestoreGState(context);
+}
+
++ (id)pp_createRoundedRectImage:(UIImage*)image withKey:(NSString *)key
+{
+    
+    //根据key判断是否绘制圆角
+    if (key && [key hasPrefix:[NSString stringWithFormat:@"%@",DSRoundImagePreString]]) {
+        
+        NSArray *preArray = [key componentsSeparatedByString:[NSString stringWithFormat:@"%@",DSRoundImagePreString]];
+        CGSize imageSize;
+        
+        if ([preArray count]>2) {  //key里有传宽高信息
+            NSString *sizeStr = [preArray objectAtIndex:1];
+            NSArray *sizeArray = [sizeStr componentsSeparatedByString:@"x"];
+            float width = [[sizeArray objectAtIndex:0] floatValue];
+            float height = [[sizeArray objectAtIndex:1] floatValue];
+            if (width > 0 && height > 0) {
+                if (width>height) {
+                    imageSize = CGSizeMake(width*2, width*2);
+                }else{
+                    imageSize = CGSizeMake(height*2, height*2);
+                }
+            }else{
+                imageSize = CGSizeMake(160, 160);
+            }
+        }else{
+            
+            if (image.size.height > image.size.width) {
+                imageSize = CGSizeMake(image.size.height, image.size.height);
+            }else{
+                imageSize = CGSizeMake(image.size.width, image.size.width);
+            }
+            if (imageSize.height>160) {
+                imageSize = CGSizeMake(160, 160);
+            }
+        }
+        
+        //得到size跟image开始绘制
+        int w = imageSize.width;
+        int h = imageSize.height;
+        int radius = imageSize.width/2;
+        
+        UIImage *img = image;
+        CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+        CGContextRef context = CGBitmapContextCreate(NULL, w, h, 8, 4 * w, colorSpace, kCGImageAlphaPremultipliedFirst);
+        CGRect rect = CGRectMake(0, 0, w, h);
+        
+        CGContextBeginPath(context);
+        addRoundedRectToPath(context, rect, radius, radius);
+        CGContextClosePath(context);
+        CGContextClip(context);
+        CGContextDrawImage(context, CGRectMake(0, 0, w, h), img.CGImage);
+        CGImageRef imageMasked = CGBitmapContextCreateImage(context);
+        img = [UIImage imageWithCGImage:imageMasked];
+        
+        CGContextRelease(context);
+        CGColorSpaceRelease(colorSpace);
+        CGImageRelease(imageMasked);
+        return img;
+    }else{
+        return image;
+    }
+}
+
++ (id)pp_createRoundedRectImage:(UIImage *)image size:(CGSize)size radius:(int)radius{
+    
+    size = CGSizeMake(size.width*2, size.height*2);
+    radius = radius*2;
+    
+    UIImage *img = image;
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    CGContextRef context = CGBitmapContextCreate(NULL, size.width, size.height, 8, 4 * size.width, colorSpace, kCGImageAlphaPremultipliedFirst);
+    CGRect rect = CGRectMake(0, 0, size.width, size.height);
+    
+    CGContextBeginPath(context);
+    addRoundedRectToPath(context, rect, radius, radius);
+    CGContextClosePath(context);
+    CGContextClip(context);
+    CGContextDrawImage(context, CGRectMake(0, 0, size.width, size.height), img.CGImage);
+    CGImageRef imageMasked = CGBitmapContextCreateImage(context);
+    img = [UIImage imageWithCGImage:imageMasked];
+    
+    CGContextRelease(context);
+    CGColorSpaceRelease(colorSpace);
+    CGImageRelease(imageMasked);
     return img;
 }
+
+
 
 @end
