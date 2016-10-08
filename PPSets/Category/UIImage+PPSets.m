@@ -8,6 +8,7 @@
 
 #import "UIImage+PPSets.h"
 
+
 @implementation UIImage (PPSets)
 //全屏截图
 + (UIImage *)pp_shotScreen{

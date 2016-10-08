@@ -7,7 +7,7 @@
 //
 
 #import "PPBaseViewController.h"
-
+#import "PPSets.h"
 @interface PPBaseViewController ()
 
 @end
@@ -19,7 +19,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.title = @"PPDemos";
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
-    
+    [[UIApplication sharedApplication] pp_beganNetworkActivity];
 }
 
 #pragma mark - Table view data source

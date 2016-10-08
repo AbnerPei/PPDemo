@@ -301,6 +301,7 @@
 		575C1DF81D85044900357B39 /* UIView+PP_Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PP_Frame.m"; sourceTree = "<group>"; };
 		575C1DFA1D85044900357B39 /* PAWaterflowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAWaterflowLayout.h; sourceTree = "<group>"; };
 		575C1DFB1D85044900357B39 /* PAWaterflowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAWaterflowLayout.m; sourceTree = "<group>"; };
+		579A450C1DA94A9400D61BD8 /* PPSets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPSets.h; sourceTree = "<group>"; };
 		C62DA8FC1D816B790003945C /* UIImage+PPSets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+PPSets.h"; sourceTree = "<group>"; };
 		C62DA8FD1D816B790003945C /* UIImage+PPSets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PPSets.m"; sourceTree = "<group>"; };
 		C62DA8FF1D816DAB0003945C /* UIView+PPSets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PPSets.h"; sourceTree = "<group>"; };
@@ -907,6 +908,7 @@
 		C62DA8FA1D816B050003945C /* PPSets */ = {
 			isa = PBXGroup;
 			children = (
+				579A450C1DA94A9400D61BD8 /* PPSets.h */,
 				575C1DE71D85044900357B39 /* PPQRCode */,
 				575C1DF91D85044900357B39 /* PPWaterFlow */,
 				575C1D9A1D85033500357B39 /* Tools */,
