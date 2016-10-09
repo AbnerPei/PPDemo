@@ -206,6 +206,7 @@
 		C6C6D1E31D0FA50100F82C39 /* MJDefaultBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C6D1E21D0FA50100F82C39 /* MJDefaultBlockViewController.m */; };
 		C6D808A61D4B25E500C8B2FF /* AnimationBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D808A51D4B25E500C8B2FF /* AnimationBaseViewController.m */; };
 		C6D808A91D4B265200C8B2FF /* AnimationShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D808A81D4B265200C8B2FF /* AnimationShowViewController.m */; };
+		C6FEE3C51DAA56F800316D14 /* PPTextfield.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FEE3C41DAA56F800316D14 /* PPTextfield.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -632,6 +633,8 @@
 		C6D808A51D4B25E500C8B2FF /* AnimationBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationBaseViewController.m; sourceTree = "<group>"; };
 		C6D808A71D4B265200C8B2FF /* AnimationShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationShowViewController.h; sourceTree = "<group>"; };
 		C6D808A81D4B265200C8B2FF /* AnimationShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationShowViewController.m; sourceTree = "<group>"; };
+		C6FEE3C31DAA56F800316D14 /* PPTextfield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTextfield.h; sourceTree = "<group>"; };
+		C6FEE3C41DAA56F800316D14 /* PPTextfield.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPTextfield.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1679,6 +1682,8 @@
 		C6FEE3BC1DA8DF5700316D14 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				C6FEE3C31DAA56F800316D14 /* PPTextfield.h */,
+				C6FEE3C41DAA56F800316D14 /* PPTextfield.m */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -1857,6 +1862,7 @@
 				575C1DB31D85033500357B39 /* PP_CameraManager.m in Sources */,
 				C683FBC11D29F73000D1BF6A /* NSObject+YYModel.m in Sources */,
 				C6C6D1C81D0F94DB00F82C39 /* UIView+WebCacheOperation.m in Sources */,
+				C6FEE3C51DAA56F800316D14 /* PPTextfield.m in Sources */,
 				575C1D711D73269300357B39 /* YYDiskCache.m in Sources */,
 				575C1D851D85021D00357B39 /* UIGestureRecognizer+BlocksKit.m in Sources */,
 				C6C6D1CA1D0F94DB00F82C39 /* MJPicture.m in Sources */,
