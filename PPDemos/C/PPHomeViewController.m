@@ -27,9 +27,10 @@
                  @"Masonry使用Demos",
                  @"label垂直位置（居上，居中，居下）",
                  @"JavaScriptCore使用",
-//                 @"长按图片保存到本地",
                  @"Animation Demos",
-                 @"Runtime学习"
+                 @"Runtime学习",
+                 @"YYText使用demos",
+                 @"算法学习集合"
                  ] mutableCopy];
     
     self.vcs = [@[
@@ -38,10 +39,10 @@
               @"MasonryBaseViewController",
               @"PPLabelViewController",
               @"JSViewController",
-//              @"TwoMoreViewController",
-//              @"LongPressToSaveViewController",
               @"AnimationBaseViewController",
-              @"RuntimeViewController"
+              @"RuntimeViewController",
+              @"YYTextDemoViewController",
+              @"AlgorithmViewController"
               ] mutableCopy];
     
 }

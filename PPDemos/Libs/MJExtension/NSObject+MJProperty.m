@@ -99,7 +99,7 @@ static NSMutableDictionary *cachedPropertiesDict_;
     
     // 2.用属性名作为key
     if (!key) key = propertyName;
-    
+    NSLog(@"%s---key is -%@",__func__,key);
     return key;
 }
 
@@ -136,7 +136,7 @@ static NSMutableDictionary *cachedPropertiesDict_;
 {
     // 获得成员变量
     NSArray *cachedProperties = [self properties];
-    
+    NSLog(@"属性数组又放的是MJProperty*-----%@",cachedProperties);
     // 遍历成员变量
     BOOL stop = NO;
     for (MJProperty *property in cachedProperties) {
@@ -158,10 +158,13 @@ static NSMutableDictionary *cachedPropertiesDict_;
             unsigned int outCount = 0;
             objc_property_t *properties = class_copyPropertyList(c, &outCount);
             
+            NSLog(@"outCount--%d",outCount);
+
             // 2.遍历每一个成员变量
             for (unsigned int i = 0; i<outCount; i++) {
                 MJProperty *property = [MJProperty cachedPropertyWithProperty:properties[i]];
                 // 过滤掉系统自动添加的元素
+                NSLog(@"property.name is   %@",property.name);
                 if ([property.name isEqualToString:@"hash"]
                     || [property.name isEqualToString:@"superclass"]
                     || [property.name isEqualToString:@"description"]

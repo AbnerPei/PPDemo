@@ -144,6 +144,7 @@ static NSMutableDictionary *ignoredCodingPropertyNamesDict_;
 + (NSMutableArray *)mj_totalObjectsWithSelector:(SEL)selector key:(const char *)key
 {
     NSMutableArray *array = [self dictForKey:key][NSStringFromClass(self)];
+    NSLog(@"mj_total---%@---%s---%@",array,key,NSStringFromClass(self));
     if (array) return array;
     
     // 创建、存储
@@ -153,6 +154,8 @@ static NSMutableDictionary *ignoredCodingPropertyNamesDict_;
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
         NSArray *subArray = [self performSelector:selector];
+        NSLog(@"selector---%@---%s",subArray,key);
+
 #pragma clang diagnostic pop
         if (subArray) {
             [array addObjectsFromArray:subArray];
@@ -161,8 +164,12 @@ static NSMutableDictionary *ignoredCodingPropertyNamesDict_;
     
     [self mj_enumerateAllClasses:^(__unsafe_unretained Class c, BOOL *stop) {
         NSArray *subArray = objc_getAssociatedObject(c, key);
+        NSLog(@"subArray---%@---%s",subArray,key);
+
         [array addObjectsFromArray:subArray];
     }];
+    NSLog(@"end----Array---%@",array);
+
     return array;
 }
 @end

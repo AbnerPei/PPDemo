@@ -14,6 +14,50 @@
 
 @implementation User
 
+//+(NSArray *)mj_ignoredPropertyNames
+//{
+//    NSLog(@"走了不不管");
+//    return @[@"name",@"icon"];
+//}
+//----------------- 类方法-----------
++(NSString *)mj_replacedKeyFromPropertyName121:(NSString *)propertyName
+{
+    NSLog(@"%s---%@",__func__,propertyName);
+    if ([propertyName isEqualToString:@"name"]) {
+        return @"ppname";
+    }
+    return propertyName;
+}
+
+/**
+*  旧值换新值，用于过滤字典中的值(例如返回的是nil,设置为默认的“30”)
+*  @param oldValue 旧值（相当于下例子的nil）
+*  @param property 包装的属性MJProperty的一个对象
+*  @return 新值
+*/
+//- (id)mj_newValueFromOldValue:(id)oldValue property:(MJProperty *)property
+//{
+//    if ([property.name isEqualToString:@"name"]) {
+//        if (oldValue == nil) {
+//            oldValue = @"30";
+//        }
+//    }
+//    return oldValue;
+//
+//}
+
++ (NSDictionary *)mj_replacedKeyFromPropertyName{
+    return @{
+             @"id":@"shopID",
+             };
+}
++ (NSDictionary *)modelCustomPropertyMapper
+{
+    return @{
+              @"name": @[@"ppname", @"pppname", @"abcname",@"name"]
+             };
+}
+
 -(void)user_eat
 {
     NSLog(@"runtime-eat-->人如果吃不好,就不能好好思考,好好爱,好好休息。");

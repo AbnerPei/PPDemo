@@ -87,6 +87,8 @@
 		C64D57CC1D829FED000C25CC /* YYTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = C64D57B41D829FED000C25CC /* YYTextView.m */; };
 		C64D57D01D82A302000C25CC /* city.json in Resources */ = {isa = PBXBuildFile; fileRef = C64D57CF1D82A302000C25CC /* city.json */; };
 		C64D57D71D82A4D2000C25CC /* ProductDetailResult.m in Sources */ = {isa = PBXBuildFile; fileRef = C64D57D61D82A4D2000C25CC /* ProductDetailResult.m */; };
+		C65643A91D868B880079B58B /* YYTextDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C65643A81D868B880079B58B /* YYTextDemoViewController.m */; };
+		C65643D51D892C450079B58B /* AlgorithmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C65643D41D892C450079B58B /* AlgorithmViewController.m */; };
 		C67799911D508E9000007161 /* CenterOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C67799881D508E9000007161 /* CenterOneViewController.m */; };
 		C67799921D508E9000007161 /* LongPressToSaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C677998A1D508E9000007161 /* LongPressToSaveViewController.m */; };
 		C67799931D508E9000007161 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C677998C1D508E9000007161 /* MoreViewController.m */; };
@@ -147,7 +149,6 @@
 		C6C6D1971D0F94DB00F82C39 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C6D1001D0F94DB00F82C39 /* View+MASAdditions.m */; };
 		C6C6D1981D0F94DB00F82C39 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C6D1031D0F94DB00F82C39 /* ViewController+MASAdditions.m */; };
 		C6C6D1991D0F94DB00F82C39 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C6D1061D0F94DB00F82C39 /* MBProgressHUD.m */; };
-		C6C6D19A1D0F94DB00F82C39 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C6C6D1081D0F94DB00F82C39 /* Info.plist */; };
 		C6C6D19B1D0F94DB00F82C39 /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C6D10B1D0F94DB00F82C39 /* MJExtensionConst.m */; };
 		C6C6D19C1D0F94DB00F82C39 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C6D10D1D0F94DB00F82C39 /* MJFoundation.m */; };
 		C6C6D19D1D0F94DB00F82C39 /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C6D10F1D0F94DB00F82C39 /* MJProperty.m */; };
@@ -378,6 +379,12 @@
 		C64D57CF1D82A302000C25CC /* city.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = city.json; sourceTree = "<group>"; };
 		C64D57D51D82A4D2000C25CC /* ProductDetailResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailResult.h; sourceTree = "<group>"; };
 		C64D57D61D82A4D2000C25CC /* ProductDetailResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailResult.m; sourceTree = "<group>"; };
+		C65643A71D868B880079B58B /* YYTextDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextDemoViewController.h; sourceTree = "<group>"; };
+		C65643A81D868B880079B58B /* YYTextDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextDemoViewController.m; sourceTree = "<group>"; };
+		C65643D11D88F0170079B58B /* MJExtension源码解读.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MJExtension源码解读.h"; sourceTree = "<group>"; };
+		C65643D31D892C450079B58B /* AlgorithmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlgorithmViewController.h; sourceTree = "<group>"; };
+		C65643D41D892C450079B58B /* AlgorithmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlgorithmViewController.m; sourceTree = "<group>"; };
+		C65643D61D892DEA0079B58B /* AlgorithmGuides.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlgorithmGuides.h; sourceTree = "<group>"; };
 		C67799761D507E7D00007161 /* RuntimeAPI解析.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RuntimeAPI解析.h"; sourceTree = "<group>"; };
 		C67799871D508E9000007161 /* CenterOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenterOneViewController.h; sourceTree = "<group>"; };
 		C67799881D508E9000007161 /* CenterOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenterOneViewController.m; sourceTree = "<group>"; };
@@ -507,7 +514,6 @@
 		C6C6D1031D0F94DB00F82C39 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		C6C6D1051D0F94DB00F82C39 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		C6C6D1061D0F94DB00F82C39 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		C6C6D1081D0F94DB00F82C39 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6C6D1091D0F94DB00F82C39 /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
 		C6C6D10A1D0F94DB00F82C39 /* MJExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConst.h; sourceTree = "<group>"; };
 		C6C6D10B1D0F94DB00F82C39 /* MJExtensionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConst.m; sourceTree = "<group>"; };
@@ -909,6 +915,7 @@
 			isa = PBXGroup;
 			children = (
 				579A450C1DA94A9400D61BD8 /* PPSets.h */,
+				C6FEE3BC1DA8DF5700316D14 /* Custom */,
 				575C1DE71D85044900357B39 /* PPQRCode */,
 				575C1DF91D85044900357B39 /* PPWaterFlow */,
 				575C1D9A1D85033500357B39 /* Tools */,
@@ -1071,18 +1078,11 @@
 		C64D57D11D82A477000C25CC /* YYTextDemo */ = {
 			isa = PBXGroup;
 			children = (
-				C64D57D21D82A477000C25CC /* C */,
+				C65643A21D868B130079B58B /* C */,
+				C65643A31D868B130079B58B /* V */,
 				C64D57D31D82A477000C25CC /* M */,
-				C64D57D41D82A477000C25CC /* V */,
 			);
 			path = YYTextDemo;
-			sourceTree = "<group>";
-		};
-		C64D57D21D82A477000C25CC /* C */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = C;
 			sourceTree = "<group>";
 		};
 		C64D57D31D82A477000C25CC /* M */ = {
@@ -1094,11 +1094,30 @@
 			path = M;
 			sourceTree = "<group>";
 		};
-		C64D57D41D82A477000C25CC /* V */ = {
+		C65643A21D868B130079B58B /* C */ = {
+			isa = PBXGroup;
+			children = (
+				C65643A71D868B880079B58B /* YYTextDemoViewController.h */,
+				C65643A81D868B880079B58B /* YYTextDemoViewController.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		C65643A31D868B130079B58B /* V */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = V;
+			sourceTree = "<group>";
+		};
+		C65643D21D892C1F0079B58B /* Algorithm(算法) */ = {
+			isa = PBXGroup;
+			children = (
+				C65643D31D892C450079B58B /* AlgorithmViewController.h */,
+				C65643D41D892C450079B58B /* AlgorithmViewController.m */,
+				C65643D61D892DEA0079B58B /* AlgorithmGuides.h */,
+			);
+			path = "Algorithm(算法)";
 			sourceTree = "<group>";
 		};
 		C67799861D508E8500007161 /* Masonry */ = {
@@ -1175,6 +1194,7 @@
 			children = (
 				C683FBCC1D2A012B00D1BF6A /* MJExtensionViewController.h */,
 				C683FBCD1D2A012B00D1BF6A /* MJExtensionViewController.m */,
+				C65643D11D88F0170079B58B /* MJExtension源码解读.h */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -1260,7 +1280,6 @@
 				575C1D5F1D4C92D500357B39 /* Notes */,
 				C67799961D508EE500007161 /* V */,
 				C683FBBA1D29F36600D1BF6A /* MJExtension和YYModel */,
-				C6F097561D265E6D008FD57D /* PPWaterFlow */,
 				C6C6D0BA1D0F94DB00F82C39 /* C */,
 				C6C6D0C11D0F94DB00F82C39 /* Libs */,
 				C6C6D1721D0F94DB00F82C39 /* M */,
@@ -1287,6 +1306,7 @@
 		C6C6D0BA1D0F94DB00F82C39 /* C */ = {
 			isa = PBXGroup;
 			children = (
+				C65643D21D892C1F0079B58B /* Algorithm(算法) */,
 				C677999E1D50959A00007161 /* YYCache */,
 				C67799861D508E8500007161 /* Masonry */,
 				C6C1CC0F1D4EF9480082A717 /* Runtime */,
@@ -1431,7 +1451,6 @@
 		C6C6D1071D0F94DB00F82C39 /* MJExtension */ = {
 			isa = PBXGroup;
 			children = (
-				C6C6D1081D0F94DB00F82C39 /* Info.plist */,
 				C6C6D1091D0F94DB00F82C39 /* MJExtension.h */,
 				C6C6D10A1D0F94DB00F82C39 /* MJExtensionConst.h */,
 				C6C6D10B1D0F94DB00F82C39 /* MJExtensionConst.m */,
@@ -1657,11 +1676,11 @@
 			path = Animations;
 			sourceTree = "<group>";
 		};
-		C6F097561D265E6D008FD57D /* PPWaterFlow */ = {
+		C6FEE3BC1DA8DF5700316D14 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = PPWaterFlow;
+			path = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1740,7 +1759,6 @@
 				C6C6D0B01D0F94BB00F82C39 /* Assets.xcassets in Resources */,
 				575C1DFD1D85044900357B39 /* frame_icon@2x.png in Resources */,
 				C64D57D01D82A302000C25CC /* city.json in Resources */,
-				C6C6D19A1D0F94DB00F82C39 /* Info.plist in Resources */,
 				575C1DE41D8503F000357B39 /* tujieGCD.png in Resources */,
 				575C1D981D85029600357B39 /* b27_icon_star_yellow@3x.png in Resources */,
 				575C1DE51D8503F000357B39 /* yi.gif in Resources */,
@@ -1809,6 +1827,7 @@
 				C6C6D1801D0F94DB00F82C39 /* AFSecurityPolicy.m in Sources */,
 				C67799931D508E9000007161 /* MoreViewController.m in Sources */,
 				C6C6D1921D0F94DB00F82C39 /* MASLayoutConstraint.m in Sources */,
+				C65643D51D892C450079B58B /* AlgorithmViewController.m in Sources */,
 				C6C6D1C41D0F94DB00F82C39 /* UIImage+MultiFormat.m in Sources */,
 				C6C6D1B41D0F94DB00F82C39 /* MJRefreshConst.m in Sources */,
 				C64D57BE1D829FED000C25CC /* YYTextArchiver.m in Sources */,
@@ -1822,6 +1841,7 @@
 				C6C6D1BA1D0F94DB00F82C39 /* NSData+ImageContentType.m in Sources */,
 				C6C6D1901D0F94DB00F82C39 /* MASConstraint.m in Sources */,
 				C6C6D1821D0F94DB00F82C39 /* AFURLResponseSerialization.m in Sources */,
+				C65643A91D868B880079B58B /* YYTextDemoViewController.m in Sources */,
 				575C1D7B1D84F86A00357B39 /* UIApplication+PPSets.m in Sources */,
 				C6C6D1941D0F94DB00F82C39 /* MASViewConstraint.m in Sources */,
 				C6C1CC121D4EF9660082A717 /* RuntimeViewController.m in Sources */,

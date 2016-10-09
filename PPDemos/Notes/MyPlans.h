@@ -21,7 +21,7 @@
 1.2 MJExtension
 > 之所以研究MJExtension的一个原因也是面试的时候有面试官问及Runtime,而自己对Runtime除了很皮毛的“运行时”之外，说不出丝毫更多的理解，恰恰了解MJExtension内部其实用到Runtime，加之自己平时解析数据时用MJExtension
 1.3 YYModel
-> 之所以研究YYModel,是自己在决定研究MJExtension的时候脑海突然就冒出同样功能的YYModel，还有Mantle,但是想到Mantle的NSObject类必须继承BaseModel时，就二选一，选MJExtension，最后还能比较两者之间的区别；还有一个是YY系列本省很屌，但屌到什么程度，说不出任何自己的理解，还有一个原因就是YY作者是90后的程序员，而自己却差别如此大，虽然年龄不说明什么，但技术真的需要前进，惭愧；
+> 之所以研究YYModel,是自己在决定研究MJExtension的时候脑海突然就冒出同样功能的YYModel，还有Mantle,但是想到Mantle的NSObject类必须继承BaseModel时，就二选一，选MJExtension，最后还能比较两者之间的区别；还有一个是YY系列本身很屌，但屌到什么程度，说不出任何自己的理解，还有一个原因就是YY作者是90后的程序员，而自己却差别如此大，虽然年龄不说明什么，但技术真的需要前进，惭愧；
 
 ##PLAN2：学习Swift
 

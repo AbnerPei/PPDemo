@@ -37,6 +37,10 @@
     [self setupDatas];
     [self setupDatas_MJ];
     
+    NSNumber *pp = @45;
+    NSLog(@"pp---%@----%@",[pp description],[[pp description] superclass]);
+    
+    
 //    //1.简单的字典 --> 模型 [8---by,2---to]
 //    //mj，使用的是mj_objectWithKeyValues:方法
 //    //yy，使用的是yy_modelWithDictionary:方法
@@ -88,25 +92,25 @@
 //     }
 //     
 //     */
-//    [self dict882model_mj];
+    [self dict882model_mj];
 //    [self dict882model_yy];
     
     //从5开始就只用MJ，如果YY可以的话，我会再修改，暂时只研究MJ
     //5.模型中的属性名和字典中的key不相同(或者需要多级映射)
     //多级映射，用点语法设置
-    [self setupNoKeyOrMore];
+//    [self setupNoKeyOrMore];
     
     //6.字典数组 --> 模型数组
     //mj_objectArrayWithKeyValuesArray:
-    [self dictArray2modelArray];
+//    [self dictArray2modelArray];
     
     //7.模型 --> 字典
     //mj_keyValues
-    [self model2dict];
+//    [self model2dict];
     
     //8. 模型数组 --> 字典数组
     //mj_keyValuesArrayWithObjectArray
-    [self modelArray2dictArray];
+//    [self modelArray2dictArray];
     
     //9.过滤字典的值
     //以后。。。
@@ -168,11 +172,11 @@
 {
     NSArray *dictArray = @[
                            @{
-                               @"name" : @"Jack",
+                               @"ppname" : @"Jack",
                                @"icon" : @"lufy.png"
                                },
                            @{
-                               @"name" : @"Rose",
+                               @"pppname" : @"Rose",
                                @"icon" : @"nami.png"
                                }
                            ];
@@ -180,10 +184,19 @@
     NSArray *userArray = [User mj_objectArrayWithKeyValuesArray:dictArray];
     //打印
     for (User *user in userArray) {
-        NSLog(@"name=%@, icon=%@", user.name, user.icon);
+        NSLog(@"mj---name=%@, icon=%@", user.name, user.icon);
+    }
+    // name=null, icon=lufy.png
+    // name=null, icon=nami.png
+    
+    //yymodel解析
+    NSArray *userArray1 = [NSArray yy_modelArrayWithClass:[User class] json:dictArray];
+    for (User *user in userArray1) {
+        NSLog(@"yy---name=%@, icon=%@", user.name, user.icon);
     }
     // name=Jack, icon=lufy.png
     // name=Rose, icon=nami.png
+    
 }
 
 
@@ -217,14 +230,14 @@
 #pragma mark --4- 使用MJExtension实现“模型中有个数组属性，数组里面又要装着其他模型”转“模型”
 -(void)dict882model_mj
 {
-    [StatusResult mj_setupObjectClassInArray:^NSDictionary *{
-        return @{
-//                 @"statuses" : @"Status",
-                  @"statuses" : [Status class],
-//                 @"ads" : @"Ad"
-                  @"ads" : [Ad class]
-                 };
-    }];
+//    [StatusResult mj_setupObjectClassInArray:^NSDictionary *{
+//        return @{
+////                 @"statuses" : @"Status",
+//                  @"statuses" : [Status class],
+////                 @"ads" : @"Ad"
+//                  @"ads" : [Ad class]
+//                 };
+//    }];
     //字典转模型，支持模型的数组属性里面又装着模型
     StatusResult *result = [StatusResult mj_objectWithKeyValues:dict_m8a];
     //打印博主信息
@@ -327,6 +340,10 @@
 #pragma mark --1- 使用MJExtension实现“字典”转“模型”
 -(void)dict2model_mj
 {
+    
+//    NSArray *arr = @[
+//                     @"11",@"22"
+//                     ];
     User *user = [User mj_objectWithKeyValues:dict_user];
     NSLog(@"MJ---%@----%@---%u---%@---%@---%u----%d",user.name,user.icon,user.age,user.height,user.money,user.sex,user.gay);
 }
@@ -350,13 +367,13 @@
 {
     //简单的字典
     dict_user = @{
-                           @"name" : @"Jack",
+                           @"ppname" : @"Jack",
                            @"icon" : @"lufy.png",
                            @"age" : @20,
                            @"height" : @"1.55",
                            @"money" : @100.9,
                            @"sex" : @(SexFemale),/* 枚举需要使用NSNumber包装 */
-                           @"gay" : @YES
+                           @"gay" : @YES,
                            };
     
     // 定义一个JSON字符串

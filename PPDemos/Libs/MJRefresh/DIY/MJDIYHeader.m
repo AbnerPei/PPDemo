@@ -51,7 +51,7 @@
 {
     [super placeSubviews];
     self.label.frame = self.bounds;
-    self.s.frame = CGRectMake(self.bounds.size.width/2 - 48, 20, 19, 19);
+    self.s.frame = CGRectMake(self.bounds.size.width/2 - 48, 20, 40, 40);
     self.logo.bounds = CGRectMake(0, 0, self.bounds.size.width, 15);
     self.logo.center = CGPointMake(self.mj_w * 0.5, - self.logo.mj_h + 8);
     

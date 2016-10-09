@@ -19,13 +19,23 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     // Do any additional setup after loading the view.
-    PPLabel *label = [[PPLabel alloc]initWithFrame:CGRectMake(50, 200, 100, 40)];
+    PPLabel *label = [[PPLabel alloc]initWithFrame:CGRectMake(50, 200, 100, 140)];
     label.backgroundColor = [UIColor orangeColor];
     label.font = [UIFont fontWithName:@"Helvetica-Bold" size:13];
     label.text = @"helloworld";
     label.textColor = [UIColor blueColor];
     label.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:label];
+    label.verticalAlignment = VerticalAlignmentMidele;
+    
+    
+    unsigned int count = 0;
+    Ivar *ivarList = class_copyIvarList([UILabel class], &count);
+    for (int i = 0; i<count; i++) {
+        Ivar ivar = ivarList[i];
+        NSLog(@"88888------/n%s",ivar_getName(ivar));
+    }
+    free(ivarList);
     
 }
 

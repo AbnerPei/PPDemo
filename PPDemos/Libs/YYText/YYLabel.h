@@ -26,25 +26,24 @@ NS_ASSUME_NONNULL_BEGIN
 #if !TARGET_INTERFACE_BUILDER
 
 /**
- The YYLabel class implements a read-only text view.
+ *  `YYLabel`类是一个`read-only`的文字(展示)view.
+ `YYLabel`的用法和`UILabel`相似，但是它提供更多的功能：
+ 1. 支持异步布局和渲染`rendering` （防止阻塞UI线程，即主线程）;
+ 2. 延伸（继承）`CoreText`的属性来支持更多的文字效果；
+ 3. 允许添加`UIImage`, `UIView` 和 `CALayer` 作为文字附件；
+ 4. 允许在文字某个范围上添加可以点击的高亮链接；
+ 5. 允许添加集合路径和禁止路径控制文字容器的形状；
+ 6. 支持垂直布局显示CJK文本（中日韩统一表意文字，CJK 是中文（Chinese）、日文（Japanese）、韩文（Korean））；
  
- @discussion The API and behavior is similar to UILabel, but provides more features:
+ 见`NSAttributedString+YYText.h`，知晓更多设置attributes的便捷方法；
+ 见`YYTextAttribute.h` 和 `YYTextLayout.h`获取更多信息；
  
- * It supports asynchronous layout and rendering (to avoid blocking UI thread).
- * It extends the CoreText attributes to support more text effects.
- * It allows to add UIImage, UIView and CALayer as text attachments.
- * It allows to add 'highlight' link to some range of text to allow user interact with.
- * It allows to add container path and exclusion paths to control text container's shape.
- * It supports vertical form layout to display CJK text.
- 
- See NSAttributedString+YYText.h for more convenience methods to set the attributes.
- See YYTextAttribute.h and YYTextLayout.h for more information.
  */
 @interface YYLabel : UIView <NSCoding>
 
-#pragma mark - Accessing the Text Attributes
+#pragma mark - 访问的属性s
 ///=============================================================================
-/// @name Accessing the Text Attributes
+/// @name 访问的属性s
 ///=============================================================================
 
 /**
@@ -52,12 +51,18 @@ NS_ASSUME_NONNULL_BEGIN
  Set a new value to this property also replaces the text in `attributedText`.
  Get the value returns the plain text in `attributedText`.
  */
+/**
+ *  <#Description#>
+ */
 @property (nullable, nonatomic, copy) NSString *text;
 
 /**
  The font of the text. Default is 17-point system font.
  Set a new value to this property also causes the new font to be applied to the entire `attributedText`.
  Get the value returns the font at the head of `attributedText`.
+ */
+/*
+ 知识补充 001 ：[iOS9的几个新关键字（nonnull、nullable、null_resettable、__null_unspecified）](http://www.cnblogs.com/alan12138/p/5620021.html )
  */
 @property (null_resettable, nonatomic, strong) UIFont *font;
 
@@ -131,7 +136,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  When `text` or `attributedText` is changed, the parser will be called to modify the text.
- It can be used to add code highlighting or emoticon replacement to text view. 
+ It can be used to add code highlighting or emoticon replacement to text view.
  The default value is nil.
  
  See `YYTextParser` protocol for more information.
@@ -196,11 +201,11 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  The preferred maximum width (in points) for a multiline label.
  
- @discussion This property affects the size of the label when layout constraints 
-     are applied to it. During layout, if the text extends beyond the width 
-     specified by this property, the additional text is flowed to one or more new 
-     lines, thereby increasing the height of the label. If the text is vertical 
-     form, this value will match to text height.
+ @discussion This property affects the size of the label when layout constraints
+ are applied to it. During layout, if the text extends beyond the width
+ specified by this property, the additional text is flowed to one or more new
+ lines, thereby increasing the height of the label. If the text is vertical
+ form, this value will match to text height.
  */
 @property (nonatomic) CGFloat preferredMaxLayoutWidth;
 
@@ -230,7 +235,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  When user long press the highlight range of text, this action will be called.
- The default value is nil. 
+ The default value is nil.
  */
 @property (nullable, nonatomic, copy) YYTextAction highlightLongPressAction;
 
@@ -242,7 +247,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  A Boolean value indicating whether the layout and rendering codes are running
- asynchronously on background threads. 
+ asynchronously on background threads.
  
  The default value is `NO`.
  */
@@ -250,21 +255,21 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  If the value is YES, and the layer is rendered asynchronously, then it will
- set label.layer.contents to nil before display. 
+ set label.layer.contents to nil before display.
  
  The default value is `YES`.
  
  @discussion When the asynchronously display is enabled, the layer's content will
  be updated after the background render process finished. If the render process
  can not finished in a vsync time (1/60 second), the old content will be still kept
- for display. You may manually clear the content by set the layer.contents to nil 
+ for display. You may manually clear the content by set the layer.contents to nil
  after you update the label's properties, or you can just set this property to YES.
  */
 @property (nonatomic) BOOL clearContentsBeforeAsynchronouslyDisplay;
 
 /**
- If the value is YES, and the layer is rendered asynchronously, then it will add 
- a fade animation on layer when the contents of layer changed. 
+ If the value is YES, and the layer is rendered asynchronously, then it will add
+ a fade animation on layer when the contents of layer changed.
  
  The default value is `YES`.
  */
@@ -272,7 +277,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  If the value is YES, then it will add a fade animation on layer when some range
- of text become highlighted. 
+ of text become highlighted.
  
  The default value is `YES`.
  */
@@ -280,7 +285,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  Ignore common properties (such as text, font, textColor, attributedText...) and
- only use "textLayout" to display content. 
+ only use "textLayout" to display content.
  
  The default value is `NO`.
  
@@ -292,45 +297,45 @@ NS_ASSUME_NONNULL_BEGIN
 /*
  Tips:
  
- 1. If you only need a UILabel alternative to display rich text and receive link touch event, 
-    you do not need to adjust the display mode properties.
+ 1. 如果你只是需要UILabel`显示富文本`或者`可以响应链接点击事件`,不需要调整显示模式的属性s.
  
- 2. If you have performance issues, you may enable the asynchronous display mode
-    by setting the `displaysAsynchronously` to YES.
+ 2. 如果有性能问题，最好确保 `displaysAsynchronously` 设置为 `YES`·
  
- 3. If you want to get the highest performance, you should do text layout with
-    `YYTextLayout` class in background thread. Here's an example:
-    
-    YYLabel *label = [YYLabel new];
-    label.displaysAsynchronously = YES;
-    label.ignoreCommonProperties = YES;
-    
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+ 3. 如果你想追求最好的性能，你应该在后台线程用`YYTextLayout`类实现文字布局.如下：
  
-        // Create attributed string.
-        NSMutableAttributedString *text = [[NSMutableAttributedString alloc] initWithString:@"Some Text"];
-        text.yy_font = [UIFont systemFontOfSize:16];
-        text.yy_color = [UIColor grayColor];
-        [text yy_setColor:[UIColor redColor] range:NSMakeRange(0, 4)];
+ YYLabel *label = [YYLabel new];
+ label.displaysAsynchronously = YES;
+ label.ignoreCommonProperties = YES;
  
-        // Create text container
-        YYTextContainer *container = [YYTextContainer new];
-        container.size = CGSizeMake(100, CGFLOAT_MAX);
-        container.maximumNumberOfRows = 0;
-        
-        // Generate a text layout.
-        YYTextLayout *layout = [YYTextLayout layoutWithContainer:container text:text];
-        
-        dispatch_async(dispatch_get_main_queue(), ^{
-            label.size = layout.textBoundingSize;
-            label.textLayout = layout;
-        });
-    });
+ dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+ 
+ // Create attributed string.
+ NSMutableAttributedString *text = [[NSMutableAttributedString alloc] initWithString:@"Some Text"];
+ text.yy_font = [UIFont systemFontOfSize:16];
+ text.yy_color = [UIColor grayColor];
+ [text yy_setColor:[UIColor redColor] range:NSMakeRange(0, 4)];
+ 
+ // Create text container
+ YYTextContainer *container = [YYTextContainer new];
+ container.size = CGSizeMake(100, CGFLOAT_MAX);
+ container.maximumNumberOfRows = 0;
+ 
+ // Generate a text layout.
+ YYTextLayout *layout = [YYTextLayout layoutWithContainer:container text:text];
+ 
+ dispatch_async(dispatch_get_main_queue(), ^{
+ label.size = layout.textBoundingSize;
+ label.textLayout = layout;
+ });
+ });
  
  */
 
 @end
 
+/*
+ 知识补充 002 ： [IB_DESIGNABLE 和 IBInspectable 的用法](http://www.jianshu.com/p/64931d040692)
+ */
 
 #else // TARGET_INTERFACE_BUILDER
 IB_DESIGNABLE

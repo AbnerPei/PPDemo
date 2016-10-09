@@ -10,7 +10,8 @@
 // 构建错误
 #define MJExtensionBuildError(clazz, msg) \
 NSError *error = [NSError errorWithDomain:msg code:250 userInfo:nil]; \
-[clazz setMj_error:error];
+[clazz setMj_error:error];\
+MJExtensionLog(@"%@",error);
 
 // 日志输出
 #ifdef DEBUG

@@ -57,8 +57,9 @@
     // 1.属性名
     _name = @(property_getName(property));
     
-    // 2.成员类型
+    // 2.成员类型(name属性对应的是【T@"NSString",C,N,V_name】)
     NSString *attrs = @(property_getAttributes(property));
+    NSLog(@"attrs is  %@",attrs);
     NSUInteger dotLoc = [attrs rangeOfString:@","].location;
     NSString *code = nil;
     NSUInteger loc = 1;
@@ -100,6 +101,7 @@
     NSArray *oldKeys = [stringKey componentsSeparatedByString:@"."];
     
     for (NSString *oldKey in oldKeys) {
+        //Student.m中的@"nameChangedTime" : @"name.info[1].nameChangedTime",会走下面if方法
         NSUInteger start = [oldKey rangeOfString:@"["].location;
         if (start != NSNotFound) { // 有索引的key
             NSString *prefixKey = [oldKey substringToIndex:start];
@@ -127,7 +129,12 @@
             [propertyKeys addObject:propertyKey];
         }
     }
-    
+    //为了测试结果，打印pp
+    if (propertyKeys.count == 4) {
+        for (MJPropertyKey *propertyKey in propertyKeys) {
+            NSLog(@"4个元素的propertyKeys---%@",propertyKey.name);
+        }
+    }
     return propertyKeys;
 }
 
@@ -169,6 +176,8 @@
 {
     if (!objectClass) return;
     self.objectClassInArrayDict[NSStringFromClass(c)] = objectClass;
+    NSLog(@"%s--%@---包含的模型-%@--本身模型-%@",__func__,self.objectClassInArrayDict,objectClass,c);
+
 }
 - (Class)objectClassInArrayForClass:(Class)c
 {

@@ -45,5 +45,6 @@
 #import "UIView+PP_Frame.h"
 #import "RequestUrl.h"
 #import "YYCache.h"
+#import "YYModel.h"
 
 #endif /* PPDemos_pch */

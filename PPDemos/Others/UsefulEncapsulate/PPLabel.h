@@ -16,6 +16,7 @@
 // iOS开发之直播App流程介绍，直播资料收集汇总，视频推流，视频拉流，SMTP、RTMP、HLS、 PLPlayerKit: http://blog.csdn.net/zhonggaorong/article/details/51483282
 
 //iOS开发学习之YYKit中YYText的深入解析，YYTextShadow的代码解析:http://blog.csdn.net/zhonggaorong/article/details/51482738
+
 typedef enum {
     VerticalAlignmentTop = 0,
     VerticalAlignmentMidele,

@@ -207,9 +207,13 @@ static NSNumberFormatter *numberFormatter_;
 
 + (instancetype)mj_objectWithKeyValues:(id)keyValues context:(NSManagedObjectContext *)context
 {
+    
     // 获得JSON对象
     keyValues = [keyValues mj_JSONObject];
+    Class clas = [self class];
+    NSLog(@"获得JSON对象----%@",clas);
     MJExtensionAssertError([keyValues isKindOfClass:[NSDictionary class]], nil, [self class], @"keyValues参数不是一个字典");
+    
     
     if ([self isSubclassOfClass:[NSManagedObject class]] && context) {
         return [[NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass(self) inManagedObjectContext:context] mj_setKeyValues:keyValues context:context];
@@ -298,11 +302,15 @@ static NSNumberFormatter *numberFormatter_;
 - (NSMutableDictionary *)mj_keyValuesWithKeys:(NSArray *)keys ignoredKeys:(NSArray *)ignoredKeys
 {
     // 如果自己不是模型类, 那就返回自己
+    Class clas = [self class];
+    NSLog(@"什么类型111----%@",clas);
     MJExtensionAssertError(![MJFoundation isClassFromFoundation:[self class]], (NSMutableDictionary *)self, [self class], @"不是自定义的模型类")
     
     id keyValues = [NSMutableDictionary dictionary];
     
     Class clazz = [self class];
+    NSLog(@"什么类型2222----%@",clas);
+
     NSArray *allowedPropertyNames = [clazz mj_totalAllowedPropertyNames];
     NSArray *ignoredPropertyNames = [clazz mj_totalIgnoredPropertyNames];
     
