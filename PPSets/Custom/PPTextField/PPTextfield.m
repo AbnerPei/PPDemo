@@ -1,20 +1,26 @@
 //
 //  PPTextfield.m
-//  WTSDK
+//  PPDemos
 //
 //  Created by Abner on 16/10/9.
-//  Copyright © 2016年 zwt. All rights reserved.
+//  Copyright © 2016年 PPAbner. All rights reserved.
 //
+/*
+   只要方法：
+      法1> 主要用来判断可以不可以输入
+      法2> 处理超过规定后，截取想要的范围！
+ 
+   - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string;
+ 
+   -(void)setupLimits:(NSString *)toBeString;
+ 
+ */
 
 #import "PPTextfield.h"
-#import <objc/runtime.h>
-
 #define kNumbersPeriod  @"0123456789."
 
 @interface PPTextfield ()
-{
-    int _lastTotalCharsCount;
-}
+
 @end
 @implementation PPTextfield
 - (instancetype)initWithFrame:(CGRect)frame
@@ -25,7 +31,6 @@
         self.autocorrectionType = UITextAutocorrectionTypeNo;//不自动提示
         [self pp_addTargetEditingChanged];
         _isPriceHeaderPoint = NO;
-        _lastTotalCharsCount = 0;
 
     }
     return self;
@@ -37,7 +42,6 @@
     self.autocorrectionType = UITextAutocorrectionTypeNo;
     [self pp_addTargetEditingChanged];
     _isPriceHeaderPoint = NO;
-    _lastTotalCharsCount = 0;
 }
 
 -(void)setIsOnlyNumber:(BOOL)isOnlyNumber
@@ -48,6 +52,12 @@
     }
     self.keyboardType = UIKeyboardTypeNumberPad;
     
+}
+-(void)setMaxNumberCount:(NSInteger)maxNumberCount
+{
+    _isOnlyNumber = YES;
+    _maxNumberCount = maxNumberCount;
+    self.keyboardType = UIKeyboardTypeNumberPad;
 }
 
 -(void)setIsPrice:(BOOL)isPrice
@@ -60,30 +70,30 @@
    
     self.keyboardType = UIKeyboardTypeDecimalPad;
 }
-
--(void)setIsPriceHeaderPoint:(BOOL)isPriceHeaderPoint{
+-(void)setIsPriceHeaderPoint:(BOOL)isPriceHeaderPoint
+{
     _isPriceHeaderPoint = isPriceHeaderPoint;
     _isPrice = YES;
     self.keyboardType = UIKeyboardTypeDecimalPad;
 }
+
 -(void)setMaxCharactersLength:(NSInteger)maxCharactersLength
 {
     _maxCharactersLength = maxCharactersLength;
+    //防止冲突（也仅仅是最大字符串的中英限制）
+    if (_maxCharactersLength > 0) {
+        _maxTextLength = 0;
+    }
 }
-
 -(void)setMaxTextLength:(NSInteger)maxTextLength
 {
     _maxTextLength = maxTextLength;
-}
-
--(void)setMaxNumberCount:(NSInteger)maxNumberCount
-{
-    _isOnlyNumber = YES;
-    _maxNumberCount = maxNumberCount;
-    if (_maxNumberCount > 0) {
-        [self textFieldTextLengthLimit:self];
+    if (_maxTextLength > 0) {
+        _maxCharactersLength = 0;
     }
 }
+
+
 
 #pragma mark --- UITextfieldDelegate
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
@@ -141,12 +151,11 @@
     }
 }
 
-#pragma mark --- 主要方法
-
 - (void)pp_addTargetEditingChanged
 {
     [self addTarget:self action:@selector(textFieldTextLengthLimit:) forControlEvents:UIControlEventEditingChanged];
 }
+
 - (void)textFieldTextLengthLimit:(id)sender
 {
     
@@ -177,10 +186,6 @@
             if (!position) {
                 [self setupLimits:toBeString];
             }
-            else
-            {
-                // NSLog(@"输入的");
-            }
         }else{
             [self setupLimits:toBeString];
         }
@@ -202,13 +207,9 @@
         }
     }
     
+    //区分中英文
     if (_maxCharactersLength > 0) {
-//        NSString* str  = @"人men，我";
-//        NSLog(@"111111  %d  %d  %zd",[self chineseStrCount:str],[self countTheStrLength:str],str.length);
-        //2016-10-09 16:52:29.244 textField[19955:629974] 111111  3  9  6
-        
         int totalCountAll = [PPTFTool countTheStrLength:toBeString];
-        NSLog(@"333333----%zd----%@",totalCountAll,toBeString);
         if (totalCountAll > _maxCharactersLength) {
             int totalCount = 0;
             for (int i = 0; i < toBeString.length; i++) {
@@ -227,9 +228,13 @@
                 }
             }
         }
-        
-        NSLog(@"toBeString   %@",toBeString);
-        
+    }
+    
+    //不区分中英文
+    if (_maxTextLength > 0) {
+        if (toBeString.length > _maxTextLength) {
+            self.text = [toBeString substringToIndex:_maxTextLength];
+        }
     }
    
 }
@@ -242,19 +247,8 @@
 
 @implementation PPTFTool
 
-+(int)chineseStrCount:(NSString *)str
++(BOOL)isChinese:(NSString*)c
 {
-    int cn_count = 0;
-    for (int i = 0; i<str.length; i++) {
-        NSString *str1 = [str substringWithRange:NSMakeRange(i, 1)];
-        if ([self isChinese:str1]) {
-            cn_count++;
-        }
-    }
-    return cn_count;
-}
-//判断一个字符书不是中文。
-+(BOOL)isChinese:(NSString*)c{
     int strlength = 0;
     char* p = (char*)[c cStringUsingEncoding:NSUnicodeStringEncoding];
     for (int i=0 ; i<[c lengthOfBytesUsingEncoding:NSUnicodeStringEncoding] ;i++) {
@@ -269,9 +263,8 @@
     return ((strlength/2)==1)?YES:NO;
 }
 
-//计算一段字符串的长度，两个英文字符占一个长度。
-
-+(int)countTheStrLength:(NSString*)strtemp {
++(int)countTheStrLength:(NSString*)strtemp
+{
     int strlength = 0;
     char* p = (char*)[strtemp cStringUsingEncoding:NSUnicodeStringEncoding];
     for (int i=0 ; i<[strtemp lengthOfBytesUsingEncoding:NSUnicodeStringEncoding] ;i++) {
@@ -285,7 +278,7 @@
     }
     return strlength;
 }
-#pragma mark --- 限制只能输入一个“.”
+
 + (void)limitedPointOnlyOne:(UITextField *)tf
 {
     NSString *newStr = tf.text;

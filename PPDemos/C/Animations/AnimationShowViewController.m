@@ -20,9 +20,31 @@
     self.view.backgroundColor = [UIColor whiteColor];
     SEL sel = NSSelectorFromString(self.selName);
 
-    [self performSelector:sel withObject:nil];
+//    [self performSelector:sel withObject:nil];
+    
+    [self shadowAndBorder];
 }
-
+-(void)shadowAndBorder
+{
+    UIView *viewSample = [[UIView alloc] init];
+    [self.view addSubview:viewSample];
+    
+    viewSample.backgroundColor = [UIColor greenColor];
+    viewSample.frame = CGRectMake(100, 100, 100, 100);
+    
+    
+    //Test 1 阴影
+    //viewSample.layer.shadowPath = [UIBezierPath bezierPathWithRect:viewSample.bounds].CGPath;
+    viewSample.layer.shadowPath = [UIBezierPath bezierPathWithRect:CGRectMake(0, 0, 100, 100)].CGPath;
+    viewSample.layer.masksToBounds = NO;
+    viewSample.layer.shadowOffset = CGSizeMake(10, 10);
+    viewSample.layer.shadowRadius = 5;
+    viewSample.layer.shadowOpacity = 0.5;
+    
+    //Test 2 边框
+    viewSample.layer.borderWidth = 2;
+    viewSample.layer.borderColor = [[UIColor redColor] CGColor];
+}
 - (void)transformAnimation
 {
     // 1.创建动画对象

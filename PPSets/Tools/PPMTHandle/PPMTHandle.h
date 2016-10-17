@@ -66,4 +66,7 @@ http://pan.baidu.com/s/1gd1wwZx
 
 + (void)pp_alertError: (NSString *) error title: (NSString *)title delegate: (id)delegate cancelButtonTitle: (NSString *)cancelButtonTitle otherButtonTitle: (NSString *)otherButtonTitle;
 
+/* 是否在系统通知处打开app的通知开关 2016-10-17*/
+//+(BOOL)pp_isRemoteNotificationOpen;
+
 @end

@@ -83,6 +83,7 @@ static NSNumberFormatter *numberFormatter_;
     NSArray *allowedPropertyNames = [clazz mj_totalAllowedPropertyNames];
     NSArray *ignoredPropertyNames = [clazz mj_totalIgnoredPropertyNames];
     
+    NSLog(@"%s---allowedPropertyNames-%@--ignoredPropertyNames-%@",__func__,allowedPropertyNames,ignoredPropertyNames);
     //通过封装的方法回调一个通过运行时编写的，用于返回属性列表的方法。
     [clazz mj_enumerateProperties:^(MJProperty *property, BOOL *stop) {
         @try {

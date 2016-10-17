@@ -19,7 +19,6 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.title = @"PPDemos";
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
-    [[UIApplication sharedApplication] pp_beganNetworkActivity];
 }
 
 #pragma mark - Table view data source

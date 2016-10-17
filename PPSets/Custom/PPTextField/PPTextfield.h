@@ -1,14 +1,20 @@
 //
 //  PPTextfield.h
-//  WTSDK
+//  PPDemos
 //
 //  Created by Abner on 16/10/9.
-//  Copyright © 2016年 zwt. All rights reserved.
+//  Copyright © 2016年 PPAbner. All rights reserved.
 //
+
+/*
+    已知bug:设置maxCharactersLength或者maxTextLength大于0，如果输入达到最大限制，虽然可以输入，但是快速点击键盘，会替换最后一个字符串
+ */
 
 #import <UIKit/UIKit.h>
 
 @interface PPTextfield : UITextField
+
+//=================================限制===================================
 
 /** 纯数字 */
 @property(nonatomic,assign)BOOL isOnlyNumber;
@@ -28,16 +34,14 @@
 /** tf.text最大长度（不考虑中英文） */
 @property(nonatomic,assign)NSInteger maxTextLength;
 
-
-
+//=================================扩展属性===================================
 @end
 
 @interface PPTFTool : NSObject
 
-+(int)chineseStrCount:(NSString *)str;
-//判断一个字符书不是中文。
+//判断一个字符不是中文。
 +(BOOL)isChinese:(NSString*)c;
-//计算一段字符串的长度，两个英文字符占一个长度。
+//计算一段字符串的长度，一个中文为2，一个英文为1。
 +(int)countTheStrLength:(NSString*)strtemp;
 //限制只能输入一个“.”
 +(void)limitedPointOnlyOne:(UITextField *)tf;

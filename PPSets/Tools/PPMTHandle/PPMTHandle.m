@@ -263,4 +263,20 @@
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:error delegate:delegate cancelButtonTitle:cancelButtonTitle otherButtonTitles:otherButtonTitle, nil];
     [alert show];
 }
+
+//================================2016-10-17 & later=================
+
+//+(BOOL)pp_isRemoteNotificationOpen
+//{
+//    if (iOS8_Later) { //iOS8以上包含iOS8
+//        if ([[UIApplication sharedApplication] currentUserNotificationSettings].types  == UIRemoteNotificationTypeNone) {
+//            return NO;
+//        }
+//    }else{ // ios7 一下
+//        if ([[UIApplication sharedApplication] enabledRemoteNotificationTypes]  == UIRemoteNotificationTypeNone) {
+//            return NO;
+//        }
+//    }
+//    return YES;
+//}
 @end

@@ -30,7 +30,10 @@
                  @"Animation Demos",
                  @"Runtime学习",
                  @"YYText使用demos",
-                 @"算法学习集合"
+                 @"算法学习集合",
+                 @"自定义PPTextfield,各种限制一句话搞定",
+                 @"可以展开的cell",
+                 @"人脸识别（uiimageview+faceaware）"
                  ] mutableCopy];
     
     self.vcs = [@[
@@ -42,7 +45,10 @@
               @"AnimationBaseViewController",
               @"RuntimeViewController",
               @"YYTextDemoViewController",
-              @"AlgorithmViewController"
+              @"AlgorithmViewController",
+              @"PPTextfieldViewController",
+              @"PPExpendCellViewController",
+              @"PPFaceAwareFillViewController"
               ] mutableCopy];
     
 }

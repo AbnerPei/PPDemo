@@ -14,11 +14,11 @@
 
 @implementation User
 
-//+(NSArray *)mj_ignoredPropertyNames
-//{
-//    NSLog(@"走了不不管");
-//    return @[@"name",@"icon"];
-//}
++(NSArray *)mj_ignoredPropertyNames
+{
+    NSLog(@"走了不不管");
+    return @[@"name",@"icon"];
+}
 //----------------- 类方法-----------
 +(NSString *)mj_replacedKeyFromPropertyName121:(NSString *)propertyName
 {
