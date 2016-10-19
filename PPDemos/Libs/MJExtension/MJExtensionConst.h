@@ -11,7 +11,7 @@
 #define MJExtensionBuildError(clazz, msg) \
 NSError *error = [NSError errorWithDomain:msg code:250 userInfo:nil]; \
 [clazz setMj_error:error];\
-MJExtensionLog(@"%@",error);
+MJExtensionLog(@"error code:250 %@",error);
 
 // 日志输出
 #ifdef DEBUG
@@ -20,6 +20,12 @@ MJExtensionLog(@"%@",error);
 #define MJExtensionLog(...)
 #endif
 
+#define PPNutritiousBreakfast(milkCount,eggCount) \
+if(((eggCount) == 1) && ((milkCount) == 1)){ \
+NSLog(@"是营养早餐"); \
+}else{ \
+NSLog(@"不是营养早餐"); \
+}
 /**
  * 断言
  * @param condition   条件

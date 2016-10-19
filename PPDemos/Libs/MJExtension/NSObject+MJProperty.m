@@ -154,6 +154,7 @@ static NSMutableDictionary *cachedPropertiesDict_;
         cachedProperties = [NSMutableArray array];
         
         [self mj_enumerateClasses:^(__unsafe_unretained Class c, BOOL *stop) {
+            NSLog(@"__unsafe_unretained Class c----%@",c);
             // 1.获得所有的成员变量
             unsigned int outCount = 0;
             objc_property_t *properties = class_copyPropertyList(c, &outCount);
@@ -172,7 +173,31 @@ static NSMutableDictionary *cachedPropertiesDict_;
                     continue;
                 }
                 property.srcClass = c;
+                /*
+                ppNO.1 [self propertyKey:property.name] //拿到一个属性名，去判断MJKeyValue的代理方法（mj_replacedKeyFromPropertyName 和 mj_replacedKeyFromPropertyName121）有没有替换对应属性名，并最终返回能完成转换所需要的【数据解析出来的字典的key,如Student.h中声明的是@“ID”，而字典返回的是@“id”,此时结果就是@“id”】属性名。
+                 
+                 ppNO.2  [property setOriginKey:@"原始的key(即“id”)" forClass:self]; //这个方法里面有NSArray *propertyKeys = [self propertyKeysWithStringKey:originKey];，作用是处理属性key,尤其是多级映射的处理（比如Student.m中@"nameChangedTime" : @"name.info[1].nameChangedTime",返回结果就是有4个元素(MJPropertyKey *类型的)的数组，各自的propertyKey.name分别是@"name",@"info",@"1",@"nameChangedTime"）
+                 
+                    回到主方法：说白了，整句代码就是给MJProperty.m中的可变字典propertyKeysDict赋值：
+                 {
+                       Student : @[
+                                     (MJPropertyKey *)mp1;
+                                     (MJPropertyKey *)mp2;
+                                     (MJPropertyKey *)mp3;
+                                     (MJPropertyKey *)mp4;
+                                   ];
+                 }
+                 */
                 [property setOriginKey:[self propertyKey:property.name] forClass:self];
+                
+                /*
+                 ppNo3. [self propertyObjectClassInArray:property.name] //拿到一个属性名（key），去判断MJKeyValue的代理方法（mj_objectClassInArray）中对应的其它模型类的数组。返回的是Class类型!
+                 
+                 回到主方法：说白了，整句代码就是给MJProperty.m中的可变字典objectClassInArrayDict赋值 ：
+                 {
+                          StatusResult : Status
+                 }
+                 */
                 [property setObjectClassInArray:[self propertyObjectClassInArray:property.name] forClass:self];
                 [cachedProperties addObject:property];
             }

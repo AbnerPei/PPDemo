@@ -18,6 +18,10 @@
  1.3 [iOS用CocoaLumberJack抓取crash日志上传](http://www.jianshu.com/p/ea1e6b210b27)
  1.4 [CocoaLumberjack框架简单介绍](https://my.oschina.net/u/2285956/blog/370282)
  1.5 [利用 CocoaLumberjack 搭建自己的 Log 系统](http://nonomori.farbox.com/post/li-yong-cocoalumberjack-da-jian-zi-ji-de-log-xi-tong)
+                                       
+                                       
+ 1. [一行代码实现多形式多动画的推送小红点WZLBadge(iOS)](https://github.com/weng1250/WZLBadge)
+    //[【原】Github系列之二：开源 一行代码实现多形式多动画的推送小红点WZLBadge(iOS)](http://www.cnblogs.com/wengzilin/p/4633937.html#3519525)
 #iOS 10 
  1. [iOS10 隐私权限设置问题（Crash）](http://blog.csdn.net/yj_sail/article/details/52609825)
  2. [iOS10通知框架UserNotification理解与应用](https://my.oschina.net/u/2340880/blog/747781)

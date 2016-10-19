@@ -59,7 +59,7 @@
     
     // 2.成员类型(name属性对应的是【T@"NSString",C,N,V_name】)
     NSString *attrs = @(property_getAttributes(property));
-    NSLog(@"attrs is  %@",attrs);
+//    NSLog(@"attrs is  %@",attrs);
     NSUInteger dotLoc = [attrs rangeOfString:@","].location;
     NSString *code = nil;
     NSUInteger loc = 1;
@@ -97,6 +97,7 @@
     if (stringKey.length == 0) return nil;
     
     NSMutableArray *propertyKeys = [NSMutableArray array];
+    NSLog(@"%s--stringKey is -%@",__func__,stringKey);
     // 如果有多级映射
     NSArray *oldKeys = [stringKey componentsSeparatedByString:@"."];
     
@@ -142,6 +143,7 @@
 - (void)setOriginKey:(id)originKey forClass:(Class)c
 {
     if ([originKey isKindOfClass:[NSString class]]) { // 字符串类型的key
+        NSLog(@"%s--originKey is -%@",__func__,originKey);
         NSArray *propertyKeys = [self propertyKeysWithStringKey:originKey];
         if (propertyKeys.count) {
             [self setPorpertyKeys:@[propertyKeys] forClass:c];

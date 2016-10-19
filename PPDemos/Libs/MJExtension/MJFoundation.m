@@ -34,6 +34,10 @@ static NSSet *foundationClasses_;
 
 + (BOOL)isClassFromFoundation:(Class)c
 {
+    /*字典转模型时
+     (lldb) po c
+     __NSDictionaryI
+     */
     if (c == [NSObject class] || c == [NSManagedObject class]) return YES;
     
     __block BOOL result = NO;

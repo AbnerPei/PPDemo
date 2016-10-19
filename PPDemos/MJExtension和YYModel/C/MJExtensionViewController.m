@@ -29,6 +29,7 @@
 
 @implementation MJExtensionViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -37,8 +38,12 @@
     [self setupDatas];
     [self setupDatas_MJ];
     
-    NSNumber *pp = @45;
-    NSLog(@"pp---%@----%@",[pp description],[[pp description] superclass]);
+
+    PPNutritiousBreakfast(1, 1);
+    
+    
+//    NSNumber *pp = @45;
+//    NSLog(@"pp---%@----%@",[pp description],[[pp description] superclass]);
     
 //    if ([[UIApplication sharedApplication] currentUserNotificationSettings] ) {
 //        <#statements#>
@@ -48,7 +53,7 @@
 //    //1.简单的字典 --> 模型 [8---by,2---to]
 //    //mj，使用的是mj_objectWithKeyValues:方法
 //    //yy，使用的是yy_modelWithDictionary:方法
-    [self dict2model_mj];
+//    [self dict2model_mj];
 //    [self dict2model_yy];
     
 //    //2. JSON字符串 --> 模型
@@ -96,7 +101,7 @@
 //     }
 //     
 //     */
-//    [self dict882model_mj];
+    [self dict882model_mj];
 //    [self dict882model_yy];
     
     //从5开始就只用MJ，如果YY可以的话，我会再修改，暂时只研究MJ
