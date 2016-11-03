@@ -35,22 +35,24 @@
 *  @param property 包装的属性MJProperty的一个对象
 *  @return 新值
 */
-//- (id)mj_newValueFromOldValue:(id)oldValue property:(MJProperty *)property
-//{
-//    if ([property.name isEqualToString:@"name"]) {
-//        if (oldValue == nil) {
-//            oldValue = @"30";
-//        }
-//    }
-//    return oldValue;
-//
-//}
+//旧值换新值，用于过滤字典中的值(例如返回的是nil,设置为默认的“30”)
+- (id)mj_newValueFromOldValue:(id)oldValue property:(MJProperty *)property
+{
+    if ([property.name isEqualToString:@"name"]) {
+        if (oldValue == nil) {
+            oldValue = @"30";
+        }
+    }
+    return oldValue;
 
+}
+//【最常用】将属性名换为其他key去字典中取值
 + (NSDictionary *)mj_replacedKeyFromPropertyName{
     return @{
              @"id":@"shopID",
              };
 }
+//yy
 + (NSDictionary *)modelCustomPropertyMapper
 {
     return @{

@@ -13,8 +13,17 @@
 #import <Foundation/Foundation.h>
 #import <QuartzCore/QuartzCore.h>
 
+//===========================常用start====================
+
 //系统判断
 #define iOS8_Later ([[[UIDevice currentDevice] systemVersion] doubleValue] >= 8.0 ? YES:NO)
+
+#define PPWeakSelf(type)  __weak typeof(type) weak##type = type;
+#define PPStrongSelf(type)  __strong typeof(type) type = weak##type;
+
+//===========================常用end====================
+
+
 
 
 //define this constant if you want to use Masonry without the 'mas_' prefix
@@ -56,8 +65,7 @@
 #import "UIView+Toast.h"
 #import "UIView+PP_Frame.h"
 #import "RequestUrl.h"
-#import "YYCache.h"
-#import "YYModel.h"
+#import "YYKit.h"
 #import "PPSets.h"
 
 #endif /* PPDemos_pch */

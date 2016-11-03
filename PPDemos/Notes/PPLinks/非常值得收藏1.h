@@ -15,6 +15,9 @@
 
 ###精品
 1. [【精】iOS知识树，知识点（包括对象、Block、消息转发、GCD、运行时、runloop、动画、Push、KVO、tableview，UIViewController、提交AppStore）](http://blog.csdn.net/hherima/article/details/50714866)
+2. [dev-blog](https://github.com/nixzhu/dev-blog)
+> 翻译、开发心得或学习笔记`2016-10-21收入`
+            
                                                                                                       
 ###调试与优化
 1. [ 【置顶】 iOS开发调试技巧总结（持续更新中）](http://blog.csdn.net/chenyufeng1991/article/details/50478656)

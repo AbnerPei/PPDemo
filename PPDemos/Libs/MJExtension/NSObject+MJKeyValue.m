@@ -211,6 +211,7 @@ static NSNumberFormatter *numberFormatter_;
     
     // 获得JSON对象
     keyValues = [keyValues mj_JSONObject];
+    NSLog(@"keyValues is %@",keyValues);
     Class clas = [self class];
     NSLog(@"获得JSON对象----%@",clas);
     MJExtensionAssertError([keyValues isKindOfClass:[NSDictionary class]], nil, [self class], @"keyValues参数不是一个字典");
@@ -305,8 +306,24 @@ static NSNumberFormatter *numberFormatter_;
     // 如果自己不是模型类, 那就返回自己
     Class clas = [self class];
     NSLog(@"什么类型111----%@",clas);
+    //【传入字典，虽然是在（NSObject+MJKeyValue）中，但是是这样的keyValues = [keyValues mj_JSONObject];调用，所以是__NSDictionaryI类型】2016-10-18 10:07:52.504 PPDemos[40887:906654] 什么类型111----__NSDictionaryI
+
     MJExtensionAssertError(![MJFoundation isClassFromFoundation:[self class]], (NSMutableDictionary *)self, [self class], @"不是自定义的模型类")
-    
+    /* 
+     此时等价于（clas 为 __NSDictionaryI）
+    self 为
+     {
+     age = 20;
+     gay = 1;
+     height = "1.55";
+     icon = "lufy.png";
+     money = "100.9";
+     ppname = Jack;
+     sex = 1;
+     }
+     */
+//    MJExtensionAssertError(NO, (NSMutableDictionary *)self, clas, @"不是自定义的模型类");
+
     id keyValues = [NSMutableDictionary dictionary];
     
     Class clazz = [self class];
@@ -454,6 +471,19 @@ static NSNumberFormatter *numberFormatter_;
         return [NSJSONSerialization JSONObjectWithData:(NSData *)self options:kNilOptions error:nil];
     }
     
+    //在此时 self 是一个user模型字典
+    /*
+     (lldb) po self
+     {
+     age = 20;
+     gay = 1;
+     height = "1.55";
+     icon = "lufy.png";
+     money = "100.9";
+     ppname = Jack;
+     sex = 1;
+     }
+     */
     return self.mj_keyValues;
 }
 

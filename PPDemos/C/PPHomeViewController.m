@@ -33,10 +33,14 @@
                  @"算法学习集合",
                  @"自定义PPTextfield,各种限制一句话搞定",
                  @"可以展开的cell",
-                 @"人脸识别（uiimageview+faceaware）"
+                 @"人脸识别（uiimageview+faceaware）",
+                 @"iOS 10 WKWebView 学习",
+                 @"将text文本转为image",
+                 @"日历中添加事件 和 拨打电话常用方式"
                  ] mutableCopy];
     
     self.vcs = [@[
+                  
               @"MJBaseViewController",
               @"MJExtensionBaseViewController",
               @"MasonryBaseViewController",
@@ -48,7 +52,10 @@
               @"AlgorithmViewController",
               @"PPTextfieldViewController",
               @"PPExpendCellViewController",
-              @"PPFaceAwareFillViewController"
+              @"PPFaceAwareFillViewController",
+              @"PPWKViewController",
+              @"PPTextToImageViewController",
+              @"CalendarEventViewController"
               ] mutableCopy];
     
 }

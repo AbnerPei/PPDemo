@@ -32,4 +32,9 @@
 
 2. [Canvas](https://github.com/CanvasPod/Canvas)
 > cell 载入动画
+
+
+##文章
+1. [iOS 超Easy实现 渐变导航栏](http://www.jianshu.com/p/bba27212de69)
+
 #endif /* ____________h */

@@ -7,10 +7,37 @@
 //
 
 #import "Student.h"
+#import "Bag.h"
 
 @implementation Student
+
+
 +(NSDictionary *)mj_replacedKeyFromPropertyName
 {
+    
+    /*
+     
+     dict_nokey = @{
+     @"id" : @"20",
+     @"desciption" : @"kids",
+     @"name" : @{
+     @"newName" : @"lufy",
+     @"oldName" : @"kitty",
+     @"info" : @[
+                 @"test-data",
+                 @{
+                    @"nameChangedTime" : @"2013-08"
+                  }
+                ]
+     },
+     @"other" : @{
+     @"bag" : @{
+     @"name" : @"a red bag",
+     @"price" : @100.7
+     }
+     }
+     };
+     */
     return @{
              @"ID" : @"id",
              @"desc" : @"desciption",
@@ -20,4 +47,6 @@
              @"bag" : @"other.bag"
              };
 }
+
+
 @end

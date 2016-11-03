@@ -8,7 +8,6 @@
 
 #import "MJExtensionViewController.h"
 #import "MJExtension.h"
-#import "YYModel.h"
 #import "User.h"
 #import "Status.h"
 #import "Ad.h"
@@ -29,6 +28,7 @@
 
 @implementation MJExtensionViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -37,18 +37,12 @@
     [self setupDatas];
     [self setupDatas_MJ];
     
-    NSNumber *pp = @45;
-    NSLog(@"pp---%@----%@",[pp description],[[pp description] superclass]);
-    
-//    if ([[UIApplication sharedApplication] currentUserNotificationSettings] ) {
-//        <#statements#>
-//    }
     
     
 //    //1.简单的字典 --> 模型 [8---by,2---to]
 //    //mj，使用的是mj_objectWithKeyValues:方法
 //    //yy，使用的是yy_modelWithDictionary:方法
-    [self dict2model_mj];
+//    [self dict2model_mj];
 //    [self dict2model_yy];
     
 //    //2. JSON字符串 --> 模型
@@ -99,14 +93,16 @@
 //    [self dict882model_mj];
 //    [self dict882model_yy];
     
-    //从5开始就只用MJ，如果YY可以的话，我会再修改，暂时只研究MJ
+    //从5开始就只用MJ，如果YY可以的话，我会再修改，暂时只研究MJ【2016-11-02，还是不会除非多建一个模型类】
     //5.模型中的属性名和字典中的key不相同(或者需要多级映射)
     //多级映射，用点语法设置
-//    [self setupNoKeyOrMore];
+//    [self setupNoKeyOrMore_mj];
     
     //6.字典数组 --> 模型数组
-    //mj_objectArrayWithKeyValuesArray:
+    //mj_objectArrayWithKeyValuesArray:  //mj
+    //modelArrayWithClass: json:         //yy
 //    [self dictArray2modelArray];
+    
     
     //7.模型 --> 字典
     //mj_keyValues
@@ -158,8 +154,8 @@
     status.text = @"Nice mood!";
     
     //模型转字典，使用的是mj_keyValues属性
-    NSDictionary *statusDict = status.mj_keyValues;
-    NSLog(@"%@", statusDict);
+    NSDictionary *statusDict_mj = status.mj_keyValues;
+    NSLog(@"statusDict_mj----%@", statusDict_mj);
     /*
      {
      text = "Nice mood!";
@@ -169,6 +165,10 @@
      };
      }
      */
+    
+    //yy
+    NSDictionary *statusDict_yy = [status modelToJSONObject];
+    NSLog(@"statusDict_yy----%@", statusDict_yy);
 }
 
 
@@ -194,7 +194,7 @@
     // name=null, icon=nami.png
     
     //yymodel解析
-    NSArray *userArray1 = [NSArray yy_modelArrayWithClass:[User class] json:dictArray];
+    NSArray *userArray1 = [NSArray modelArrayWithClass:[User class] json:dictArray];
     for (User *user in userArray1) {
         NSLog(@"yy---name=%@, icon=%@", user.name, user.icon);
     }
@@ -204,8 +204,30 @@
 }
 
 
--(void)setupNoKeyOrMore
+-(void)setupNoKeyOrMore_mj
 {
+    /*
+    dict_nokey = @{
+                   @"id" : @"20",
+                   @"desciption" : @"kids",
+                   @"name" : @{
+                           @"newName" : @"lufy",
+                           @"oldName" : @"kitty",
+                           @"info" : @[
+                                   @"test-data",
+                                   @{
+                                       @"nameChangedTime" : @"2013-08"
+                                       }
+                                   ]
+                           },
+                   @"other" : @{
+                           @"bag" : @{
+                                   @"name" : @"a red bag",
+                                   @"price" : @100.7
+                                   }
+                           }
+                   };
+     */
 //    // How to map
 //    [Student mj_setupReplacedKeyFromPropertyName:^NSDictionary *{
 //        return @{
@@ -222,9 +244,9 @@
     //字典转模型，支持多级映射
     Student *stu = [Student mj_objectWithKeyValues:dict_nokey];
     //打印
-    NSLog(@"ID=%@, desc=%@, oldName=%@, nowName=%@, nameChangedTime=%@",
+    NSLog(@"mj____ID=%@, desc=%@, oldName=%@, nowName=%@, nameChangedTime=%@",
           stu.ID, stu.desc, stu.oldName, stu.nowName, stu.nameChangedTime);
-    NSLog(@"bagName=%@, bagPrice=%f", stu.bag.name, stu.bag.price);
+    NSLog(@"mj____bagName=%@, bagPrice=%f", stu.bag.name, stu.bag.price);
     
     //2016-07-04 14:20:28.082 PPDemos[3602:126004] ID=20, desc=kids, oldName=kitty, nowName=lufy, nameChangedTime=2013-08
     //2016-07-04 14:20:28.082 PPDemos[3602:126004] bagName=a red bag, bagPrice=100.700000
@@ -259,7 +281,7 @@
 -(void)dict882model_yy
 {
     //字典转模型，支持模型的数组属性里面又装着模型
-    StatusResult *result = [StatusResult mj_objectWithKeyValues:dict_m8a];
+    StatusResult *result = [StatusResult modelWithDictionary:dict_m8a];
     //打印博主信息
     for (Status *status in result.statuses) {
         NSString *text = status.text;
@@ -306,7 +328,7 @@
 -(void)dict82model_yy
 {
     //字典转模型，模型里面含有模型
-    Status *status = [Status yy_modelWithDictionary:dict_m8m];
+    Status *status = [Status modelWithDictionary:dict_m8m];
     NSString *text = status.text;
     NSString *name = status.user.name;
     NSString *icon = status.user.icon;
@@ -333,7 +355,7 @@
 #pragma mark --2- 使用YYModel实现“json”转“模型”
 -(void)json2model_yy
 {
-    User *user = [User yy_modelWithJSON:jsonStr];
+    User *user = [User modelWithJSON:jsonStr];
     NSLog(@"YY---%@----%@---%u",user.name,user.icon,user.age);
     //打印结果
     //2016-07-04 11:16:04.655 PPDemos[2563:78561] MJ---Jack----lufy.png---20
@@ -354,7 +376,7 @@
 #pragma mark --1- 使用YYModel实现“字典”转“模型”
 -(void)dict2model_yy
 {
-    User *user = [User yy_modelWithDictionary:dict_user];
+    User *user = [User modelWithDictionary:dict_user];
     NSLog(@"YY---%@----%@---%u---%@---%@---%u----%d",user.name,user.icon,user.age,user.height,user.money,user.sex,user.gay);
     //打印结果
     //2016-07-04 11:06:59.746 PPDemos[2432:73824] MJ---Jack----lufy.png---20---1.55---100.9---1----1
