@@ -15,6 +15,13 @@
 #import "Student.h"
 #import "Bag.h"
 
+//==============米同学专区=============
+#import "ClassListModel.h"
+#import "ClassEntryModel.h"
+#import "ClassClassModel.h"
+#import "ClassObj.h"
+//==============米同学专区=============
+
 
 @interface MJExtensionViewController ()
 {
@@ -101,7 +108,7 @@
     //6.字典数组 --> 模型数组
     //mj_objectArrayWithKeyValuesArray:  //mj
     //modelArrayWithClass: json:         //yy
-//    [self dictArray2modelArray];
+   [self dictArray2modelArray];
     
     
     //7.模型 --> 字典
@@ -184,6 +191,60 @@
                                @"icon" : @"nami.png"
                                }
                            ];
+    
+    NSDictionary *dictCourseList =  @{
+                                @"list" : @[
+                                              @{
+                                                  @"entry" : @[
+                                                          @{
+                                                              @"class" : @[
+                                                                      @{ @"beginTime" : @"17:55",
+                                                                         @"classRoom" : @"3年级9班",
+                                                                         @"courseId" : @"20",
+                                                                         @"courseLabel" : @[],
+                                                                         @"detailId" : @"17",
+                                                                         @"endTime" : @"18:55",
+                                                                         @"teacherName" : @"方世玉"
+                                                                         }
+                                                                      ],
+                                                              @"time" : @"17:55-18:55"
+                                                              },
+                                                          
+                                                          ]
+                                                  }
+                                              
+                                             
+                                            ],
+                                @"weekDay" : @"7"
+                                };
+
+    //转换如下：
+    ClassListModel *listModel = [ClassListModel mj_objectWithKeyValues:dictCourseList];
+    PPLog(@"listModel.weekDay is %@",listModel.weekDay);
+    
+    for (ClassEntryModel *entryModel in listModel.list) {
+        for (ClassClassModel *classModel in entryModel.entry) {
+            PPLog(@"classModel.time is -- %@",classModel.time);
+            for (ClassObj *classObj in classModel.ppClass) {
+                PPLog(@"%@----%@----%@",classObj.beginTime,classObj.teacherName,classObj.classRoom);
+            }
+        }
+    }
+//    NSArray *listArr = [ClassListModel mj_objectArrayWithKeyValuesArray:dictCourseList[@"list"]];
+//    
+//    for (ClassListModel *listModel in listArr) {
+//        NSArray *entryArr = [ClassEntryModel mj_objectArrayWithKeyValuesArray:listModel.entry];
+//        for (ClassEntryModel *entryModel in entryArr) {
+//            NSArray *classArr = [ClassObj mj_objectArrayWithKeyValuesArray:entryModel.classes];
+//            NSLog(@"%@",entryModel.classes);
+//            for (ClassObj *classObj in classArr) {
+//                NSLog(@"%@",classObj.beginTime);
+//            }
+//        }
+//    }
+
+    
+  
     //字典数组转模型数组，使用的是mj_objectArrayWithKeyValuesArray:方法
     NSArray *userArray = [User mj_objectArrayWithKeyValuesArray:dictArray];
     //打印

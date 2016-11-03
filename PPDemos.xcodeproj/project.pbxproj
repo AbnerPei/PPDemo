@@ -43,6 +43,10 @@
 		575C1E071D85044900357B39 /* prev@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 575C1DF61D85044900357B39 /* prev@3x.png */; };
 		575C1E081D85044900357B39 /* UIView+PP_Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C1DF81D85044900357B39 /* UIView+PP_Frame.m */; };
 		575C1E091D85044900357B39 /* PAWaterflowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C1DFB1D85044900357B39 /* PAWaterflowLayout.m */; };
+		5780E7081DCB7C2300156B12 /* ClassListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5780E7071DCB7C2300156B12 /* ClassListModel.m */; };
+		5780E70B1DCB802600156B12 /* ClassEntryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5780E70A1DCB802600156B12 /* ClassEntryModel.m */; };
+		5780E70E1DCB803A00156B12 /* ClassObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 5780E70D1DCB803A00156B12 /* ClassObj.m */; };
+		5780E7111DCB81B900156B12 /* ClassClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5780E7101DCB81B900156B12 /* ClassClassModel.m */; };
 		C60886511DBE18010071B7B8 /* MJRefreshCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C60886501DBE18010071B7B8 /* MJRefreshCell.m */; };
 		C62DA90E1D8176790003945C /* NSUserDefaultsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C62DA90D1D8176790003945C /* NSUserDefaultsManager.m */; };
 		C63B358D1D1D3CA8006277E8 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = C63B358A1D1D3CA8006277E8 /* Foundation+Log.m */; };
@@ -371,6 +375,14 @@
 		575C1DF81D85044900357B39 /* UIView+PP_Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PP_Frame.m"; sourceTree = "<group>"; };
 		575C1DFA1D85044900357B39 /* PAWaterflowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAWaterflowLayout.h; sourceTree = "<group>"; };
 		575C1DFB1D85044900357B39 /* PAWaterflowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAWaterflowLayout.m; sourceTree = "<group>"; };
+		5780E7061DCB7C2300156B12 /* ClassListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassListModel.h; sourceTree = "<group>"; };
+		5780E7071DCB7C2300156B12 /* ClassListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassListModel.m; sourceTree = "<group>"; };
+		5780E7091DCB802600156B12 /* ClassEntryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassEntryModel.h; sourceTree = "<group>"; };
+		5780E70A1DCB802600156B12 /* ClassEntryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassEntryModel.m; sourceTree = "<group>"; };
+		5780E70C1DCB803A00156B12 /* ClassObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassObj.h; sourceTree = "<group>"; };
+		5780E70D1DCB803A00156B12 /* ClassObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassObj.m; sourceTree = "<group>"; };
+		5780E70F1DCB81B900156B12 /* ClassClassModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassClassModel.h; sourceTree = "<group>"; };
+		5780E7101DCB81B900156B12 /* ClassClassModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassClassModel.m; sourceTree = "<group>"; };
 		579A450C1DA94A9400D61BD8 /* PPSets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPSets.h; sourceTree = "<group>"; };
 		579A450E1DABE88200D61BD8 /* AnimationsLearn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationsLearn.h; sourceTree = "<group>"; };
 		C608864F1DBE18010071B7B8 /* MJRefreshCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshCell.h; sourceTree = "<group>"; };
@@ -1129,6 +1141,22 @@
 			path = PPWaterFlow;
 			sourceTree = "<group>";
 		};
+		5780E7051DCB7BDA00156B12 /* 简书-小米人 */ = {
+			isa = PBXGroup;
+			children = (
+				5780E7061DCB7C2300156B12 /* ClassListModel.h */,
+				5780E7071DCB7C2300156B12 /* ClassListModel.m */,
+				5780E7091DCB802600156B12 /* ClassEntryModel.h */,
+				5780E70A1DCB802600156B12 /* ClassEntryModel.m */,
+				5780E70F1DCB81B900156B12 /* ClassClassModel.h */,
+				5780E7101DCB81B900156B12 /* ClassClassModel.m */,
+				5780E70C1DCB803A00156B12 /* ClassObj.h */,
+				5780E70D1DCB803A00156B12 /* ClassObj.m */,
+			);
+			name = "简书-小米人";
+			path = "小米同学";
+			sourceTree = "<group>";
+		};
 		C62DA8F91D816AFD0003945C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1637,9 +1665,9 @@
 		C683FBBA1D29F36600D1BF6A /* MJExtension和YYModel */ = {
 			isa = PBXGroup;
 			children = (
+				5780E7051DCB7BDA00156B12 /* 简书-小米人 */,
 				C683FBC61D2A008700D1BF6A /* C */,
 				C683FBC71D2A008700D1BF6A /* M */,
-				C683FBC81D2A008700D1BF6A /* V */,
 				C683FBC31D29FF9900D1BF6A /* MJExtensionBaseViewController.h */,
 				C683FBC41D29FF9900D1BF6A /* MJExtensionBaseViewController.m */,
 			);
@@ -1673,13 +1701,6 @@
 				C683FBDC1D2A360000D1BF6A /* Student.m */,
 			);
 			path = M;
-			sourceTree = "<group>";
-		};
-		C683FBC81D2A008700D1BF6A /* V */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = V;
 			sourceTree = "<group>";
 		};
 		C6AC8C141D124CF80008133E /* DIY */ = {
@@ -2441,6 +2462,7 @@
 				C6C6D1BA1D0F94DB00F82C39 /* NSData+ImageContentType.m in Sources */,
 				C6C6D1901D0F94DB00F82C39 /* MASConstraint.m in Sources */,
 				C681C13F1DC9C0EF003637CD /* UIApplication+YYAdd.m in Sources */,
+				5780E70B1DCB802600156B12 /* ClassEntryModel.m in Sources */,
 				C6C6D1821D0F94DB00F82C39 /* AFURLResponseSerialization.m in Sources */,
 				C65643A91D868B880079B58B /* YYTextDemoViewController.m in Sources */,
 				C6C6D1941D0F94DB00F82C39 /* MASViewConstraint.m in Sources */,
@@ -2533,6 +2555,7 @@
 				C6EBE9051DACD9E70067EF2A /* UIView+PPSets.m in Sources */,
 				C681C1701DC9C0EF003637CD /* YYTextRunDelegate.m in Sources */,
 				C6C6D1C01D0F94DB00F82C39 /* SDWebImageManager.m in Sources */,
+				5780E70E1DCB803A00156B12 /* ClassObj.m in Sources */,
 				C681C15D1DC9C0EF003637CD /* YYWebImageOperation.m in Sources */,
 				C62DA90E1D8176790003945C /* NSUserDefaultsManager.m in Sources */,
 				C6C6D1B91D0F94DB00F82C39 /* MKAnnotationView+WebCache.m in Sources */,
@@ -2540,6 +2563,7 @@
 				C681C1741DC9C0EF003637CD /* YYAsyncLayer.m in Sources */,
 				C6C6D1AB1D0F94DB00F82C39 /* MJRefreshAutoNormalFooter.m in Sources */,
 				C681C1641DC9C0EF003637CD /* YYTextKeyboardManager.m in Sources */,
+				5780E7081DCB7C2300156B12 /* ClassListModel.m in Sources */,
 				C683FBD71D2A15C500D1BF6A /* StatusResult.m in Sources */,
 				C6C6D1C21D0F94DB00F82C39 /* UIButton+WebCache.m in Sources */,
 				C683FBCE1D2A012B00D1BF6A /* MJExtensionViewController.m in Sources */,
@@ -2580,6 +2604,7 @@
 				575C1D621D4C930A00357B39 /* ShaHeViewController.m in Sources */,
 				C6C6D18D1D0F94DB00F82C39 /* HYBNetworking.m in Sources */,
 				C681C1561DC9C0EF003637CD /* YYAnimatedImageView.m in Sources */,
+				5780E7111DCB81B900156B12 /* ClassClassModel.m in Sources */,
 				C682E6551DB9A60600CD86CB /* CalendarEvent.m in Sources */,
 				C6C6D1DD1D0F99CB00F82C39 /* MJBaseViewController.m in Sources */,
 				C683FBDD1D2A360000D1BF6A /* Student.m in Sources */,
