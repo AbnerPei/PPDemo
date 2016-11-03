@@ -225,6 +225,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		575749AD1DCA42FF0028447B /* 开源库.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "开源库.h"; sourceTree = "<group>"; };
 		575C1D601D4C930A00357B39 /* ShaHeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaHeViewController.h; sourceTree = "<group>"; };
 		575C1D611D4C930A00357B39 /* ShaHeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShaHeViewController.m; sourceTree = "<group>"; };
 		575C1D671D73269300357B39 /* YYCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCache.h; sourceTree = "<group>"; };
@@ -315,6 +316,7 @@
 		575C1DFA1D85044900357B39 /* PAWaterflowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAWaterflowLayout.h; sourceTree = "<group>"; };
 		575C1DFB1D85044900357B39 /* PAWaterflowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAWaterflowLayout.m; sourceTree = "<group>"; };
 		579A450C1DA94A9400D61BD8 /* PPSets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPSets.h; sourceTree = "<group>"; };
+		579A450E1DABE88200D61BD8 /* AnimationsLearn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationsLearn.h; sourceTree = "<group>"; };
 		C62DA90C1D8176790003945C /* NSUserDefaultsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSUserDefaultsManager.h; sourceTree = "<group>"; };
 		C62DA90D1D8176790003945C /* NSUserDefaultsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSUserDefaultsManager.m; sourceTree = "<group>"; };
 		C63B358A1D1D3CA8006277E8 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
@@ -906,6 +908,7 @@
 				575C1DDF1D8503F000357B39 /* 源码解析1.h */,
 				575C1DE01D8503F000357B39 /* 非常值得收藏1.h */,
 				C6B980141DB473D100604393 /* 这些你知道吗？很提升自我价值.h */,
+				575749AD1DCA42FF0028447B /* 开源库.h */,
 			);
 			path = PPLinks;
 			sourceTree = "<group>";
@@ -1727,6 +1730,7 @@
 				C6D808A51D4B25E500C8B2FF /* AnimationBaseViewController.m */,
 				C6D808A71D4B265200C8B2FF /* AnimationShowViewController.h */,
 				C6D808A81D4B265200C8B2FF /* AnimationShowViewController.m */,
+				579A450E1DABE88200D61BD8 /* AnimationsLearn.h */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
