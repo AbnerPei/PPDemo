@@ -9,6 +9,7 @@
 #import "MJViewController.h"
 
 #import "MJPicture.h"
+#import "MJRefreshCell.h"
 
 @interface MJViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -71,7 +72,7 @@
     [HYBNetworking getWithUrl:url refreshCache:NO params:nil progress:^(int64_t bytesRead, int64_t totalBytesRead) {
        
     } success:^(id response) {
-        PPLog(@"请求成功---%@",response);
+        PPLog(@"请求成功---%@----%@",response,[NSThread currentThread]);
         [self endRefresh];
         isJuhua = NO; //数据获取成功后，设置为NO
         
@@ -119,16 +120,29 @@
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    if (!cell) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+    //方法1：这样的话会导致app第一次安装的时候缓存不到图片
+//    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+//    if (!cell) {
+//        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+//    }
+//    MJPicture * picture;
+//    if (_pictures.count > indexPath.row) {
+//        picture = _pictures[indexPath.row];
+//        cell.textLabel.text = picture.name;
+//        cell.detailTextLabel.text = picture.passtime;
+//        [cell.imageView sd_setImageWithURL:[NSURL URLWithString:picture.profile_image]];
+//    }
+//    return cell;
+    
+    //方法2：这种方法就可以第一次装的时候缓存到图片
+    MJRefreshCell *cell = [MJRefreshCell cellWithTableView:tableView];
+    MJPicture * picture;
+    if (_pictures.count > indexPath.row) {
+        picture = _pictures[indexPath.row];
+        [cell setupMJRefreshCellData:picture];
     }
-
-    MJPicture * picture = _pictures[indexPath.row];
-    cell.textLabel.text = picture.name;
-    cell.detailTextLabel.text = picture.passtime;
-    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:picture.profile_image]];
     return cell;
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

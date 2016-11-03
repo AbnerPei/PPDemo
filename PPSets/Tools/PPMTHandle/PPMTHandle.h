@@ -41,14 +41,13 @@ http://pan.baidu.com/s/1gd1wwZx
 + (BOOL) validateMobile:(NSString *)mobile;
 //判断邮编格式为6位数字
 + (BOOL)checkPostCode:(NSString *)str;
+//判断银行卡号正确不
++(BOOL) checkUnionpayCardNo:(NSString*) cardNo;
 
 #pragma 正则匹配用户身份证号15或18位
 + (BOOL)checkUserIdCard: (NSString *) idCard;
 
 + (BOOL) validateIdentityCard: (NSString *)identityCard;
-
-//获得设备型号
-+ (NSString *)getCurrentDeviceModel:(UIViewController *)controller;
 
 //获取当前设备运营商(详细信息)
 +(void)check;
@@ -61,12 +60,22 @@ http://pan.baidu.com/s/1gd1wwZx
 //金额转大写
 +(NSString *)digitUppercaseWithMoney:(NSString *)money;
 
-//判断银行卡号正确不
-+(BOOL) checkUnionpayCardNo:(NSString*) cardNo;
-
 + (void)pp_alertError: (NSString *) error title: (NSString *)title delegate: (id)delegate cancelButtonTitle: (NSString *)cancelButtonTitle otherButtonTitle: (NSString *)otherButtonTitle;
 
-/* 是否在系统通知处打开app的通知开关 2016-10-17*/
-//+(BOOL)pp_isRemoteNotificationOpen;
+//根据一个view，返回一张图片
++(UIImage *)pp_viewToImage:(UIView *)view;
+
+
+
+/**
+ 2016--10--20
+ //拨打电话
+ webV方式： 这种方法，打完电话后还会回到原来的程序，也会弹出提示！
+ 基本方式 ： 这种方法，拨打完电话回不到原来的应用，会停留在通讯录里，而且是直接拨打，不弹出提示！（在iOS9.0之后，这个方法也是可以回到原来的应用）
+ @param telNumber 电话号码
+ @param isUseWebV 是不是用webView的方式
+ */
++(void)pp_callTel:(NSString *)telNumber isUseWebView:(BOOL)isUseWebV;
+
 
 @end

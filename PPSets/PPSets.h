@@ -29,6 +29,14 @@
 #import "NSString+PPSets.h"
 
 
+/*
+ * PPTool 工具
+ */
+#import "PPMTHandle.h"
+#import "PP_CameraManager.h"
+#import "PP_NSArrayManager.h"
+#import "PP_NSDateManager.h"
+#import "PP_NSStringManager.h"
 
 #endif /* PPSets_h */
 

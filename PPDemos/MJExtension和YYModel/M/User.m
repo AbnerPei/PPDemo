@@ -52,6 +52,7 @@
              @"id":@"shopID",
              };
 }
+//yy
 + (NSDictionary *)modelCustomPropertyMapper
 {
     return @{

@@ -7,7 +7,6 @@
 //
 
 #import "YYTextDemoViewController.h"
-#import "YYText.h"
 @interface YYTextDemoViewController ()
 /*
  0. [专访YYKit作者郭曜源：开源大牛是怎样炼成的](http://www.infoq.com/cn/news/2015/11/ibireme-interview?utm_content=homepage)

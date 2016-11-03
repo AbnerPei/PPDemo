@@ -8,7 +8,6 @@
 
 #import "StatusResult.h"
 #import "MJExtension.h"
-#import "YYModel.h"
 @implementation StatusResult
 /* 数组中存储模型数据，需要说明数组中存储的模型数据类型 */
 +(NSDictionary *)mj_objectClassInArray
