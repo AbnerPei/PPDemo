@@ -280,6 +280,8 @@
 		C6C6D1E31D0FA50100F82C39 /* MJDefaultBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C6D1E21D0FA50100F82C39 /* MJDefaultBlockViewController.m */; };
 		C6D808A61D4B25E500C8B2FF /* AnimationBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D808A51D4B25E500C8B2FF /* AnimationBaseViewController.m */; };
 		C6D808A91D4B265200C8B2FF /* AnimationShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D808A81D4B265200C8B2FF /* AnimationShowViewController.m */; };
+		C6DC36D11DD07799003EC552 /* NSDate+TimeAgo.m in Sources */ = {isa = PBXBuildFile; fileRef = C6DC36CF1DD07799003EC552 /* NSDate+TimeAgo.m */; };
+		C6DC36D21DD07799003EC552 /* NSDateTimeAgo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C6DC36D01DD07799003EC552 /* NSDateTimeAgo.bundle */; };
 		C6EBE8FE1DACD9E70067EF2A /* NSObject+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EBE8EE1DACD9E70067EF2A /* NSObject+PPSets.m */; };
 		C6EBE8FF1DACD9E70067EF2A /* NSString+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EBE8F01DACD9E70067EF2A /* NSString+PPSets.m */; };
 		C6EBE9001DACD9E70067EF2A /* UIApplication+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EBE8F31DACD9E70067EF2A /* UIApplication+PPSets.m */; };
@@ -851,6 +853,9 @@
 		C6D808A51D4B25E500C8B2FF /* AnimationBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationBaseViewController.m; sourceTree = "<group>"; };
 		C6D808A71D4B265200C8B2FF /* AnimationShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationShowViewController.h; sourceTree = "<group>"; };
 		C6D808A81D4B265200C8B2FF /* AnimationShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationShowViewController.m; sourceTree = "<group>"; };
+		C6DC36CE1DD07799003EC552 /* NSDate+TimeAgo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TimeAgo.h"; sourceTree = "<group>"; };
+		C6DC36CF1DD07799003EC552 /* NSDate+TimeAgo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TimeAgo.m"; sourceTree = "<group>"; };
+		C6DC36D01DD07799003EC552 /* NSDateTimeAgo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NSDateTimeAgo.bundle; sourceTree = "<group>"; };
 		C6EBE8ED1DACD9E70067EF2A /* NSObject+PPSets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PPSets.h"; sourceTree = "<group>"; };
 		C6EBE8EE1DACD9E70067EF2A /* NSObject+PPSets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PPSets.m"; sourceTree = "<group>"; };
 		C6EBE8EF1DACD9E70067EF2A /* NSString+PPSets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PPSets.h"; sourceTree = "<group>"; };
@@ -2189,9 +2194,20 @@
 			path = Animations;
 			sourceTree = "<group>";
 		};
+		C6DC36CD1DD07779003EC552 /* NSDate */ = {
+			isa = PBXGroup;
+			children = (
+				C6DC36CE1DD07799003EC552 /* NSDate+TimeAgo.h */,
+				C6DC36CF1DD07799003EC552 /* NSDate+TimeAgo.m */,
+				C6DC36D01DD07799003EC552 /* NSDateTimeAgo.bundle */,
+			);
+			path = NSDate;
+			sourceTree = "<group>";
+		};
 		C6EBE8EC1DACD9E70067EF2A /* NS */ = {
 			isa = PBXGroup;
 			children = (
+				C6DC36CD1DD07779003EC552 /* NSDate */,
 				C6EBE8ED1DACD9E70067EF2A /* NSObject+PPSets.h */,
 				C6EBE8EE1DACD9E70067EF2A /* NSObject+PPSets.m */,
 				C6EBE8EF1DACD9E70067EF2A /* NSString+PPSets.h */,
@@ -2357,6 +2373,7 @@
 				575C1DFE1D85044900357B39 /* frame_icon@3x.png in Resources */,
 				C6B980521DB4C83400604393 /* photo9.jpg in Resources */,
 				C6B980501DB4C83400604393 /* photo7.jpg in Resources */,
+				C6DC36D21DD07799003EC552 /* NSDateTimeAgo.bundle in Resources */,
 				575C1E071D85044900357B39 /* prev@3x.png in Resources */,
 				C6B9804E1DB4C83400604393 /* photo5.jpg in Resources */,
 				C66BFBED1DB8AF70008A0ACF /* ppwkTest.html in Resources */,
@@ -2542,6 +2559,7 @@
 				C683FBDA1D2A35F200D1BF6A /* Bag.m in Sources */,
 				C6EBE9081DACDA960067EF2A /* UIDevice+PPSets.m in Sources */,
 				C6C6D1B01D0F94DB00F82C39 /* MJRefreshGifHeader.m in Sources */,
+				C6DC36D11DD07799003EC552 /* NSDate+TimeAgo.m in Sources */,
 				C6C6D1C61D0F94DB00F82C39 /* UIImageView+HighlightedWebCache.m in Sources */,
 				C677999A1D508F0F00007161 /* WholesaleCell.m in Sources */,
 				C6AC8C261D124CF80008133E /* MJDIYHeader.m in Sources */,

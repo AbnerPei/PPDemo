@@ -8,6 +8,7 @@
 
 #import "PPLabelViewController.h"
 #import "PPLabel.h"
+#import "NSDate+TimeAgo.h"
 
 @interface PPLabelViewController ()
 
@@ -37,8 +38,18 @@
     }
     free(ivarList);
     
+    [self dateCategory];
+    
 }
 
+-(void)dateCategory
+{
+    NSDate *ppDate = [[NSDate alloc]initWithTimeIntervalSince1970:50];
+    NSString *str1 = [ppDate timeAgo];
+    NSString *str2 = [ppDate timeAgoWithLimit:5];
+    NSString *str3 = [ppDate timeAgoSimple];
+    NSLog(@"ppdate----%@---%@----%@",str1,str2,str3);
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
