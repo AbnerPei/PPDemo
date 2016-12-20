@@ -22,6 +22,10 @@
 #import "ClassObj.h"
 //==============米同学专区=============
 
+#import "EPeiResultModel.h"
+#import "EPeiDataModel.h"
+#import "EPeiOrderModel.h"
+
 
 @interface MJExtensionViewController ()
 {
@@ -122,8 +126,24 @@
     //9.过滤字典的值
     //以后。。。
     
+    //2016-12-19
+    [self setupEPei];
+    
 }
 
+-(void)setupEPei
+{
+    NSString *urlStr = @"http://www.epeimall.com/appapi/GetOrderlist?user_id=81&key=epeimall&pay_status=0&page=3";
+    [HYBNetworking getWithUrl:urlStr refreshCache:NO params:nil progress:^(int64_t bytesRead, int64_t totalBytesRead) {
+        
+    } success:^(id response) {
+        NSDictionary *resultDict = (NSDictionary *)response;
+        EPeiResultModel *resultModel = [EPeiResultModel mj_objectWithKeyValues:resultDict];
+        PPLog(@"pppp----------%@---%@",resultDict,resultModel.state_code);
+    } fail:^(NSError *error) {
+        
+    }];
+}
 -(void)modelArray2dictArray
 {
     //创建模型数组
