@@ -8,6 +8,7 @@
 
 #import "NSString+PPSets.h"
 #import <UIKit/UILocalizedIndexedCollation.h>
+
 @implementation NSString (PPSets)
 
 @end

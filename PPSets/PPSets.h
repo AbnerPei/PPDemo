@@ -26,7 +26,7 @@
  *  NS 系列
  */
 #import "NSObject+PPSets.h"
-#import "NSString+PPSets.h"
+#import "PPNSStringCategory.h"
 
 
 /*

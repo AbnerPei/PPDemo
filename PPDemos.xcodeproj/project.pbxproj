@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5725821F1E0B77F600C41BAB /* NSString+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = 5725821E1E0B77F600C41BAB /* NSString+PPSets.m */; };
+		572582231E0B781300C41BAB /* NSObject+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = 572582221E0B781300C41BAB /* NSObject+PPSets.m */; };
+		572582261E0B791F00C41BAB /* NSString+PPProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 572582251E0B791F00C41BAB /* NSString+PPProcess.m */; };
 		575C1D621D4C930A00357B39 /* ShaHeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C1D611D4C930A00357B39 /* ShaHeViewController.m */; };
 		575C1D751D7326F200357B39 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 575C1D741D7326F200357B39 /* libsqlite3.0.tbd */; };
 		575C1D851D85021D00357B39 /* UIGestureRecognizer+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C1D821D85021D00357B39 /* UIGestureRecognizer+BlocksKit.m */; };
@@ -285,8 +288,6 @@
 		C6D808A91D4B265200C8B2FF /* AnimationShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D808A81D4B265200C8B2FF /* AnimationShowViewController.m */; };
 		C6DC36D11DD07799003EC552 /* NSDate+TimeAgo.m in Sources */ = {isa = PBXBuildFile; fileRef = C6DC36CF1DD07799003EC552 /* NSDate+TimeAgo.m */; };
 		C6DC36D21DD07799003EC552 /* NSDateTimeAgo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C6DC36D01DD07799003EC552 /* NSDateTimeAgo.bundle */; };
-		C6EBE8FE1DACD9E70067EF2A /* NSObject+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EBE8EE1DACD9E70067EF2A /* NSObject+PPSets.m */; };
-		C6EBE8FF1DACD9E70067EF2A /* NSString+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EBE8F01DACD9E70067EF2A /* NSString+PPSets.m */; };
 		C6EBE9001DACD9E70067EF2A /* UIApplication+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EBE8F31DACD9E70067EF2A /* UIApplication+PPSets.m */; };
 		C6EBE9011DACD9E70067EF2A /* UIButton+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EBE8F51DACD9E70067EF2A /* UIButton+PPSets.m */; };
 		C6EBE9021DACD9E70067EF2A /* UIColor+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EBE8F71DACD9E70067EF2A /* UIColor+PPSets.m */; };
@@ -300,6 +301,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5725821D1E0B77F600C41BAB /* NSString+PPSets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PPSets.h"; sourceTree = "<group>"; };
+		5725821E1E0B77F600C41BAB /* NSString+PPSets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PPSets.m"; sourceTree = "<group>"; };
+		572582211E0B781300C41BAB /* NSObject+PPSets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PPSets.h"; sourceTree = "<group>"; };
+		572582221E0B781300C41BAB /* NSObject+PPSets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PPSets.m"; sourceTree = "<group>"; };
+		572582241E0B791F00C41BAB /* NSString+PPProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PPProcess.h"; sourceTree = "<group>"; };
+		572582251E0B791F00C41BAB /* NSString+PPProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PPProcess.m"; sourceTree = "<group>"; };
+		572582271E0B7C3700C41BAB /* PPNSStringCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPNSStringCategory.h; sourceTree = "<group>"; };
 		575749AD1DCA42FF0028447B /* 开源库.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "开源库.h"; sourceTree = "<group>"; };
 		575C1D601D4C930A00357B39 /* ShaHeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaHeViewController.h; sourceTree = "<group>"; };
 		575C1D611D4C930A00357B39 /* ShaHeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShaHeViewController.m; sourceTree = "<group>"; };
@@ -865,10 +873,6 @@
 		C6DC36CE1DD07799003EC552 /* NSDate+TimeAgo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TimeAgo.h"; sourceTree = "<group>"; };
 		C6DC36CF1DD07799003EC552 /* NSDate+TimeAgo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TimeAgo.m"; sourceTree = "<group>"; };
 		C6DC36D01DD07799003EC552 /* NSDateTimeAgo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NSDateTimeAgo.bundle; sourceTree = "<group>"; };
-		C6EBE8ED1DACD9E70067EF2A /* NSObject+PPSets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PPSets.h"; sourceTree = "<group>"; };
-		C6EBE8EE1DACD9E70067EF2A /* NSObject+PPSets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PPSets.m"; sourceTree = "<group>"; };
-		C6EBE8EF1DACD9E70067EF2A /* NSString+PPSets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PPSets.h"; sourceTree = "<group>"; };
-		C6EBE8F01DACD9E70067EF2A /* NSString+PPSets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PPSets.m"; sourceTree = "<group>"; };
 		C6EBE8F21DACD9E70067EF2A /* UIApplication+PPSets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+PPSets.h"; sourceTree = "<group>"; };
 		C6EBE8F31DACD9E70067EF2A /* UIApplication+PPSets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+PPSets.m"; sourceTree = "<group>"; };
 		C6EBE8F41DACD9E70067EF2A /* UIButton+PPSets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+PPSets.h"; sourceTree = "<group>"; };
@@ -910,6 +914,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5725821C1E0B77F600C41BAB /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				572582271E0B7C3700C41BAB /* PPNSStringCategory.h */,
+				5725821D1E0B77F600C41BAB /* NSString+PPSets.h */,
+				5725821E1E0B77F600C41BAB /* NSString+PPSets.m */,
+				572582241E0B791F00C41BAB /* NSString+PPProcess.h */,
+				572582251E0B791F00C41BAB /* NSString+PPProcess.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		572582201E0B781300C41BAB /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				572582211E0B781300C41BAB /* NSObject+PPSets.h */,
+				572582221E0B781300C41BAB /* NSObject+PPSets.m */,
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
 		575C1D5F1D4C92D500357B39 /* Notes */ = {
 			isa = PBXGroup;
 			children = (
@@ -2230,11 +2255,9 @@
 		C6EBE8EC1DACD9E70067EF2A /* NS */ = {
 			isa = PBXGroup;
 			children = (
+				572582201E0B781300C41BAB /* NSObject */,
+				5725821C1E0B77F600C41BAB /* NSString */,
 				C6DC36CD1DD07779003EC552 /* NSDate */,
-				C6EBE8ED1DACD9E70067EF2A /* NSObject+PPSets.h */,
-				C6EBE8EE1DACD9E70067EF2A /* NSObject+PPSets.m */,
-				C6EBE8EF1DACD9E70067EF2A /* NSString+PPSets.h */,
-				C6EBE8F01DACD9E70067EF2A /* NSString+PPSets.m */,
 			);
 			path = NS;
 			sourceTree = "<group>";
@@ -2411,6 +2434,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				572582261E0B791F00C41BAB /* NSString+PPProcess.m in Sources */,
 				C6EBE9011DACD9E70067EF2A /* UIButton+PPSets.m in Sources */,
 				C681C1431DC9C0EF003637CD /* UIControl+YYAdd.m in Sources */,
 				C681C1621DC9C0EF003637CD /* YYTextEffectWindow.m in Sources */,
@@ -2466,7 +2490,6 @@
 				C6C6D1991D0F94DB00F82C39 /* MBProgressHUD.m in Sources */,
 				C6EBE90C1DACF68B0067EF2A /* PPExpendCellViewController.m in Sources */,
 				C6C6D1881D0F94DB00F82C39 /* UIButton+AFNetworking.m in Sources */,
-				C6EBE8FE1DACD9E70067EF2A /* NSObject+PPSets.m in Sources */,
 				C6C6D1A51D0F94DB00F82C39 /* MJRefreshAutoFooter.m in Sources */,
 				C681C1491DC9C0EF003637CD /* UIScrollView+YYAdd.m in Sources */,
 				C681C1371DC9C0EF003637CD /* NSObject+YYAdd.m in Sources */,
@@ -2516,7 +2539,6 @@
 				C6C6D0A81D0F94BB00F82C39 /* AppDelegate.m in Sources */,
 				C681C1421DC9C0EF003637CD /* UIColor+YYAdd.m in Sources */,
 				C6AC8C251D124CF80008133E /* MJDIYBackFooter.m in Sources */,
-				C6EBE8FF1DACD9E70067EF2A /* NSString+PPSets.m in Sources */,
 				C6C6D1B71D0F94DB00F82C39 /* UIScrollView+MJRefresh.m in Sources */,
 				C681C17A1DC9C0EF003637CD /* YYSentinel.m in Sources */,
 				575C1D941D85029600357B39 /* LPLevelView.m in Sources */,
@@ -2541,6 +2563,7 @@
 				C63B358E1D1D3CA8006277E8 /* PPLabel.m in Sources */,
 				C6C6D1AE1D0F94DB00F82C39 /* MJRefreshBackNormalFooter.m in Sources */,
 				C6C6D1B51D0F94DB00F82C39 /* NSBundle+MJRefresh.m in Sources */,
+				572582231E0B781300C41BAB /* NSObject+PPSets.m in Sources */,
 				C681C14F1DC9C0EF003637CD /* YYKVStorage.m in Sources */,
 				C6C6D17E1D0F94DB00F82C39 /* AFHTTPSessionManager.m in Sources */,
 				575C1DB41D85033500357B39 /* PP_NSArrayManager.m in Sources */,
@@ -2551,6 +2574,7 @@
 				C681C16A1DC9C0EF003637CD /* NSParagraphStyle+YYText.m in Sources */,
 				C681C1541DC9C0EF003637CD /* UIButton+YYWebImage.m in Sources */,
 				C67799921D508E9000007161 /* LongPressToSaveViewController.m in Sources */,
+				5725821F1E0B77F600C41BAB /* NSString+PPSets.m in Sources */,
 				C6EBE9041DACD9E70067EF2A /* UIScreen+PPSets.m in Sources */,
 				C66BFBF21DB8CB64008A0ACF /* PPTextToImageViewController.m in Sources */,
 				C683FBD41D2A15B500D1BF6A /* Ad.m in Sources */,
