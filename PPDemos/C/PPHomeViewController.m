@@ -18,13 +18,6 @@
     // Do any additional setup after loading the view.
     [self setupArrs];
     
-    NSString *str = @"北京 老 师 ，我pp mt is love is 我老我 @/／：；（）¥「」＂、[]{}#%-*+=_\\|~＜＞$€^•'@#$%^&*()_+'\"，~！。@#￥%……&*（）——+”：《》？|!bobo";
-//    str = [str pp_removeAllBlankStr];
-//    str = [str pp_replaceStr:@"我" withString:@"你们"];
-//    str = [str pp_removeAllSpecialLetter];
-    str = [str pp_setupPlanePassengerName];
-    
-    NSLog(@"最终字符串---%@",str);
 }
 -(void)setupArrs
 {

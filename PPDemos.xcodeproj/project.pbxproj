@@ -32,19 +32,6 @@
 		575C1DE41D8503F000357B39 /* tujieGCD.png in Resources */ = {isa = PBXBuildFile; fileRef = 575C1DCA1D8503F000357B39 /* tujieGCD.png */; };
 		575C1DE51D8503F000357B39 /* yi.gif in Resources */ = {isa = PBXBuildFile; fileRef = 575C1DCB1D8503F000357B39 /* yi.gif */; };
 		575C1DE61D8503F000357B39 /* 响应者链条示意图.png in Resources */ = {isa = PBXBuildFile; fileRef = 575C1DCC1D8503F000357B39 /* 响应者链条示意图.png */; };
-		575C1DFC1D85044900357B39 /* frame_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 575C1DE81D85044900357B39 /* frame_icon.png */; };
-		575C1DFD1D85044900357B39 /* frame_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 575C1DE91D85044900357B39 /* frame_icon@2x.png */; };
-		575C1DFE1D85044900357B39 /* frame_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 575C1DEA1D85044900357B39 /* frame_icon@3x.png */; };
-		575C1DFF1D85044900357B39 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 575C1DEB1D85044900357B39 /* line.png */; };
-		575C1E001D85044900357B39 /* line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 575C1DEC1D85044900357B39 /* line@2x.png */; };
-		575C1E011D85044900357B39 /* line@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 575C1DED1D85044900357B39 /* line@3x.png */; };
-		575C1E021D85044900357B39 /* PP_QRCodeBgView.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C1DEF1D85044900357B39 /* PP_QRCodeBgView.m */; };
-		575C1E031D85044900357B39 /* PP_QRCodeScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C1DF11D85044900357B39 /* PP_QRCodeScanView.m */; };
-		575C1E041D85044900357B39 /* PP_QRCodeScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C1DF31D85044900357B39 /* PP_QRCodeScanViewController.m */; };
-		575C1E051D85044900357B39 /* prev.png in Resources */ = {isa = PBXBuildFile; fileRef = 575C1DF41D85044900357B39 /* prev.png */; };
-		575C1E061D85044900357B39 /* prev@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 575C1DF51D85044900357B39 /* prev@2x.png */; };
-		575C1E071D85044900357B39 /* prev@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 575C1DF61D85044900357B39 /* prev@3x.png */; };
-		575C1E081D85044900357B39 /* UIView+PP_Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C1DF81D85044900357B39 /* UIView+PP_Frame.m */; };
 		575C1E091D85044900357B39 /* PAWaterflowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C1DFB1D85044900357B39 /* PAWaterflowLayout.m */; };
 		5780E7081DCB7C2300156B12 /* ClassListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5780E7071DCB7C2300156B12 /* ClassListModel.m */; };
 		5780E70B1DCB802600156B12 /* ClassEntryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5780E70A1DCB802600156B12 /* ClassEntryModel.m */; };
@@ -288,7 +275,6 @@
 		C6EBE9041DACD9E70067EF2A /* UIScreen+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EBE8FB1DACD9E70067EF2A /* UIScreen+PPSets.m */; };
 		C6EBE9051DACD9E70067EF2A /* UIView+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EBE8FD1DACD9E70067EF2A /* UIView+PPSets.m */; };
 		C6EBE9081DACDA960067EF2A /* UIDevice+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EBE9071DACDA960067EF2A /* UIDevice+PPSets.m */; };
-		C6FEE3EC1DAB3CB000316D14 /* PPTextfieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FEE3EB1DAB3CB000316D14 /* PPTextfieldViewController.m */; };
 		C6FEE4131DAB76C100316D14 /* PPTextfield.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FEE4121DAB76C100316D14 /* PPTextfield.m */; };
 /* End PBXBuildFile section */
 
@@ -361,23 +347,6 @@
 		575C1DDE1D8503F000357B39 /* 待确定是否非常值得收藏.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "待确定是否非常值得收藏.h"; sourceTree = "<group>"; };
 		575C1DDF1D8503F000357B39 /* 源码解析1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "源码解析1.h"; sourceTree = "<group>"; };
 		575C1DE01D8503F000357B39 /* 非常值得收藏1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "非常值得收藏1.h"; sourceTree = "<group>"; };
-		575C1DE81D85044900357B39 /* frame_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame_icon.png; sourceTree = "<group>"; };
-		575C1DE91D85044900357B39 /* frame_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "frame_icon@2x.png"; sourceTree = "<group>"; };
-		575C1DEA1D85044900357B39 /* frame_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "frame_icon@3x.png"; sourceTree = "<group>"; };
-		575C1DEB1D85044900357B39 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
-		575C1DEC1D85044900357B39 /* line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "line@2x.png"; sourceTree = "<group>"; };
-		575C1DED1D85044900357B39 /* line@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "line@3x.png"; sourceTree = "<group>"; };
-		575C1DEE1D85044900357B39 /* PP_QRCodeBgView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PP_QRCodeBgView.h; sourceTree = "<group>"; };
-		575C1DEF1D85044900357B39 /* PP_QRCodeBgView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PP_QRCodeBgView.m; sourceTree = "<group>"; };
-		575C1DF01D85044900357B39 /* PP_QRCodeScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PP_QRCodeScanView.h; sourceTree = "<group>"; };
-		575C1DF11D85044900357B39 /* PP_QRCodeScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PP_QRCodeScanView.m; sourceTree = "<group>"; };
-		575C1DF21D85044900357B39 /* PP_QRCodeScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PP_QRCodeScanViewController.h; sourceTree = "<group>"; };
-		575C1DF31D85044900357B39 /* PP_QRCodeScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PP_QRCodeScanViewController.m; sourceTree = "<group>"; };
-		575C1DF41D85044900357B39 /* prev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prev.png; sourceTree = "<group>"; };
-		575C1DF51D85044900357B39 /* prev@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "prev@2x.png"; sourceTree = "<group>"; };
-		575C1DF61D85044900357B39 /* prev@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "prev@3x.png"; sourceTree = "<group>"; };
-		575C1DF71D85044900357B39 /* UIView+PP_Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PP_Frame.h"; sourceTree = "<group>"; };
-		575C1DF81D85044900357B39 /* UIView+PP_Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PP_Frame.m"; sourceTree = "<group>"; };
 		575C1DFA1D85044900357B39 /* PAWaterflowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAWaterflowLayout.h; sourceTree = "<group>"; };
 		575C1DFB1D85044900357B39 /* PAWaterflowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAWaterflowLayout.m; sourceTree = "<group>"; };
 		5780E7061DCB7C2300156B12 /* ClassListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassListModel.h; sourceTree = "<group>"; };
@@ -865,8 +834,6 @@
 		C6EBE8FD1DACD9E70067EF2A /* UIView+PPSets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PPSets.m"; sourceTree = "<group>"; };
 		C6EBE9061DACDA960067EF2A /* UIDevice+PPSets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+PPSets.h"; sourceTree = "<group>"; };
 		C6EBE9071DACDA960067EF2A /* UIDevice+PPSets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+PPSets.m"; sourceTree = "<group>"; };
-		C6FEE3EA1DAB3CB000316D14 /* PPTextfieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTextfieldViewController.h; sourceTree = "<group>"; };
-		C6FEE3EB1DAB3CB000316D14 /* PPTextfieldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPTextfieldViewController.m; sourceTree = "<group>"; };
 		C6FEE4111DAB76C100316D14 /* PPTextfield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTextfield.h; sourceTree = "<group>"; };
 		C6FEE4121DAB76C100316D14 /* PPTextfield.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPTextfield.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1123,30 +1090,6 @@
 			path = PPLinks;
 			sourceTree = "<group>";
 		};
-		575C1DE71D85044900357B39 /* PPQRCode */ = {
-			isa = PBXGroup;
-			children = (
-				575C1DE81D85044900357B39 /* frame_icon.png */,
-				575C1DE91D85044900357B39 /* frame_icon@2x.png */,
-				575C1DEA1D85044900357B39 /* frame_icon@3x.png */,
-				575C1DEB1D85044900357B39 /* line.png */,
-				575C1DEC1D85044900357B39 /* line@2x.png */,
-				575C1DED1D85044900357B39 /* line@3x.png */,
-				575C1DEE1D85044900357B39 /* PP_QRCodeBgView.h */,
-				575C1DEF1D85044900357B39 /* PP_QRCodeBgView.m */,
-				575C1DF01D85044900357B39 /* PP_QRCodeScanView.h */,
-				575C1DF11D85044900357B39 /* PP_QRCodeScanView.m */,
-				575C1DF21D85044900357B39 /* PP_QRCodeScanViewController.h */,
-				575C1DF31D85044900357B39 /* PP_QRCodeScanViewController.m */,
-				575C1DF41D85044900357B39 /* prev.png */,
-				575C1DF51D85044900357B39 /* prev@2x.png */,
-				575C1DF61D85044900357B39 /* prev@3x.png */,
-				575C1DF71D85044900357B39 /* UIView+PP_Frame.h */,
-				575C1DF81D85044900357B39 /* UIView+PP_Frame.m */,
-			);
-			path = PPQRCode;
-			sourceTree = "<group>";
-		};
 		575C1DF91D85044900357B39 /* PPWaterFlow */ = {
 			isa = PBXGroup;
 			children = (
@@ -1198,7 +1141,6 @@
 			children = (
 				579A450C1DA94A9400D61BD8 /* PPSets.h */,
 				C6FEE3BC1DA8DF5700316D14 /* Custom */,
-				575C1DE71D85044900357B39 /* PPQRCode */,
 				575C1DF91D85044900357B39 /* PPWaterFlow */,
 				575C1D9A1D85033500357B39 /* Tools */,
 				575C1D7F1D85021100357B39 /* PPLibs */,
@@ -1792,7 +1734,6 @@
 			children = (
 				C682E6521DB9A5AA00CD86CB /* CalendarEvent */,
 				C6B980191DB4B3FE00604393 /* PPFaceAwareFill */,
-				C6FEE3E91DAB3C6F00316D14 /* PPTextfield */,
 				C677999E1D50959A00007161 /* YYCache */,
 				C67799861D508E8500007161 /* Masonry */,
 				C6C1CC0F1D4EF9480082A717 /* Runtime */,
@@ -2215,15 +2156,6 @@
 			path = Custom;
 			sourceTree = "<group>";
 		};
-		C6FEE3E91DAB3C6F00316D14 /* PPTextfield */ = {
-			isa = PBXGroup;
-			children = (
-				C6FEE3EA1DAB3CB000316D14 /* PPTextfieldViewController.h */,
-				C6FEE3EB1DAB3CB000316D14 /* PPTextfieldViewController.m */,
-			);
-			path = PPTextfield;
-			sourceTree = "<group>";
-		};
 		C6FEE4101DAB76C100316D14 /* PPTextField */ = {
 			isa = PBXGroup;
 			children = (
@@ -2306,18 +2238,11 @@
 				C681C0791DC98DB8003637CD /* panglong.html in Resources */,
 				C6B9804D1DB4C83400604393 /* photo4.jpg in Resources */,
 				575C1DE11D8503F000357B39 /* AutoLayout相对处理pin.png in Resources */,
-				575C1E061D85044900357B39 /* prev@2x.png in Resources */,
 				575C1DE61D8503F000357B39 /* 响应者链条示意图.png in Resources */,
 				C6C6D1B31D0F94DB00F82C39 /* MJRefresh.bundle in Resources */,
 				C6B9804B1DB4C83400604393 /* photo2.jpg in Resources */,
-				575C1E051D85044900357B39 /* prev.png in Resources */,
-				575C1E011D85044900357B39 /* line@3x.png in Resources */,
-				575C1E001D85044900357B39 /* line@2x.png in Resources */,
-				575C1DFF1D85044900357B39 /* line.png in Resources */,
-				575C1DFC1D85044900357B39 /* frame_icon.png in Resources */,
 				575C1D951D85029600357B39 /* b27_icon_star_gray@2x.png in Resources */,
 				C6C6D0B01D0F94BB00F82C39 /* Assets.xcassets in Resources */,
-				575C1DFD1D85044900357B39 /* frame_icon@2x.png in Resources */,
 				C6B980511DB4C83400604393 /* photo8.jpg in Resources */,
 				C64D57D01D82A302000C25CC /* city.json in Resources */,
 				C6B9804C1DB4C83400604393 /* photo3.jpg in Resources */,
@@ -2328,11 +2253,9 @@
 				C6B9804F1DB4C83400604393 /* photo6.jpg in Resources */,
 				575C1DE31D8503F000357B39 /* SDWebImage原理图.png in Resources */,
 				575C1DE21D8503F000357B39 /* iOS沙盒图.png in Resources */,
-				575C1DFE1D85044900357B39 /* frame_icon@3x.png in Resources */,
 				C6B980521DB4C83400604393 /* photo9.jpg in Resources */,
 				C6B980501DB4C83400604393 /* photo7.jpg in Resources */,
 				C6DC36D21DD07799003EC552 /* NSDateTimeAgo.bundle in Resources */,
-				575C1E071D85044900357B39 /* prev@3x.png in Resources */,
 				C6B9804E1DB4C83400604393 /* photo5.jpg in Resources */,
 				C6C6D0AE1D0F94BB00F82C39 /* Main.storyboard in Resources */,
 			);
@@ -2358,12 +2281,10 @@
 				C63B35911D1D3CED006277E8 /* Person.m in Sources */,
 				C681C14D1DC9C0EF003637CD /* YYCache.m in Sources */,
 				C681C16E1DC9C0EF003637CD /* YYTextParser.m in Sources */,
-				575C1E021D85044900357B39 /* PP_QRCodeBgView.m in Sources */,
 				C6C6D1B21D0F94DB00F82C39 /* MJRefreshStateHeader.m in Sources */,
 				C6C6D1AA1D0F94DB00F82C39 /* MJRefreshAutoGifFooter.m in Sources */,
 				C681C16B1DC9C0EF003637CD /* UIPasteboard+YYText.m in Sources */,
 				C6C6D18F1D0F94DB00F82C39 /* MASCompositeConstraint.m in Sources */,
-				575C1E081D85044900357B39 /* UIView+PP_Frame.m in Sources */,
 				C6C6D19B1D0F94DB00F82C39 /* MJExtensionConst.m in Sources */,
 				C681C1581DC9C0EF003637CD /* YYImage.m in Sources */,
 				C681C15F1DC9C0EF003637CD /* YYClassInfo.m in Sources */,
@@ -2379,10 +2300,8 @@
 				C681C1651DC9C0EF003637CD /* YYTextLayout.m in Sources */,
 				C6C6D1A11D0F94DB00F82C39 /* NSObject+MJCoding.m in Sources */,
 				C681C17B1DC9C0EF003637CD /* YYThreadSafeArray.m in Sources */,
-				575C1E031D85044900357B39 /* PP_QRCodeScanView.m in Sources */,
 				C6C6D19E1D0F94DB00F82C39 /* MJPropertyKey.m in Sources */,
 				C681C14C1DC9C0EF003637CD /* UIView+YYAdd.m in Sources */,
-				575C1E041D85044900357B39 /* PP_QRCodeScanViewController.m in Sources */,
 				575C1E091D85044900357B39 /* PAWaterflowLayout.m in Sources */,
 				C6C6D1971D0F94DB00F82C39 /* View+MASAdditions.m in Sources */,
 				575C1D861D85021D00357B39 /* UIView+BlocksKit.m in Sources */,
@@ -2523,7 +2442,6 @@
 				C681C1791DC9C0EF003637CD /* YYReachability.m in Sources */,
 				C64D57D71D82A4D2000C25CC /* ProductDetailResult.m in Sources */,
 				C681C14B1DC9C0EF003637CD /* UITextField+YYAdd.m in Sources */,
-				C6FEE3EC1DAB3CB000316D14 /* PPTextfieldViewController.m in Sources */,
 				C6C6D0A51D0F94BB00F82C39 /* main.m in Sources */,
 				C6C6D1BC1D0F94DB00F82C39 /* SDWebImageCompat.m in Sources */,
 				C6EBE9051DACD9E70067EF2A /* UIView+PPSets.m in Sources */,
