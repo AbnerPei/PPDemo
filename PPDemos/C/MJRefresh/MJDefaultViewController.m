@@ -21,6 +21,15 @@
     //默认【下拉刷新】
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refresh)];
     
+    /*
+     // 如何做到,刷新时,只显示菊花动画,其他的都不要呢?
+     MJRefreshNormalHeader *nomalHeader = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refresh)];
+     self.tableView.mj_header = nomalHeader;
+     nomalHeader.lastUpdatedTimeLabel.hidden = YES;
+     nomalHeader.stateLabel.hidden = YES;
+     
+     */
+    
     //默认【上拉加载】
     self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMore)];
     

@@ -37,12 +37,6 @@
 #define PPLog(...)
 #endif
 
-//iOS 10 
-//#ifdef DEBUG
-//#define NSLog(format, ...) printf("[%s] %s [第%d行] %s\n", __TIME__, __FUNCTION__, __LINE__, [[NSString stringWithFormat:format, ## __VA_ARGS__] UTF8String]);
-//#else
-//#define NSLog(format, ...)
-//#endif
 
 #define PPSetColorRGBValue(rgbValue,aValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000)>>16))/255.0 green:((float)((rgbValue & 0xFF00)>>8))/255.0  blue:((float)((rgbValue & 0xFF)))/255.0  alpha:aValue]
 #define PPSetColor(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
@@ -53,6 +47,7 @@
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
 #define PPFontSet(size) [UIFont systemFontOfSize:size]
 
+#define PPIOS(version)     ([[[UIDevice currentDevice] systemVersion] floatValue] >= version ? YES : NO)
 
 
 #import "MJRefresh.h"

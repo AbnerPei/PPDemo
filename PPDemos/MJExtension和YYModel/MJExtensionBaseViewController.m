@@ -24,20 +24,10 @@
 {
     self.titles = [@[
                      @"MJExtension 格式转换"
-//                     @"下拉刷洗和上拉加载（默认但用block方法）",
-//                     @"动画图片",
-//                     @"自定义刷新控件",
-                     //                     @"至少两个view相互约束",
-                     //                     @"长按图片保存到本地",
                      ] mutableCopy];
     
     self.vcs = [@[
                   @"MJExtensionViewController"
-//                  @"MJDefaultBlockViewController",
-//                  @"MJAnimationImageViewController",
-//                  @"MJCustomRefreshViewController",
-                  //                  @"TwoMoreViewController",
-                  //                  @"LongPressToSaveViewController",
                   ] mutableCopy];
 }
 
