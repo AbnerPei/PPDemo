@@ -9,7 +9,8 @@
 #import "MasonryBaseViewController.h"
 
 @interface MasonryBaseViewController ()
-
+@property(nonatomic,strong)NSMutableArray *titles;
+@property(nonatomic,strong)NSMutableArray *vcs;
 @end
 
 @implementation MasonryBaseViewController

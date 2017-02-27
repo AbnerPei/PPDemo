@@ -10,7 +10,6 @@ target 'PPDemos' do
        pod "MJExtension"
        pod "MJRefresh"
        pod "HYBNetworking"
-       pod "MBProgressHUD"
        pod "Masonry"
        pod "YYKit"
 

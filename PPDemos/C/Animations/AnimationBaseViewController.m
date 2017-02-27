@@ -10,6 +10,8 @@
 #import "AnimationShowViewController.h"
 @interface AnimationBaseViewController ()
 @property (nonatomic) NSArray  *datas;
+@property(nonatomic,strong)NSMutableArray *titles;
+@property(nonatomic,strong)NSMutableArray *vcs;
 
 @end
 

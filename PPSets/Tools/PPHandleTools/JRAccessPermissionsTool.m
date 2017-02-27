@@ -10,6 +10,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import <AddressBook/AddressBook.h>
 #import <Contacts/Contacts.h>
+#import "JRDeviceTool.h"
 
 #define JRIOS(version)     ([[[UIDevice currentDevice] systemVersion] floatValue] >= version ? YES : NO)
 
