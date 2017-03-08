@@ -6,8 +6,7 @@
 //  Copyright © 2016年 PPAbner. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
-@interface YYTextDemoViewController : UIViewController
+#import "PPBaseViewController.h"
+@interface YYTextDemoViewController : PPBaseViewController
 
 @end

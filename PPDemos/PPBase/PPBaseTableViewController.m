@@ -1,25 +1,28 @@
 //
-//  PPFirstViewController.m
+//  PPBaseTableViewController.m
 //  PPDemos
 //
-//  Created by ╰莪呮想好好宠Nǐつ on 2017/2/24.
+//  Created by ╰莪呮想好好宠Nǐつ on 2017/3/8.
 //  Copyright © 2017年 PPAbner. All rights reserved.
 //
 
-#import "PPFirstViewController.h"
+#import "PPBaseTableViewController.h"
 
-@interface PPFirstViewController ()<UITableViewDelegate,UITableViewDataSource>
-@property(nonatomic,strong)UITableView *tableView;
-@property(nonatomic,strong)NSMutableArray *titles;
-@property(nonatomic,strong)NSMutableArray *vcs;
+@interface PPBaseTableViewController ()
+
 @end
 
-@implementation PPFirstViewController
+@implementation PPBaseTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self setupArrs];
+    self.view.backgroundColor = [UIColor whiteColor];
+    [self creatTableViewUI];
+    
+}
+-(void)creatTableViewUI
+{
     self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, ScreenHeight) style:UITableViewStylePlain];
     [self.view addSubview:self.tableView];
     self.tableView.tag = 333;
@@ -28,48 +31,6 @@
     self.tableView.dataSource = self;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.tableView setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
-    
-}
--(void)setupArrs
-{
-    self.titles = [@[
-                     @"MJRefrsh使用Demos",
-                     @"MJExtension使用Demos",
-                     @"Masonry使用Demos",
-                     @"JavaScriptCore使用",
-                     @"Animation Demos",
-                     @"Runtime学习",
-                     @"YYText使用demos",
-                     @"自定义PPTextfield,各种限制一句话搞定",
-                     @"人脸识别（uiimageview+faceaware）",
-                     @"日历中添加事件 和 拨打电话常用方式",
-                     @"Runtime学习",
-                     @"YYText使用demos",
-                     @"自定义PPTextfield,各种限制一句话搞定",
-                     @"人脸识别（uiimageview+faceaware）",
-                     @"日历中添加事件 和 拨打电话常用方式"
-                     ] mutableCopy];
-    
-    self.vcs = [@[
-                  
-                  @"MJBaseViewController",
-                  @"MJExtensionBaseViewController",
-                  @"MasonryBaseViewController",
-                  @"JSViewController",
-                  @"AnimationBaseViewController",
-                  @"RuntimeViewController",
-                  @"YYTextDemoViewController",
-                  @"PPTextfieldViewController",
-                  @"PPFaceAwareFillViewController",
-                  @"CalendarEventViewController",
-                  @"RuntimeViewController",
-                  @"YYTextDemoViewController",
-                  @"PPTextfieldViewController",
-                  @"PPFaceAwareFillViewController",
-                  @"CalendarEventViewController"
-
-                  ] mutableCopy];
-    
 }
 #pragma mark - Table view data source
 
@@ -107,6 +68,11 @@
     UIViewController *nextVC =[NSClassFromString(nextVCString) new];
     nextVC.title = [NSString stringWithFormat:@"%@",self.titles[indexPath.row]];
     [self.navigationController pushViewController:nextVC animated:YES];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 

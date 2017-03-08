@@ -6,8 +6,8 @@
 //  Copyright © 2016年 PPAbner. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "PPBaseViewController.h"
 
-@interface CenterOneViewController : UIViewController
+@interface CenterOneViewController : PPBaseViewController
 
 @end

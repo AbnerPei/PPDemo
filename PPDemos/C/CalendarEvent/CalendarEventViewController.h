@@ -6,8 +6,8 @@
 //  Copyright © 2016年 PPAbner. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "PPBaseViewController.h"
 
-@interface CalendarEventViewController : UIViewController
+@interface CalendarEventViewController : PPBaseViewController
 
 @end

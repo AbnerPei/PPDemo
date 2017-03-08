@@ -6,8 +6,8 @@
 //  Copyright © 2016年 PPAbner. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "PPBaseViewController.h"
 
-@interface MoreViewController : UIViewController
+@interface MoreViewController : PPBaseViewController
 
 @end

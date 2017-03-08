@@ -8,11 +8,6 @@
 
 #import "MJExtensionBaseViewController.h"
 
-@interface MJExtensionBaseViewController ()
-@property(nonatomic,strong)NSMutableArray *titles;
-@property(nonatomic,strong)NSMutableArray *vcs;
-@end
-
 @implementation MJExtensionBaseViewController
 
 - (void)viewDidLoad {

@@ -6,8 +6,7 @@
 //  Copyright © 2016年 PPAbner. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
-@interface RuntimeViewController : UIViewController
+#import "PPBaseViewController.h"
+@interface RuntimeViewController : PPBaseViewController
 
 @end

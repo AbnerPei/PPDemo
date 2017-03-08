@@ -6,8 +6,8 @@
 //  Copyright © 2016年 zhanshu. All rights reserved.
 //  批发进货
 
-#import <UIKit/UIKit.h>
+#import "PPBaseViewController.h"
 
-@interface WholesaleViewController : UIViewController
+@interface WholesaleViewController : PPBaseViewController
 
 @end
