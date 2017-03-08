@@ -58,6 +58,9 @@
 		57DAAB2D1E703CF9001C127E /* PPThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DAAB2A1E703CF9001C127E /* PPThirdViewController.m */; };
 		57DAAB2F1E703DF4001C127E /* PPFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DAAB2E1E703DF4001C127E /* PPFirstViewController.m */; };
 		57DAAB321E703FAC001C127E /* PPBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DAAB311E703FAC001C127E /* PPBaseTableViewController.m */; };
+		57DAAB371E7053E2001C127E /* PPBaseCellDisplayAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DAAB361E7053E2001C127E /* PPBaseCellDisplayAnimationViewController.m */; };
+		57DAAB3A1E705436001C127E /* PPDetailCellDisplyAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DAAB391E705436001C127E /* PPDetailCellDisplyAnimationViewController.m */; };
+		57DAAB3D1E705907001C127E /* JRNumberTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DAAB3C1E705907001C127E /* JRNumberTool.m */; };
 		57F76FC01E5FFC9B001BD536 /* MJChiBaoZiFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F76FB51E5FFC9B001BD536 /* MJChiBaoZiFooter.m */; };
 		57F76FC11E5FFC9B001BD536 /* MJChiBaoZiFooter2.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F76FB71E5FFC9B001BD536 /* MJChiBaoZiFooter2.m */; };
 		57F76FC21E5FFC9B001BD536 /* MJChiBaoZiHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F76FB91E5FFC9B001BD536 /* MJChiBaoZiHeader.m */; };
@@ -255,6 +258,12 @@
 		57DAAB2E1E703DF4001C127E /* PPFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPFirstViewController.m; sourceTree = "<group>"; };
 		57DAAB301E703FAC001C127E /* PPBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPBaseTableViewController.h; sourceTree = "<group>"; };
 		57DAAB311E703FAC001C127E /* PPBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPBaseTableViewController.m; sourceTree = "<group>"; };
+		57DAAB351E7053E2001C127E /* PPBaseCellDisplayAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPBaseCellDisplayAnimationViewController.h; sourceTree = "<group>"; };
+		57DAAB361E7053E2001C127E /* PPBaseCellDisplayAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPBaseCellDisplayAnimationViewController.m; sourceTree = "<group>"; };
+		57DAAB381E705436001C127E /* PPDetailCellDisplyAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPDetailCellDisplyAnimationViewController.h; sourceTree = "<group>"; };
+		57DAAB391E705436001C127E /* PPDetailCellDisplyAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPDetailCellDisplyAnimationViewController.m; sourceTree = "<group>"; };
+		57DAAB3B1E705907001C127E /* JRNumberTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRNumberTool.h; sourceTree = "<group>"; };
+		57DAAB3C1E705907001C127E /* JRNumberTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRNumberTool.m; sourceTree = "<group>"; };
 		57F76FB41E5FFC9B001BD536 /* MJChiBaoZiFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJChiBaoZiFooter.h; sourceTree = "<group>"; };
 		57F76FB51E5FFC9B001BD536 /* MJChiBaoZiFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJChiBaoZiFooter.m; sourceTree = "<group>"; };
 		57F76FB61E5FFC9B001BD536 /* MJChiBaoZiFooter2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJChiBaoZiFooter2.h; sourceTree = "<group>"; };
@@ -686,6 +695,8 @@
 		57CC4E201E5ECE03001CA8E3 /* PPHandleTools */ = {
 			isa = PBXGroup;
 			children = (
+				57DAAB3B1E705907001C127E /* JRNumberTool.h */,
+				57DAAB3C1E705907001C127E /* JRNumberTool.m */,
 				57CC4E231E5ECE4C001CA8E3 /* PPHandleTools.h */,
 				57CC4E301E5ED144001CA8E3 /* RTDateFormatterTool.h */,
 				57CC4E311E5ED144001CA8E3 /* RTDateFormatterTool.m */,
@@ -745,6 +756,25 @@
 				57DAAB0F1E703C83001C127E /* TabBarViewController.m */,
 			);
 			path = UITabbarController;
+			sourceTree = "<group>";
+		};
+		57DAAB331E7053A1001C127E /* PPBaseDemos */ = {
+			isa = PBXGroup;
+			children = (
+				57DAAB341E7053A1001C127E /* PPCellDisplayAnimations */,
+			);
+			path = PPBaseDemos;
+			sourceTree = "<group>";
+		};
+		57DAAB341E7053A1001C127E /* PPCellDisplayAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				57DAAB351E7053E2001C127E /* PPBaseCellDisplayAnimationViewController.h */,
+				57DAAB361E7053E2001C127E /* PPBaseCellDisplayAnimationViewController.m */,
+				57DAAB381E705436001C127E /* PPDetailCellDisplyAnimationViewController.h */,
+				57DAAB391E705436001C127E /* PPDetailCellDisplyAnimationViewController.m */,
+			);
+			path = PPCellDisplayAnimations;
 			sourceTree = "<group>";
 		};
 		57F76FA21E5FD961001BD536 /* PPBase */ = {
@@ -1055,6 +1085,7 @@
 		C6C6D0A21D0F94BB00F82C39 /* PPDemos */ = {
 			isa = PBXGroup;
 			children = (
+				57DAAB331E7053A1001C127E /* PPBaseDemos */,
 				57F76FA21E5FD961001BD536 /* PPBase */,
 				C64D57D11D82A477000C25CC /* YYTextDemo */,
 				C62DA8F91D816AFD0003945C /* Frameworks */,
@@ -1404,6 +1435,7 @@
 				C6B980171DB4AD4200604393 /* UIImageView+PPSets.m in Sources */,
 				C682E6581DB9A63300CD86CB /* CalendarEventViewController.m in Sources */,
 				C67799931D508E9000007161 /* MoreViewController.m in Sources */,
+				57DAAB371E7053E2001C127E /* PPBaseCellDisplayAnimationViewController.m in Sources */,
 				57CC4E411E5EE912001CA8E3 /* PPMakeImgVTool.m in Sources */,
 				C677999D1D508F7700007161 /* MasonryBaseViewController.m in Sources */,
 				C67799951D508E9000007161 /* WholesaleViewController.m in Sources */,
@@ -1420,6 +1452,7 @@
 				575C1D941D85029600357B39 /* LPLevelView.m in Sources */,
 				575C1DB71D85033500357B39 /* PPMTHandle.m in Sources */,
 				57DAAB121E703C83001C127E /* ScreenShotView.m in Sources */,
+				57DAAB3D1E705907001C127E /* JRNumberTool.m in Sources */,
 				575C1DB31D85033500357B39 /* PP_CameraManager.m in Sources */,
 				575C1D851D85021D00357B39 /* UIGestureRecognizer+BlocksKit.m in Sources */,
 				C6C6D1CA1D0F94DB00F82C39 /* MJPicture.m in Sources */,
@@ -1454,6 +1487,7 @@
 				C683FBCE1D2A012B00D1BF6A /* MJExtensionViewController.m in Sources */,
 				5721EEEB1E631F95006AA33C /* PPBaseViewController.m in Sources */,
 				C6C6D1C91D0F94DB00F82C39 /* UIView+Toast.m in Sources */,
+				57DAAB3A1E705436001C127E /* PPDetailCellDisplyAnimationViewController.m in Sources */,
 				C6C6D1E01D0F9DE400F82C39 /* MJDefaultViewController.m in Sources */,
 				C60886511DBE18010071B7B8 /* MJRefreshCell.m in Sources */,
 				578897331E07F48C00CD0595 /* EPeiDataModel.m in Sources */,

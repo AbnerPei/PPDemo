@@ -26,6 +26,7 @@
     self.titles = [@[
                      @"MJRefrsh使用Demos",
                      @"MJExtension使用Demos",
+                     @"cell加载时各种动画",
                      @"Masonry使用Demos",
                      @"Animation Demos",
                      @"Runtime学习",
@@ -36,6 +37,7 @@
                   
                   @"MJBaseViewController",
                   @"MJExtensionBaseViewController",
+                  @"PPBaseCellDisplayAnimationViewController",
                   @"MasonryBaseViewController",
                   @"AnimationBaseViewController",
                   @"RuntimeViewController",
