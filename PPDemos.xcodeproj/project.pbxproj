@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		570F720D1E7E986E006BCAFC /* NSString+PPTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 570F720A1E7E986E006BCAFC /* NSString+PPTextField.m */; };
+		570F720E1E7E986E006BCAFC /* PPTextfield.m in Sources */ = {isa = PBXBuildFile; fileRef = 570F720C1E7E986E006BCAFC /* PPTextfield.m */; };
 		5721EEEB1E631F95006AA33C /* PPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5721EEEA1E631F95006AA33C /* PPBaseViewController.m */; };
 		5725821F1E0B77F600C41BAB /* NSString+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = 5725821E1E0B77F600C41BAB /* NSString+PPSets.m */; };
 		572582231E0B781300C41BAB /* NSObject+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = 572582221E0B781300C41BAB /* NSObject+PPSets.m */; };
@@ -127,12 +129,15 @@
 		C6EBE9041DACD9E70067EF2A /* UIScreen+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EBE8FB1DACD9E70067EF2A /* UIScreen+PPSets.m */; };
 		C6EBE9051DACD9E70067EF2A /* UIView+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EBE8FD1DACD9E70067EF2A /* UIView+PPSets.m */; };
 		C6EBE9081DACDA960067EF2A /* UIDevice+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EBE9071DACDA960067EF2A /* UIDevice+PPSets.m */; };
-		C6FEE4131DAB76C100316D14 /* PPTextfield.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FEE4121DAB76C100316D14 /* PPTextfield.m */; };
 		E8B686D5BC6F2B71E2BACD86 /* libPods-PPDemos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6162811495AAB66267D556 /* libPods-PPDemos.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		414F369095042B33D44D1F5E /* Pods-PPDemos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PPDemos.release.xcconfig"; path = "Pods/Target Support Files/Pods-PPDemos/Pods-PPDemos.release.xcconfig"; sourceTree = "<group>"; };
+		570F72091E7E986E006BCAFC /* NSString+PPTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PPTextField.h"; sourceTree = "<group>"; };
+		570F720A1E7E986E006BCAFC /* NSString+PPTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PPTextField.m"; sourceTree = "<group>"; };
+		570F720B1E7E986E006BCAFC /* PPTextfield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTextfield.h; sourceTree = "<group>"; };
+		570F720C1E7E986E006BCAFC /* PPTextfield.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPTextfield.m; sourceTree = "<group>"; };
 		5721EEE91E631F95006AA33C /* PPBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPBaseViewController.h; sourceTree = "<group>"; };
 		5721EEEA1E631F95006AA33C /* PPBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPBaseViewController.m; sourceTree = "<group>"; };
 		5725821D1E0B77F600C41BAB /* NSString+PPSets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PPSets.h"; sourceTree = "<group>"; };
@@ -394,8 +399,6 @@
 		C6EBE8FD1DACD9E70067EF2A /* UIView+PPSets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PPSets.m"; sourceTree = "<group>"; };
 		C6EBE9061DACDA960067EF2A /* UIDevice+PPSets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+PPSets.h"; sourceTree = "<group>"; };
 		C6EBE9071DACDA960067EF2A /* UIDevice+PPSets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+PPSets.m"; sourceTree = "<group>"; };
-		C6FEE4111DAB76C100316D14 /* PPTextfield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTextfield.h; sourceTree = "<group>"; };
-		C6FEE4121DAB76C100316D14 /* PPTextfield.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPTextfield.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1259,8 +1262,10 @@
 		C6FEE4101DAB76C100316D14 /* PPTextField */ = {
 			isa = PBXGroup;
 			children = (
-				C6FEE4111DAB76C100316D14 /* PPTextfield.h */,
-				C6FEE4121DAB76C100316D14 /* PPTextfield.m */,
+				570F72091E7E986E006BCAFC /* NSString+PPTextField.h */,
+				570F720A1E7E986E006BCAFC /* NSString+PPTextField.m */,
+				570F720B1E7E986E006BCAFC /* PPTextfield.h */,
+				570F720C1E7E986E006BCAFC /* PPTextfield.m */,
 			);
 			path = PPTextField;
 			sourceTree = "<group>";
@@ -1450,6 +1455,7 @@
 				C6C6D1D41D0F97EB00F82C39 /* MJViewController.m in Sources */,
 				C6C6D0A81D0F94BB00F82C39 /* AppDelegate.m in Sources */,
 				575C1D941D85029600357B39 /* LPLevelView.m in Sources */,
+				570F720E1E7E986E006BCAFC /* PPTextfield.m in Sources */,
 				575C1DB71D85033500357B39 /* PPMTHandle.m in Sources */,
 				57DAAB121E703C83001C127E /* ScreenShotView.m in Sources */,
 				57DAAB3D1E705907001C127E /* JRNumberTool.m in Sources */,
@@ -1491,7 +1497,6 @@
 				C6C6D1E01D0F9DE400F82C39 /* MJDefaultViewController.m in Sources */,
 				C60886511DBE18010071B7B8 /* MJRefreshCell.m in Sources */,
 				578897331E07F48C00CD0595 /* EPeiDataModel.m in Sources */,
-				C6FEE4131DAB76C100316D14 /* PPTextfield.m in Sources */,
 				C681C07D1DC9B2ED003637CD /* PP_LabelManager.m in Sources */,
 				57F76FC51E5FFC9B001BD536 /* MJDIYHeader.m in Sources */,
 				C63B358D1D1D3CA8006277E8 /* Foundation+Log.m in Sources */,
@@ -1502,6 +1507,7 @@
 				57DAAB2C1E703CF9001C127E /* PPSecondViewController.m in Sources */,
 				C6C6D1DD1D0F99CB00F82C39 /* MJBaseViewController.m in Sources */,
 				C683FBDD1D2A360000D1BF6A /* Student.m in Sources */,
+				570F720D1E7E986E006BCAFC /* NSString+PPTextField.m in Sources */,
 				C6C6D1E31D0FA50100F82C39 /* MJDefaultBlockViewController.m in Sources */,
 				57F76FC11E5FFC9B001BD536 /* MJChiBaoZiFooter2.m in Sources */,
 			);
