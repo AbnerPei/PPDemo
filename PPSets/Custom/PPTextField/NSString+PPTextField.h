@@ -11,6 +11,7 @@ typedef NS_ENUM(NSInteger,PPTextFieldStringType) {
     PPTextFieldStringTypeLetter,         //字母
     PPTextFieldStringTypeChinese         //汉字
 };
+
 #import <Foundation/Foundation.h>
 
 @interface NSString (PPTextField)
@@ -20,6 +21,12 @@ typedef NS_ENUM(NSInteger,PPTextFieldStringType) {
  某个字符串是不是数字、字母、汉字。
  */
 -(BOOL)pp_is:(PPTextFieldStringType)stringType;
+
+
+/**
+ 字符串是不是特殊字符，此时的特殊字符就是：出数字、字母、汉字以外的。
+ */
+-(BOOL)pp_isSpecialLetter;
 
 /**
  获取字符串长度 【一个汉字算2个字符串，一个英文算1个字符串】
