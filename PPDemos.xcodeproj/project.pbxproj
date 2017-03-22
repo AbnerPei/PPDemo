@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		570F720D1E7E986E006BCAFC /* NSString+PPTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 570F720A1E7E986E006BCAFC /* NSString+PPTextField.m */; };
 		570F720E1E7E986E006BCAFC /* PPTextfield.m in Sources */ = {isa = PBXBuildFile; fileRef = 570F720C1E7E986E006BCAFC /* PPTextfield.m */; };
+		570F72461E82A3A0006BCAFC /* LearnSystemAPIBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 570F72451E82A3A0006BCAFC /* LearnSystemAPIBaseViewController.m */; };
+		570F72491E82A418006BCAFC /* Quartz2DViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 570F72481E82A418006BCAFC /* Quartz2DViewController.m */; };
+		570F724C1E82A4C5006BCAFC /* Quartz2DFirstCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 570F724B1E82A4C5006BCAFC /* Quartz2DFirstCustomView.m */; };
 		5721EEEB1E631F95006AA33C /* PPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5721EEEA1E631F95006AA33C /* PPBaseViewController.m */; };
 		5725821F1E0B77F600C41BAB /* NSString+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = 5725821E1E0B77F600C41BAB /* NSString+PPSets.m */; };
 		572582231E0B781300C41BAB /* NSObject+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = 572582221E0B781300C41BAB /* NSObject+PPSets.m */; };
@@ -138,6 +141,12 @@
 		570F720A1E7E986E006BCAFC /* NSString+PPTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PPTextField.m"; sourceTree = "<group>"; };
 		570F720B1E7E986E006BCAFC /* PPTextfield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTextfield.h; sourceTree = "<group>"; };
 		570F720C1E7E986E006BCAFC /* PPTextfield.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPTextfield.m; sourceTree = "<group>"; };
+		570F72441E82A3A0006BCAFC /* LearnSystemAPIBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnSystemAPIBaseViewController.h; sourceTree = "<group>"; };
+		570F72451E82A3A0006BCAFC /* LearnSystemAPIBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnSystemAPIBaseViewController.m; sourceTree = "<group>"; };
+		570F72471E82A418006BCAFC /* Quartz2DViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quartz2DViewController.h; sourceTree = "<group>"; };
+		570F72481E82A418006BCAFC /* Quartz2DViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quartz2DViewController.m; sourceTree = "<group>"; };
+		570F724A1E82A4C5006BCAFC /* Quartz2DFirstCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quartz2DFirstCustomView.h; sourceTree = "<group>"; };
+		570F724B1E82A4C5006BCAFC /* Quartz2DFirstCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quartz2DFirstCustomView.m; sourceTree = "<group>"; };
 		5721EEE91E631F95006AA33C /* PPBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPBaseViewController.h; sourceTree = "<group>"; };
 		5721EEEA1E631F95006AA33C /* PPBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPBaseViewController.m; sourceTree = "<group>"; };
 		5725821D1E0B77F600C41BAB /* NSString+PPSets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PPSets.h"; sourceTree = "<group>"; };
@@ -421,6 +430,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		570F723F1E82A16B006BCAFC /* LearnSystemAPIS */ = {
+			isa = PBXGroup;
+			children = (
+				570F72401E82A20E006BCAFC /* Quartz2D */,
+				570F72441E82A3A0006BCAFC /* LearnSystemAPIBaseViewController.h */,
+				570F72451E82A3A0006BCAFC /* LearnSystemAPIBaseViewController.m */,
+			);
+			path = LearnSystemAPIS;
+			sourceTree = "<group>";
+		};
+		570F72401E82A20E006BCAFC /* Quartz2D */ = {
+			isa = PBXGroup;
+			children = (
+				570F72471E82A418006BCAFC /* Quartz2DViewController.h */,
+				570F72481E82A418006BCAFC /* Quartz2DViewController.m */,
+				570F724A1E82A4C5006BCAFC /* Quartz2DFirstCustomView.h */,
+				570F724B1E82A4C5006BCAFC /* Quartz2DFirstCustomView.m */,
+			);
+			path = Quartz2D;
+			sourceTree = "<group>";
+		};
 		5725821C1E0B77F600C41BAB /* NSString */ = {
 			isa = PBXGroup;
 			children = (
@@ -627,6 +657,7 @@
 		575C1DCD1D8503F000357B39 /* PPLearn */ = {
 			isa = PBXGroup;
 			children = (
+				570F723F1E82A16B006BCAFC /* LearnSystemAPIS */,
 				575C1DCE1D8503F000357B39 /* AutoLayout.h */,
 				575C1DCF1D8503F000357B39 /* Block学习指导.h */,
 				575C1DD01D8503F000357B39 /* GCD学习1.h */,
@@ -1416,6 +1447,7 @@
 				572582261E0B791F00C41BAB /* NSString+PPProcess.m in Sources */,
 				C6EBE9011DACD9E70067EF2A /* UIButton+PPSets.m in Sources */,
 				C683FBCB1D2A00AF00D1BF6A /* User.m in Sources */,
+				570F724C1E82A4C5006BCAFC /* Quartz2DFirstCustomView.m in Sources */,
 				57F76FC31E5FFC9B001BD536 /* MJDIYAutoFooter.m in Sources */,
 				575C1D991D85029600357B39 /* CWStarRateView.m in Sources */,
 				57CC4E321E5ED144001CA8E3 /* RTDateFormatterTool.m in Sources */,
@@ -1498,10 +1530,12 @@
 				C60886511DBE18010071B7B8 /* MJRefreshCell.m in Sources */,
 				578897331E07F48C00CD0595 /* EPeiDataModel.m in Sources */,
 				C681C07D1DC9B2ED003637CD /* PP_LabelManager.m in Sources */,
+				570F72461E82A3A0006BCAFC /* LearnSystemAPIBaseViewController.m in Sources */,
 				57F76FC51E5FFC9B001BD536 /* MJDIYHeader.m in Sources */,
 				C63B358D1D1D3CA8006277E8 /* Foundation+Log.m in Sources */,
 				C6EBE9021DACD9E70067EF2A /* UIColor+PPSets.m in Sources */,
 				575C1D621D4C930A00357B39 /* ShaHeViewController.m in Sources */,
+				570F72491E82A418006BCAFC /* Quartz2DViewController.m in Sources */,
 				5780E7111DCB81B900156B12 /* ClassClassModel.m in Sources */,
 				C682E6551DB9A60600CD86CB /* CalendarEvent.m in Sources */,
 				57DAAB2C1E703CF9001C127E /* PPSecondViewController.m in Sources */,
