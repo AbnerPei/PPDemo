@@ -46,6 +46,7 @@
 		578897301E07F35A00CD0595 /* EPeiResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5788972F1E07F35A00CD0595 /* EPeiResultModel.m */; };
 		578897331E07F48C00CD0595 /* EPeiDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 578897321E07F48C00CD0595 /* EPeiDataModel.m */; };
 		578897361E07F5C900CD0595 /* EPeiOrderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 578897351E07F5C900CD0595 /* EPeiOrderModel.m */; };
+		578E56371E83C936004F5F5F /* NSString+Verify.m in Sources */ = {isa = PBXBuildFile; fileRef = 578E56361E83C936004F5F5F /* NSString+Verify.m */; };
 		57CC4E2A1E5ECEF8001CA8E3 /* JRAccessPermissionsTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CC4E251E5ECEF8001CA8E3 /* JRAccessPermissionsTool.m */; };
 		57CC4E2B1E5ECEF8001CA8E3 /* JRCalculateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CC4E271E5ECEF8001CA8E3 /* JRCalculateTool.m */; };
 		57CC4E2C1E5ECEF8001CA8E3 /* JRDeviceTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CC4E291E5ECEF8001CA8E3 /* JRDeviceTool.m */; };
@@ -233,6 +234,8 @@
 		578897321E07F48C00CD0595 /* EPeiDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPeiDataModel.m; sourceTree = "<group>"; };
 		578897341E07F5C900CD0595 /* EPeiOrderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPeiOrderModel.h; sourceTree = "<group>"; };
 		578897351E07F5C900CD0595 /* EPeiOrderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPeiOrderModel.m; sourceTree = "<group>"; };
+		578E56351E83C936004F5F5F /* NSString+Verify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Verify.h"; sourceTree = "<group>"; };
+		578E56361E83C936004F5F5F /* NSString+Verify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Verify.m"; sourceTree = "<group>"; };
 		579A450C1DA94A9400D61BD8 /* PPSets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPSets.h; sourceTree = "<group>"; };
 		579A450E1DABE88200D61BD8 /* AnimationsLearn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationsLearn.h; sourceTree = "<group>"; };
 		57CC4E221E5ECE24001CA8E3 /* PPMakeUITools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPMakeUITools.h; sourceTree = "<group>"; };
@@ -459,6 +462,8 @@
 				5725821E1E0B77F600C41BAB /* NSString+PPSets.m */,
 				572582241E0B791F00C41BAB /* NSString+PPProcess.h */,
 				572582251E0B791F00C41BAB /* NSString+PPProcess.m */,
+				578E56351E83C936004F5F5F /* NSString+Verify.h */,
+				578E56361E83C936004F5F5F /* NSString+Verify.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -1504,6 +1509,7 @@
 				C683FBD41D2A15B500D1BF6A /* Ad.m in Sources */,
 				57DAAB2F1E703DF4001C127E /* PPFirstViewController.m in Sources */,
 				C683FBC51D29FF9900D1BF6A /* MJExtensionBaseViewController.m in Sources */,
+				578E56371E83C936004F5F5F /* NSString+Verify.m in Sources */,
 				C6AC8C131D124CA00008133E /* MJAnimationImageViewController.m in Sources */,
 				57DAAB321E703FAC001C127E /* PPBaseTableViewController.m in Sources */,
 				C6EBE9001DACD9E70067EF2A /* UIApplication+PPSets.m in Sources */,
