@@ -16,6 +16,7 @@
 		5725821F1E0B77F600C41BAB /* NSString+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = 5725821E1E0B77F600C41BAB /* NSString+PPSets.m */; };
 		572582231E0B781300C41BAB /* NSObject+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = 572582221E0B781300C41BAB /* NSObject+PPSets.m */; };
 		572582261E0B791F00C41BAB /* NSString+PPProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 572582251E0B791F00C41BAB /* NSString+PPProcess.m */; };
+		5744CC661E8A153000A15DB9 /* ASDKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5744CC651E8A153000A15DB9 /* ASDKViewController.m */; };
 		575C1D621D4C930A00357B39 /* ShaHeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C1D611D4C930A00357B39 /* ShaHeViewController.m */; };
 		575C1D751D7326F200357B39 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 575C1D741D7326F200357B39 /* libsqlite3.0.tbd */; };
 		575C1D851D85021D00357B39 /* UIGestureRecognizer+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C1D821D85021D00357B39 /* UIGestureRecognizer+BlocksKit.m */; };
@@ -157,6 +158,8 @@
 		572582241E0B791F00C41BAB /* NSString+PPProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PPProcess.h"; sourceTree = "<group>"; };
 		572582251E0B791F00C41BAB /* NSString+PPProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PPProcess.m"; sourceTree = "<group>"; };
 		572582271E0B7C3700C41BAB /* PPNSStringCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPNSStringCategory.h; sourceTree = "<group>"; };
+		5744CC641E8A153000A15DB9 /* ASDKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDKViewController.h; sourceTree = "<group>"; };
+		5744CC651E8A153000A15DB9 /* ASDKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDKViewController.m; sourceTree = "<group>"; };
 		575749AD1DCA42FF0028447B /* 开源库.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "开源库.h"; sourceTree = "<group>"; };
 		575C1D601D4C930A00357B39 /* ShaHeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaHeViewController.h; sourceTree = "<group>"; };
 		575C1D611D4C930A00357B39 /* ShaHeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShaHeViewController.m; sourceTree = "<group>"; };
@@ -475,6 +478,39 @@
 				572582221E0B781300C41BAB /* NSObject+PPSets.m */,
 			);
 			path = NSObject;
+			sourceTree = "<group>";
+		};
+		5744CC601E8A14BE00A15DB9 /* AsyncDisplayKit */ = {
+			isa = PBXGroup;
+			children = (
+				5744CC611E8A14BE00A15DB9 /* C */,
+				5744CC621E8A14BE00A15DB9 /* M */,
+				5744CC631E8A14BE00A15DB9 /* V */,
+			);
+			path = AsyncDisplayKit;
+			sourceTree = "<group>";
+		};
+		5744CC611E8A14BE00A15DB9 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				5744CC641E8A153000A15DB9 /* ASDKViewController.h */,
+				5744CC651E8A153000A15DB9 /* ASDKViewController.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		5744CC621E8A14BE00A15DB9 /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		5744CC631E8A14BE00A15DB9 /* V */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = V;
 			sourceTree = "<group>";
 		};
 		575C1D5F1D4C92D500357B39 /* Notes */ = {
@@ -800,6 +836,7 @@
 		57DAAB331E7053A1001C127E /* PPBaseDemos */ = {
 			isa = PBXGroup;
 			children = (
+				5744CC601E8A14BE00A15DB9 /* AsyncDisplayKit */,
 				57DAAB341E7053A1001C127E /* PPCellDisplayAnimations */,
 			);
 			path = PPBaseDemos;
@@ -1490,6 +1527,7 @@
 				57CC4E2F1E5ED015001CA8E3 /* PPSizeTool.m in Sources */,
 				57CC4E2A1E5ECEF8001CA8E3 /* JRAccessPermissionsTool.m in Sources */,
 				C6C6D1D41D0F97EB00F82C39 /* MJViewController.m in Sources */,
+				5744CC661E8A153000A15DB9 /* ASDKViewController.m in Sources */,
 				C6C6D0A81D0F94BB00F82C39 /* AppDelegate.m in Sources */,
 				575C1D941D85029600357B39 /* LPLevelView.m in Sources */,
 				570F720E1E7E986E006BCAFC /* PPTextfield.m in Sources */,

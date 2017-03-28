@@ -30,7 +30,8 @@
                      @"Masonry使用Demos",
                      @"Animation Demos",
                      @"Runtime学习",
-                     @"YYText使用demos"
+                     @"YYText使用demos",
+                     @"ASDK学习"
                      ] mutableCopy];
     
     self.vcs = [@[
@@ -41,7 +42,8 @@
                   @"MasonryBaseViewController",
                   @"AnimationBaseViewController",
                   @"RuntimeViewController",
-                  @"YYTextDemoViewController"
+                  @"YYTextDemoViewController",
+                  @"ASDKViewController"
 
                   ] mutableCopy];
     

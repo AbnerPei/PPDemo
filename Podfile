@@ -12,6 +12,8 @@ target 'PPDemos' do
        pod "HYBNetworking"
        pod "Masonry"
        pod "YYKit"
+       
+       pod "AsyncDisplayKit"
 
 
 end
