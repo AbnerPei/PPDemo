@@ -59,7 +59,7 @@
 //    //2. JSON字符串 --> 模型
 //    //mj，使用的是mj_objectWithKeyValues:方法
 //    //yy，使用的是yy_modelWithJSON:方法
-//    [self json2model_mj];
+    [self json2model_mj];
 //    [self json2model_yy];
     
 //    //3. 复杂的字典 --> 模型 (模型里面包含了模型)
@@ -112,7 +112,7 @@
     //6.字典数组 --> 模型数组
     //mj_objectArrayWithKeyValuesArray:  //mj
     //modelArrayWithClass: json:         //yy
-   [self dictArray2modelArray];
+//   [self dictArray2modelArray];
     
     
     //7.模型 --> 字典
@@ -127,7 +127,7 @@
     //以后。。。
     
     //2016-12-19
-    [self setupEPei];
+//    [self setupEPei];
     
 }
 
@@ -484,7 +484,7 @@
                            };
     
     // 定义一个JSON字符串
-    jsonStr = @"{\"name\":\"Jack\", \"icon\":\"lufy.png\", \"age\":20}";
+    jsonStr = [NSString stringWithFormat:@"{\"name\":\"%@\", \"icon\":\"lufy.png\", \"age\":%d}",@"jack",30];
     
     //复杂的字典
     dict_m8m = @{

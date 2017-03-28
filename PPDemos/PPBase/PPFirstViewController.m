@@ -31,7 +31,8 @@
                      @"Animation Demos",
                      @"Runtime学习",
                      @"YYText使用demos",
-                     @"ASDK学习"
+                     @"ASDK学习",
+                     @"学习系统API知识，练习demos"
                      ] mutableCopy];
     
     self.vcs = [@[
@@ -43,8 +44,8 @@
                   @"AnimationBaseViewController",
                   @"RuntimeViewController",
                   @"YYTextDemoViewController",
-                  @"ASDKViewController"
-
+                  @"ASDKViewController",
+                  @"LearnSystemAPIBaseViewController"
                   ] mutableCopy];
     
 }
