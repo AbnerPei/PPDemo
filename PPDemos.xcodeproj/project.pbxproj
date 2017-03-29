@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		570149DD1E8B4CC7007CD99E /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 570149DC1E8B4CC7007CD99E /* NSString+WordCount.m */; };
 		570F720D1E7E986E006BCAFC /* NSString+PPTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 570F720A1E7E986E006BCAFC /* NSString+PPTextField.m */; };
 		570F720E1E7E986E006BCAFC /* PPTextfield.m in Sources */ = {isa = PBXBuildFile; fileRef = 570F720C1E7E986E006BCAFC /* PPTextfield.m */; };
 		570F72461E82A3A0006BCAFC /* LearnSystemAPIBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 570F72451E82A3A0006BCAFC /* LearnSystemAPIBaseViewController.m */; };
@@ -17,7 +18,6 @@
 		572582231E0B781300C41BAB /* NSObject+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = 572582221E0B781300C41BAB /* NSObject+PPSets.m */; };
 		572582261E0B791F00C41BAB /* NSString+PPProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 572582251E0B791F00C41BAB /* NSString+PPProcess.m */; };
 		5744CC661E8A153000A15DB9 /* ASDKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5744CC651E8A153000A15DB9 /* ASDKViewController.m */; };
-		575C1D621D4C930A00357B39 /* ShaHeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C1D611D4C930A00357B39 /* ShaHeViewController.m */; };
 		575C1D751D7326F200357B39 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 575C1D741D7326F200357B39 /* libsqlite3.0.tbd */; };
 		575C1D851D85021D00357B39 /* UIGestureRecognizer+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C1D821D85021D00357B39 /* UIGestureRecognizer+BlocksKit.m */; };
 		575C1D861D85021D00357B39 /* UIView+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C1D841D85021D00357B39 /* UIView+BlocksKit.m */; };
@@ -48,6 +48,8 @@
 		578897331E07F48C00CD0595 /* EPeiDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 578897321E07F48C00CD0595 /* EPeiDataModel.m */; };
 		578897361E07F5C900CD0595 /* EPeiOrderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 578897351E07F5C900CD0595 /* EPeiOrderModel.m */; };
 		578E56371E83C936004F5F5F /* NSString+Verify.m in Sources */ = {isa = PBXBuildFile; fileRef = 578E56361E83C936004F5F5F /* NSString+Verify.m */; };
+		57BC34451E8BB4A900DD6175 /* PPBaiSiRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BC34441E8BB4A900DD6175 /* PPBaiSiRequest.m */; };
+		57BC34491E8BDDE200DD6175 /* PPJianFriendRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BC34481E8BDDE200DD6175 /* PPJianFriendRequest.m */; };
 		57CC4E2A1E5ECEF8001CA8E3 /* JRAccessPermissionsTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CC4E251E5ECEF8001CA8E3 /* JRAccessPermissionsTool.m */; };
 		57CC4E2B1E5ECEF8001CA8E3 /* JRCalculateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CC4E271E5ECEF8001CA8E3 /* JRCalculateTool.m */; };
 		57CC4E2C1E5ECEF8001CA8E3 /* JRDeviceTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CC4E291E5ECEF8001CA8E3 /* JRDeviceTool.m */; };
@@ -139,6 +141,8 @@
 
 /* Begin PBXFileReference section */
 		414F369095042B33D44D1F5E /* Pods-PPDemos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PPDemos.release.xcconfig"; path = "Pods/Target Support Files/Pods-PPDemos/Pods-PPDemos.release.xcconfig"; sourceTree = "<group>"; };
+		570149DB1E8B4CC7007CD99E /* NSString+WordCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+WordCount.h"; sourceTree = "<group>"; };
+		570149DC1E8B4CC7007CD99E /* NSString+WordCount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
 		570F72091E7E986E006BCAFC /* NSString+PPTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PPTextField.h"; sourceTree = "<group>"; };
 		570F720A1E7E986E006BCAFC /* NSString+PPTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PPTextField.m"; sourceTree = "<group>"; };
 		570F720B1E7E986E006BCAFC /* PPTextfield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTextfield.h; sourceTree = "<group>"; };
@@ -161,8 +165,6 @@
 		5744CC641E8A153000A15DB9 /* ASDKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDKViewController.h; sourceTree = "<group>"; };
 		5744CC651E8A153000A15DB9 /* ASDKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDKViewController.m; sourceTree = "<group>"; };
 		575749AD1DCA42FF0028447B /* 开源库.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "开源库.h"; sourceTree = "<group>"; };
-		575C1D601D4C930A00357B39 /* ShaHeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaHeViewController.h; sourceTree = "<group>"; };
-		575C1D611D4C930A00357B39 /* ShaHeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShaHeViewController.m; sourceTree = "<group>"; };
 		575C1D741D7326F200357B39 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		575C1D811D85021D00357B39 /* UIGestureRecognizer+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+BlocksKit.h"; sourceTree = "<group>"; };
 		575C1D821D85021D00357B39 /* UIGestureRecognizer+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+BlocksKit.m"; sourceTree = "<group>"; };
@@ -215,7 +217,6 @@
 		575C1DD61D8503F000357B39 /* iOS开发基础知识3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iOS开发基础知识3.h"; sourceTree = "<group>"; };
 		575C1DD71D8503F000357B39 /* Runtime知识集中营.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Runtime知识集中营.h"; sourceTree = "<group>"; };
 		575C1DD81D8503F000357B39 /* 【API】NSString学习.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "【API】NSString学习.h"; sourceTree = "<group>"; };
-		575C1DD91D8503F000357B39 /* 【API】UICollectionView学习.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "【API】UICollectionView学习.h"; sourceTree = "<group>"; };
 		575C1DDA1D8503F000357B39 /* 你不知道的开源库ONE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "你不知道的开源库ONE.h"; sourceTree = "<group>"; };
 		575C1DDB1D8503F000357B39 /* 开发经验与技巧.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "开发经验与技巧.h"; sourceTree = "<group>"; };
 		575C1DDE1D8503F000357B39 /* 待确定是否非常值得收藏.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "待确定是否非常值得收藏.h"; sourceTree = "<group>"; };
@@ -241,6 +242,12 @@
 		578E56361E83C936004F5F5F /* NSString+Verify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Verify.m"; sourceTree = "<group>"; };
 		579A450C1DA94A9400D61BD8 /* PPSets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPSets.h; sourceTree = "<group>"; };
 		579A450E1DABE88200D61BD8 /* AnimationsLearn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationsLearn.h; sourceTree = "<group>"; };
+		57BC34431E8BB4A900DD6175 /* PPBaiSiRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPBaiSiRequest.h; sourceTree = "<group>"; };
+		57BC34441E8BB4A900DD6175 /* PPBaiSiRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPBaiSiRequest.m; sourceTree = "<group>"; };
+		57BC34461E8BDA6C00DD6175 /* PPDemoRequestMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPDemoRequestMacros.h; sourceTree = "<group>"; };
+		57BC34471E8BDDE200DD6175 /* PPJianFriendRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPJianFriendRequest.h; sourceTree = "<group>"; };
+		57BC34481E8BDDE200DD6175 /* PPJianFriendRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPJianFriendRequest.m; sourceTree = "<group>"; };
+		57BC344A1E8BDF2600DD6175 /* RequestUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestUrl.h; sourceTree = "<group>"; };
 		57CC4E221E5ECE24001CA8E3 /* PPMakeUITools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPMakeUITools.h; sourceTree = "<group>"; };
 		57CC4E231E5ECE4C001CA8E3 /* PPHandleTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPHandleTools.h; sourceTree = "<group>"; };
 		57CC4E241E5ECEF8001CA8E3 /* JRAccessPermissionsTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRAccessPermissionsTool.h; sourceTree = "<group>"; };
@@ -436,6 +443,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		570149E21E8B81FE007CD99E /* 转场动画 */ = {
+			isa = PBXGroup;
+			children = (
+				570149E31E8B81FE007CD99E /* RMPZoomTransitionAnimator */,
+			);
+			path = "转场动画";
+			sourceTree = "<group>";
+		};
+		570149E31E8B81FE007CD99E /* RMPZoomTransitionAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				570149E41E8B81FE007CD99E /* CollectionView */,
+				570149E51E8B81FE007CD99E /* TableView */,
+			);
+			path = RMPZoomTransitionAnimator;
+			sourceTree = "<group>";
+		};
+		570149E41E8B81FE007CD99E /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		570149E51E8B81FE007CD99E /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
 		570F723F1E82A16B006BCAFC /* LearnSystemAPIS */ = {
 			isa = PBXGroup;
 			children = (
@@ -467,6 +505,8 @@
 				572582251E0B791F00C41BAB /* NSString+PPProcess.m */,
 				578E56351E83C936004F5F5F /* NSString+Verify.h */,
 				578E56361E83C936004F5F5F /* NSString+Verify.m */,
+				570149DB1E8B4CC7007CD99E /* NSString+WordCount.h */,
+				570149DC1E8B4CC7007CD99E /* NSString+WordCount.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -525,8 +565,6 @@
 				575C1DC61D8503F000357B39 /* PPImages */,
 				575C1DCD1D8503F000357B39 /* PPLearn */,
 				575C1DDC1D8503F000357B39 /* PPLinks */,
-				575C1D601D4C930A00357B39 /* ShaHeViewController.h */,
-				575C1D611D4C930A00357B39 /* ShaHeViewController.m */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -710,7 +748,6 @@
 				575C1DD61D8503F000357B39 /* iOS开发基础知识3.h */,
 				575C1DD71D8503F000357B39 /* Runtime知识集中营.h */,
 				575C1DD81D8503F000357B39 /* 【API】NSString学习.h */,
-				575C1DD91D8503F000357B39 /* 【API】UICollectionView学习.h */,
 				575C1DDA1D8503F000357B39 /* 你不知道的开源库ONE.h */,
 				575C1DDB1D8503F000357B39 /* 开发经验与技巧.h */,
 			);
@@ -765,6 +802,19 @@
 				578897351E07F5C900CD0595 /* EPeiOrderModel.m */,
 			);
 			path = "简书-_de_bug_life同学";
+			sourceTree = "<group>";
+		};
+		57BC34421E8BB2B700DD6175 /* PPRequestTool */ = {
+			isa = PBXGroup;
+			children = (
+				57BC344A1E8BDF2600DD6175 /* RequestUrl.h */,
+				57BC34461E8BDA6C00DD6175 /* PPDemoRequestMacros.h */,
+				57BC34431E8BB4A900DD6175 /* PPBaiSiRequest.h */,
+				57BC34441E8BB4A900DD6175 /* PPBaiSiRequest.m */,
+				57BC34471E8BDDE200DD6175 /* PPJianFriendRequest.h */,
+				57BC34481E8BDDE200DD6175 /* PPJianFriendRequest.m */,
+			);
+			path = PPRequestTool;
 			sourceTree = "<group>";
 		};
 		57CC4E201E5ECE03001CA8E3 /* PPHandleTools */ = {
@@ -836,6 +886,8 @@
 		57DAAB331E7053A1001C127E /* PPBaseDemos */ = {
 			isa = PBXGroup;
 			children = (
+				57BC34421E8BB2B700DD6175 /* PPRequestTool */,
+				570149E21E8B81FE007CD99E /* 转场动画 */,
 				5744CC601E8A14BE00A15DB9 /* AsyncDisplayKit */,
 				57DAAB341E7053A1001C127E /* PPCellDisplayAnimations */,
 			);
@@ -1507,6 +1559,7 @@
 				575C1DB51D85033500357B39 /* PP_NSDateManager.m in Sources */,
 				C6C6D1CC1D0F94DB00F82C39 /* UIView+PP_Frame.m in Sources */,
 				C67799911D508E9000007161 /* CenterOneViewController.m in Sources */,
+				570149DD1E8B4CC7007CD99E /* NSString+WordCount.m in Sources */,
 				C6D808A91D4B265200C8B2FF /* AnimationShowViewController.m in Sources */,
 				57F76FC01E5FFC9B001BD536 /* MJChiBaoZiFooter.m in Sources */,
 				C6D808A61D4B25E500C8B2FF /* AnimationBaseViewController.m in Sources */,
@@ -1552,6 +1605,7 @@
 				57DAAB321E703FAC001C127E /* PPBaseTableViewController.m in Sources */,
 				C6EBE9001DACD9E70067EF2A /* UIApplication+PPSets.m in Sources */,
 				578897361E07F5C900CD0595 /* EPeiOrderModel.m in Sources */,
+				57BC34491E8BDDE200DD6175 /* PPJianFriendRequest.m in Sources */,
 				57DAAB171E703C83001C127E /* TabBarViewController.m in Sources */,
 				C683FBDA1D2A35F200D1BF6A /* Bag.m in Sources */,
 				C6EBE9081DACDA960067EF2A /* UIDevice+PPSets.m in Sources */,
@@ -1578,10 +1632,10 @@
 				57F76FC51E5FFC9B001BD536 /* MJDIYHeader.m in Sources */,
 				C63B358D1D1D3CA8006277E8 /* Foundation+Log.m in Sources */,
 				C6EBE9021DACD9E70067EF2A /* UIColor+PPSets.m in Sources */,
-				575C1D621D4C930A00357B39 /* ShaHeViewController.m in Sources */,
 				570F72491E82A418006BCAFC /* Quartz2DViewController.m in Sources */,
 				5780E7111DCB81B900156B12 /* ClassClassModel.m in Sources */,
 				C682E6551DB9A60600CD86CB /* CalendarEvent.m in Sources */,
+				57BC34451E8BB4A900DD6175 /* PPBaiSiRequest.m in Sources */,
 				57DAAB2C1E703CF9001C127E /* PPSecondViewController.m in Sources */,
 				C6C6D1DD1D0F99CB00F82C39 /* MJBaseViewController.m in Sources */,
 				C683FBDD1D2A360000D1BF6A /* Student.m in Sources */,

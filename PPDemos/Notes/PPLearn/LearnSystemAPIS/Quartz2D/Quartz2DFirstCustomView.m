@@ -60,11 +60,20 @@
 
 -(void)drawRightTriangle
 {
+    /*
+     typedef CF_ENUM(int32_t, CGLineJoin) {
+     kCGLineJoinMiter,  //尖角
+     kCGLineJoinRound,  //圆角
+     kCGLineJoinBevel   //斜角
+     };
+     */
     //1. 获取图形上下文对象
     CGContextRef ctr = UIGraphicsGetCurrentContext();
-
+    
     //设置线的宽度
-    CGContextSetLineWidth(ctr, 2);
+    CGContextSetLineWidth(ctr, 10);
+    //设置线段之间的连接方式
+    CGContextSetLineJoin(ctr, kCGLineJoinBevel);
     
     //2. 设置绘画的当前点
     CGContextMoveToPoint(ctr, 20, 20);

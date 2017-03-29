@@ -9,11 +9,12 @@ target 'PPDemos' do
        pod "SDWebImage"
        pod "MJExtension"
        pod "MJRefresh"
-       pod "HYBNetworking"
        pod "Masonry"
        pod "YYKit"
        
        pod "AsyncDisplayKit"
+       pod "RMPZoomTransitionAnimator"
+       pod "YTKNetwork"
 
 
 end

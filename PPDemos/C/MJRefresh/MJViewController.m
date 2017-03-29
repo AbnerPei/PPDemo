@@ -10,6 +10,7 @@
 
 #import "MJPicture.h"
 #import "MJRefreshCell.h"
+#import "PPBaiSiRequest.h"
 
 @interface MJViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -51,6 +52,8 @@
     [self.view addSubview:self.tableView];
     self.tableView.tableFooterView = [UIView new];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    
       
 }
 -(void)getNetworkData:(BOOL)isRefresh
@@ -64,19 +67,19 @@
     
     NSString *url;
     if (isFirstCome) {
-        url = [NSString stringWithFormat:MissBaisiImageUrl,@"",page];
-    }else{
-        url = [NSString stringWithFormat:MissBaisiImageUrl,self.maxtime,page];
+//        url = [NSString stringWithFormat:MissBaisiImageUrl,@"",page];
+        self.maxtime = @"";
     }
-//    [HYBNetworking cacheGetRequest:YES shoulCachePost:YES];
-    [HYBNetworking getWithUrl:url refreshCache:NO params:nil progress:^(int64_t bytesRead, int64_t totalBytesRead) {
-       
-    } success:^(id response) {
-        PPLog(@"请求成功---%@----%@",response,[NSThread currentThread]);
+//    else{
+//        url = [NSString stringWithFormat:MissBaisiImageUrl,self.maxtime,page];
+//    }
+    PPBaiSiRequest *request = [[PPBaiSiRequest alloc]initWithCategoryType:PPMissBaiSiCategoryTypePicture maxtime:self.maxtime currentPage:page perPageCount:20];
+    [request startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
+        PPLog(@"success--%@---responseJSONObject--%@--responseObject-%@---%@",request,request.responseJSONObject,request.responseObject,[NSThread currentThread]);
         [self endRefresh];
         isJuhua = NO; //数据获取成功后，设置为NO
         
-        NSDictionary *dict = (NSDictionary *)response;
+        NSDictionary *dict = (NSDictionary *)request.responseObject;
         NSDictionary *infoDict = [dict objectForKey:@"info"];
         totalPage = (int)[infoDict objectForKey:@"page"];
         self.maxtime = [infoDict objectForKey:@"maxtime"];
@@ -108,11 +111,11 @@
         [self.tableView reloadData];
         //获取成功一次就判断
         isFirstCome = NO;
-        
-        
-    } fail:^(NSError *error) {
-        PPLog(@"请求失败---%@",error);
+    } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
+        PPLog(@"请求失败---%@",request.error);
+        [self endRefresh];
     }];
+
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {

@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "TabBarViewController.h"
+#import "NSString+WordCount.h"
 @interface AppDelegate ()
 
 @end
@@ -21,6 +22,15 @@
     self.window.backgroundColor = [UIColor whiteColor];
     TabBarViewController *tabBarVC = [[TabBarViewController alloc]init];
     self.window.rootViewController = tabBarVC;
+    
+    
+    NSString *testStr = @"This is a test. This is only a test.";
+    NSUInteger wordCount = [testStr pp_wordCount];
+    NSLog(@"wordCount is %ld",wordCount);
+    
+    NSUInteger givenStrCount = [testStr pp_wordCountWithGivenStr:@"This"];
+    NSLog(@"givenStrCount is %ld",givenStrCount);
+
     
 #warning 第三步
     

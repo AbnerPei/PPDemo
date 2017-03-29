@@ -190,14 +190,6 @@ xib/storyboard：-initWithCoder:，
 -viewDidDisappear:
 -dealloc
 
-* 注意，当从ViewController进入到HYBViewController控制器时，注意出现顺序如下：
-
--[ViewController viewWillDisappear:]
--[HYBViewController viewWillAppear:]
--[HYBViewController viewDidAppear:]
--[ViewController viewDidDisappear:]
-
-在HYBViewController完全出现后，才会调用前一个控制器的完全消失。像这种要不同控制器之间导航条隐藏与显示控制问题，就需要特别注意其生命周期的顺序。
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

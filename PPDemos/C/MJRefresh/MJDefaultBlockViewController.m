@@ -29,6 +29,8 @@
         //Call this Block When enter the refresh status automatically
         [weakSelf getNetworkData:NO];
     }];
+    /** 自动根据有无数据来显示和隐藏（有数据就显示，没有数据隐藏。默认是NO） */
+    self.tableView.mj_footer.automaticallyHidden = YES;
 
 }
 

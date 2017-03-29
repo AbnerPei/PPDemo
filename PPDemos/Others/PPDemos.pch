@@ -52,17 +52,17 @@
 
 #import "MJRefresh.h"
 #import "MJExtension.h"
-#import "HYBNetworking.h"
 #import "UIImageView+WebCache.h"
 #import "AFNetworking.h"
 #import "Masonry.h"
 #import "UIView+Toast.h"
 #import "UIView+PP_Frame.h"
-#import "RequestUrl.h"
 #import "YYKit.h"
 #import "PPSets.h"
 
 #import "ScreenShotBackConfig.h"
 #import "JRNumberTool.h"
+
+#import "PPDemoRequestMacros.h"
 
 #endif /* PPDemos_pch */

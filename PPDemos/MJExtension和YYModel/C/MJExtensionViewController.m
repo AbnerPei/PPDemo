@@ -59,7 +59,7 @@
 //    //2. JSON字符串 --> 模型
 //    //mj，使用的是mj_objectWithKeyValues:方法
 //    //yy，使用的是yy_modelWithJSON:方法
-    [self json2model_mj];
+//    [self json2model_mj];
 //    [self json2model_yy];
     
 //    //3. 复杂的字典 --> 模型 (模型里面包含了模型)
@@ -127,21 +127,19 @@
     //以后。。。
     
     //2016-12-19
-//    [self setupEPei];
+    [self setupEPei];
     
 }
 
 -(void)setupEPei
 {
-    NSString *urlStr = @"http://www.epeimall.com/appapi/GetOrderlist?user_id=81&key=epeimall&pay_status=0&page=3";
-    [HYBNetworking getWithUrl:urlStr refreshCache:NO params:nil progress:^(int64_t bytesRead, int64_t totalBytesRead) {
-        
-    } success:^(id response) {
-        NSDictionary *resultDict = (NSDictionary *)response;
+    PPJianFriendRequest *jianFriendRequest = [[PPJianFriendRequest alloc]initWithJianFriendName:PPJianFriendNameEPei];
+    [jianFriendRequest startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
+        NSDictionary *resultDict = (NSDictionary *)request.responseObject;
         EPeiResultModel *resultModel = [EPeiResultModel mj_objectWithKeyValues:resultDict];
-        PPLog(@"pppp----------%@---%@",resultDict,resultModel.state_code);
-    } fail:^(NSError *error) {
-        
+        //PPLog(@"简友 EPei--success--------%@---%@",resultDict,resultModel.state_code);
+    } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
+        //PPLog(@"简友 EPei----error------%@",request.error);
     }];
 }
 -(void)modelArray2dictArray
