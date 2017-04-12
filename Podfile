@@ -10,11 +10,15 @@ target 'PPDemos' do
        pod "MJExtension"
        pod "MJRefresh"
        pod "Masonry"
-       pod "YYKit"
-       
+       pod "YYText"
+       pod "YYModel"
+
        pod "AsyncDisplayKit"
        pod "RMPZoomTransitionAnimator"
        pod "YTKNetwork"
+       pod "IQKeyboardManager"
+       
+       
 
 
 end

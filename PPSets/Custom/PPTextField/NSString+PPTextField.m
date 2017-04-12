@@ -59,17 +59,23 @@
     return strLength;
 }
 
--(NSString *)pp_removeSpecialLettersExceptLetters:(NSArray<NSString *> *)exceptLetters
+-(NSString *)pp_removeSpecialLettersExceptLetters:(NSArray<NSString *> *)exceptLetters filterCanotInputLetters:(NSArray<NSString *> *)canotInputLetters
 {
     if (self.length > 0) {
         NSMutableString *resultStr = [[NSMutableString alloc]init];
         for (int i = 0; i<self.length; i++) {
             NSString *indexStr = [self substringWithRange:NSMakeRange(i, 1)];
             
-            if (![indexStr pp_isSpecialLetter] || (exceptLetters && [exceptLetters containsObject:indexStr])) {
-                [resultStr appendString:indexStr];
+            if ((canotInputLetters.count > 0) && [canotInputLetters containsObject:indexStr]) {
+                //在不能输入范围内，就不能输入
+            }else{
+                //不在不能输入范围
+                if (![indexStr pp_isSpecialLetter] || (exceptLetters && [exceptLetters containsObject:indexStr])) {
+                    [resultStr appendString:indexStr];
+                }
             }
         }
+        
         if (resultStr.length > 0) {
             return resultStr;
         }else{

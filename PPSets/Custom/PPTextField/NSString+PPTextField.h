@@ -33,10 +33,12 @@ typedef NS_ENUM(NSInteger,PPTextFieldStringType) {
  */
 -(int)pp_getStrLengthWithCh2En1;
 
-
 /**
- 移除字符串中除exceptLetters外的所有特殊字符
+ 移除字符串中除exceptLetters外的所有特殊字符,并且过滤不可以输入的
+
+ @param exceptLetters 特殊字符中可以输入的特殊字符数组
+ @param canotInputLetters 不是特殊字符中不可以输入的正常字符数组
  */
--(NSString *)pp_removeSpecialLettersExceptLetters:(NSArray<NSString *> *)exceptLetters;
+-(NSString *)pp_removeSpecialLettersExceptLetters:(NSArray<NSString *> *)exceptLetters filterCanotInputLetters:(NSArray<NSString *> *)canotInputLetters;
 
 @end

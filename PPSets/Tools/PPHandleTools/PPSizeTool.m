@@ -12,12 +12,12 @@
 
 +(CGFloat)pp_getWidth:(CGFloat)width
 {
-    return kScreenWidth*width/375;
+    return ScreenWidth*width/375;
 }
 
 +(CGFloat)pp_getHeight:(CGFloat)height
 {
-    return kScreenHeight*height/667;
+    return ScreenHeight*height/667;
 }
 
 @end

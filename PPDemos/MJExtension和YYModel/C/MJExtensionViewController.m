@@ -8,6 +8,7 @@
 
 #import "MJExtensionViewController.h"
 #import "MJExtension.h"
+#import "YYModel.h"
 #import "User.h"
 #import "Status.h"
 #import "Ad.h"
@@ -127,7 +128,7 @@
     //以后。。。
     
     //2016-12-19
-    [self setupEPei];
+//    [self setupEPei];
     
 }
 
@@ -192,7 +193,7 @@
      */
     
     //yy
-    NSDictionary *statusDict_yy = [status modelToJSONObject];
+    NSDictionary *statusDict_yy = [status yy_modelToJSONObject];
     NSLog(@"statusDict_yy----%@", statusDict_yy);
 }
 
@@ -273,7 +274,7 @@
     // name=null, icon=nami.png
     
     //yymodel解析
-    NSArray *userArray1 = [NSArray modelArrayWithClass:[User class] json:dictArray];
+    NSArray *userArray1 = [NSArray yy_modelArrayWithClass:[User class] json:dictArray];
     for (User *user in userArray1) {
         NSLog(@"yy---name=%@, icon=%@", user.name, user.icon);
     }
@@ -360,7 +361,7 @@
 -(void)dict882model_yy
 {
     //字典转模型，支持模型的数组属性里面又装着模型
-    StatusResult *result = [StatusResult modelWithDictionary:dict_m8a];
+    StatusResult *result = [StatusResult yy_modelWithDictionary:dict_m8a];
     //打印博主信息
     for (Status *status in result.statuses) {
         NSString *text = status.text;
@@ -407,7 +408,7 @@
 -(void)dict82model_yy
 {
     //字典转模型，模型里面含有模型
-    Status *status = [Status modelWithDictionary:dict_m8m];
+    Status *status = [Status yy_modelWithDictionary:dict_m8m];
     NSString *text = status.text;
     NSString *name = status.user.name;
     NSString *icon = status.user.icon;
@@ -434,7 +435,7 @@
 #pragma mark --2- 使用YYModel实现“json”转“模型”
 -(void)json2model_yy
 {
-    User *user = [User modelWithJSON:jsonStr];
+    User *user = [User yy_modelWithJSON:jsonStr];
     NSLog(@"YY---%@----%@---%u",user.name,user.icon,user.age);
     //打印结果
     //2016-07-04 11:16:04.655 PPDemos[2563:78561] MJ---Jack----lufy.png---20
@@ -455,7 +456,7 @@
 #pragma mark --1- 使用YYModel实现“字典”转“模型”
 -(void)dict2model_yy
 {
-    User *user = [User modelWithDictionary:dict_user];
+    User *user = [User yy_modelWithDictionary:dict_user];
     NSLog(@"YY---%@----%@---%u---%@---%@---%u----%d",user.name,user.icon,user.age,user.height,user.money,user.sex,user.gay);
     //打印结果
     //2016-07-04 11:06:59.746 PPDemos[2432:73824] MJ---Jack----lufy.png---20---1.55---100.9---1----1

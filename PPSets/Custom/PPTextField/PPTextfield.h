@@ -7,8 +7,8 @@
 //
 
 /*
- 已知bug:设置maxCharactersLength或者maxTextLength大于0，如果输入达到最大限制，虽然可以输入，但是快速点击键盘，会替换最后一个字符串
- 默认都不能输入特殊字符
+ 已知bug:设置maxCharactersLength或者maxTextLength大于0，如果输入达到最大限制，虽然可以输入，但是【快速连续点击】键盘，会替换最后一个字符串
+   默认都不能输入特殊字符
  */
 
 #import <UIKit/UIKit.h>

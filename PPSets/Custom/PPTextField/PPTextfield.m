@@ -6,7 +6,7 @@
 //  Copyright © 2016年 PPAbner. All rights reserved.
 //
 /*
- 只要方法：
+ 主要方法：
  法1> 主要用来判断可以不可以输入
  法2> 处理超过规定后，截取想要的范围！
  
@@ -34,7 +34,6 @@
 -(void)configurePPTextfield
 {
     self.delegate = (id<UITextFieldDelegate>)self;
-    self.autocorrectionType = UITextAutocorrectionTypeNo;//不自动提示
     [self pp_addTargetEditingChanged];
     [self setupDefaultConfigure];
     
@@ -42,6 +41,8 @@
 #pragma mark --- 配置默认设置
 -(void)setupDefaultConfigure
 {
+    self.autocorrectionType = UITextAutocorrectionTypeNo;//不自动提示
+
     _isOnlyNumber = NO;
     _isPriceHeaderPoint = NO;
     
@@ -86,7 +87,9 @@
 {
     //再次说明：当不可以输入特殊字符，但是特殊字符中的某个或某几个又是需要的时，所以前提是不可以输入特殊字符
     _canInputCharacters = canInputCharacters;
-    [self setIsSpecialCharacter:NO];
+    if (canInputCharacters && canInputCharacters.count > 0) {
+        [self setIsSpecialCharacter:NO];
+    }
     
 }
 -(void)setCanotInputCharacters:(NSArray<NSString *> *)canotInputCharacters
@@ -97,23 +100,25 @@
 -(void)setIsOnlyNumber:(BOOL)isOnlyNumber
 {
     _isOnlyNumber = isOnlyNumber;
-    _isSpecialCharacter = NO;
     if (_isOnlyNumber) {
+        _isSpecialCharacter = NO;
         _isPrice = NO;
         self.keyboardType = UIKeyboardTypeNumberPad;
     }
-    
+
 }
 
 -(void)setIsPrice:(BOOL)isPrice
 {
     _isPrice = isPrice;
-    _isSpecialCharacter = NO;
-    if (_canotInputCharacters) {
-        _canotInputCharacters = [NSArray array];
-    }
+   
     //防止冲突
     if (_isPrice) {
+        
+        if (_canotInputCharacters) {
+            _canotInputCharacters = [NSArray array];
+        }
+        _isSpecialCharacter = NO;
         _isOnlyNumber = NO;
         self.keyboardType = UIKeyboardTypeDecimalPad;
     }
@@ -122,34 +127,45 @@
 -(void)setIsPriceHeaderPoint:(BOOL)isPriceHeaderPoint
 {
     _isPriceHeaderPoint = isPriceHeaderPoint;
-    [self setIsPrice:YES];
+    if (isPriceHeaderPoint) {
+        [self setIsPrice:YES];
+    }
 }
 #pragma mark --- 最大纯数字数量
 -(void)setMaxNumberCount:(NSInteger)maxNumberCount
 {
     _maxNumberCount = maxNumberCount;
-    [self setIsOnlyNumber:YES];
+    if (maxNumberCount) {
+        [self setIsOnlyNumber:YES];
+    }
 }
 #pragma mark ---  电话号码
 -(void)setIsPhoneNumber:(BOOL)isPhoneNumber
 {
     _isPhoneNumber = isPhoneNumber;
-    [self setIsOnlyNumber:YES];
-    [self setMaxNumberCount:11];
+    if (isPhoneNumber) {
+        [self setIsOnlyNumber:YES];
+        [self setMaxNumberCount:11];
+    }
+    
     
 }
 #pragma mark --- 是不是密码
 -(void)setIsPassword:(BOOL)isPassword
 {
     _isPassword = isPassword;
-    self.secureTextEntry = YES;
-    _isSpecialCharacter = NO;
+    if (isPassword) {
+        self.secureTextEntry = YES;
+        _isSpecialCharacter = NO;
+    }
 }
 -(void)setCanInputPassword:(NSArray<NSString *> *)canInputPasswords
 {
     //再次说明：密码默认只能输入字母和数字，但有时又要可以输入某个或某些非字母或数字的字符，所以前提是（是输入密码）
     _canInputPasswords = canInputPasswords;
-    [self setIsPassword:YES];
+    if (canInputPasswords && canInputPasswords.count > 0) {
+        [self setIsPassword:YES];
+    }
 }
 
 -(void)setMaxCharactersLength:(NSInteger)maxCharactersLength
@@ -228,99 +244,93 @@
         return [self limitPriceWithTextField:textField shouldChangeCharactersInRange:range replacementString:string];
     }
     //特殊字符 【一定要放在该方法最后一个判断，要不会影响哪些它互斥的设置】
-    if (!_isSpecialCharacter) {
-        if ([self.canInputCharacters containsObject:string] ||[self.canInputPasswords containsObject:string]) {
-            return YES;
-        }else{
-            if ([string pp_isSpecialLetter] || [self.canotInputCharacters containsObject:string]) {
-                return NO;
-            }
-            return YES;
-        }
-    }
+//    if (!_isSpecialCharacter) {
+//        if ([self.canInputCharacters containsObject:string] ||[self.canInputPasswords containsObject:string]) {
+//            return YES;
+//        }else{
+//            if ([string pp_isSpecialLetter] || [self.canotInputCharacters containsObject:string]) {
+//                return NO;
+//            }
+//            return YES;
+//        }
+//    }
     return YES;
 }
 -(BOOL)limitPriceWithTextField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
 {
     //参考：[UITextField 的限制输入金额(可为小数的正确金额)](http://www.cnblogs.com/fcug/p/5500349.html)
-    if (textField.text.length > 10) {
-        return range.location < 11;
-    }else{
-        BOOL isHaveDian = YES;
-        if ([textField.text rangeOfString:@"."].location==NSNotFound) {
-            isHaveDian=NO;
-        }
-        if ([string length] > 0){
-            unichar single=[string characterAtIndex:0];//当前输入的字符
-            
-            if ((single >='0' && single<='9') || single=='.')//数据格式正确
-            {
-                if (_isPriceHeaderPoint) {
-                    //首字母可以为小数点
-                    if([textField.text length]==0){
-                        if(single == '.'){
-                            NSLog(@"isheder11 %@",textField.text);
-                            textField.text = @"0"; //此处强制让textField.text = 0,然后又return YES,这样第一个字符输入.，显示的就是0.
-                            NSLog(@"%@",textField.text);
-                            
-                            return YES;
-                            
-                        }
-                    }
-                }
-                //首字母不能为小数点
+    BOOL isHaveDian = YES;
+    if ([textField.text rangeOfString:@"."].location==NSNotFound) {
+        isHaveDian=NO;
+    }
+    if ([string length] > 0){
+        unichar single=[string characterAtIndex:0];//当前输入的字符
+        
+        if ((single >='0' && single<='9') || single=='.')//数据格式正确
+        {
+            if (_isPriceHeaderPoint) {
+                //首字母可以为小数点
                 if([textField.text length]==0){
                     if(single == '.'){
-                        [textField.text stringByReplacingCharactersInRange:range withString:@""];
-                        return NO;
+                        textField.text = @"0"; //此处强制让textField.text = 0,然后又return YES,这样第一个字符输入.，显示的就是0.
                         
-                    }
-                }
-                if([textField.text length]==1 && [textField.text isEqualToString:@"0"]){
-                    if(single != '.'){
-                        textField.text = @"0.";
                         return YES;
                         
                     }
                 }
-                if (single=='.'){
-                    if(!isHaveDian)//text中还没有小数点
-                    {
-                        isHaveDian=YES;
+            }
+            //首字母不能为小数点
+            if([textField.text length]==0){
+                if(single == '.'){
+                    [textField.text stringByReplacingCharactersInRange:range withString:@""];
+                    return NO;
+                    
+                }
+            }
+            if([textField.text length]==1 && [textField.text isEqualToString:@"0"]){
+                if(single != '.'){
+                    textField.text = @"0.";
+                    return YES;
+                    
+                }
+            }
+            if (single=='.'){
+                if(!isHaveDian)//text中还没有小数点
+                {
+                    isHaveDian=YES;
+                    return YES;
+                }else
+                {
+                    [textField.text stringByReplacingCharactersInRange:range withString:@""];
+                    return NO;
+                }
+            }
+            else
+            {
+                if (isHaveDian)//存在小数点
+                {
+                    //判断小数点的位数
+                    NSRange ran=[textField.text rangeOfString:@"."];
+                    NSInteger tt=range.location-ran.location;
+                    if (tt <= 2){
                         return YES;
-                    }else
-                    {
-                        [textField.text stringByReplacingCharactersInRange:range withString:@""];
+                    }else{
                         return NO;
                     }
                 }
                 else
                 {
-                    if (isHaveDian)//存在小数点
-                    {
-                        //判断小数点的位数
-                        NSRange ran=[textField.text rangeOfString:@"."];
-                        NSInteger tt=range.location-ran.location;
-                        if (tt <= 2){
-                            return YES;
-                        }else{
-                            return NO;
-                        }
-                    }
-                    else
-                    {
-                        return YES;
-                    }
+                    return YES;
                 }
-            }else{//输入的数据格式不正确
-                [textField.text stringByReplacingCharactersInRange:range withString:@""];
-                return NO;
             }
+        }else{//输入的数据格式不正确
+            [textField.text stringByReplacingCharactersInRange:range withString:@""];
+            return NO;
         }
-        else
-        {
-            return YES;
-        }
+    }
+    else
+    {
+        return YES;
     }
 }
 
@@ -376,7 +386,6 @@
         //价格要放在【特殊字符处理】前，并且不让再继续下去。
         return;
     }
-    NSLog(@"price---%@----%@",toBeString,self.text);
     
     
     //特殊字符处理
@@ -386,9 +395,8 @@
         if (_isPassword && self.canInputPasswords.count > 0) {
             [filterArrs addObjectsFromArray:self.canInputPasswords];
         }
-        NSLog(@"phone11 %@---%@",toBeString,self.text);
-        self.text = [toBeString pp_removeSpecialLettersExceptLetters:filterArrs];
-        NSLog(@"phone22 %@---%@",toBeString,self.text);
+    
+        self.text = [toBeString pp_removeSpecialLettersExceptLetters:filterArrs filterCanotInputLetters:self.canotInputCharacters];
         
     }
     
@@ -421,6 +429,7 @@
                         totalCount +=1;
                     }
 #warning pp -2016--10-09
+                    
                     //点击过快，会替换到最后一个字符串？？？为啥？？
                     if (totalCount > _maxCharactersLength) {
                         self.text = [toBeString substringToIndex:i];

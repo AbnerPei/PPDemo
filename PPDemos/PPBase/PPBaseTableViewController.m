@@ -23,7 +23,7 @@
 }
 -(void)creatTableViewUI
 {
-    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, ScreenHeight) style:UITableViewStylePlain];
+    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight) style:UITableViewStylePlain];
     [self.view addSubview:self.tableView];
     self.tableView.tag = 333;
     self.tableView.backgroundColor = [UIColor whiteColor];
@@ -53,9 +53,7 @@
     cell.textLabel.text = self.titles[indexPath.row];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
-    UIView *line = [[UIView alloc]initWithFrame:CGRectMake(0, 43, ScreenWidth, 1)];
-    [cell.contentView addSubview:line];
-    line.backgroundColor = [UIColor cyanColor];
+
     return cell;
 }
 

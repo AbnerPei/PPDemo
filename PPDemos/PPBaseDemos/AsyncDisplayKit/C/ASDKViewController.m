@@ -7,6 +7,8 @@
 //
 
 #import "ASDKViewController.h"
+#import "YYText.h"
+
 
 @interface ASDKViewController ()
 
@@ -18,6 +20,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"ASDK示例";
+    
+    YYLabel *lb = [YYLabel new];
+    [self.view addSubview:lb];
+    lb.numberOfLines = 0;
+    
+    NSMutableAttributedString *mutStr = [[NSMutableAttributedString alloc]initWithString:@"暂时还没有去学习，最近在看YYLabel,后续会更新的！"];
+    [mutStr yy_setKern:@8 range:[mutStr.string rangeOfString:@"YYLabel"]];
+    lb.attributedText = mutStr;
 }
 
 - (void)didReceiveMemoryWarning {

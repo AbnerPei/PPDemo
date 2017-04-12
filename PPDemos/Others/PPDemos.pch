@@ -49,6 +49,8 @@
 
 #define PPIOS(version)     ([[[UIDevice currentDevice] systemVersion] floatValue] >= version ? YES : NO)
 
+#define UIAlertView(info) UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"错误提示" message:info delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil]; \
+[alert show]; \
 
 #import "MJRefresh.h"
 #import "MJExtension.h"
@@ -57,7 +59,7 @@
 #import "Masonry.h"
 #import "UIView+Toast.h"
 #import "UIView+PP_Frame.h"
-#import "YYKit.h"
+#import "YYText.h"
 #import "PPSets.h"
 
 #import "ScreenShotBackConfig.h"

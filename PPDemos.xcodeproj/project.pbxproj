@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		570149DD1E8B4CC7007CD99E /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 570149DC1E8B4CC7007CD99E /* NSString+WordCount.m */; };
-		570F720D1E7E986E006BCAFC /* NSString+PPTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 570F720A1E7E986E006BCAFC /* NSString+PPTextField.m */; };
-		570F720E1E7E986E006BCAFC /* PPTextfield.m in Sources */ = {isa = PBXBuildFile; fileRef = 570F720C1E7E986E006BCAFC /* PPTextfield.m */; };
 		570F72461E82A3A0006BCAFC /* LearnSystemAPIBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 570F72451E82A3A0006BCAFC /* LearnSystemAPIBaseViewController.m */; };
 		570F72491E82A418006BCAFC /* Quartz2DViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 570F72481E82A418006BCAFC /* Quartz2DViewController.m */; };
 		570F724C1E82A4C5006BCAFC /* Quartz2DFirstCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 570F724B1E82A4C5006BCAFC /* Quartz2DFirstCustomView.m */; };
+		571E042A1E8F42220037556C /* PPCustomCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 571E04291E8F42220037556C /* PPCustomCalendarViewController.m */; };
+		571E042E1E8F7CBC0037556C /* PPTextFieldDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 571E042D1E8F7CBC0037556C /* PPTextFieldDemoViewController.m */; };
+		571E04341E8F7D330037556C /* NSString+PPTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 571E04311E8F7D330037556C /* NSString+PPTextField.m */; };
+		571E04351E8F7D330037556C /* PPTextfield.m in Sources */ = {isa = PBXBuildFile; fileRef = 571E04331E8F7D330037556C /* PPTextfield.m */; };
+		571E04381E8F7F3C0037556C /* PPTextFieldDemoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 571E04371E8F7F3C0037556C /* PPTextFieldDemoCell.m */; };
+		571E043B1E8F7FEA0037556C /* PPTFModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 571E043A1E8F7FEA0037556C /* PPTFModel.m */; };
+		571E043E1E8FA1A30037556C /* UITableViewCell+ShowAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = 571E043D1E8FA1A30037556C /* UITableViewCell+ShowAnimations.m */; };
 		5721EEEB1E631F95006AA33C /* PPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5721EEEA1E631F95006AA33C /* PPBaseViewController.m */; };
 		5725821F1E0B77F600C41BAB /* NSString+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = 5725821E1E0B77F600C41BAB /* NSString+PPSets.m */; };
 		572582231E0B781300C41BAB /* NSObject+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = 572582221E0B781300C41BAB /* NSObject+PPSets.m */; };
@@ -48,6 +53,8 @@
 		578897331E07F48C00CD0595 /* EPeiDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 578897321E07F48C00CD0595 /* EPeiDataModel.m */; };
 		578897361E07F5C900CD0595 /* EPeiOrderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 578897351E07F5C900CD0595 /* EPeiOrderModel.m */; };
 		578E56371E83C936004F5F5F /* NSString+Verify.m in Sources */ = {isa = PBXBuildFile; fileRef = 578E56361E83C936004F5F5F /* NSString+Verify.m */; };
+		578E5DDE1E9DD79F003BB111 /* PPCustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 578E5DDD1E9DD79F003BB111 /* PPCustomTextField.m */; };
+		578E5DE21E9DD8E0003BB111 /* NSMutableAttributedString+PPTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 578E5DE11E9DD8E0003BB111 /* NSMutableAttributedString+PPTextField.m */; };
 		57BC34451E8BB4A900DD6175 /* PPBaiSiRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BC34441E8BB4A900DD6175 /* PPBaiSiRequest.m */; };
 		57BC34491E8BDDE200DD6175 /* PPJianFriendRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BC34481E8BDDE200DD6175 /* PPJianFriendRequest.m */; };
 		57CC4E2A1E5ECEF8001CA8E3 /* JRAccessPermissionsTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CC4E251E5ECEF8001CA8E3 /* JRAccessPermissionsTool.m */; };
@@ -143,16 +150,26 @@
 		414F369095042B33D44D1F5E /* Pods-PPDemos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PPDemos.release.xcconfig"; path = "Pods/Target Support Files/Pods-PPDemos/Pods-PPDemos.release.xcconfig"; sourceTree = "<group>"; };
 		570149DB1E8B4CC7007CD99E /* NSString+WordCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+WordCount.h"; sourceTree = "<group>"; };
 		570149DC1E8B4CC7007CD99E /* NSString+WordCount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
-		570F72091E7E986E006BCAFC /* NSString+PPTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PPTextField.h"; sourceTree = "<group>"; };
-		570F720A1E7E986E006BCAFC /* NSString+PPTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PPTextField.m"; sourceTree = "<group>"; };
-		570F720B1E7E986E006BCAFC /* PPTextfield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTextfield.h; sourceTree = "<group>"; };
-		570F720C1E7E986E006BCAFC /* PPTextfield.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPTextfield.m; sourceTree = "<group>"; };
 		570F72441E82A3A0006BCAFC /* LearnSystemAPIBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnSystemAPIBaseViewController.h; sourceTree = "<group>"; };
 		570F72451E82A3A0006BCAFC /* LearnSystemAPIBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnSystemAPIBaseViewController.m; sourceTree = "<group>"; };
 		570F72471E82A418006BCAFC /* Quartz2DViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quartz2DViewController.h; sourceTree = "<group>"; };
 		570F72481E82A418006BCAFC /* Quartz2DViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quartz2DViewController.m; sourceTree = "<group>"; };
 		570F724A1E82A4C5006BCAFC /* Quartz2DFirstCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quartz2DFirstCustomView.h; sourceTree = "<group>"; };
 		570F724B1E82A4C5006BCAFC /* Quartz2DFirstCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quartz2DFirstCustomView.m; sourceTree = "<group>"; };
+		571E04281E8F42220037556C /* PPCustomCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPCustomCalendarViewController.h; sourceTree = "<group>"; };
+		571E04291E8F42220037556C /* PPCustomCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPCustomCalendarViewController.m; sourceTree = "<group>"; };
+		571E042C1E8F7CBC0037556C /* PPTextFieldDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTextFieldDemoViewController.h; sourceTree = "<group>"; };
+		571E042D1E8F7CBC0037556C /* PPTextFieldDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPTextFieldDemoViewController.m; sourceTree = "<group>"; };
+		571E04301E8F7D330037556C /* NSString+PPTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PPTextField.h"; sourceTree = "<group>"; };
+		571E04311E8F7D330037556C /* NSString+PPTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PPTextField.m"; sourceTree = "<group>"; };
+		571E04321E8F7D330037556C /* PPTextfield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTextfield.h; sourceTree = "<group>"; };
+		571E04331E8F7D330037556C /* PPTextfield.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPTextfield.m; sourceTree = "<group>"; };
+		571E04361E8F7F3C0037556C /* PPTextFieldDemoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTextFieldDemoCell.h; sourceTree = "<group>"; };
+		571E04371E8F7F3C0037556C /* PPTextFieldDemoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPTextFieldDemoCell.m; sourceTree = "<group>"; };
+		571E04391E8F7FEA0037556C /* PPTFModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTFModel.h; sourceTree = "<group>"; };
+		571E043A1E8F7FEA0037556C /* PPTFModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPTFModel.m; sourceTree = "<group>"; };
+		571E043C1E8FA1A30037556C /* UITableViewCell+ShowAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+ShowAnimations.h"; sourceTree = "<group>"; };
+		571E043D1E8FA1A30037556C /* UITableViewCell+ShowAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+ShowAnimations.m"; sourceTree = "<group>"; };
 		5721EEE91E631F95006AA33C /* PPBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPBaseViewController.h; sourceTree = "<group>"; };
 		5721EEEA1E631F95006AA33C /* PPBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPBaseViewController.m; sourceTree = "<group>"; };
 		5725821D1E0B77F600C41BAB /* NSString+PPSets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PPSets.h"; sourceTree = "<group>"; };
@@ -240,6 +257,10 @@
 		578897351E07F5C900CD0595 /* EPeiOrderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPeiOrderModel.m; sourceTree = "<group>"; };
 		578E56351E83C936004F5F5F /* NSString+Verify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Verify.h"; sourceTree = "<group>"; };
 		578E56361E83C936004F5F5F /* NSString+Verify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Verify.m"; sourceTree = "<group>"; };
+		578E5DDC1E9DD79F003BB111 /* PPCustomTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPCustomTextField.h; sourceTree = "<group>"; };
+		578E5DDD1E9DD79F003BB111 /* PPCustomTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPCustomTextField.m; sourceTree = "<group>"; };
+		578E5DE01E9DD8E0003BB111 /* NSMutableAttributedString+PPTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+PPTextField.h"; sourceTree = "<group>"; };
+		578E5DE11E9DD8E0003BB111 /* NSMutableAttributedString+PPTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+PPTextField.m"; sourceTree = "<group>"; };
 		579A450C1DA94A9400D61BD8 /* PPSets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPSets.h; sourceTree = "<group>"; };
 		579A450E1DABE88200D61BD8 /* AnimationsLearn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationsLearn.h; sourceTree = "<group>"; };
 		57BC34431E8BB4A900DD6175 /* PPBaiSiRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPBaiSiRequest.h; sourceTree = "<group>"; };
@@ -388,7 +409,6 @@
 		C6C6D1711D0F94DB00F82C39 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
 		C6C6D1731D0F94DB00F82C39 /* MJPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPicture.h; sourceTree = "<group>"; };
 		C6C6D1741D0F94DB00F82C39 /* MJPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPicture.m; sourceTree = "<group>"; };
-		C6C6D1771D0F94DB00F82C39 /* RequestUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestUrl.h; sourceTree = "<group>"; };
 		C6C6D1781D0F94DB00F82C39 /* UIView+PP_Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PP_Frame.h"; sourceTree = "<group>"; };
 		C6C6D1791D0F94DB00F82C39 /* UIView+PP_Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PP_Frame.m"; sourceTree = "<group>"; };
 		C6C6D1CD1D0F94F900F82C39 /* PPDemos.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPDemos.pch; sourceTree = "<group>"; };
@@ -493,6 +513,50 @@
 				570F724B1E82A4C5006BCAFC /* Quartz2DFirstCustomView.m */,
 			);
 			path = Quartz2D;
+			sourceTree = "<group>";
+		};
+		571E04261E8F41CF0037556C /* 自定义日历 */ = {
+			isa = PBXGroup;
+			children = (
+				571E04271E8F41F80037556C /* PPCalendar */,
+				571E04281E8F42220037556C /* PPCustomCalendarViewController.h */,
+				571E04291E8F42220037556C /* PPCustomCalendarViewController.m */,
+			);
+			path = "自定义日历";
+			sourceTree = "<group>";
+		};
+		571E04271E8F41F80037556C /* PPCalendar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PPCalendar;
+			sourceTree = "<group>";
+		};
+		571E042B1E8F7CA20037556C /* PPTextField */ = {
+			isa = PBXGroup;
+			children = (
+				571E042C1E8F7CBC0037556C /* PPTextFieldDemoViewController.h */,
+				571E042D1E8F7CBC0037556C /* PPTextFieldDemoViewController.m */,
+				571E04361E8F7F3C0037556C /* PPTextFieldDemoCell.h */,
+				571E04371E8F7F3C0037556C /* PPTextFieldDemoCell.m */,
+				571E04391E8F7FEA0037556C /* PPTFModel.h */,
+				571E043A1E8F7FEA0037556C /* PPTFModel.m */,
+			);
+			path = PPTextField;
+			sourceTree = "<group>";
+		};
+		571E042F1E8F7D330037556C /* PPTextField */ = {
+			isa = PBXGroup;
+			children = (
+				578E5DDF1E9DD8BF003BB111 /* Category */,
+				571E04301E8F7D330037556C /* NSString+PPTextField.h */,
+				571E04311E8F7D330037556C /* NSString+PPTextField.m */,
+				571E04321E8F7D330037556C /* PPTextfield.h */,
+				571E04331E8F7D330037556C /* PPTextfield.m */,
+				578E5DDC1E9DD79F003BB111 /* PPCustomTextField.h */,
+				578E5DDD1E9DD79F003BB111 /* PPCustomTextField.m */,
+			);
+			path = PPTextField;
 			sourceTree = "<group>";
 		};
 		5725821C1E0B77F600C41BAB /* NSString */ = {
@@ -804,6 +868,15 @@
 			path = "简书-_de_bug_life同学";
 			sourceTree = "<group>";
 		};
+		578E5DDF1E9DD8BF003BB111 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				578E5DE01E9DD8E0003BB111 /* NSMutableAttributedString+PPTextField.h */,
+				578E5DE11E9DD8E0003BB111 /* NSMutableAttributedString+PPTextField.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		57BC34421E8BB2B700DD6175 /* PPRequestTool */ = {
 			isa = PBXGroup;
 			children = (
@@ -886,6 +959,8 @@
 		57DAAB331E7053A1001C127E /* PPBaseDemos */ = {
 			isa = PBXGroup;
 			children = (
+				571E042B1E8F7CA20037556C /* PPTextField */,
+				571E04261E8F41CF0037556C /* 自定义日历 */,
 				57BC34421E8BB2B700DD6175 /* PPRequestTool */,
 				570149E21E8B81FE007CD99E /* 转场动画 */,
 				5744CC601E8A14BE00A15DB9 /* AsyncDisplayKit */,
@@ -1290,7 +1365,6 @@
 			children = (
 				C64D57CD1D82A00C000C25CC /* JsonDatas */,
 				C63B35891D1D3CA8006277E8 /* UsefulEncapsulate */,
-				C6C6D1771D0F94DB00F82C39 /* RequestUrl.h */,
 				C6C6D1781D0F94DB00F82C39 /* UIView+PP_Frame.h */,
 				C6C6D1791D0F94DB00F82C39 /* UIView+PP_Frame.m */,
 				C6C6D1CD1D0F94F900F82C39 /* PPDemos.pch */,
@@ -1355,6 +1429,8 @@
 		C6EBE8F11DACD9E70067EF2A /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				571E043C1E8FA1A30037556C /* UITableViewCell+ShowAnimations.h */,
+				571E043D1E8FA1A30037556C /* UITableViewCell+ShowAnimations.m */,
 				C6B980181DB4AD6500604393 /* Swift */,
 				C6EBE8F21DACD9E70067EF2A /* UIApplication+PPSets.h */,
 				C6EBE8F31DACD9E70067EF2A /* UIApplication+PPSets.m */,
@@ -1379,20 +1455,9 @@
 		C6FEE3BC1DA8DF5700316D14 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
-				C6FEE4101DAB76C100316D14 /* PPTextField */,
+				571E042F1E8F7D330037556C /* PPTextField */,
 			);
 			path = Custom;
-			sourceTree = "<group>";
-		};
-		C6FEE4101DAB76C100316D14 /* PPTextField */ = {
-			isa = PBXGroup;
-			children = (
-				570F72091E7E986E006BCAFC /* NSString+PPTextField.h */,
-				570F720A1E7E986E006BCAFC /* NSString+PPTextField.m */,
-				570F720B1E7E986E006BCAFC /* PPTextfield.h */,
-				570F720C1E7E986E006BCAFC /* PPTextfield.m */,
-			);
-			path = PPTextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1538,6 +1603,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				578E5DDE1E9DD79F003BB111 /* PPCustomTextField.m in Sources */,
 				572582261E0B791F00C41BAB /* NSString+PPProcess.m in Sources */,
 				C6EBE9011DACD9E70067EF2A /* UIButton+PPSets.m in Sources */,
 				C683FBCB1D2A00AF00D1BF6A /* User.m in Sources */,
@@ -1550,7 +1616,9 @@
 				57DAAB2D1E703CF9001C127E /* PPThirdViewController.m in Sources */,
 				C63B35911D1D3CED006277E8 /* Person.m in Sources */,
 				57CC4E2B1E5ECEF8001CA8E3 /* JRCalculateTool.m in Sources */,
+				578E5DE21E9DD8E0003BB111 /* NSMutableAttributedString+PPTextField.m in Sources */,
 				57CC4E2C1E5ECEF8001CA8E3 /* JRDeviceTool.m in Sources */,
+				571E04351E8F7D330037556C /* PPTextfield.m in Sources */,
 				575C1DB61D85033500357B39 /* PP_NSStringManager.m in Sources */,
 				C6B9805D1DB4CC6800604393 /* UIImageView+FaceAware.swift in Sources */,
 				57CC4E3E1E5EE8F9001CA8E3 /* PPMakeBTTool.m in Sources */,
@@ -1561,16 +1629,19 @@
 				C67799911D508E9000007161 /* CenterOneViewController.m in Sources */,
 				570149DD1E8B4CC7007CD99E /* NSString+WordCount.m in Sources */,
 				C6D808A91D4B265200C8B2FF /* AnimationShowViewController.m in Sources */,
+				571E042A1E8F42220037556C /* PPCustomCalendarViewController.m in Sources */,
 				57F76FC01E5FFC9B001BD536 /* MJChiBaoZiFooter.m in Sources */,
 				C6D808A61D4B25E500C8B2FF /* AnimationBaseViewController.m in Sources */,
 				C6AC8C2A1D1276F30008133E /* MJCustomRefreshViewController.m in Sources */,
 				C6B980171DB4AD4200604393 /* UIImageView+PPSets.m in Sources */,
+				571E043E1E8FA1A30037556C /* UITableViewCell+ShowAnimations.m in Sources */,
 				C682E6581DB9A63300CD86CB /* CalendarEventViewController.m in Sources */,
 				C67799931D508E9000007161 /* MoreViewController.m in Sources */,
 				57DAAB371E7053E2001C127E /* PPBaseCellDisplayAnimationViewController.m in Sources */,
 				57CC4E411E5EE912001CA8E3 /* PPMakeImgVTool.m in Sources */,
 				C677999D1D508F7700007161 /* MasonryBaseViewController.m in Sources */,
 				C67799951D508E9000007161 /* WholesaleViewController.m in Sources */,
+				571E04381E8F7F3C0037556C /* PPTextFieldDemoCell.m in Sources */,
 				578897301E07F35A00CD0595 /* EPeiResultModel.m in Sources */,
 				C67799941D508E9000007161 /* TwoMoreViewController.m in Sources */,
 				C6EBE9031DACD9E70067EF2A /* UIImage+PPSets.m in Sources */,
@@ -1583,7 +1654,6 @@
 				5744CC661E8A153000A15DB9 /* ASDKViewController.m in Sources */,
 				C6C6D0A81D0F94BB00F82C39 /* AppDelegate.m in Sources */,
 				575C1D941D85029600357B39 /* LPLevelView.m in Sources */,
-				570F720E1E7E986E006BCAFC /* PPTextfield.m in Sources */,
 				575C1DB71D85033500357B39 /* PPMTHandle.m in Sources */,
 				57DAAB121E703C83001C127E /* ScreenShotView.m in Sources */,
 				57DAAB3D1E705907001C127E /* JRNumberTool.m in Sources */,
@@ -1616,6 +1686,8 @@
 				C6EBE9051DACD9E70067EF2A /* UIView+PPSets.m in Sources */,
 				57DAAB101E703C83001C127E /* BaseNavigationController.m in Sources */,
 				5780E70E1DCB803A00156B12 /* ClassObj.m in Sources */,
+				571E04341E8F7D330037556C /* NSString+PPTextField.m in Sources */,
+				571E043B1E8F7FEA0037556C /* PPTFModel.m in Sources */,
 				57CC4E3B1E5EE8E5001CA8E3 /* PPMakeLBTool.m in Sources */,
 				5780E7081DCB7C2300156B12 /* ClassListModel.m in Sources */,
 				C683FBD71D2A15C500D1BF6A /* StatusResult.m in Sources */,
@@ -1628,6 +1700,7 @@
 				C60886511DBE18010071B7B8 /* MJRefreshCell.m in Sources */,
 				578897331E07F48C00CD0595 /* EPeiDataModel.m in Sources */,
 				C681C07D1DC9B2ED003637CD /* PP_LabelManager.m in Sources */,
+				571E042E1E8F7CBC0037556C /* PPTextFieldDemoViewController.m in Sources */,
 				570F72461E82A3A0006BCAFC /* LearnSystemAPIBaseViewController.m in Sources */,
 				57F76FC51E5FFC9B001BD536 /* MJDIYHeader.m in Sources */,
 				C63B358D1D1D3CA8006277E8 /* Foundation+Log.m in Sources */,
@@ -1639,7 +1712,6 @@
 				57DAAB2C1E703CF9001C127E /* PPSecondViewController.m in Sources */,
 				C6C6D1DD1D0F99CB00F82C39 /* MJBaseViewController.m in Sources */,
 				C683FBDD1D2A360000D1BF6A /* Student.m in Sources */,
-				570F720D1E7E986E006BCAFC /* NSString+PPTextField.m in Sources */,
 				C6C6D1E31D0FA50100F82C39 /* MJDefaultBlockViewController.m in Sources */,
 				57F76FC11E5FFC9B001BD536 /* MJChiBaoZiFooter2.m in Sources */,
 			);
@@ -1776,7 +1848,7 @@
 					"$(PROJECT_DIR)/PPDemos/Libs/ShareSDK/Support/PlatformSDK/SinaWeiboSDK",
 					"$(PROJECT_DIR)/PPDemos/Libs/ShareSDK/Support/PlatformSDK/WeChatSDK",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = pplccatjikeguoji;
+				PRODUCT_BUNDLE_IDENTIFIER = PPDemos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1812,7 +1884,7 @@
 					"$(PROJECT_DIR)/PPDemos/Libs/ShareSDK/Support/PlatformSDK/SinaWeiboSDK",
 					"$(PROJECT_DIR)/PPDemos/Libs/ShareSDK/Support/PlatformSDK/WeChatSDK",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = pplccatjikeguoji;
+				PRODUCT_BUNDLE_IDENTIFIER = PPDemos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;

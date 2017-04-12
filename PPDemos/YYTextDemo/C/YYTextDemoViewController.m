@@ -10,12 +10,10 @@
 @interface YYTextDemoViewController ()
 /*
  0. [专访YYKit作者郭曜源：开源大牛是怎样炼成的](http://www.infoq.com/cn/news/2015/11/ibireme-interview?utm_content=homepage)
- 1. [iOS开发学习之YYKit中YYText的深入解析，YYTextShadow的代码解析](http://blog.csdn.net/zhonggaorong/article/details/51482738)
  2. [YYKit之YYText](http://www.cnblogs.com/lujianwenance/p/5716804.html)
  3. [YYText 是如何绘制的](https://github.com/lzwjava/OpenSourceNotes/blob/master/YYText/YYText.md)
  4. [YYText 库学习总结](http://www.jianshu.com/p/60aee32ade55?nomobile=yes)
- 5. [ 使用YYText-文本蓝色文字点击实现超链接跳转](http://blog.csdn.net/justinaelx/article/details/52077610)
- 6. 
+ 6.
  */
 @end
 

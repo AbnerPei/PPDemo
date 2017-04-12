@@ -7,12 +7,15 @@
 //
 
 #import "PPDetailCellDisplyAnimationViewController.h"
+#import "UITableViewCell+ShowAnimations.h"
 
 @interface PPDetailCellDisplyAnimationViewController ()
 {
     BOOL _isNeededAnimation;  //判断当前cell要不要做动画效果
     int  _baseCount;
 }
+//cell动画indexPath集合
+@property(nonatomic,strong)NSMutableSet *cellAnimationIndexPaths;
 @end
 
 @implementation PPDetailCellDisplyAnimationViewController
@@ -23,6 +26,7 @@
     
     [self creatRightItemUI];
     self.titles = [NSMutableArray array];
+    self.cellAnimationIndexPaths = [NSMutableSet set];
     
     [self refreshDataAction];
 }
@@ -35,13 +39,14 @@
 {
     
     [self.titles removeAllObjects];
+    [self.cellAnimationIndexPaths removeAllObjects];
     [self.tableView reloadData];
     
     _isNeededAnimation = NO;
     
     //模拟网路加载数据
     _baseCount+=100;
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         for (int i = _baseCount; i<_baseCount+30; i++) {
             [self.titles addObject:[NSString stringWithFormat:@"%d",i]];
         }
@@ -58,37 +63,14 @@
 {
     return 100;
 }
--(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (_isNeededAnimation == NO) {
+    cell.backgroundColor = [UIColor pp_randomColor];
+    
+    if (![self.cellAnimationIndexPaths containsObject:indexPath]) {
+        [self.cellAnimationIndexPaths addObject:indexPath];
         CGFloat rowHeight = [self tableView:tableView heightForRowAtIndexPath:indexPath];
-        CGFloat displayRowFloat = tableView.height/rowHeight;
-        NSInteger rowCount = [[JRNumberTool jr_Ceilf:[NSString stringWithFormat:@"%f",displayRowFloat] decimalCount:0] integerValue];
-        NSLog(@"indexPath.row---%ld----%f",indexPath.row,rowHeight);
-        if (indexPath.row+1 <= rowCount) {
-            CGRect originFrame = cell.frame;
-            CGRect frame = cell.frame;
-            frame.origin.y = originFrame.origin.y+60;
-            cell.frame = frame;
-            
-            NSTimeInterval duration = 0.3;
-            
-            cell.alpha = 0;
-            [UIView animateWithDuration:0.1 delay:duration*(indexPath.row) options:UIViewAnimationOptionCurveLinear animations:^{
-                cell.alpha = 1.0;
-            } completion:nil];
-            
-            [UIView animateWithDuration:duration delay:duration*(indexPath.row) options:UIViewAnimationOptionCurveLinear animations:^{
-                cell.frame = originFrame;
-            } completion:^(BOOL finished) {
-                if (finished) {
-                    if (indexPath.row+1 >= rowCount) {
-                        _isNeededAnimation = YES;
-                    }
-                }
-            }];
-            
-        }
+        [cell pp_showAnimationWithAnimationStyle:UITableViewCellShowAnimationStyleBottomTop cellHeight:rowHeight tableView:tableView indexPath:indexPath];
     }
 }
 
