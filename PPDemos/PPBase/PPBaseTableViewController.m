@@ -29,7 +29,6 @@
     self.tableView.backgroundColor = [UIColor whiteColor];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.tableView setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
 }
 #pragma mark - Table view data source

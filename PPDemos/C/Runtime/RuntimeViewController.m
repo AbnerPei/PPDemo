@@ -128,7 +128,7 @@
     
     //runtime获取成员变量列表
     Ivar *ivarLists = class_copyIvarList([User class], &count);
-    for (unsigned int i; i<count; i++) {
+    for (unsigned int i = 0; i<count; i++) {
         Ivar myIvar = ivarLists[i];
         const char *ivarName = ivar_getName(myIvar);
         NSLog(@"runtime获取成员变量列表---->%@", [NSString stringWithUTF8String:ivarName]);
@@ -136,7 +136,7 @@
     
     //runtime获取协议列表
     __unsafe_unretained Protocol **protocolLists = class_copyProtocolList([User class], &count);
-    for (unsigned int i; i<count; i++) {
+    for (unsigned int i = 0; i<count; i++) {
         Protocol *myProtocal = protocolLists[i];
         const char *protocolName = protocol_getName(myProtocal);
         NSLog(@"runtime获取协议列表---->%@", [NSString stringWithUTF8String:protocolName]);

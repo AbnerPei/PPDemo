@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>baidumap</string>
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -29,6 +33,10 @@
 	</dict>
 	<key>NSCalendarsUsageDescription</key>
 	<string>ppdemos访问你的日历</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>总是访问地址</string>
+	<key>NSLocationUsageDescription</key>
+	<string>位置</string>
 	<key>NSRemindersUsageDescription</key>
 	<string>ppdemos访问你的提醒事项</string>
 	<key>UILaunchStoryboardName</key>

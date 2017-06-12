@@ -14,32 +14,10 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - AsyncDisplayKit (2.2):
-    - AsyncDisplayKit/PINRemoteImage (= 2.2)
-  - AsyncDisplayKit/Core (2.2)
-  - AsyncDisplayKit/PINRemoteImage (2.2):
-    - AsyncDisplayKit/Core
-    - PINRemoteImage/iOS (= 3.0.0-beta.8)
-    - PINRemoteImage/PINCache
-  - IQKeyboardManager (4.0.8)
+  - IQKeyboardManager (4.0.10)
   - Masonry (1.0.2)
   - MJExtension (3.0.13)
   - MJRefresh (3.1.12)
-  - PINCache (3.0.1-beta.4):
-    - PINCache/Arc-exception-safe (= 3.0.1-beta.4)
-    - PINCache/Core (= 3.0.1-beta.4)
-  - PINCache/Arc-exception-safe (3.0.1-beta.4):
-    - PINCache/Core
-  - PINCache/Core (3.0.1-beta.4):
-    - PINOperation (= 1.0.3)
-  - PINOperation (1.0.3)
-  - PINRemoteImage/Core (3.0.0-beta.8)
-  - PINRemoteImage/iOS (3.0.0-beta.8):
-    - PINRemoteImage/Core
-  - PINRemoteImage/PINCache (3.0.0-beta.8):
-    - PINCache (= 3.0.1-beta.4)
-    - PINRemoteImage/Core
-  - RMPZoomTransitionAnimator (1.0.2)
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
@@ -50,12 +28,10 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
-  - AsyncDisplayKit
   - IQKeyboardManager
   - Masonry
   - MJExtension
   - MJRefresh
-  - RMPZoomTransitionAnimator
   - SDWebImage
   - YTKNetwork
   - YYModel
@@ -63,20 +39,15 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  AsyncDisplayKit: 1585f6cd0531ae9b30476f5912f577b73ebcb0e4
-  IQKeyboardManager: 1a8189fa153bf09044355ee0ad36826f6767e7f7
+  IQKeyboardManager: 593ee99b88381f4b9ccb22bd680f22606351bd41
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
-  PINCache: a89c8f609232afac77128557bd12c861844423d7
-  PINOperation: ac23db44796d4a564ecf9b5ea7163510f579b71d
-  PINRemoteImage: c4f9f16932840c597f32e69dd288e10e111a1929
-  RMPZoomTransitionAnimator: fa1a0726e8e227069d9d63d30ef403aa12323960
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   YTKNetwork: c4b0c29c9d639dc050d475de69ee626d53eac598
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 209cd854b351120248494530933b79a5bc1839ba
+PODFILE CHECKSUM: 2f0845d9976638ff37dd2b48c1441f146de0f5ad
 
 COCOAPODS: 1.1.1

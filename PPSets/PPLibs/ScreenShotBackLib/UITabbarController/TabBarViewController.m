@@ -38,6 +38,7 @@
     BaseNavigationController *recommendNavC = [[BaseNavigationController alloc] initWithRootViewController:recommendVC];
     [childVCArray addObject:recommendNavC];
     
+    
     PPSecondViewController *columnVC = [[PPSecondViewController alloc] init];
     columnVC.navigationItem.title = @"栏目";
     [columnVC.tabBarItem setTitle:@"栏目"];

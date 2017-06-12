@@ -13,10 +13,10 @@ target 'PPDemos' do
        pod "YYText"
        pod "YYModel"
 
-       pod "AsyncDisplayKit"
-       pod "RMPZoomTransitionAnimator"
        pod "YTKNetwork"
        pod "IQKeyboardManager"
+       
+
        
        
 

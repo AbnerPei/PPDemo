@@ -40,6 +40,9 @@
     self.screenshotView.hidden = YES;
 #endif
     
+    
+    NSURL *url = [NSURL URLWithString:@"http://baidu.com/中文"];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

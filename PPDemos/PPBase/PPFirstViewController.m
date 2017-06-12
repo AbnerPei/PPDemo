@@ -27,6 +27,7 @@
                      @"MJRefrsh使用Demos",
                      @"MJExtension使用Demos",
                      @"TextField限制那些事，一个属性满足你的需求！",
+                     @"转场动画",
                      @"cell加载时各种动画",
                      @"Masonry使用Demos",
                      @"Animation Demos",
@@ -34,7 +35,8 @@
                      @"YYText使用demos",
                      @"ASDK学习",
                      @"学习系统API知识，练习demos",
-                     @"自定义个日历控件"
+                     @"自定义个日历控件",
+                     @"架构/地图"
                      ] mutableCopy];
     
     self.vcs = [@[
@@ -42,6 +44,7 @@
                   @"MJBaseViewController",
                   @"MJExtensionBaseViewController",
                   @"PPTextFieldDemoViewController",
+                  @"PPTransitionsViewController",
                   @"PPBaseCellDisplayAnimationViewController",
                   @"MasonryBaseViewController",
                   @"AnimationBaseViewController",
@@ -49,7 +52,8 @@
                   @"YYTextDemoViewController",
                   @"ASDKViewController",
                   @"LearnSystemAPIBaseViewController",
-                  @"PPCustomCalendarViewController"
+                  @"PPCustomCalendarViewController",
+                  @"PPJiaGouMapBaseViewController"
                   ] mutableCopy];
     
 }
