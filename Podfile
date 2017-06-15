@@ -15,6 +15,7 @@ target 'PPDemos' do
 
        pod "YTKNetwork"
        pod "IQKeyboardManager"
+       pod “WCDB”
        
 
        

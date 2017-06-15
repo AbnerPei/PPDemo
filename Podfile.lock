@@ -21,6 +21,7 @@ PODS:
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
+  - WCDB (1.0.0)
   - YTKNetwork (2.0.3):
     - AFNetworking (~> 3.0)
   - YYModel (1.0.4)
@@ -33,6 +34,7 @@ DEPENDENCIES:
   - MJExtension
   - MJRefresh
   - SDWebImage
+  - WCDB
   - YTKNetwork
   - YYModel
   - YYText
@@ -44,10 +46,11 @@ SPEC CHECKSUMS:
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  WCDB: b8ebc76bc8cc3f69c4dc9ebc9214fee6c7ba1a04
   YTKNetwork: c4b0c29c9d639dc050d475de69ee626d53eac598
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 2f0845d9976638ff37dd2b48c1441f146de0f5ad
+PODFILE CHECKSUM: e40ac6ce293fb3ddab3f28d197c0b94087d9c58d
 
 COCOAPODS: 1.1.1
