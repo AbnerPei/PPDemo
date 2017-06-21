@@ -41,11 +41,23 @@
 #endif
     
     
-    NSURL *url = [NSURL URLWithString:@"http://baidu.com/中文"];
+//    NSURL *url = [NSURL URLWithString:@"http://baidu.com/中文"];
+    NSURL *url = [[NSURL alloc]initWithString:@"http://baidu.com/中文" relativeToURL:nil];
+    
+//    UITapGestureRecognizer *tapG = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(pplog)];
+    
+//    [self.window.rootViewController.view addGestureRecognizer:tapG];
+    
+    CGFloat scale = [UIScreen mainScreen].scale;
+    NSLog(@"屏幕scale is %f",scale);
     
     [self.window makeKeyAndVisible];
     return YES;
 }
+
+//-(void)pplog{
+//    NSLog(@"pplog laallalallalallal");
+//}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

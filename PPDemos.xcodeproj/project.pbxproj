@@ -43,10 +43,6 @@
 		57378B2B1EEE6834000ECA07 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57378B2A1EEE6834000ECA07 /* GLKit.framework */; };
 		57378B2F1EEE6C7E000ECA07 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57378B2E1EEE6C7E000ECA07 /* UIKit.framework */; };
 		57378B311EEE6C84000ECA07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57378B301EEE6C84000ECA07 /* Foundation.framework */; };
-		57378B341EEE6D1C000ECA07 /* PPBaiduMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57378B331EEE6D1C000ECA07 /* PPBaiduMapView.m */; };
-		57378B371EEE6E4B000ECA07 /* PPGaodeMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57378B361EEE6E4B000ECA07 /* PPGaodeMapView.m */; };
-		57378B3B1EEE7CAE000ECA07 /* PPBaiduFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 57378B3A1EEE7CAE000ECA07 /* PPBaiduFactory.m */; };
-		57378B431EEE8019000ECA07 /* PPGaodeFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 57378B421EEE8019000ECA07 /* PPGaodeFactory.m */; };
 		57378B4B1EEE83E5000ECA07 /* BaiduMapAPI_Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57378B441EEE83E5000ECA07 /* BaiduMapAPI_Base.framework */; };
 		57378B4C1EEE83E5000ECA07 /* BaiduMapAPI_Cloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57378B451EEE83E5000ECA07 /* BaiduMapAPI_Cloud.framework */; };
 		57378B4D1EEE83E5000ECA07 /* BaiduMapAPI_Location.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57378B461EEE83E5000ECA07 /* BaiduMapAPI_Location.framework */; };
@@ -57,7 +53,6 @@
 		57378B551EEE8425000ECA07 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57378B531EEE8425000ECA07 /* libcrypto.a */; };
 		57378B561EEE8425000ECA07 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57378B541EEE8425000ECA07 /* libssl.a */; };
 		57378B581EEE84B0000ECA07 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 57378B571EEE84B0000ECA07 /* mapapi.bundle */; };
-		57378B5B1EEE8830000ECA07 /* PPMapEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 57378B5A1EEE8830000ECA07 /* PPMapEngine.m */; };
 		5742B4B11EA5BA1000C57BFB /* PPTransitionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742B4B01EA5BA1000C57BFB /* PPTransitionsViewController.m */; };
 		5742B4B41EA5BA8800C57BFB /* UIPresentationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742B4B31EA5BA8800C57BFB /* UIPresentationDemoViewController.m */; };
 		5742B4B71EA5BB4800C57BFB /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742B4B61EA5BB4800C57BFB /* TestViewController.m */; };
@@ -90,6 +85,11 @@
 		575C1DE51D8503F000357B39 /* yi.gif in Resources */ = {isa = PBXBuildFile; fileRef = 575C1DCB1D8503F000357B39 /* yi.gif */; };
 		575C1DE61D8503F000357B39 /* 响应者链条示意图.png in Resources */ = {isa = PBXBuildFile; fileRef = 575C1DCC1D8503F000357B39 /* 响应者链条示意图.png */; };
 		575C1E091D85044900357B39 /* PAWaterflowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C1DFB1D85044900357B39 /* PAWaterflowLayout.m */; };
+		5773EDBE1EF9533800014D95 /* UIGestureRecognizer+Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 5773EDBD1EF9533800014D95 /* UIGestureRecognizer+Event.m */; };
+		5773EDC11EF955CB00014D95 /* UITapGestureRecognizer+Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 5773EDC01EF955CB00014D95 /* UITapGestureRecognizer+Event.m */; };
+		5773EDD51EFA420D00014D95 /* NSString+ContainsString.m in Sources */ = {isa = PBXBuildFile; fileRef = 5773EDD41EFA420D00014D95 /* NSString+ContainsString.m */; };
+		5773EDE11EFA6A4B00014D95 /* YYLabel+ConfigureFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5773EDE01EFA6A4B00014D95 /* YYLabel+ConfigureFunction.m */; };
+		5773EDE41EFAA38800014D95 /* UILabel+CreatWithUILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5773EDE31EFAA38800014D95 /* UILabel+CreatWithUILabel.m */; };
 		5780E7081DCB7C2300156B12 /* ClassListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5780E7071DCB7C2300156B12 /* ClassListModel.m */; };
 		5780E70B1DCB802600156B12 /* ClassEntryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5780E70A1DCB802600156B12 /* ClassEntryModel.m */; };
 		5780E70E1DCB803A00156B12 /* ClassObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 5780E70D1DCB803A00156B12 /* ClassObj.m */; };
@@ -102,14 +102,18 @@
 		578E5DE21E9DD8E0003BB111 /* NSMutableAttributedString+PPTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 578E5DE11E9DD8E0003BB111 /* NSMutableAttributedString+PPTextField.m */; };
 		57BC34451E8BB4A900DD6175 /* PPBaiSiRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BC34441E8BB4A900DD6175 /* PPBaiSiRequest.m */; };
 		57BC34491E8BDDE200DD6175 /* PPJianFriendRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BC34481E8BDDE200DD6175 /* PPJianFriendRequest.m */; };
+		57C227FC1EF3B95C00BE2A30 /* PPBaiduFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C227F11EF3B95C00BE2A30 /* PPBaiduFactory.m */; };
+		57C227FD1EF3B95C00BE2A30 /* PPBaiduMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C227F31EF3B95C00BE2A30 /* PPBaiduMapView.m */; };
+		57C227FE1EF3B95C00BE2A30 /* PPGaodeFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C227F51EF3B95C00BE2A30 /* PPGaodeFactory.m */; };
+		57C227FF1EF3B95C00BE2A30 /* PPGaodeMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C227F71EF3B95C00BE2A30 /* PPGaodeMapView.m */; };
+		57C228001EF3B95C00BE2A30 /* PPMapEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C227F91EF3B95C00BE2A30 /* PPMapEngine.m */; };
+		57C228071EF76DD700BE2A30 /* KVCKeyPaths.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C228061EF76DD700BE2A30 /* KVCKeyPaths.m */; };
+		57C2280D1EF90C0700BE2A30 /* UILabel+CreatWithYYLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C2280C1EF90C0700BE2A30 /* UILabel+CreatWithYYLabel.m */; };
 		57CC4E2A1E5ECEF8001CA8E3 /* JRAccessPermissionsTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CC4E251E5ECEF8001CA8E3 /* JRAccessPermissionsTool.m */; };
 		57CC4E2B1E5ECEF8001CA8E3 /* JRCalculateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CC4E271E5ECEF8001CA8E3 /* JRCalculateTool.m */; };
 		57CC4E2C1E5ECEF8001CA8E3 /* JRDeviceTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CC4E291E5ECEF8001CA8E3 /* JRDeviceTool.m */; };
 		57CC4E2F1E5ED015001CA8E3 /* PPSizeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CC4E2E1E5ED015001CA8E3 /* PPSizeTool.m */; };
 		57CC4E321E5ED144001CA8E3 /* RTDateFormatterTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CC4E311E5ED144001CA8E3 /* RTDateFormatterTool.m */; };
-		57CC4E3B1E5EE8E5001CA8E3 /* PPMakeLBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CC4E3A1E5EE8E5001CA8E3 /* PPMakeLBTool.m */; };
-		57CC4E3E1E5EE8F9001CA8E3 /* PPMakeBTTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CC4E3D1E5EE8F9001CA8E3 /* PPMakeBTTool.m */; };
-		57CC4E411E5EE912001CA8E3 /* PPMakeImgVTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CC4E401E5EE912001CA8E3 /* PPMakeImgVTool.m */; };
 		57DAAB101E703C83001C127E /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DAAAFF1E703C83001C127E /* BaseNavigationController.m */; };
 		57DAAB111E703C83001C127E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DAAB011E703C83001C127E /* BaseViewController.m */; };
 		57DAAB121E703C83001C127E /* ScreenShotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DAAB041E703C83001C127E /* ScreenShotView.m */; };
@@ -166,7 +170,7 @@
 		C6B980171DB4AD4200604393 /* UIImageView+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B980161DB4AD4200604393 /* UIImageView+PPSets.m */; };
 		C6B9805D1DB4CC6800604393 /* UIImageView+FaceAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B9805C1DB4CC6800604393 /* UIImageView+FaceAware.swift */; };
 		C6C1CC121D4EF9660082A717 /* RuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1CC111D4EF9660082A717 /* RuntimeViewController.m */; };
-		C6C6D0A51D0F94BB00F82C39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C6D0A41D0F94BB00F82C39 /* main.m */; };
+		C6C6D0A51D0F94BB00F82C39 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = C6C6D0A41D0F94BB00F82C39 /* main.mm */; };
 		C6C6D0A81D0F94BB00F82C39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C6D0A71D0F94BB00F82C39 /* AppDelegate.m */; };
 		C6C6D0AE1D0F94BB00F82C39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6C6D0AC1D0F94BB00F82C39 /* Main.storyboard */; };
 		C6C6D0B01D0F94BB00F82C39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6C6D0AF1D0F94BB00F82C39 /* Assets.xcassets */; };
@@ -247,19 +251,8 @@
 		57378B261EEE67F9000ECA07 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		57378B281EEE680B000ECA07 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		57378B2A1EEE6834000ECA07 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
-		57378B2D1EEE6B96000ECA07 /* PPMapViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPMapViewProtocol.h; sourceTree = "<group>"; };
 		57378B2E1EEE6C7E000ECA07 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		57378B301EEE6C84000ECA07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		57378B321EEE6D1C000ECA07 /* PPBaiduMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPBaiduMapView.h; sourceTree = "<group>"; };
-		57378B331EEE6D1C000ECA07 /* PPBaiduMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPBaiduMapView.m; sourceTree = "<group>"; };
-		57378B351EEE6E4B000ECA07 /* PPGaodeMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPGaodeMapView.h; sourceTree = "<group>"; };
-		57378B361EEE6E4B000ECA07 /* PPGaodeMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPGaodeMapView.m; sourceTree = "<group>"; };
-		57378B381EEE71FC000ECA07 /* MapEngineMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapEngineMacros.h; sourceTree = "<group>"; };
-		57378B391EEE7CAE000ECA07 /* PPBaiduFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPBaiduFactory.h; sourceTree = "<group>"; };
-		57378B3A1EEE7CAE000ECA07 /* PPBaiduFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPBaiduFactory.m; sourceTree = "<group>"; };
-		57378B3C1EEE7CD4000ECA07 /* PPMapFactoryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPMapFactoryProtocol.h; sourceTree = "<group>"; };
-		57378B411EEE8019000ECA07 /* PPGaodeFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPGaodeFactory.h; sourceTree = "<group>"; };
-		57378B421EEE8019000ECA07 /* PPGaodeFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPGaodeFactory.m; sourceTree = "<group>"; };
 		57378B441EEE83E5000ECA07 /* BaiduMapAPI_Base.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Base.framework; sourceTree = "<group>"; };
 		57378B451EEE83E5000ECA07 /* BaiduMapAPI_Cloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Cloud.framework; sourceTree = "<group>"; };
 		57378B461EEE83E5000ECA07 /* BaiduMapAPI_Location.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Location.framework; sourceTree = "<group>"; };
@@ -270,8 +263,6 @@
 		57378B531EEE8425000ECA07 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
 		57378B541EEE8425000ECA07 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
 		57378B571EEE84B0000ECA07 /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = mapapi.bundle; path = BaiduMapAPI_Map.framework/Resources/mapapi.bundle; sourceTree = "<group>"; };
-		57378B591EEE8830000ECA07 /* PPMapEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPMapEngine.h; sourceTree = "<group>"; };
-		57378B5A1EEE8830000ECA07 /* PPMapEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPMapEngine.m; sourceTree = "<group>"; };
 		5742B4AF1EA5BA1000C57BFB /* PPTransitionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTransitionsViewController.h; sourceTree = "<group>"; };
 		5742B4B01EA5BA1000C57BFB /* PPTransitionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPTransitionsViewController.m; sourceTree = "<group>"; };
 		5742B4B21EA5BA8800C57BFB /* UIPresentationDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPresentationDemoViewController.h; sourceTree = "<group>"; };
@@ -352,6 +343,16 @@
 		575C1DE01D8503F000357B39 /* 非常值得收藏1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "非常值得收藏1.h"; sourceTree = "<group>"; };
 		575C1DFA1D85044900357B39 /* PAWaterflowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAWaterflowLayout.h; sourceTree = "<group>"; };
 		575C1DFB1D85044900357B39 /* PAWaterflowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAWaterflowLayout.m; sourceTree = "<group>"; };
+		5773EDBC1EF9533800014D95 /* UIGestureRecognizer+Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+Event.h"; sourceTree = "<group>"; };
+		5773EDBD1EF9533800014D95 /* UIGestureRecognizer+Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+Event.m"; sourceTree = "<group>"; };
+		5773EDBF1EF955CB00014D95 /* UITapGestureRecognizer+Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITapGestureRecognizer+Event.h"; sourceTree = "<group>"; };
+		5773EDC01EF955CB00014D95 /* UITapGestureRecognizer+Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITapGestureRecognizer+Event.m"; sourceTree = "<group>"; };
+		5773EDD31EFA420D00014D95 /* NSString+ContainsString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ContainsString.h"; sourceTree = "<group>"; };
+		5773EDD41EFA420D00014D95 /* NSString+ContainsString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ContainsString.m"; sourceTree = "<group>"; };
+		5773EDDF1EFA6A4B00014D95 /* YYLabel+ConfigureFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YYLabel+ConfigureFunction.h"; sourceTree = "<group>"; };
+		5773EDE01EFA6A4B00014D95 /* YYLabel+ConfigureFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YYLabel+ConfigureFunction.m"; sourceTree = "<group>"; };
+		5773EDE21EFAA38800014D95 /* UILabel+CreatWithUILabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+CreatWithUILabel.h"; sourceTree = "<group>"; };
+		5773EDE31EFAA38800014D95 /* UILabel+CreatWithUILabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CreatWithUILabel.m"; sourceTree = "<group>"; };
 		5780E7061DCB7C2300156B12 /* ClassListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassListModel.h; sourceTree = "<group>"; };
 		5780E7071DCB7C2300156B12 /* ClassListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassListModel.m; sourceTree = "<group>"; };
 		5780E7091DCB802600156B12 /* ClassEntryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassEntryModel.h; sourceTree = "<group>"; };
@@ -380,7 +381,23 @@
 		57BC34471E8BDDE200DD6175 /* PPJianFriendRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPJianFriendRequest.h; sourceTree = "<group>"; };
 		57BC34481E8BDDE200DD6175 /* PPJianFriendRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPJianFriendRequest.m; sourceTree = "<group>"; };
 		57BC344A1E8BDF2600DD6175 /* RequestUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestUrl.h; sourceTree = "<group>"; };
-		57CC4E221E5ECE24001CA8E3 /* PPMakeUITools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPMakeUITools.h; sourceTree = "<group>"; };
+		57C227EF1EF3B95C00BE2A30 /* MapEngineMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapEngineMacros.h; sourceTree = "<group>"; };
+		57C227F01EF3B95C00BE2A30 /* PPBaiduFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPBaiduFactory.h; sourceTree = "<group>"; };
+		57C227F11EF3B95C00BE2A30 /* PPBaiduFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPBaiduFactory.m; sourceTree = "<group>"; };
+		57C227F21EF3B95C00BE2A30 /* PPBaiduMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPBaiduMapView.h; sourceTree = "<group>"; };
+		57C227F31EF3B95C00BE2A30 /* PPBaiduMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPBaiduMapView.m; sourceTree = "<group>"; };
+		57C227F41EF3B95C00BE2A30 /* PPGaodeFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPGaodeFactory.h; sourceTree = "<group>"; };
+		57C227F51EF3B95C00BE2A30 /* PPGaodeFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPGaodeFactory.m; sourceTree = "<group>"; };
+		57C227F61EF3B95C00BE2A30 /* PPGaodeMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPGaodeMapView.h; sourceTree = "<group>"; };
+		57C227F71EF3B95C00BE2A30 /* PPGaodeMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPGaodeMapView.m; sourceTree = "<group>"; };
+		57C227F81EF3B95C00BE2A30 /* PPMapEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPMapEngine.h; sourceTree = "<group>"; };
+		57C227F91EF3B95C00BE2A30 /* PPMapEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPMapEngine.m; sourceTree = "<group>"; };
+		57C227FA1EF3B95C00BE2A30 /* PPMapFactoryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPMapFactoryProtocol.h; sourceTree = "<group>"; };
+		57C227FB1EF3B95C00BE2A30 /* PPMapViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPMapViewProtocol.h; sourceTree = "<group>"; };
+		57C228051EF76DD700BE2A30 /* KVCKeyPaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVCKeyPaths.h; sourceTree = "<group>"; };
+		57C228061EF76DD700BE2A30 /* KVCKeyPaths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVCKeyPaths.m; sourceTree = "<group>"; };
+		57C2280B1EF90C0700BE2A30 /* UILabel+CreatWithYYLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+CreatWithYYLabel.h"; sourceTree = "<group>"; };
+		57C2280C1EF90C0700BE2A30 /* UILabel+CreatWithYYLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CreatWithYYLabel.m"; sourceTree = "<group>"; };
 		57CC4E231E5ECE4C001CA8E3 /* PPHandleTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPHandleTools.h; sourceTree = "<group>"; };
 		57CC4E241E5ECEF8001CA8E3 /* JRAccessPermissionsTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRAccessPermissionsTool.h; sourceTree = "<group>"; };
 		57CC4E251E5ECEF8001CA8E3 /* JRAccessPermissionsTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRAccessPermissionsTool.m; sourceTree = "<group>"; };
@@ -392,12 +409,6 @@
 		57CC4E2E1E5ED015001CA8E3 /* PPSizeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSizeTool.m; sourceTree = "<group>"; };
 		57CC4E301E5ED144001CA8E3 /* RTDateFormatterTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTDateFormatterTool.h; sourceTree = "<group>"; };
 		57CC4E311E5ED144001CA8E3 /* RTDateFormatterTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTDateFormatterTool.m; sourceTree = "<group>"; };
-		57CC4E391E5EE8E5001CA8E3 /* PPMakeLBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPMakeLBTool.h; sourceTree = "<group>"; };
-		57CC4E3A1E5EE8E5001CA8E3 /* PPMakeLBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPMakeLBTool.m; sourceTree = "<group>"; };
-		57CC4E3C1E5EE8F9001CA8E3 /* PPMakeBTTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPMakeBTTool.h; sourceTree = "<group>"; };
-		57CC4E3D1E5EE8F9001CA8E3 /* PPMakeBTTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPMakeBTTool.m; sourceTree = "<group>"; };
-		57CC4E3F1E5EE912001CA8E3 /* PPMakeImgVTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPMakeImgVTool.h; sourceTree = "<group>"; };
-		57CC4E401E5EE912001CA8E3 /* PPMakeImgVTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPMakeImgVTool.m; sourceTree = "<group>"; };
 		57DAAAFE1E703C83001C127E /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		57DAAAFF1E703C83001C127E /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		57DAAB001E703C83001C127E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -511,7 +522,7 @@
 		C6C1CC111D4EF9660082A717 /* RuntimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeViewController.m; sourceTree = "<group>"; };
 		C6C1CC131D4EF9850082A717 /* Runtime知识.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runtime知识.h"; sourceTree = "<group>"; };
 		C6C6D0A01D0F94BB00F82C39 /* PPDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PPDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6C6D0A41D0F94BB00F82C39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C6C6D0A41D0F94BB00F82C39 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		C6C6D0A61D0F94BB00F82C39 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C6C6D0A71D0F94BB00F82C39 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C6C6D0AD1D0F94BB00F82C39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -681,6 +692,7 @@
 		5725821C1E0B77F600C41BAB /* NSString */ = {
 			isa = PBXGroup;
 			children = (
+				5773EDD21EFA420D00014D95 /* SystemRewrite */,
 				572582271E0B7C3700C41BAB /* PPNSStringCategory.h */,
 				5725821D1E0B77F600C41BAB /* NSString+PPSets.h */,
 				5725821E1E0B77F600C41BAB /* NSString+PPSets.m */,
@@ -739,7 +751,7 @@
 		57378B0A1EEE664E000ECA07 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				57378B2C1EEE68E1000ECA07 /* MapEngine */,
+				57C227EE1EF3B95C00BE2A30 /* MapEngine */,
 				57378B0C1EEE667D000ECA07 /* BaiDuMapLib */,
 				57378B0D1EEE667D000ECA07 /* GaoDeMapLib */,
 			);
@@ -778,26 +790,6 @@
 				57378B0E1EEE66AC000ECA07 /* MAMapKit.framework */,
 			);
 			path = GaoDeMapLib;
-			sourceTree = "<group>";
-		};
-		57378B2C1EEE68E1000ECA07 /* MapEngine */ = {
-			isa = PBXGroup;
-			children = (
-				57378B2D1EEE6B96000ECA07 /* PPMapViewProtocol.h */,
-				57378B3C1EEE7CD4000ECA07 /* PPMapFactoryProtocol.h */,
-				57378B381EEE71FC000ECA07 /* MapEngineMacros.h */,
-				57378B321EEE6D1C000ECA07 /* PPBaiduMapView.h */,
-				57378B331EEE6D1C000ECA07 /* PPBaiduMapView.m */,
-				57378B351EEE6E4B000ECA07 /* PPGaodeMapView.h */,
-				57378B361EEE6E4B000ECA07 /* PPGaodeMapView.m */,
-				57378B391EEE7CAE000ECA07 /* PPBaiduFactory.h */,
-				57378B3A1EEE7CAE000ECA07 /* PPBaiduFactory.m */,
-				57378B411EEE8019000ECA07 /* PPGaodeFactory.h */,
-				57378B421EEE8019000ECA07 /* PPGaodeFactory.m */,
-				57378B591EEE8830000ECA07 /* PPMapEngine.h */,
-				57378B5A1EEE8830000ECA07 /* PPMapEngine.m */,
-			);
-			path = MapEngine;
 			sourceTree = "<group>";
 		};
 		57378B521EEE8425000ECA07 /* thirdlibs */ = {
@@ -951,7 +943,6 @@
 			isa = PBXGroup;
 			children = (
 				57CC4E201E5ECE03001CA8E3 /* PPHandleTools */,
-				57CC4E211E5ECE03001CA8E3 /* PPMakeUITools */,
 				575C1D9D1D85033500357B39 /* PP_Manager */,
 				575C1DAC1D85033500357B39 /* PPMTHandle */,
 			);
@@ -1101,6 +1092,24 @@
 			path = PPWaterFlow;
 			sourceTree = "<group>";
 		};
+		5773EDD21EFA420D00014D95 /* SystemRewrite */ = {
+			isa = PBXGroup;
+			children = (
+				5773EDD31EFA420D00014D95 /* NSString+ContainsString.h */,
+				5773EDD41EFA420D00014D95 /* NSString+ContainsString.m */,
+			);
+			path = SystemRewrite;
+			sourceTree = "<group>";
+		};
+		5773EDDE1EFA69E300014D95 /* YYLabel */ = {
+			isa = PBXGroup;
+			children = (
+				5773EDDF1EFA6A4B00014D95 /* YYLabel+ConfigureFunction.h */,
+				5773EDE01EFA6A4B00014D95 /* YYLabel+ConfigureFunction.m */,
+			);
+			path = YYLabel;
+			sourceTree = "<group>";
+		};
 		5780E7051DCB7BDA00156B12 /* 简书-小米人 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1160,6 +1169,53 @@
 			path = PPRequestTool;
 			sourceTree = "<group>";
 		};
+		57C227891EF3B82B00BE2A30 /* 数据库 */ = {
+			isa = PBXGroup;
+			children = (
+				57C2278A1EF3B82C00BE2A30 /* WCDB */,
+			);
+			path = "数据库";
+			sourceTree = "<group>";
+		};
+		57C2278A1EF3B82C00BE2A30 /* WCDB */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WCDB;
+			sourceTree = "<group>";
+		};
+		57C227EE1EF3B95C00BE2A30 /* MapEngine */ = {
+			isa = PBXGroup;
+			children = (
+				57C227EF1EF3B95C00BE2A30 /* MapEngineMacros.h */,
+				57C227F01EF3B95C00BE2A30 /* PPBaiduFactory.h */,
+				57C227F11EF3B95C00BE2A30 /* PPBaiduFactory.m */,
+				57C227F21EF3B95C00BE2A30 /* PPBaiduMapView.h */,
+				57C227F31EF3B95C00BE2A30 /* PPBaiduMapView.m */,
+				57C227F41EF3B95C00BE2A30 /* PPGaodeFactory.h */,
+				57C227F51EF3B95C00BE2A30 /* PPGaodeFactory.m */,
+				57C227F61EF3B95C00BE2A30 /* PPGaodeMapView.h */,
+				57C227F71EF3B95C00BE2A30 /* PPGaodeMapView.m */,
+				57C227F81EF3B95C00BE2A30 /* PPMapEngine.h */,
+				57C227F91EF3B95C00BE2A30 /* PPMapEngine.m */,
+				57C227FA1EF3B95C00BE2A30 /* PPMapFactoryProtocol.h */,
+				57C227FB1EF3B95C00BE2A30 /* PPMapViewProtocol.h */,
+			);
+			path = MapEngine;
+			sourceTree = "<group>";
+		};
+		57C2280A1EF9047100BE2A30 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				5773EDDE1EFA69E300014D95 /* YYLabel */,
+				57C2280B1EF90C0700BE2A30 /* UILabel+CreatWithYYLabel.h */,
+				57C2280C1EF90C0700BE2A30 /* UILabel+CreatWithYYLabel.m */,
+				5773EDE21EFAA38800014D95 /* UILabel+CreatWithUILabel.h */,
+				5773EDE31EFAA38800014D95 /* UILabel+CreatWithUILabel.m */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
 		57CC4E201E5ECE03001CA8E3 /* PPHandleTools */ = {
 			isa = PBXGroup;
 			children = (
@@ -1178,20 +1234,6 @@
 				57CC4E2E1E5ED015001CA8E3 /* PPSizeTool.m */,
 			);
 			path = PPHandleTools;
-			sourceTree = "<group>";
-		};
-		57CC4E211E5ECE03001CA8E3 /* PPMakeUITools */ = {
-			isa = PBXGroup;
-			children = (
-				57CC4E221E5ECE24001CA8E3 /* PPMakeUITools.h */,
-				57CC4E391E5EE8E5001CA8E3 /* PPMakeLBTool.h */,
-				57CC4E3A1E5EE8E5001CA8E3 /* PPMakeLBTool.m */,
-				57CC4E3C1E5EE8F9001CA8E3 /* PPMakeBTTool.h */,
-				57CC4E3D1E5EE8F9001CA8E3 /* PPMakeBTTool.m */,
-				57CC4E3F1E5EE912001CA8E3 /* PPMakeImgVTool.h */,
-				57CC4E401E5EE912001CA8E3 /* PPMakeImgVTool.m */,
-			);
-			path = PPMakeUITools;
 			sourceTree = "<group>";
 		};
 		57DAAAFC1E703C62001C127E /* ScreenShotBackLib */ = {
@@ -1301,6 +1343,10 @@
 			children = (
 				57FFA5411EE3C32500FAFD94 /* NSURL+LegalUrl.h */,
 				57FFA5421EE3C32500FAFD94 /* NSURL+LegalUrl.m */,
+				5773EDBC1EF9533800014D95 /* UIGestureRecognizer+Event.h */,
+				5773EDBD1EF9533800014D95 /* UIGestureRecognizer+Event.m */,
+				5773EDBF1EF955CB00014D95 /* UITapGestureRecognizer+Event.h */,
+				5773EDC01EF955CB00014D95 /* UITapGestureRecognizer+Event.m */,
 			);
 			path = NSURL;
 			sourceTree = "<group>";
@@ -1580,6 +1626,7 @@
 		C6C6D0A21D0F94BB00F82C39 /* PPDemos */ = {
 			isa = PBXGroup;
 			children = (
+				57C227891EF3B82B00BE2A30 /* 数据库 */,
 				5791AC961EED7C81006BB7D8 /* 架构 */,
 				57DAAB331E7053A1001C127E /* PPBaseDemos */,
 				57F76FA21E5FD961001BD536 /* PPBase */,
@@ -1606,7 +1653,7 @@
 		C6C6D0A31D0F94BB00F82C39 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C6C6D0A41D0F94BB00F82C39 /* main.m */,
+				C6C6D0A41D0F94BB00F82C39 /* main.mm */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1696,6 +1743,8 @@
 				C6D808A81D4B265200C8B2FF /* AnimationShowViewController.m */,
 				579A450E1DABE88200D61BD8 /* AnimationsLearn.h */,
 				C682E65A1DB9C7D000CD86CB /* 动画学习资料.h */,
+				57C228051EF76DD700BE2A30 /* KVCKeyPaths.h */,
+				57C228061EF76DD700BE2A30 /* KVCKeyPaths.m */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -1724,6 +1773,7 @@
 		C6EBE8F11DACD9E70067EF2A /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				57C2280A1EF9047100BE2A30 /* UILabel */,
 				571E043C1E8FA1A30037556C /* UITableViewCell+ShowAnimations.h */,
 				571E043D1E8FA1A30037556C /* UITableViewCell+ShowAnimations.m */,
 				C6B980181DB4AD6500604393 /* Swift */,
@@ -1908,7 +1958,6 @@
 				57F76FC31E5FFC9B001BD536 /* MJDIYAutoFooter.m in Sources */,
 				57FFA5431EE3C32500FAFD94 /* NSURL+LegalUrl.m in Sources */,
 				575C1D991D85029600357B39 /* CWStarRateView.m in Sources */,
-				57378B3B1EEE7CAE000ECA07 /* PPBaiduFactory.m in Sources */,
 				57CC4E321E5ED144001CA8E3 /* RTDateFormatterTool.m in Sources */,
 				57F76FC41E5FFC9B001BD536 /* MJDIYBackFooter.m in Sources */,
 				57DAAB111E703C83001C127E /* BaseViewController.m in Sources */,
@@ -1920,13 +1969,12 @@
 				571E04351E8F7D330037556C /* PPTextfield.m in Sources */,
 				575C1DB61D85033500357B39 /* PP_NSStringManager.m in Sources */,
 				C6B9805D1DB4CC6800604393 /* UIImageView+FaceAware.swift in Sources */,
-				57CC4E3E1E5EE8F9001CA8E3 /* PPMakeBTTool.m in Sources */,
 				575C1E091D85044900357B39 /* PAWaterflowLayout.m in Sources */,
 				575C1D861D85021D00357B39 /* UIView+BlocksKit.m in Sources */,
 				575C1DB51D85033500357B39 /* PP_NSDateManager.m in Sources */,
 				C6C6D1CC1D0F94DB00F82C39 /* UIView+PP_Frame.m in Sources */,
+				57C228001EF3B95C00BE2A30 /* PPMapEngine.m in Sources */,
 				C67799911D508E9000007161 /* CenterOneViewController.m in Sources */,
-				57378B371EEE6E4B000ECA07 /* PPGaodeMapView.m in Sources */,
 				570149DD1E8B4CC7007CD99E /* NSString+WordCount.m in Sources */,
 				C6D808A91D4B265200C8B2FF /* AnimationShowViewController.m in Sources */,
 				571E042A1E8F42220037556C /* PPCustomCalendarViewController.m in Sources */,
@@ -1940,8 +1988,6 @@
 				C67799931D508E9000007161 /* MoreViewController.m in Sources */,
 				57DAAB371E7053E2001C127E /* PPBaseCellDisplayAnimationViewController.m in Sources */,
 				57378AFF1EEE5C74000ECA07 /* PPJiaGouMapBaseViewController.m in Sources */,
-				57378B431EEE8019000ECA07 /* PPGaodeFactory.m in Sources */,
-				57CC4E411E5EE912001CA8E3 /* PPMakeImgVTool.m in Sources */,
 				C677999D1D508F7700007161 /* MasonryBaseViewController.m in Sources */,
 				57378B051EEE5D48000ECA07 /* PPJiaGouBaiduMapViewController.m in Sources */,
 				C67799951D508E9000007161 /* WholesaleViewController.m in Sources */,
@@ -1950,6 +1996,7 @@
 				C67799941D508E9000007161 /* TwoMoreViewController.m in Sources */,
 				5742B4EF1EA9AFE100C57BFB /* MyTableViewController.m in Sources */,
 				C6EBE9031DACD9E70067EF2A /* UIImage+PPSets.m in Sources */,
+				5773EDD51EFA420D00014D95 /* NSString+ContainsString.m in Sources */,
 				5780E70B1DCB802600156B12 /* ClassEntryModel.m in Sources */,
 				C65643A91D868B880079B58B /* YYTextDemoViewController.m in Sources */,
 				C6C1CC121D4EF9660082A717 /* RuntimeViewController.m in Sources */,
@@ -1964,7 +2011,6 @@
 				5742B4F51EA9B45700C57BFB /* UIPresentationDemoViewController2.m in Sources */,
 				57DAAB121E703C83001C127E /* ScreenShotView.m in Sources */,
 				57DAAB3D1E705907001C127E /* JRNumberTool.m in Sources */,
-				57378B341EEE6D1C000ECA07 /* PPBaiduMapView.m in Sources */,
 				575C1DB31D85033500357B39 /* PP_CameraManager.m in Sources */,
 				575C1D851D85021D00357B39 /* UIGestureRecognizer+BlocksKit.m in Sources */,
 				C6C6D1CA1D0F94DB00F82C39 /* MJPicture.m in Sources */,
@@ -1977,6 +2023,7 @@
 				57F76FC21E5FFC9B001BD536 /* MJChiBaoZiHeader.m in Sources */,
 				C683FBD41D2A15B500D1BF6A /* Ad.m in Sources */,
 				57DAAB2F1E703DF4001C127E /* PPFirstViewController.m in Sources */,
+				5773EDE11EFA6A4B00014D95 /* YYLabel+ConfigureFunction.m in Sources */,
 				57469CE31EC2E53E00F557B8 /* HYBNetworking.m in Sources */,
 				C683FBC51D29FF9900D1BF6A /* MJExtensionBaseViewController.m in Sources */,
 				578E56371E83C936004F5F5F /* NSString+Verify.m in Sources */,
@@ -1985,39 +2032,46 @@
 				5742B4B11EA5BA1000C57BFB /* PPTransitionsViewController.m in Sources */,
 				57DAAB321E703FAC001C127E /* PPBaseTableViewController.m in Sources */,
 				C6EBE9001DACD9E70067EF2A /* UIApplication+PPSets.m in Sources */,
+				5773EDBE1EF9533800014D95 /* UIGestureRecognizer+Event.m in Sources */,
 				578897361E07F5C900CD0595 /* EPeiOrderModel.m in Sources */,
+				57C227FE1EF3B95C00BE2A30 /* PPGaodeFactory.m in Sources */,
 				57BC34491E8BDDE200DD6175 /* PPJianFriendRequest.m in Sources */,
 				57DAAB171E703C83001C127E /* TabBarViewController.m in Sources */,
-				57378B5B1EEE8830000ECA07 /* PPMapEngine.m in Sources */,
+				57C228071EF76DD700BE2A30 /* KVCKeyPaths.m in Sources */,
 				C683FBDA1D2A35F200D1BF6A /* Bag.m in Sources */,
 				C6EBE9081DACDA960067EF2A /* UIDevice+PPSets.m in Sources */,
 				C6DC36D11DD07799003EC552 /* NSDate+TimeAgo.m in Sources */,
+				57C227FF1EF3B95C00BE2A30 /* PPGaodeMapView.m in Sources */,
 				C677999A1D508F0F00007161 /* WholesaleCell.m in Sources */,
 				C64D57D71D82A4D2000C25CC /* ProductDetailResult.m in Sources */,
-				C6C6D0A51D0F94BB00F82C39 /* main.m in Sources */,
+				C6C6D0A51D0F94BB00F82C39 /* main.mm in Sources */,
 				C6EBE9051DACD9E70067EF2A /* UIView+PPSets.m in Sources */,
 				57DAAB101E703C83001C127E /* BaseNavigationController.m in Sources */,
 				5780E70E1DCB803A00156B12 /* ClassObj.m in Sources */,
 				571E04341E8F7D330037556C /* NSString+PPTextField.m in Sources */,
 				571E043B1E8F7FEA0037556C /* PPTFModel.m in Sources */,
-				57CC4E3B1E5EE8E5001CA8E3 /* PPMakeLBTool.m in Sources */,
 				5780E7081DCB7C2300156B12 /* ClassListModel.m in Sources */,
 				C683FBD71D2A15C500D1BF6A /* StatusResult.m in Sources */,
+				57C227FC1EF3B95C00BE2A30 /* PPBaiduFactory.m in Sources */,
 				57DAAB2B1E703CF9001C127E /* PPFourthViewController.m in Sources */,
 				C683FBCE1D2A012B00D1BF6A /* MJExtensionViewController.m in Sources */,
+				5773EDE41EFAA38800014D95 /* UILabel+CreatWithUILabel.m in Sources */,
 				5721EEEB1E631F95006AA33C /* PPBaseViewController.m in Sources */,
 				C6C6D1C91D0F94DB00F82C39 /* UIView+Toast.m in Sources */,
 				57DAAB3A1E705436001C127E /* PPDetailCellDisplyAnimationViewController.m in Sources */,
 				C6C6D1E01D0F9DE400F82C39 /* MJDefaultViewController.m in Sources */,
 				C60886511DBE18010071B7B8 /* MJRefreshCell.m in Sources */,
 				57378B021EEE5D08000ECA07 /* PPJiaGouCommonMapViewController.m in Sources */,
+				57C227FD1EF3B95C00BE2A30 /* PPBaiduMapView.m in Sources */,
 				578897331E07F48C00CD0595 /* EPeiDataModel.m in Sources */,
 				5742B4F21EA9B0A600C57BFB /* MyCustomCell.m in Sources */,
 				C681C07D1DC9B2ED003637CD /* PP_LabelManager.m in Sources */,
+				5773EDC11EF955CB00014D95 /* UITapGestureRecognizer+Event.m in Sources */,
 				571E042E1E8F7CBC0037556C /* PPTextFieldDemoViewController.m in Sources */,
 				5742B4EC1EA9AB5700C57BFB /* CustomPresentationVC.m in Sources */,
 				5742B4BA1EA5BBA500C57BFB /* MyPresentationConytollrt.m in Sources */,
 				570F72461E82A3A0006BCAFC /* LearnSystemAPIBaseViewController.m in Sources */,
+				57C2280D1EF90C0700BE2A30 /* UILabel+CreatWithYYLabel.m in Sources */,
 				57F76FC51E5FFC9B001BD536 /* MJDIYHeader.m in Sources */,
 				C63B358D1D1D3CA8006277E8 /* Foundation+Log.m in Sources */,
 				C6EBE9021DACD9E70067EF2A /* UIColor+PPSets.m in Sources */,

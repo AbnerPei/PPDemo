@@ -19,12 +19,16 @@
  */
 +(void)load
 {
-    Method URLWithString = class_getClassMethod([NSURL class], @selector(URLWithString:));
+//    Method URLWithString = class_getClassMethod([NSURL class], @selector(URLWithString:));
+//    
+//    Method PPURLWithString = class_getClassMethod([NSURL class], @selector(PP_URLWithString:));
+//    
+//    method_exchangeImplementations(URLWithString, PPURLWithString);
     
-    Method PPURLWithString = class_getClassMethod([NSURL class], @selector(PP_URLWithString:));
     
-
-    method_exchangeImplementations(URLWithString, PPURLWithString);
+    Method initUrlMethod = class_getInstanceMethod([NSURL class], @selector(initWithString:relativeToURL:));
+    Method ppInitUrlMethod = class_getInstanceMethod([NSURL class], @selector(pp_initWithString:relativeToURL:));
+    method_exchangeImplementations(initUrlMethod, ppInitUrlMethod);
     
 /*
   runtime学习运用：
@@ -45,5 +49,16 @@
         NSLog(@"%@",warningStr);
     }
     return url;
+}
+
+-(instancetype)pp_initWithString:(NSString *)url relativeToURL:(NSString *)baseUrl
+{
+    //此处注意了：因为自定义的PP_URLWithString和系统的URLWithString已经交换了，此时如果再调用系统的URLWithString，就是在刚方法了调用PP_URLWithString，而这样就会引起死循环
+    NSURL *URL = [[NSURL alloc]pp_initWithString:url relativeToURL:nil];
+    if (!URL) {
+        NSString *warningStr = [NSString stringWithFormat:@"PP警告：该URL【 %@ 】不合法，可能会导致网络请求失败！",url];
+        NSLog(@"%@",warningStr);
+    }
+    return URL;
 }
 @end

@@ -8,10 +8,8 @@
 
 #import "AnimationBaseViewController.h"
 #import "AnimationShowViewController.h"
+
 @interface AnimationBaseViewController ()
-@property (nonatomic) NSArray  *datas;
-@property(nonatomic,strong)NSMutableArray *titles;
-@property(nonatomic,strong)NSMutableArray *vcs;
 
 @end
 
@@ -32,16 +30,7 @@
     self.vcs = [@[
                   @"AnimationShowViewController"
                   ] mutableCopy];
-    
-    self.datas = @[@"transformAnimation"
-//                   @"loadingCircleJoinAnimation",
-//                   @"loadingDotAnimation",
-//                   @"loadingCustomAnimations",
-//                   @"loadingGifAnimations",
-//                   @"loadingFailure",
-//                   @"loadingFailure2",
-//                   @"classMethod",
-                   ];
+
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -49,7 +38,6 @@
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
     
     AnimationShowViewController * showVC = [AnimationShowViewController new];
-    showVC.selName = _datas[indexPath.row];
     [self.navigationController pushViewController:showVC animated:YES];
 }
 @end

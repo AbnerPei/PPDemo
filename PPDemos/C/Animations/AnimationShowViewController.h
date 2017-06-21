@@ -9,6 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface AnimationShowViewController : UIViewController
-@property (nonatomic,copy) NSString  *selName;
 
 @end

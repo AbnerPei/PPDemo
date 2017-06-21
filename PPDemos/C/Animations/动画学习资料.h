@@ -10,5 +10,6 @@
 #define _______h
 
 1. [iOS学习44之动画](http://www.cnblogs.com/gfxxbk/p/5531887.html)
+2. [CALayer设置默认属性](http://www.360doc.com/content/16/0318/15/31697881_543335639.shtml)
 
 #endif /* _______h */

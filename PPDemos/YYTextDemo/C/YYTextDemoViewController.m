@@ -10,6 +10,8 @@
 #import "HYBNetworking.h"
 #import <CoreLocation/CoreLocation.h>
 
+#import "YYLabel+ConfigureFunction.h"
+
 @interface YYTextDemoViewController ()<CLLocationManagerDelegate>
 /*
  0. [专访YYKit作者郭曜源：开源大牛是怎样炼成的](http://www.infoq.com/cn/news/2015/11/ibireme-interview?utm_content=homepage)
@@ -36,7 +38,7 @@
     
     [self testN];
     [self setupTopLB];
-    [self setupBottomLB];
+//    [self setupBottomLB];
     
     _messLB = [YYLabel new];
     _messLB.backgroundColor = [UIColor brownColor];
@@ -164,14 +166,69 @@
 {
     YYLabel *topLB = [YYLabel new];
     _topLB = topLB;
-    topLB.text = @"山上轻松山上花，\n花间轻松不如她。";
+    topLB.text = @"山上轻松山上花，\n花间轻松不如她。\n有朝一日山开花，\n上京花园人满山。";
     [self.view addSubview:topLB];
-    topLB.frame = CGRectMake(50, 100, ScreenWidth-100, 80);
+    topLB.frame = CGRectMake(50, 100, ScreenWidth-100, 180);
     topLB.textAlignment = NSTextAlignmentCenter;
     //如果有换行符“\n”，记得设置numberOfLines为0；
     topLB.numberOfLines = 0;
-    topLB.backgroundColor = [UIColor cyanColor];
+    topLB.backgroundColor = [UIColor whiteColor];
+    
+//    NSArray *arr = [self applyStylesToText:topLB.text pattern:@"山"];
+//    NSArray *arr1 = [self applyStylesToText:topLB.text pattern:@"花"];
+    
+//    NSLog(@"arr- %@--arr1- %@",arr,arr1);
+    
+    NSMutableAttributedString *mutStr = [[NSMutableAttributedString alloc]initWithString:topLB.text];
+//    mutStr.yy_color = [UIColor pp_greenColor];
+//
+//    for (NSTextCheckingResult *result in arr) {
+//        [mutStr yy_setColor:[UIColor pp_violetColor] range:result.range];
+//    }
+//    for (NSTextCheckingResult *result in arr1) {
+//        [mutStr yy_setColor:[UIColor pp_magentaColor] range:result.range];
+//    }
+//    topLB.attributedText = mutStr;
+//    
+//    BOOL contains = [mutStr.string containsString:@"山"];
+//    BOOL contains1 = [mutStr.string containsString:@"花9"];
+//    NSLog(@"%d---%d",contains,contains1);
+    
+    [_topLB LBAttributedTextWithTextColor:[UIColor pp_purpleColor] font:[UIFont systemFontOfSize:16] specialTextColorArray:@[[UIColor pp_redColor],[UIColor pp_blueColor]] specialTextFontArray:@[[UIFont systemFontOfSize:12],[UIFont systemFontOfSize:20],[UIFont systemFontOfSize:18]] specialTextArray:@[@"山",@"松",@"花"] attributedStr:mutStr];
+    
+
+    
 }
+-(void)btnAction
+{
+    NSLog(@"btnAction");
+}
+- (NSArray *)applyStylesToText:(NSString *)text pattern:(NSString *)pattern
+{
+    NSMutableArray *arrya = [NSMutableArray array];
+    NSRange searchRange = NSMakeRange(1, 3);
+    NSRange paragaphRange = [text paragraphRangeForRange: searchRange];
+    
+    NSRegularExpression *regex = [self expressionForDefinitionWithPattern:pattern];
+    
+    [regex enumerateMatchesInString:text options:0 range:paragaphRange
+                         usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop) {
+                             [arrya addObject:result];
+                         }];
+    return arrya;
+}
+
+
+- (NSRegularExpression *)expressionForDefinitionWithPattern:(NSString *)pattern
+{
+    NSRegularExpression *expression = nil;
+    expression = [NSRegularExpression regularExpressionWithPattern:pattern
+                                                           options:NSRegularExpressionCaseInsensitive error:nil];
+    
+    return expression;
+}
+
+
 -(void)setupBottomLB
 {
     YYLabel *bottomLB = [YYLabel new];

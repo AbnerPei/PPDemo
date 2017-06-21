@@ -6,8 +6,8 @@
 //  Copyright © 2016年 PPAbner. All rights reserved.
 //
 
-#import "PPBaseViewController.h"
+#import "PPBaseTableViewController.h"
 
-@interface AnimationBaseViewController : PPBaseViewController
+@interface AnimationBaseViewController : PPBaseTableViewController
 
 @end
