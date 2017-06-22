@@ -36,19 +36,13 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [self testN];
     [self setupTopLB];
 //    [self setupBottomLB];
     
-    _messLB = [YYLabel new];
-    _messLB.backgroundColor = [UIColor brownColor];
-    _messLB.frame = CGRectMake(50, 260, 240, 200);
-    _messLB.numberOfLines = 0;
-    _messLB.textColor = [UIColor purpleColor];
-    [self.view addSubview:_messLB];
+
     
  
-    [self initializeLocationService];
+//    [self initializeLocationService];
     
     
 }
@@ -127,74 +121,50 @@
     //系统会一直更新数据，直到选择停止更新，因为我们只需要获得一次经纬度即可，所以获取之后就停止更新
     [manager stopUpdatingLocation];
 }
--(void)testN
-{
-   
-    
-    
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    
-    
-    NSMutableDictionary *param = [NSMutableDictionary dictionary];
-    [param setValue:@10 forKey:@"type"];
-    [param setValue:@"{}" forKey:@"gson"];
-    [manager POST:@"http://hao.oudot.cn/tongji_app/JsonManageServlet?" parameters:param progress:^(NSProgress * _Nonnull uploadProgress) {
-        
-        
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
-        NSDictionary *resultDict = (NSDictionary *)responseObject;
-        NSDictionary *retBodyDict = [resultDict objectForKey:@"retBody"];
-        NSArray *businessListArr = [retBodyDict objectForKey:@"businessList"];
-        NSDictionary *messDict = businessListArr[0];
-        NSString *infoStr = [messDict objectForKey:@"businessInfo"];
-        
-        NSLog(@"infoStr is --- %@",infoStr);
-        
-#warning 把请求的数据放到这里，就可以实现换行，why??
-#warning 把请求的数据放到这里，就可以实现换行，why??
-#warning 把请求的数据放到这里，就可以实现换行，why??
-        
-        //        infoStr = @"我应该是一个详情。我应该\n\n是一个详情。我应该是一个详情。我应该是一个详情。我应该是一个详情。我应该是一个详情。我应该是一个详情。我应该是一个详情。我应该是一个详情。我应该是一个详情。我应该是一\n\n个详情。我应该是一个详情。";
-        NSMutableAttributedString *mutStr = [[NSMutableAttributedString alloc]initWithString:infoStr];
-        _messLB.attributedText = mutStr;
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
-    }];
-}
+
 -(void)setupTopLB
 {
     YYLabel *topLB = [YYLabel new];
     _topLB = topLB;
-    topLB.text = @"山上轻松山上花，\n花间轻松不如她。\n有朝一日山开花，\n上京花园人满山。";
+    topLB.text = @"山上轻松山上花\n花间轻松不如她\n有朝一日山开花\n上京花园人满山";
     [self.view addSubview:topLB];
     topLB.frame = CGRectMake(50, 100, ScreenWidth-100, 180);
-    topLB.textAlignment = NSTextAlignmentCenter;
+//    topLB.textAlignment = NSTextAlignmentCenter;
     //如果有换行符“\n”，记得设置numberOfLines为0；
     topLB.numberOfLines = 0;
-    topLB.backgroundColor = [UIColor whiteColor];
+    topLB.backgroundColor = [UIColor pp_lightGrayColor];
     
-//    NSArray *arr = [self applyStylesToText:topLB.text pattern:@"山"];
-//    NSArray *arr1 = [self applyStylesToText:topLB.text pattern:@"花"];
-    
-//    NSLog(@"arr- %@--arr1- %@",arr,arr1);
-    
-    NSMutableAttributedString *mutStr = [[NSMutableAttributedString alloc]initWithString:topLB.text];
-//    mutStr.yy_color = [UIColor pp_greenColor];
+//    [_topLB LBAttributedTextWithTextColor:[UIColor pp_purpleColor] font:[UIFont systemFontOfSize:16] lineSpacing:10 specialTextColorArray:@[[UIColor pp_redColor],[UIColor pp_blueColor]] specialTextFontArray:@[[UIFont systemFontOfSize:12],[UIFont systemFontOfSize:20],[UIFont systemFontOfSize:18]] specialTextArray:@[@"山",@"花"] allStr:topLB.text attributedStrBlock:^(NSMutableAttributedString *attributedStr) {
+////        NSLog(@"%@---%@",[NSThread currentThread],attributedStr);
+//        [_topLB LBCalculateWithContainerInsets:UIEdgeInsetsMake(10, 10, 10, 10) containerSize:CGSizeMake(ScreenWidth-100, CGFLOAT_MAX) attributedStr:attributedStr calculateBlock:^(CGSize size, NSUInteger lineCount) {
+//            NSLog(@"block %f---%f--%lu",size.width,size.height,(unsigned long)lineCount);
+//            NSLog(@"%@",[NSThread currentThread]);
+//            
 //
-//    for (NSTextCheckingResult *result in arr) {
-//        [mutStr yy_setColor:[UIColor pp_violetColor] range:result.range];
-//    }
-//    for (NSTextCheckingResult *result in arr1) {
-//        [mutStr yy_setColor:[UIColor pp_magentaColor] range:result.range];
-//    }
-//    topLB.attributedText = mutStr;
+//            _topLB.frame = CGRectMake(50, 100, ScreenWidth-100, size.height);
+//        }];
+//    }];
 //    
-//    BOOL contains = [mutStr.string containsString:@"山"];
-//    BOOL contains1 = [mutStr.string containsString:@"花9"];
-//    NSLog(@"%d---%d",contains,contains1);
+    [_topLB LBAttributedTextWithTextColor:[UIColor pp_purpleColor]
+                                     font:@"B18"
+                              lineSpacing:10
+                          containerInsets:UIEdgeInsetsMake(10, 10, 10, 10)
+                            containerSize:CGSizeMake(ScreenWidth-100, CGFLOAT_MAX)
+                    specialTextColorArray:@[[UIColor pp_redColor],[UIColor pp_blueColor]]
+                     specialTextFontArray:@[[UIFont systemFontOfSize:12],[UIFont systemFontOfSize:20],[UIFont systemFontOfSize:18]]
+                         specialTextArray:@[@"山",@"花"]
+                                   allStr:_topLB.text
+                           calculateBlock:^(CGSize size, NSUInteger lineCount) {
+                               NSLog(@"%@",[NSThread currentThread]);
+                               _topLB.frame = CGRectMake(50, 100, ScreenWidth-100, size.height);
+
+    }];
+    topLB.textAlignment = NSTextAlignmentCenter;
     
-    [_topLB LBAttributedTextWithTextColor:[UIColor pp_purpleColor] font:[UIFont systemFontOfSize:16] specialTextColorArray:@[[UIColor pp_redColor],[UIColor pp_blueColor]] specialTextFontArray:@[[UIFont systemFontOfSize:12],[UIFont systemFontOfSize:20],[UIFont systemFontOfSize:18]] specialTextArray:@[@"山",@"松",@"花"] attributedStr:mutStr];
+    
+
+    
+    
     
 
     
