@@ -125,6 +125,10 @@
 
 -(void)changeVaildLines:(UIButton *)btn
 {
+    _topLB = [YYLabel pp_lbMakeForAttributedWithSuperV:self.view
+                                               bgColor:[UIColor whiteColor]
+                                         numberOfLines:0];
+    
     [_topLB pp_attributedYYLabelWithTextColor:[UIColor pp_purpleColor]
                                          font:@18
                                   lineSpacing:8
