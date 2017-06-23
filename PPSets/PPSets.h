@@ -17,7 +17,6 @@
 #import "UIColor+PPSets.h"
 #import "UIButton+PPSets.h"
 #import "UIApplication+PPSets.h"
-#import "UIScreen+PPSets.h"
 #import "UIImageView+PPSets.h"
 
 

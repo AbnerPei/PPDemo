@@ -9,22 +9,53 @@
 #import <YYText/YYText.h>
 
 @interface YYLabel (MakeLB)
-/**
- YY创建lb font 文字颜色 左右对齐方式 上下对齐方式 父视图
- @param font 所有文字大小(支持UIFont/NSNumber/NSString三种类型)【可以是字体大小（加粗的话B开头，如B12意味着bold）】
- */
-+(YYLabel *)LBWithFont:(id)font
-             textColor:(UIColor *)textColor
-         textAlignment:(NSTextAlignment)textAlignment
-       yyTextAlignment:(YYTextVerticalAlignment)yyTextAlignment
-             andSuperV:(UIView *)superV;
+
++(instancetype)pp_lbMakeWithSuperV:(UIView *)superV
+                           bgColor:(UIColor *)bgColor;
+
+//=========================-建议没有富文本的使用-================
 
 /**
- YY创建lb font 文字颜色 左右对齐方式 【上下居中】 父视图
+ YY创建lb 父视图 字体 文字颜色  
  @param font 所有文字大小(支持UIFont/NSNumber/NSString三种类型)【可以是字体大小（加粗的话B开头，如B12意味着bold）】
  */
-+(YYLabel *)LBWithFont:(id)font
-             textColor:(UIColor *)textColor
-         textAlignment:(NSTextAlignment)textAlignment
-             andSuperV:(UIView *)superV;
++(instancetype)pp_lbMakeWithSuperV:(UIView *)superV
+                           bgColor:(UIColor *)bgColor
+                              font:(id)font
+                         textColor:(UIColor *)textColor;
+
++(instancetype)pp_lbMakeWithSuperV:(UIView *)superV
+                           bgColor:(UIColor *)bgColor
+                              font:(id)font
+                         textColor:(UIColor *)textColor
+                     numberOfLines:(NSUInteger)numberOfLines;
+
+
++(instancetype)pp_lbMakeWithSuperV:(UIView *)superV
+                           bgColor:(UIColor *)bgColor
+                              font:(id)font
+                         textColor:(UIColor *)textColor
+                     textAlignment:(NSTextAlignment)textAlignment;
+
++(instancetype)pp_lbMakeWithSuperV:(UIView *)superV
+                           bgColor:(UIColor *)bgColor
+                              font:(id)font
+                         textColor:(UIColor *)textColor
+                     textAlignment:(NSTextAlignment)textAlignment
+                   yyTextAlignment:(YYTextVerticalAlignment)yyTextAlignment;
+
++(instancetype)pp_lbMakeWithSuperV:(UIView *)superV
+                           bgColor:(UIColor *)bgColor
+                              font:(id)font
+                         textColor:(UIColor *)textColor
+                     textAlignment:(NSTextAlignment)textAlignment
+                   yyTextAlignment:(YYTextVerticalAlignment)yyTextAlignment
+                     numberOfLines:(NSUInteger)numberOfLines;
+
+//==========================-建议有富文本的使用-=======================
+/** 因为attributedText一旦Set a new value to this property also replaces the value of the `text`, `font`, `textColor`,`textAlignment` and other properties in label.**/
+
++(instancetype)pp_lbMakeForAttributedWithSuperV:(UIView *)superV
+                                        bgColor:(UIColor *)bgColor
+                                  numberOfLines:(NSUInteger)numberOfLines;
 @end

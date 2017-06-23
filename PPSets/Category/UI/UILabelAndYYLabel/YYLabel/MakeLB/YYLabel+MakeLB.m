@@ -10,55 +10,98 @@
 
 @implementation YYLabel (MakeLB)
 
-#pragma mark --- YY创建lb font 文字颜色 左右对齐方式 上下对齐方式 父视图
-+(YYLabel *)LBWithFont:(id)font
-             textColor:(UIColor *)textColor
-         textAlignment:(NSTextAlignment)textAlignment
-       yyTextAlignment:(YYTextVerticalAlignment)yyTextAlignment
-             andSuperV:(UIView *)superV
++(instancetype)pp_lbMakeWithSuperV:(UIView *)superV
+                           bgColor:(UIColor *)bgColor
 {
     YYLabel *lb = [YYLabel new];
+    if (bgColor) {
+        lb.backgroundColor = bgColor;
+    }
     [superV addSubview:lb];
+    return lb;
+}
++(instancetype)pp_lbMakeWithSuperV:(UIView *)superV
+                           bgColor:(UIColor *)bgColor
+                              font:(id)font
+                         textColor:(UIColor *)textColor
+{
+    YYLabel *lb = [self pp_lbMakeWithSuperV:superV
+                                    bgColor:bgColor];
     
-    if (font) {
-        if ([font isKindOfClass:[UIFont class]]) {
-            lb.font = font;
-        }else if ([font isKindOfClass:[NSString class]]){
-            NSString *fontStr = (NSString *)font;
-            if ([fontStr hasPrefix:@"B"] && fontStr.length > 2) {
-                NSString *secondStr = [[fontStr componentsSeparatedByString:@"B"] objectAtIndex:1];
-                CGFloat fontSize = [secondStr floatValue];
-                if (fontSize >= 0) {
-                    lb.font = [UIFont boldSystemFontOfSize:fontSize];
-                }
-            }else{
-                CGFloat fontSize = [fontStr floatValue];
-                if (fontSize >= 0) {
-                    lb.font = [UIFont systemFontOfSize:fontSize];
-                }
-            }
-        }else if ([font isKindOfClass:[NSNumber class]]){
-            NSNumber *fontSizeN = (NSNumber *)font;
-            CGFloat fontSizeF =  [fontSizeN floatValue];
-            lb.font = [UIFont systemFontOfSize:fontSizeF];
-        }else{
-            NSLog(@"PP警告：您传入的font类型不是我们约定的，请检查后再试！！！");
-        }
-    }
-    
-    if (textColor) {
-        lb.textColor = textColor;
-    }
+    [UIFont pp_fontWithIdFont:font forYYLabel:lb];
+    [UIColor pp_colorWithTextColor:textColor forYYLabel:lb];
+    return lb;
+}
+
++(instancetype)pp_lbMakeWithSuperV:(UIView *)superV
+                           bgColor:(UIColor *)bgColor
+                              font:(id)font
+                         textColor:(UIColor *)textColor
+                     numberOfLines:(NSUInteger)numberOfLines
+{
+    YYLabel *lb = [self pp_lbMakeWithSuperV:superV bgColor:bgColor font:font textColor:textColor];
+    lb.numberOfLines = numberOfLines;
+    return lb;
+}
++(instancetype)pp_lbMakeWithSuperV:(UIView *)superV
+                           bgColor:(UIColor *)bgColor
+                              font:(id)font
+                         textColor:(UIColor *)textColor
+                     textAlignment:(NSTextAlignment)textAlignment
+{
+    YYLabel *lb = [self pp_lbMakeWithSuperV:superV
+                                    bgColor:bgColor
+                                       font:font
+                                  textColor:textColor];
     
     lb.textAlignment = textAlignment;
+    return lb;
+}
+
++(instancetype)pp_lbMakeWithSuperV:(UIView *)superV
+                           bgColor:(UIColor *)bgColor
+                              font:(id)font
+                         textColor:(UIColor *)textColor
+                     textAlignment:(NSTextAlignment)textAlignment
+                   yyTextAlignment:(YYTextVerticalAlignment)yyTextAlignment
+{
+    YYLabel *lb = [self pp_lbMakeWithSuperV:superV
+                                    bgColor:bgColor
+                                       font:font
+                                  textColor:textColor
+                              textAlignment:textAlignment];
+    
     lb.textVerticalAlignment = yyTextAlignment;
     return lb;
 }
 
-
-#pragma mark --- YY创建lb font 文字颜色 左右对齐方式 【上下居中】 父视图
-+(YYLabel *)LBWithFont:(id)font textColor:(UIColor *)textColor textAlignment:(NSTextAlignment)textAlignment andSuperV:(UIView *)superV
++(instancetype)pp_lbMakeWithSuperV:(UIView *)superV
+                           bgColor:(UIColor *)bgColor
+                              font:(id)font
+                         textColor:(UIColor *)textColor
+                     textAlignment:(NSTextAlignment)textAlignment
+                   yyTextAlignment:(YYTextVerticalAlignment)yyTextAlignment
+                     numberOfLines:(NSUInteger)numberOfLines
 {
-    return [YYLabel LBWithFont:font textColor:textColor textAlignment:textAlignment yyTextAlignment:YYTextVerticalAlignmentCenter andSuperV:superV];
+    YYLabel *lb = [self pp_lbMakeWithSuperV:superV
+                                    bgColor:bgColor
+                                       font:font
+                                  textColor:textColor
+                              textAlignment:textAlignment
+                            yyTextAlignment:yyTextAlignment];
+    lb.numberOfLines = numberOfLines;
+    return lb;
 }
+
+
+//===========建议富文本使用========
++(instancetype)pp_lbMakeForAttributedWithSuperV:(UIView *)superV
+                                        bgColor:(UIColor *)bgColor
+                                  numberOfLines:(NSUInteger)numberOfLines
+{
+    YYLabel *lb = [self pp_lbMakeWithSuperV:superV bgColor:bgColor];
+    lb.numberOfLines = numberOfLines;
+    return lb;
+}
+
 @end
