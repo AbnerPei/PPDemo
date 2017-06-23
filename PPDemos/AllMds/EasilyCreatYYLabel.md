@@ -3,17 +3,6 @@
 
 > ![YYLabel.gif](http://upload-images.jianshu.io/upload_images/402808-fdf12d64b08ffac2.gif?imageMogr2/auto-orient/strip)
 
-
-![Snip20170623_13.png](http://upload-images.jianshu.io/upload_images/402808-12bb5c616494fabf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-![Snip20170623_15.png](http://upload-images.jianshu.io/upload_images/402808-36e5c3a716541b6a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-
-![Snip20170623_16.png](http://upload-images.jianshu.io/upload_images/402808-5511e0dae2d4a106.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-
-![
-
 --------------
 > 一切的缘由来源于`MJRefresh`的源码（如下）：
 
