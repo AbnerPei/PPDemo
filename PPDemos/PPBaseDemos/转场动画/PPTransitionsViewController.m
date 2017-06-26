@@ -18,12 +18,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.titles = [@[
-                     @"UIPresentationController学习",
-                     @"UIPresentationController弹窗实现"
                      ] mutableCopy];
     self.vcs = [@[
-                  @"UIPresentationDemoViewController",
-                  @"UIPresentationDemoViewController2"
                   ] mutableCopy];
 }
 

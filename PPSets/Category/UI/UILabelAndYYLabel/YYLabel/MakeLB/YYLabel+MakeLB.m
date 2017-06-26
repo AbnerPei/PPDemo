@@ -17,7 +17,9 @@
     if (bgColor) {
         lb.backgroundColor = bgColor;
     }
-    [superV addSubview:lb];
+    if (superV) {
+        [superV addSubview:lb];
+    }
     return lb;
 }
 +(instancetype)pp_lbMakeWithSuperV:(UIView *)superV

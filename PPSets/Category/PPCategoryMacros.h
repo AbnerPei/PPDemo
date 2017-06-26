@@ -9,16 +9,23 @@
 #ifndef PPCategoryMacros_h
 #define PPCategoryMacros_h
 
+#define PPVersion_Category(version)     ([[[UIDevice currentDevice] systemVersion] floatValue] >= version ? YES : NO)
+
+#define KSystemVersionEight  1
+
 typedef void(^calculateBlock)(CGSize size,NSUInteger lineCount);
+
 
 //label
 #import "YYLabel+MakeLB.h"
 #import "YYLabel+Attributed.h"
 #import "YYLabel+Calculate.h"
 
-//字符串
-#import "NSMutableAttributedString+EasilyMake.h"
-#import "NSMutableAttributedString+NSStringNSMutableAttributedString.h"
+
+#import "UIView+SpecialUI.h"
+
+//UIImageView
+#import "UIImageView+MakeImgV.h"
 
 
 //UIFont
@@ -28,6 +35,13 @@ typedef void(^calculateBlock)(CGSize size,NSUInteger lineCount);
 //UIColor
 #import "UIColor+SpecialAttributedString.h"
 
+
+//字符串
+#import "NSMutableAttributedString+EasilyMake.h"
+#import "NSMutableAttributedString+NSStringNSMutableAttributedString.h"
+
+//NSObject
+#import "NSObject+GCD.h"
 
 
 #endif /* PPCategoryMacros_h */

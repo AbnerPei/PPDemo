@@ -53,13 +53,6 @@
 		57378B561EEE8425000ECA07 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57378B541EEE8425000ECA07 /* libssl.a */; };
 		57378B581EEE84B0000ECA07 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 57378B571EEE84B0000ECA07 /* mapapi.bundle */; };
 		5742B4B11EA5BA1000C57BFB /* PPTransitionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742B4B01EA5BA1000C57BFB /* PPTransitionsViewController.m */; };
-		5742B4B41EA5BA8800C57BFB /* UIPresentationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742B4B31EA5BA8800C57BFB /* UIPresentationDemoViewController.m */; };
-		5742B4B71EA5BB4800C57BFB /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742B4B61EA5BB4800C57BFB /* TestViewController.m */; };
-		5742B4BA1EA5BBA500C57BFB /* MyPresentationConytollrt.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742B4B91EA5BBA500C57BFB /* MyPresentationConytollrt.m */; };
-		5742B4EC1EA9AB5700C57BFB /* CustomPresentationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742B4EB1EA9AB5700C57BFB /* CustomPresentationVC.m */; };
-		5742B4EF1EA9AFE100C57BFB /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742B4EE1EA9AFE100C57BFB /* MyTableViewController.m */; };
-		5742B4F21EA9B0A600C57BFB /* MyCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742B4F11EA9B0A600C57BFB /* MyCustomCell.m */; };
-		5742B4F51EA9B45700C57BFB /* UIPresentationDemoViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742B4F41EA9B45700C57BFB /* UIPresentationDemoViewController2.m */; };
 		5744CC661E8A153000A15DB9 /* ASDKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5744CC651E8A153000A15DB9 /* ASDKViewController.m */; };
 		57469CE31EC2E53E00F557B8 /* HYBNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 57469CE21EC2E53E00F557B8 /* HYBNetworking.m */; };
 		575C1D751D7326F200357B39 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 575C1D741D7326F200357B39 /* libsqlite3.0.tbd */; };
@@ -93,7 +86,6 @@
 		5773EE431EFBC6C500014D95 /* UIColor+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = 5773EE421EFBC6C500014D95 /* UIColor+PPSets.m */; };
 		5773EE461EFBC6E300014D95 /* UIImageView+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = 5773EE451EFBC6E300014D95 /* UIImageView+PPSets.m */; };
 		5773EE491EFBC6F100014D95 /* UITableViewCell+ShowAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = 5773EE481EFBC6F100014D95 /* UITableViewCell+ShowAnimations.m */; };
-		5773EE4C1EFBC70100014D95 /* UIView+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = 5773EE4B1EFBC70100014D95 /* UIView+PPSets.m */; };
 		5773EE561EFBC76F00014D95 /* UIApplication+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = 5773EE4F1EFBC76F00014D95 /* UIApplication+PPSets.m */; };
 		5773EE571EFBC76F00014D95 /* UIDevice+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = 5773EE521EFBC76F00014D95 /* UIDevice+PPSets.m */; };
 		5773EE581EFBC76F00014D95 /* UIImage+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = 5773EE551EFBC76F00014D95 /* UIImage+PPSets.m */; };
@@ -103,6 +95,13 @@
 		5773EE731EFCB71C00014D95 /* YYLabel+Calculate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5773EE721EFCB71C00014D95 /* YYLabel+Calculate.m */; };
 		5773EE761EFCBBD600014D95 /* NSMutableAttributedString+EasilyMake.m in Sources */ = {isa = PBXBuildFile; fileRef = 5773EE751EFCBBD600014D95 /* NSMutableAttributedString+EasilyMake.m */; };
 		5773EE791EFCDD5C00014D95 /* NSMutableAttributedString+NSStringNSMutableAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 5773EE781EFCDD5C00014D95 /* NSMutableAttributedString+NSStringNSMutableAttributedString.m */; };
+		5773EE7D1EFD6CAD00014D95 /* UIScreen+EasilySize.m in Sources */ = {isa = PBXBuildFile; fileRef = 5773EE7C1EFD6CAD00014D95 /* UIScreen+EasilySize.m */; };
+		5773EE841F00997600014D95 /* NSArray+SafeArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 5773EE831F00997600014D95 /* NSArray+SafeArray.m */; };
+		5773EE871F0099B500014D95 /* NSObject+GCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5773EE861F0099B500014D95 /* NSObject+GCD.m */; };
+		5773EE8A1F00D92600014D95 /* UIView+SpecialUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 5773EE891F00D92600014D95 /* UIView+SpecialUI.m */; };
+		5773EE8E1F00E22900014D95 /* UIImageView+MakeImgV.m in Sources */ = {isa = PBXBuildFile; fileRef = 5773EE8D1F00E22900014D95 /* UIImageView+MakeImgV.m */; };
+		5773EE901F00EF3E00014D95 /* rt_dashed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5773EE8F1F00EF3E00014D95 /* rt_dashed@2x.png */; };
+		5773EE941F010C7700014D95 /* UIImageView+CornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 5773EE931F010C7700014D95 /* UIImageView+CornerRadius.m */; };
 		5780E7081DCB7C2300156B12 /* ClassListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5780E7071DCB7C2300156B12 /* ClassListModel.m */; };
 		5780E70B1DCB802600156B12 /* ClassEntryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5780E70A1DCB802600156B12 /* ClassEntryModel.m */; };
 		5780E70E1DCB803A00156B12 /* ClassObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 5780E70D1DCB803A00156B12 /* ClassObj.m */; };
@@ -266,20 +265,6 @@
 		57378B571EEE84B0000ECA07 /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = mapapi.bundle; path = BaiduMapAPI_Map.framework/Resources/mapapi.bundle; sourceTree = "<group>"; };
 		5742B4AF1EA5BA1000C57BFB /* PPTransitionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTransitionsViewController.h; sourceTree = "<group>"; };
 		5742B4B01EA5BA1000C57BFB /* PPTransitionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPTransitionsViewController.m; sourceTree = "<group>"; };
-		5742B4B21EA5BA8800C57BFB /* UIPresentationDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPresentationDemoViewController.h; sourceTree = "<group>"; };
-		5742B4B31EA5BA8800C57BFB /* UIPresentationDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPresentationDemoViewController.m; sourceTree = "<group>"; };
-		5742B4B51EA5BB4800C57BFB /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
-		5742B4B61EA5BB4800C57BFB /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
-		5742B4B81EA5BBA500C57BFB /* MyPresentationConytollrt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPresentationConytollrt.h; sourceTree = "<group>"; };
-		5742B4B91EA5BBA500C57BFB /* MyPresentationConytollrt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPresentationConytollrt.m; sourceTree = "<group>"; };
-		5742B4EA1EA9AB5700C57BFB /* CustomPresentationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPresentationVC.h; sourceTree = "<group>"; };
-		5742B4EB1EA9AB5700C57BFB /* CustomPresentationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPresentationVC.m; sourceTree = "<group>"; };
-		5742B4ED1EA9AFE100C57BFB /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
-		5742B4EE1EA9AFE100C57BFB /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
-		5742B4F01EA9B0A500C57BFB /* MyCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCustomCell.h; sourceTree = "<group>"; };
-		5742B4F11EA9B0A600C57BFB /* MyCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCustomCell.m; sourceTree = "<group>"; };
-		5742B4F31EA9B45700C57BFB /* UIPresentationDemoViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPresentationDemoViewController2.h; sourceTree = "<group>"; };
-		5742B4F41EA9B45700C57BFB /* UIPresentationDemoViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPresentationDemoViewController2.m; sourceTree = "<group>"; };
 		5744CC641E8A153000A15DB9 /* ASDKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDKViewController.h; sourceTree = "<group>"; };
 		5744CC651E8A153000A15DB9 /* ASDKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDKViewController.m; sourceTree = "<group>"; };
 		57469CE11EC2E53E00F557B8 /* HYBNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBNetworking.h; sourceTree = "<group>"; };
@@ -361,8 +346,6 @@
 		5773EE451EFBC6E300014D95 /* UIImageView+PPSets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+PPSets.m"; sourceTree = "<group>"; };
 		5773EE471EFBC6F100014D95 /* UITableViewCell+ShowAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+ShowAnimations.h"; sourceTree = "<group>"; };
 		5773EE481EFBC6F100014D95 /* UITableViewCell+ShowAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+ShowAnimations.m"; sourceTree = "<group>"; };
-		5773EE4A1EFBC70100014D95 /* UIView+PPSets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PPSets.h"; sourceTree = "<group>"; };
-		5773EE4B1EFBC70100014D95 /* UIView+PPSets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PPSets.m"; sourceTree = "<group>"; };
 		5773EE4E1EFBC76F00014D95 /* UIApplication+PPSets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+PPSets.h"; sourceTree = "<group>"; };
 		5773EE4F1EFBC76F00014D95 /* UIApplication+PPSets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+PPSets.m"; sourceTree = "<group>"; };
 		5773EE511EFBC76F00014D95 /* UIDevice+PPSets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+PPSets.h"; sourceTree = "<group>"; };
@@ -382,6 +365,19 @@
 		5773EE751EFCBBD600014D95 /* NSMutableAttributedString+EasilyMake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+EasilyMake.m"; sourceTree = "<group>"; };
 		5773EE771EFCDD5C00014D95 /* NSMutableAttributedString+NSStringNSMutableAttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+NSStringNSMutableAttributedString.h"; sourceTree = "<group>"; };
 		5773EE781EFCDD5C00014D95 /* NSMutableAttributedString+NSStringNSMutableAttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+NSStringNSMutableAttributedString.m"; sourceTree = "<group>"; };
+		5773EE7B1EFD6CAD00014D95 /* UIScreen+EasilySize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+EasilySize.h"; sourceTree = "<group>"; };
+		5773EE7C1EFD6CAD00014D95 /* UIScreen+EasilySize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+EasilySize.m"; sourceTree = "<group>"; };
+		5773EE821F00997600014D95 /* NSArray+SafeArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SafeArray.h"; sourceTree = "<group>"; };
+		5773EE831F00997600014D95 /* NSArray+SafeArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SafeArray.m"; sourceTree = "<group>"; };
+		5773EE851F0099B500014D95 /* NSObject+GCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GCD.h"; sourceTree = "<group>"; };
+		5773EE861F0099B500014D95 /* NSObject+GCD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GCD.m"; sourceTree = "<group>"; };
+		5773EE881F00D92600014D95 /* UIView+SpecialUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SpecialUI.h"; sourceTree = "<group>"; };
+		5773EE891F00D92600014D95 /* UIView+SpecialUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SpecialUI.m"; sourceTree = "<group>"; };
+		5773EE8C1F00E22900014D95 /* UIImageView+MakeImgV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+MakeImgV.h"; sourceTree = "<group>"; };
+		5773EE8D1F00E22900014D95 /* UIImageView+MakeImgV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+MakeImgV.m"; sourceTree = "<group>"; };
+		5773EE8F1F00EF3E00014D95 /* rt_dashed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rt_dashed@2x.png"; sourceTree = "<group>"; };
+		5773EE921F010C7700014D95 /* UIImageView+CornerRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+CornerRadius.h"; sourceTree = "<group>"; };
+		5773EE931F010C7700014D95 /* UIImageView+CornerRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+CornerRadius.m"; sourceTree = "<group>"; };
 		5780E7061DCB7C2300156B12 /* ClassListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassListModel.h; sourceTree = "<group>"; };
 		5780E7071DCB7C2300156B12 /* ClassListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassListModel.m; sourceTree = "<group>"; };
 		5780E7091DCB802600156B12 /* ClassEntryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassEntryModel.h; sourceTree = "<group>"; };
@@ -626,8 +622,6 @@
 		570149E21E8B81FE007CD99E /* 转场动画 */ = {
 			isa = PBXGroup;
 			children = (
-				5742B4E91EA9A8BD00C57BFB /* UIPresentationController学习与使用2 */,
-				5742B4AE1EA5B89600C57BFB /* UIPresentationController学习与使用 */,
 				5742B4AF1EA5BA1000C57BFB /* PPTransitionsViewController.h */,
 				5742B4B01EA5BA1000C57BFB /* PPTransitionsViewController.m */,
 			);
@@ -721,6 +715,8 @@
 			children = (
 				572582211E0B781300C41BAB /* NSObject+PPSets.h */,
 				572582221E0B781300C41BAB /* NSObject+PPSets.m */,
+				5773EE851F0099B500014D95 /* NSObject+GCD.h */,
+				5773EE861F0099B500014D95 /* NSObject+GCD.m */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";
@@ -809,34 +805,6 @@
 				57378B541EEE8425000ECA07 /* libssl.a */,
 			);
 			path = thirdlibs;
-			sourceTree = "<group>";
-		};
-		5742B4AE1EA5B89600C57BFB /* UIPresentationController学习与使用 */ = {
-			isa = PBXGroup;
-			children = (
-				5742B4B21EA5BA8800C57BFB /* UIPresentationDemoViewController.h */,
-				5742B4B31EA5BA8800C57BFB /* UIPresentationDemoViewController.m */,
-				5742B4B51EA5BB4800C57BFB /* TestViewController.h */,
-				5742B4B61EA5BB4800C57BFB /* TestViewController.m */,
-				5742B4B81EA5BBA500C57BFB /* MyPresentationConytollrt.h */,
-				5742B4B91EA5BBA500C57BFB /* MyPresentationConytollrt.m */,
-			);
-			path = "UIPresentationController学习与使用";
-			sourceTree = "<group>";
-		};
-		5742B4E91EA9A8BD00C57BFB /* UIPresentationController学习与使用2 */ = {
-			isa = PBXGroup;
-			children = (
-				5742B4EA1EA9AB5700C57BFB /* CustomPresentationVC.h */,
-				5742B4EB1EA9AB5700C57BFB /* CustomPresentationVC.m */,
-				5742B4ED1EA9AFE100C57BFB /* MyTableViewController.h */,
-				5742B4EE1EA9AFE100C57BFB /* MyTableViewController.m */,
-				5742B4F01EA9B0A500C57BFB /* MyCustomCell.h */,
-				5742B4F11EA9B0A600C57BFB /* MyCustomCell.m */,
-				5742B4F31EA9B45700C57BFB /* UIPresentationDemoViewController2.h */,
-				5742B4F41EA9B45700C57BFB /* UIPresentationDemoViewController2.m */,
-			);
-			path = "UIPresentationController学习与使用2";
 			sourceTree = "<group>";
 		};
 		5744CC601E8A14BE00A15DB9 /* AsyncDisplayKit */ = {
@@ -1114,6 +1082,7 @@
 		5773EE281EFBC5CA00014D95 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				5773EE7A1EFD6ADA00014D95 /* UIScreen */,
 				5773EE621EFC0C8000014D95 /* UIFont */,
 				5773EE4D1EFBC76F00014D95 /* UIApplication */,
 				5773EE501EFBC76F00014D95 /* UIDevice */,
@@ -1160,6 +1129,8 @@
 		5773EE2E1EFBC5CA00014D95 /* UIImageView */ = {
 			isa = PBXGroup;
 			children = (
+				5773EE911F010C6800014D95 /* QuoteLibs */,
+				5773EE8B1F00E20B00014D95 /* MakeImgV */,
 				5773EE441EFBC6E300014D95 /* UIImageView+PPSets.h */,
 				5773EE451EFBC6E300014D95 /* UIImageView+PPSets.m */,
 			);
@@ -1229,8 +1200,9 @@
 		5773EE371EFBC5CA00014D95 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				5773EE4A1EFBC70100014D95 /* UIView+PPSets.h */,
-				5773EE4B1EFBC70100014D95 /* UIView+PPSets.m */,
+				5773EE8F1F00EF3E00014D95 /* rt_dashed@2x.png */,
+				5773EE881F00D92600014D95 /* UIView+SpecialUI.h */,
+				5773EE891F00D92600014D95 /* UIView+SpecialUI.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -1298,6 +1270,42 @@
 				5773EE721EFCB71C00014D95 /* YYLabel+Calculate.m */,
 			);
 			path = Calculate;
+			sourceTree = "<group>";
+		};
+		5773EE7A1EFD6ADA00014D95 /* UIScreen */ = {
+			isa = PBXGroup;
+			children = (
+				5773EE7B1EFD6CAD00014D95 /* UIScreen+EasilySize.h */,
+				5773EE7C1EFD6CAD00014D95 /* UIScreen+EasilySize.m */,
+			);
+			path = UIScreen;
+			sourceTree = "<group>";
+		};
+		5773EE811F0096B200014D95 /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				5773EE821F00997600014D95 /* NSArray+SafeArray.h */,
+				5773EE831F00997600014D95 /* NSArray+SafeArray.m */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
+		5773EE8B1F00E20B00014D95 /* MakeImgV */ = {
+			isa = PBXGroup;
+			children = (
+				5773EE8C1F00E22900014D95 /* UIImageView+MakeImgV.h */,
+				5773EE8D1F00E22900014D95 /* UIImageView+MakeImgV.m */,
+			);
+			path = MakeImgV;
+			sourceTree = "<group>";
+		};
+		5773EE911F010C6800014D95 /* QuoteLibs */ = {
+			isa = PBXGroup;
+			children = (
+				5773EE921F010C7700014D95 /* UIImageView+CornerRadius.h */,
+				5773EE931F010C7700014D95 /* UIImageView+CornerRadius.m */,
+			);
+			path = QuoteLibs;
 			sourceTree = "<group>";
 		};
 		5780E7051DCB7BDA00156B12 /* 简书-小米人 */ = {
@@ -1933,6 +1941,7 @@
 		C6EBE8EC1DACD9E70067EF2A /* NS */ = {
 			isa = PBXGroup;
 			children = (
+				5773EE811F0096B200014D95 /* NSArray */,
 				5773EE5D1EFC09E600014D95 /* NSMutableAttributedString */,
 				57FFA5401EE3C2CC00FAFD94 /* NSURL */,
 				572582201E0B781300C41BAB /* NSObject */,
@@ -2033,6 +2042,7 @@
 				575C1DE41D8503F000357B39 /* tujieGCD.png in Resources */,
 				575C1D981D85029600357B39 /* b27_icon_star_yellow@3x.png in Resources */,
 				575C1DE51D8503F000357B39 /* yi.gif in Resources */,
+				5773EE901F00EF3E00014D95 /* rt_dashed@2x.png in Resources */,
 				575C1DE31D8503F000357B39 /* SDWebImage原理图.png in Resources */,
 				575C1DE21D8503F000357B39 /* iOS沙盒图.png in Resources */,
 				C6DC36D21DD07799003EC552 /* NSDateTimeAgo.bundle in Resources */,
@@ -2126,8 +2136,8 @@
 				57F76FC01E5FFC9B001BD536 /* MJChiBaoZiFooter.m in Sources */,
 				C6D808A61D4B25E500C8B2FF /* AnimationBaseViewController.m in Sources */,
 				C6AC8C2A1D1276F30008133E /* MJCustomRefreshViewController.m in Sources */,
-				5742B4B71EA5BB4800C57BFB /* TestViewController.m in Sources */,
 				C682E6581DB9A63300CD86CB /* CalendarEventViewController.m in Sources */,
+				5773EE8E1F00E22900014D95 /* UIImageView+MakeImgV.m in Sources */,
 				C67799931D508E9000007161 /* MoreViewController.m in Sources */,
 				57DAAB371E7053E2001C127E /* PPBaseCellDisplayAnimationViewController.m in Sources */,
 				57378AFF1EEE5C74000ECA07 /* PPJiaGouMapBaseViewController.m in Sources */,
@@ -2135,11 +2145,11 @@
 				57378B051EEE5D48000ECA07 /* PPJiaGouBaiduMapViewController.m in Sources */,
 				C67799951D508E9000007161 /* WholesaleViewController.m in Sources */,
 				571E04381E8F7F3C0037556C /* PPTextFieldDemoCell.m in Sources */,
+				5773EE841F00997600014D95 /* NSArray+SafeArray.m in Sources */,
 				578897301E07F35A00CD0595 /* EPeiResultModel.m in Sources */,
 				C67799941D508E9000007161 /* TwoMoreViewController.m in Sources */,
-				5773EE4C1EFBC70100014D95 /* UIView+PPSets.m in Sources */,
 				5773EE731EFCB71C00014D95 /* YYLabel+Calculate.m in Sources */,
-				5742B4EF1EA9AFE100C57BFB /* MyTableViewController.m in Sources */,
+				5773EE941F010C7700014D95 /* UIImageView+CornerRadius.m in Sources */,
 				5773EDD51EFA420D00014D95 /* NSString+ContainsString.m in Sources */,
 				5780E70B1DCB802600156B12 /* ClassEntryModel.m in Sources */,
 				C65643A91D868B880079B58B /* YYTextDemoViewController.m in Sources */,
@@ -2154,7 +2164,6 @@
 				C6C6D0A81D0F94BB00F82C39 /* AppDelegate.m in Sources */,
 				575C1D941D85029600357B39 /* LPLevelView.m in Sources */,
 				575C1DB71D85033500357B39 /* PPMTHandle.m in Sources */,
-				5742B4F51EA9B45700C57BFB /* UIPresentationDemoViewController2.m in Sources */,
 				57DAAB121E703C83001C127E /* ScreenShotView.m in Sources */,
 				57DAAB3D1E705907001C127E /* JRNumberTool.m in Sources */,
 				575C1DB31D85033500357B39 /* PP_CameraManager.m in Sources */,
@@ -2174,7 +2183,6 @@
 				C683FBC51D29FF9900D1BF6A /* MJExtensionBaseViewController.m in Sources */,
 				578E56371E83C936004F5F5F /* NSString+Verify.m in Sources */,
 				C6AC8C131D124CA00008133E /* MJAnimationImageViewController.m in Sources */,
-				5742B4B41EA5BA8800C57BFB /* UIPresentationDemoViewController.m in Sources */,
 				5742B4B11EA5BA1000C57BFB /* PPTransitionsViewController.m in Sources */,
 				5773EE431EFBC6C500014D95 /* UIColor+PPSets.m in Sources */,
 				57DAAB321E703FAC001C127E /* PPBaseTableViewController.m in Sources */,
@@ -2196,8 +2204,10 @@
 				57DAAB101E703C83001C127E /* BaseNavigationController.m in Sources */,
 				5780E70E1DCB803A00156B12 /* ClassObj.m in Sources */,
 				571E04341E8F7D330037556C /* NSString+PPTextField.m in Sources */,
+				5773EE871F0099B500014D95 /* NSObject+GCD.m in Sources */,
 				571E043B1E8F7FEA0037556C /* PPTFModel.m in Sources */,
 				5780E7081DCB7C2300156B12 /* ClassListModel.m in Sources */,
+				5773EE7D1EFD6CAD00014D95 /* UIScreen+EasilySize.m in Sources */,
 				C683FBD71D2A15C500D1BF6A /* StatusResult.m in Sources */,
 				57C227FC1EF3B95C00BE2A30 /* PPBaiduFactory.m in Sources */,
 				57DAAB2B1E703CF9001C127E /* PPFourthViewController.m in Sources */,
@@ -2211,12 +2221,9 @@
 				57C227FD1EF3B95C00BE2A30 /* PPBaiduMapView.m in Sources */,
 				5773EE571EFBC76F00014D95 /* UIDevice+PPSets.m in Sources */,
 				578897331E07F48C00CD0595 /* EPeiDataModel.m in Sources */,
-				5742B4F21EA9B0A600C57BFB /* MyCustomCell.m in Sources */,
 				C681C07D1DC9B2ED003637CD /* PP_LabelManager.m in Sources */,
 				5773EDC11EF955CB00014D95 /* UITapGestureRecognizer+Event.m in Sources */,
 				571E042E1E8F7CBC0037556C /* PPTextFieldDemoViewController.m in Sources */,
-				5742B4EC1EA9AB5700C57BFB /* CustomPresentationVC.m in Sources */,
-				5742B4BA1EA5BBA500C57BFB /* MyPresentationConytollrt.m in Sources */,
 				570F72461E82A3A0006BCAFC /* LearnSystemAPIBaseViewController.m in Sources */,
 				57F76FC51E5FFC9B001BD536 /* MJDIYHeader.m in Sources */,
 				C63B358D1D1D3CA8006277E8 /* Foundation+Log.m in Sources */,
@@ -2231,6 +2238,7 @@
 				C6C6D1DD1D0F99CB00F82C39 /* MJBaseViewController.m in Sources */,
 				C683FBDD1D2A360000D1BF6A /* Student.m in Sources */,
 				C6C6D1E31D0FA50100F82C39 /* MJDefaultBlockViewController.m in Sources */,
+				5773EE8A1F00D92600014D95 /* UIView+SpecialUI.m in Sources */,
 				57F76FC11E5FFC9B001BD536 /* MJChiBaoZiFooter2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

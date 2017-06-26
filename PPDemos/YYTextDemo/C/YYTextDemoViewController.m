@@ -32,15 +32,50 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
 //    [self test001];
-//    [self test002];
-    [self test003];
+    [self test002];
+//    [self test003];
+//    
+//    [self makeBtn];
     
-    [self makeBtn];
-    UIButton *bt = [UIButton buttonWithType:UIButtonTypeCustom];
-    bt.tag = 0;
-    [self changeVaildLines:bt];
-
-
+    
+    //BTN CATEGORY
+//    UIButton *bt = [UIButton buttonWithType:UIButtonTypeCustom];
+//    bt.tag = 0;
+////    [self changeVaildLines:bt];
+//
+//    bt.frame = CGRectMake(50, 100, 200, 60);
+//    [self.view addSubview:bt];
+//    bt.backgroundColor = [UIColor pp_lightGrayColor];
+//    [bt setTitle:@"获取验证码" forState:UIControlStateNormal];
+//
+//    [bt pp_handleEvent:UIControlEventTouchUpInside withBlock:^{
+//        [bt pp_startTime:5 tittle:@"重新获取验证码" waitTittle:@"s"];
+//    }];
+//    [bt pp_startTime:5 tittle:@"重新获取验证码" waitTittle:@"s"];
+    
+    
+//    //gcd category test
+//    UIImageView *imgView = [[UIImageView alloc]initWithFrame:CGRectMake(50, 180, ScreenWidth-100, 200)];
+//    [self.view addSubview:imgView];
+//    imgView.contentMode = UIViewContentModeScaleToFill;
+//    
+//    __block UIImage *img = nil;
+//    [NSObject pp_gcdAsync:^{
+//        NSLog(@"async --- %@",[NSThread currentThread]);
+//        NSURL *url = [NSURL URLWithString:@"http://img06.tooopen.com/images/20170329/tooopen_sy_203589513656.jpg"];
+//        NSData *imgData = [NSData dataWithContentsOfURL:url];
+//        img = [UIImage imageWithData:imgData];
+//    } toMain:^{
+//        NSLog(@"main --- %@",[NSThread currentThread]);
+//        imgView.image = img;
+//    }];
+//    
+//    NSLog(@"after1 main %@---%@",[NSDate date],[NSThread currentThread]);
+//    [NSObject pp_gcdAfter:^{
+//        NSLog(@"after2 main %@---%@",[NSDate date],[NSThread currentThread]);
+//        NSLog(@"%@---%@",[NSDate date],[NSThread currentThread]);
+//    } delay:5];
+//    
     
  
     
@@ -66,6 +101,11 @@
 
 -(void)test002
 {
+//    UIView *line = [UIView pp_createDashedLineWithFrame:CGRectMake(10, 100, ScreenWidth-20, 1) lineLength:1.5 lineSpacing:2 lineColor:[UIColor pp_chocolateColor]];
+//    
+//    [self.view addSubview:line];
+    
+//    UIView *line = [UIView pp_dashedLineWithSuperV:self.view imgName:@"rt_dashed" lineFrame:CGRectMake(10, 150, ScreenWidth-20, 1)];
     
 }
 
@@ -125,9 +165,6 @@
 
 -(void)changeVaildLines:(UIButton *)btn
 {
-    _topLB = [YYLabel pp_lbMakeForAttributedWithSuperV:self.view
-                                               bgColor:[UIColor whiteColor]
-                                         numberOfLines:0];
     
     [_topLB pp_attributedYYLabelWithTextColor:[UIColor pp_purpleColor]
                                          font:@18

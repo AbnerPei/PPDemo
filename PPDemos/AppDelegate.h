@@ -23,6 +23,7 @@
 @property (nonatomic, strong) ScreenShotView *screenshotView;
 #endif
 
+
 /// func
 + (AppDelegate* )shareAppDelegate;
 @end

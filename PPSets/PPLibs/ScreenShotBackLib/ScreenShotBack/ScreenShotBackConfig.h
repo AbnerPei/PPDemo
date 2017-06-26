@@ -15,7 +15,7 @@
  （针对整个APP全局的）
  */
 #pragma mark -------------------截图返回手势
-#define kUseScreenShotGesture  1
+#define kUseScreenShotGesture  0
 
 
 

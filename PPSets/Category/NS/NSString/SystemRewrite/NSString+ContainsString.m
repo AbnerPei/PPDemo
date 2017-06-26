@@ -8,7 +8,6 @@
 
 #import "NSString+ContainsString.h"
 #import <objc/runtime.h>
-#define System_NSString(version)     ([[[UIDevice currentDevice] systemVersion] floatValue] >= version ? YES : NO)
 
 @implementation NSString (ContainsString)
 +(void)load
@@ -23,7 +22,7 @@
     //字符串不为空
     if (self.length == 0 || str.length == 0) {
         return NO;
-    }else if (System_NSString(8.0)) {
+    }else if (PPVersion_Category(8.0)) {
         return [self pp_containsString:str];
     }else{
         return [self rangeOfString:str].location != NSNotFound;
