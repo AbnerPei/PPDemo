@@ -43,11 +43,8 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *identifier = @"cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
-    }
+
+    UITableViewCell *cell = [UITableViewCell pp_cellMakeWithTableView:tableView];
     cell.textLabel.textColor = PPRandomColor;
     cell.textLabel.text = self.titles[indexPath.row];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;

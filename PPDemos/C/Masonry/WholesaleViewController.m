@@ -8,6 +8,7 @@
 
 #import "WholesaleViewController.h"
 #import "WholesaleCell.h"
+
 @interface WholesaleViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
     //headerV的子控件设置全局变量
@@ -163,12 +164,8 @@
 
 #pragma mark - tableView显示内容
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *identifier = @"wholesaleCell";
-    WholesaleCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    
-    if (!cell) {
-        cell = [[WholesaleCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
-    }
+    WholesaleCell *cell = [WholesaleCell pp_cellMakeWithTableView:nil];
+
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     if (indexPath.row == 0) {
         [cell setupWholesaleCellData:@[

@@ -36,7 +36,8 @@
                      @"ASDK学习",
                      @"学习系统API知识，练习demos",
                      @"自定义个日历控件",
-                     @"架构/地图"
+                     @"架构/地图",
+                     @"iOS适配器使用练习s"
                      ] mutableCopy];
     
     self.vcs = [@[
@@ -53,7 +54,8 @@
                   @"ASDKViewController",
                   @"LearnSystemAPIBaseViewController",
                   @"PPCustomCalendarViewController",
-                  @"PPJiaGouMapBaseViewController"
+                  @"PPJiaGouMapBaseViewController",
+                  @"PPAdapterBaseTableViewController"
                   ] mutableCopy];
     
 }

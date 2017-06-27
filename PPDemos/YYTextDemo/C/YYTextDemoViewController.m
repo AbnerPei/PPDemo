@@ -32,16 +32,10 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
 //    [self test001];
-    [self test002];
-//    [self test003];
-//    
-//    [self makeBtn];
-    
-    
-    //BTN CATEGORY
-//    UIButton *bt = [UIButton buttonWithType:UIButtonTypeCustom];
-//    bt.tag = 0;
-////    [self changeVaildLines:bt];
+//    [self test002];
+    [self test003];
+//
+
 //
 //    bt.frame = CGRectMake(50, 100, 200, 60);
 //    [self.view addSubview:bt];
@@ -112,11 +106,14 @@
 
 -(void)test003
 {
+        [self makeBtn];
+
+    
     YYLabel *topLB = [YYLabel new];
     _topLB = topLB;
     topLB.text = @"山上轻松山上花山上轻松上花山上花山\n花间轻松不如她山上花山上轻松\n有朝一日山上花山上花山上花山上花山上花山开花\n上京花园人满山";
     [self.view addSubview:topLB];
-    topLB.frame = CGRectMake(50, 100, ScreenWidth-100, 180);
+    topLB.frame = CGRectMake(80, 100, ScreenWidth-100, 180);
     //如果有换行符“\n”，记得设置numberOfLines为0；
     topLB.numberOfLines = 0;
     topLB.backgroundColor = [UIColor pp_lightGrayColor];
@@ -143,6 +140,13 @@
     topLB.textTapAction = ^(UIView * _Nonnull containerView, NSAttributedString * _Nonnull text, NSRange range, CGRect rect) {
         NSLog(@"text.string is %@",text.string);
     };
+    
+    
+    
+    //        BTN CATEGORY
+    UIButton *bt = [UIButton buttonWithType:UIButtonTypeCustom];
+    bt.tag = 6;
+    [self changeVaildLines:bt];
     
     
 }
@@ -182,6 +186,7 @@
                                    _topLB.frame = CGRectMake(80, 100,ScreenWidth-100 , size.height+3);
 
     }];
+    [_topLB sizeToFit];
 }
 
 @end

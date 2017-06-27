@@ -35,6 +35,14 @@ typedef void(^calculateBlock)(CGSize size,NSUInteger lineCount);
 //UIColor
 #import "UIColor+SpecialAttributedString.h"
 
+//UITableView
+#import "UITableView+MakeTableV.h"
+
+
+//UITableViewCell
+#import "UITableViewCell+CellMake.h"
+
+
 
 //字符串
 #import "NSMutableAttributedString+EasilyMake.h"
