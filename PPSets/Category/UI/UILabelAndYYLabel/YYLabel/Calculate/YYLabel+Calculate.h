@@ -34,4 +34,17 @@
                                  vaildLines:(NSUInteger)vaildLines
                                        text:(id)text
                              calculateBlock:(calculateBlock)calculateBlock;
+
+
+
+/**
+ 获取LB(文字)的size【(NSString *)类型】。
+
+ @param containerSize 给定的size
+ @param font 文字font
+ @param text (NSString *)的文字
+ */
++(CGSize)pp_calculateYYLabelWithContainerSize:(CGSize)containerSize
+                                         font:(id)font
+                                         text:(NSString *)text;
 @end

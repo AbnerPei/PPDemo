@@ -117,22 +117,6 @@
     //如果有换行符“\n”，记得设置numberOfLines为0；
     topLB.numberOfLines = 0;
     topLB.backgroundColor = [UIColor pp_lightGrayColor];
-    
-//    [topLB pp_attributedYYLabelWithTextColor:[UIColor pp_purpleColor]
-//                                        font:@18
-//                                 lineSpacing:20
-//                               containerSize:CGSizeMake(ScreenWidth-100, CGFLOAT_MAX)
-//                       specialTextColorArray:@[[UIColor pp_redColor],[UIColor pp_blueColor]]
-//                        specialTextFontArray:@[[UIFont systemFontOfSize:12],[UIFont systemFontOfSize:20],[UIFont systemFontOfSize:18]]
-//                            specialTextArray:@[@"山",@"花"]
-//                                      allStr:topLB.text
-//                                 textAligent:NSTextAlignmentCenter
-//                              calculateBlock:^(CGSize size, NSUInteger lineCount) {
-//                                  NSLog(@"线程is %@ -- %lu",[NSThread currentThread],(unsigned long)lineCount);
-//                                  topLB.frame = CGRectMake(50, 100,ScreenWidth-100 , size.height);
-//    }];
-    
-    
 
     NSMutableAttributedString *mutStr = [NSMutableAttributedString pp_attributedStringWithText:@"bobo" font:@12 textColor:[UIColor pp_blueColor] lineSpacing:10];
     topLB.truncationToken = mutStr;
@@ -145,7 +129,7 @@
     
     //        BTN CATEGORY
     UIButton *bt = [UIButton buttonWithType:UIButtonTypeCustom];
-    bt.tag = 6;
+    bt.tag = 0;
     [self changeVaildLines:bt];
     
     

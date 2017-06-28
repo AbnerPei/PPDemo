@@ -87,7 +87,17 @@
                                    calculateBlock:calculateBlock];
     
 }
--(void)pp_attributedYYLabelWithTextColor:(UIColor *)textColor font:(id)font lineSpacing:(CGFloat)lineSpacing containerSize:(CGSize)containerSize specialTextColorArray:(NSArray<UIColor *> *)specialTextColorArray specialTextFontArray:(NSArray<UIFont *> *)specialTextFontArray specialTextArray:(NSArray<NSString *> *)specialTextArray allStr:(NSString *)allStr textAligent:(NSTextAlignment)textAligent vaildLines:(NSUInteger)vaildLines calculateBlock:(calculateBlock)calculateBlock
+-(void)pp_attributedYYLabelWithTextColor:(UIColor *)textColor
+                                    font:(id)font
+                             lineSpacing:(CGFloat)lineSpacing
+                           containerSize:(CGSize)containerSize
+                   specialTextColorArray:(NSArray<UIColor *> *)specialTextColorArray
+                    specialTextFontArray:(NSArray<UIFont *> *)specialTextFontArray
+                        specialTextArray:(NSArray<NSString *> *)specialTextArray
+                                  allStr:(NSString *)allStr
+                             textAligent:(NSTextAlignment)textAligent
+                              vaildLines:(NSUInteger)vaildLines
+                          calculateBlock:(calculateBlock)calculateBlock
 {
     NSMutableAttributedString *attributedStr =
     [NSMutableAttributedString pp_attributedStringWithTextColor:textColor

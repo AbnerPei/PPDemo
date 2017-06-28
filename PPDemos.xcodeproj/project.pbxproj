@@ -121,6 +121,9 @@
 		578E56371E83C936004F5F5F /* NSString+Verify.m in Sources */ = {isa = PBXBuildFile; fileRef = 578E56361E83C936004F5F5F /* NSString+Verify.m */; };
 		578E5DDE1E9DD79F003BB111 /* PPCustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 578E5DDD1E9DD79F003BB111 /* PPCustomTextField.m */; };
 		578E5DE21E9DD8E0003BB111 /* NSMutableAttributedString+PPTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 578E5DE11E9DD8E0003BB111 /* NSMutableAttributedString+PPTextField.m */; };
+		57A6FDE61F03B2740032EFC4 /* UITableView+Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A6FDE31F03B2740032EFC4 /* UITableView+Event.m */; };
+		57A6FDE71F03B2740032EFC4 /* UITextView+Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A6FDE51F03B2740032EFC4 /* UITextView+Event.m */; };
+		57A6FDEA1F03B2980032EFC4 /* WKHookUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A6FDE91F03B2980032EFC4 /* WKHookUtility.m */; };
 		57BC34451E8BB4A900DD6175 /* PPBaiSiRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BC34441E8BB4A900DD6175 /* PPBaiSiRequest.m */; };
 		57BC34491E8BDDE200DD6175 /* PPJianFriendRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BC34481E8BDDE200DD6175 /* PPJianFriendRequest.m */; };
 		57C227FC1EF3B95C00BE2A30 /* PPBaiduFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C227F11EF3B95C00BE2A30 /* PPBaiduFactory.m */; };
@@ -428,6 +431,12 @@
 		578E5DE11E9DD8E0003BB111 /* NSMutableAttributedString+PPTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+PPTextField.m"; sourceTree = "<group>"; };
 		579A450C1DA94A9400D61BD8 /* PPSets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPSets.h; sourceTree = "<group>"; };
 		579A450E1DABE88200D61BD8 /* AnimationsLearn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationsLearn.h; sourceTree = "<group>"; };
+		57A6FDE21F03B2740032EFC4 /* UITableView+Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Event.h"; sourceTree = "<group>"; };
+		57A6FDE31F03B2740032EFC4 /* UITableView+Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Event.m"; sourceTree = "<group>"; };
+		57A6FDE41F03B2740032EFC4 /* UITextView+Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Event.h"; sourceTree = "<group>"; };
+		57A6FDE51F03B2740032EFC4 /* UITextView+Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Event.m"; sourceTree = "<group>"; };
+		57A6FDE81F03B2980032EFC4 /* WKHookUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKHookUtility.h; sourceTree = "<group>"; };
+		57A6FDE91F03B2980032EFC4 /* WKHookUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKHookUtility.m; sourceTree = "<group>"; };
 		57BC34431E8BB4A900DD6175 /* PPBaiSiRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPBaiSiRequest.h; sourceTree = "<group>"; };
 		57BC34441E8BB4A900DD6175 /* PPBaiSiRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPBaiSiRequest.m; sourceTree = "<group>"; };
 		57BC34461E8BDA6C00DD6175 /* PPDemoRequestMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPDemoRequestMacros.h; sourceTree = "<group>"; };
@@ -1683,6 +1692,12 @@
 		C62DA8FA1D816B050003945C /* PPSets */ = {
 			isa = PBXGroup;
 			children = (
+				57A6FDE81F03B2980032EFC4 /* WKHookUtility.h */,
+				57A6FDE91F03B2980032EFC4 /* WKHookUtility.m */,
+				57A6FDE21F03B2740032EFC4 /* UITableView+Event.h */,
+				57A6FDE31F03B2740032EFC4 /* UITableView+Event.m */,
+				57A6FDE41F03B2740032EFC4 /* UITextView+Event.h */,
+				57A6FDE51F03B2740032EFC4 /* UITextView+Event.m */,
 				579A450C1DA94A9400D61BD8 /* PPSets.h */,
 				C6FEE3BC1DA8DF5700316D14 /* Custom */,
 				575C1DF91D85044900357B39 /* PPWaterFlow */,
@@ -2276,6 +2291,7 @@
 				C67799951D508E9000007161 /* WholesaleViewController.m in Sources */,
 				571E04381E8F7F3C0037556C /* PPTextFieldDemoCell.m in Sources */,
 				5773EE841F00997600014D95 /* NSArray+SafeArray.m in Sources */,
+				57A6FDE61F03B2740032EFC4 /* UITableView+Event.m in Sources */,
 				578897301E07F35A00CD0595 /* EPeiResultModel.m in Sources */,
 				C67799941D508E9000007161 /* TwoMoreViewController.m in Sources */,
 				5773EE731EFCB71C00014D95 /* YYLabel+Calculate.m in Sources */,
@@ -2322,7 +2338,9 @@
 				57DAAB321E703FAC001C127E /* PPBaseTableViewController.m in Sources */,
 				5773EDBE1EF9533800014D95 /* UIGestureRecognizer+Event.m in Sources */,
 				578897361E07F5C900CD0595 /* EPeiOrderModel.m in Sources */,
+				57A6FDEA1F03B2980032EFC4 /* WKHookUtility.m in Sources */,
 				5773EE701EFCB70A00014D95 /* YYLabel+Attributed.m in Sources */,
+				57A6FDE71F03B2740032EFC4 /* UITextView+Event.m in Sources */,
 				5773EE401EFBC6B200014D95 /* UIImageView+FaceAware.swift in Sources */,
 				5773EEAC1F0228D200014D95 /* UITableView+MakeTableV.m in Sources */,
 				57C227FE1EF3B95C00BE2A30 /* PPGaodeFactory.m in Sources */,

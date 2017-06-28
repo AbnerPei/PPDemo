@@ -74,4 +74,17 @@
         });
     });
 }
+
++(CGSize)pp_calculateYYLabelWithContainerSize:(CGSize)containerSize font:(id)font text:(NSString *)text
+{
+    NSAssert((text && text.length > 0), @"%s PP警告：你传入的字符串不是nil就是@"",哪有宽度，我不计算，白浪费我时间~.~",__func__);
+    NSMutableAttributedString *attributedStr = [[NSMutableAttributedString alloc]initWithString:text];
+    [UIFont pp_fontWithIdFont:font forAttributedStr:attributedStr];
+    YYTextContainer *textContainer = [YYTextContainer containerWithSize:containerSize];
+    YYTextLayout *textLayout = [YYTextLayout layoutWithContainer:textContainer text:attributedStr];
+    CGSize calculateSize = textLayout.textBoundingSize;
+    CGSize textSize = CGSizeMake(calculateSize.width, ceilf(calculateSize.height));
+    
+    return textSize;
+}
 @end
