@@ -10,33 +10,44 @@
 
 @interface NSMutableAttributedString (EasilyMake)
 
+
+/** (NSMutableAttributedString *)初始化。 */
 +(instancetype)pp_attributedStringWithText:(NSString *)text;
 
+/**
+ (NSMutableAttributedString *)初始化。【整体】
+ @param text 【整体】文字
+ @param font 【整体】字体
+ @param kern 【整体】文字横间距
+ @param textColor 【整体】文字颜色
+ @param lineSpacing 【整体】文字行间距
+ @param textAligent 【整体】文字对齐方式
+ */
 +(instancetype)pp_attributedStringWithText:(NSString *)text
                                       font:(id)font
-                                 textColor:(UIColor *)textColor;
-
-+(instancetype)pp_attributedStringWithText:(NSString *)text
-                                      font:(id)font
+                                      kern:(CGFloat)kern
                                  textColor:(UIColor *)textColor
-                               lineSpacing:(CGFloat)lineSpacing;
+                               lineSpacing:(CGFloat)lineSpacing
+                               textAligent:(NSTextAlignment)textAligent;
 
-+(instancetype)pp_attributedStringWithTextColor:(UIColor *)textColor
-                                           font:(id)font
-                                    lineSpacing:(CGFloat)lineSpacing
-                               specialTextColor:(UIColor *)specialTextColor
-                                specialTextFont:(id)specialTextFont
-                                    specialText:(NSString *)specialText
-                                         allStr:(NSString *)allStr;
++(instancetype)pp_attributedStringWithText:(NSString *)text
+                                      font:(id)font
+                                      kern:(CGFloat)kern
+                                 textColor:(UIColor *)textColor
+                               lineSpacing:(CGFloat)lineSpacing
+                               textAligent:(NSTextAlignment)textAligent
+                               specialText:(NSString *)specialText
+                           specialTextFont:(id)specialTextFont
+                          specialTextColor:(UIColor *)specialTextColor;
 
-
-+(instancetype)pp_attributedStringWithTextColor:(UIColor *)textColor
-                                           font:(id)font
-                                    lineSpacing:(CGFloat)lineSpacing
-                          specialTextColorArray:(NSArray<UIColor *> *)specialTextColorArray
-                           specialTextFontArray:(NSArray<UIFont *> *)specialTextFontArray
-                               specialTextArray:(NSArray<NSString *> *)specialTextArray
-                                         allStr:(NSString *)allStr;
-
++(instancetype)pp_attributedStringWithText:(NSString *)text
+                                      font:(id)font
+                                      kern:(CGFloat)kern
+                                 textColor:(UIColor *)textColor
+                               lineSpacing:(CGFloat)lineSpacing
+                               textAligent:(NSTextAlignment)textAligent
+                          specialTextArray:(NSArray<NSString *> *)specialTextArray
+                      specialTextFontArray:(NSArray<UIFont *> *)specialTextFontArray
+                     specialTextColorArray:(NSArray<UIColor *> *)specialTextColorArray;
 
 @end

@@ -10,15 +10,15 @@
 #import "WKHookUtility.h"
 
 @implementation UITableView (Event)
-//+ (void)load
-//{
-//    static dispatch_once_t onceToken;
-//    dispatch_once(&onceToken, ^{
-//        SEL initTargetOriginalSEL = @selector(setDelegate:);
-//        SEL initTargetSwizzleSEL = @selector(tableViewSwizzle_setDelegate:);
-//        [WKHookUtility swizzlingInClass:[self class] originalSelector:initTargetOriginalSEL swizzledSelector:initTargetSwizzleSEL];
-//    });
-//}
++ (void)load
+{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        SEL initTargetOriginalSEL = @selector(setDelegate:);
+        SEL initTargetSwizzleSEL = @selector(tableViewSwizzle_setDelegate:);
+        [WKHookUtility swizzlingInClass:[self class] originalSelector:initTargetOriginalSEL swizzledSelector:initTargetSwizzleSEL];
+    });
+}
 - (void)tableViewSwizzle_setDelegate:(id<UITableViewDelegate>)delegate
 {
     NSString *delegateClassStr = NSStringFromClass([delegate class]);

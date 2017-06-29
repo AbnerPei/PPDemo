@@ -92,9 +92,7 @@
 		5773EE681EFC176E00014D95 /* UIFont+NSNumberNSStringUIFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 5773EE671EFC176E00014D95 /* UIFont+NSNumberNSStringUIFont.m */; };
 		5773EE6B1EFCAFE100014D95 /* UIColor+SpecialAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 5773EE6A1EFCAFE100014D95 /* UIColor+SpecialAttributedString.m */; };
 		5773EE701EFCB70A00014D95 /* YYLabel+Attributed.m in Sources */ = {isa = PBXBuildFile; fileRef = 5773EE6F1EFCB70A00014D95 /* YYLabel+Attributed.m */; };
-		5773EE731EFCB71C00014D95 /* YYLabel+Calculate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5773EE721EFCB71C00014D95 /* YYLabel+Calculate.m */; };
 		5773EE761EFCBBD600014D95 /* NSMutableAttributedString+EasilyMake.m in Sources */ = {isa = PBXBuildFile; fileRef = 5773EE751EFCBBD600014D95 /* NSMutableAttributedString+EasilyMake.m */; };
-		5773EE791EFCDD5C00014D95 /* NSMutableAttributedString+NSStringNSMutableAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 5773EE781EFCDD5C00014D95 /* NSMutableAttributedString+NSStringNSMutableAttributedString.m */; };
 		5773EE7D1EFD6CAD00014D95 /* UIScreen+EasilySize.m in Sources */ = {isa = PBXBuildFile; fileRef = 5773EE7C1EFD6CAD00014D95 /* UIScreen+EasilySize.m */; };
 		5773EE841F00997600014D95 /* NSArray+SafeArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 5773EE831F00997600014D95 /* NSArray+SafeArray.m */; };
 		5773EE871F0099B500014D95 /* NSObject+GCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5773EE861F0099B500014D95 /* NSObject+GCD.m */; };
@@ -124,6 +122,7 @@
 		57A6FDE61F03B2740032EFC4 /* UITableView+Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A6FDE31F03B2740032EFC4 /* UITableView+Event.m */; };
 		57A6FDE71F03B2740032EFC4 /* UITextView+Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A6FDE51F03B2740032EFC4 /* UITextView+Event.m */; };
 		57A6FDEA1F03B2980032EFC4 /* WKHookUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A6FDE91F03B2980032EFC4 /* WKHookUtility.m */; };
+		57A6FDED1F0400820032EFC4 /* NSObject+CalculateSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A6FDEC1F0400820032EFC4 /* NSObject+CalculateSize.m */; };
 		57BC34451E8BB4A900DD6175 /* PPBaiSiRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BC34441E8BB4A900DD6175 /* PPBaiSiRequest.m */; };
 		57BC34491E8BDDE200DD6175 /* PPJianFriendRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BC34481E8BDDE200DD6175 /* PPJianFriendRequest.m */; };
 		57C227FC1EF3B95C00BE2A30 /* PPBaiduFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C227F11EF3B95C00BE2A30 /* PPBaiduFactory.m */; };
@@ -371,12 +370,8 @@
 		5773EE6A1EFCAFE100014D95 /* UIColor+SpecialAttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SpecialAttributedString.m"; sourceTree = "<group>"; };
 		5773EE6E1EFCB70A00014D95 /* YYLabel+Attributed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YYLabel+Attributed.h"; sourceTree = "<group>"; };
 		5773EE6F1EFCB70A00014D95 /* YYLabel+Attributed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YYLabel+Attributed.m"; sourceTree = "<group>"; };
-		5773EE711EFCB71C00014D95 /* YYLabel+Calculate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YYLabel+Calculate.h"; sourceTree = "<group>"; };
-		5773EE721EFCB71C00014D95 /* YYLabel+Calculate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YYLabel+Calculate.m"; sourceTree = "<group>"; };
 		5773EE741EFCBBD600014D95 /* NSMutableAttributedString+EasilyMake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+EasilyMake.h"; sourceTree = "<group>"; };
 		5773EE751EFCBBD600014D95 /* NSMutableAttributedString+EasilyMake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+EasilyMake.m"; sourceTree = "<group>"; };
-		5773EE771EFCDD5C00014D95 /* NSMutableAttributedString+NSStringNSMutableAttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+NSStringNSMutableAttributedString.h"; sourceTree = "<group>"; };
-		5773EE781EFCDD5C00014D95 /* NSMutableAttributedString+NSStringNSMutableAttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+NSStringNSMutableAttributedString.m"; sourceTree = "<group>"; };
 		5773EE7B1EFD6CAD00014D95 /* UIScreen+EasilySize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+EasilySize.h"; sourceTree = "<group>"; };
 		5773EE7C1EFD6CAD00014D95 /* UIScreen+EasilySize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+EasilySize.m"; sourceTree = "<group>"; };
 		5773EE821F00997600014D95 /* NSArray+SafeArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SafeArray.h"; sourceTree = "<group>"; };
@@ -437,6 +432,8 @@
 		57A6FDE51F03B2740032EFC4 /* UITextView+Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Event.m"; sourceTree = "<group>"; };
 		57A6FDE81F03B2980032EFC4 /* WKHookUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKHookUtility.h; sourceTree = "<group>"; };
 		57A6FDE91F03B2980032EFC4 /* WKHookUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKHookUtility.m; sourceTree = "<group>"; };
+		57A6FDEB1F0400820032EFC4 /* NSObject+CalculateSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CalculateSize.h"; sourceTree = "<group>"; };
+		57A6FDEC1F0400820032EFC4 /* NSObject+CalculateSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CalculateSize.m"; sourceTree = "<group>"; };
 		57BC34431E8BB4A900DD6175 /* PPBaiSiRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPBaiSiRequest.h; sourceTree = "<group>"; };
 		57BC34441E8BB4A900DD6175 /* PPBaiSiRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPBaiSiRequest.m; sourceTree = "<group>"; };
 		57BC34461E8BDA6C00DD6175 /* PPDemoRequestMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPDemoRequestMacros.h; sourceTree = "<group>"; };
@@ -754,6 +751,8 @@
 				572582221E0B781300C41BAB /* NSObject+PPSets.m */,
 				5773EE851F0099B500014D95 /* NSObject+GCD.h */,
 				5773EE861F0099B500014D95 /* NSObject+GCD.m */,
+				57A6FDEB1F0400820032EFC4 /* NSObject+CalculateSize.h */,
+				57A6FDEC1F0400820032EFC4 /* NSObject+CalculateSize.m */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";
@@ -1279,8 +1278,6 @@
 			children = (
 				5773EE741EFCBBD600014D95 /* NSMutableAttributedString+EasilyMake.h */,
 				5773EE751EFCBBD600014D95 /* NSMutableAttributedString+EasilyMake.m */,
-				5773EE771EFCDD5C00014D95 /* NSMutableAttributedString+NSStringNSMutableAttributedString.h */,
-				5773EE781EFCDD5C00014D95 /* NSMutableAttributedString+NSStringNSMutableAttributedString.m */,
 			);
 			path = NSMutableAttributedString;
 			sourceTree = "<group>";
@@ -1306,8 +1303,6 @@
 		5773EE6D1EFCB6F000014D95 /* Calculate */ = {
 			isa = PBXGroup;
 			children = (
-				5773EE711EFCB71C00014D95 /* YYLabel+Calculate.h */,
-				5773EE721EFCB71C00014D95 /* YYLabel+Calculate.m */,
 			);
 			path = Calculate;
 			sourceTree = "<group>";
@@ -2294,14 +2289,12 @@
 				57A6FDE61F03B2740032EFC4 /* UITableView+Event.m in Sources */,
 				578897301E07F35A00CD0595 /* EPeiResultModel.m in Sources */,
 				C67799941D508E9000007161 /* TwoMoreViewController.m in Sources */,
-				5773EE731EFCB71C00014D95 /* YYLabel+Calculate.m in Sources */,
 				5773EE941F010C7700014D95 /* UIImageView+CornerRadius.m in Sources */,
 				5773EDD51EFA420D00014D95 /* NSString+ContainsString.m in Sources */,
 				5780E70B1DCB802600156B12 /* ClassEntryModel.m in Sources */,
 				C65643A91D868B880079B58B /* YYTextDemoViewController.m in Sources */,
 				5773EE561EFBC76F00014D95 /* UIApplication+PPSets.m in Sources */,
 				C6C1CC121D4EF9660082A717 /* RuntimeViewController.m in Sources */,
-				5773EE791EFCDD5C00014D95 /* NSMutableAttributedString+NSStringNSMutableAttributedString.m in Sources */,
 				57CC4E2F1E5ED015001CA8E3 /* PPSizeTool.m in Sources */,
 				57CC4E2A1E5ECEF8001CA8E3 /* JRAccessPermissionsTool.m in Sources */,
 				57378B081EEE5D5B000ECA07 /* PPJiaGouGaodeMapViewController.m in Sources */,
@@ -2358,6 +2351,7 @@
 				5780E70E1DCB803A00156B12 /* ClassObj.m in Sources */,
 				571E04341E8F7D330037556C /* NSString+PPTextField.m in Sources */,
 				5773EE871F0099B500014D95 /* NSObject+GCD.m in Sources */,
+				57A6FDED1F0400820032EFC4 /* NSObject+CalculateSize.m in Sources */,
 				571E043B1E8F7FEA0037556C /* PPTFModel.m in Sources */,
 				5780E7081DCB7C2300156B12 /* ClassListModel.m in Sources */,
 				5773EE7D1EFD6CAD00014D95 /* UIScreen+EasilySize.m in Sources */,

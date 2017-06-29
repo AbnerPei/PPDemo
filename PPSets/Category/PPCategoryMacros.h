@@ -13,13 +13,13 @@
 
 #define KSystemVersionEight  1
 
-typedef void(^calculateBlock)(CGSize size,NSUInteger lineCount);
+//typedef void(^calculateBlock)(CGSize size,NSUInteger lineCount);
 
+#import "NSObject+CalculateSize.h"
 
 //label
 #import "YYLabel+MakeLB.h"
 #import "YYLabel+Attributed.h"
-#import "YYLabel+Calculate.h"
 
 
 #import "UIView+SpecialUI.h"
@@ -46,7 +46,6 @@ typedef void(^calculateBlock)(CGSize size,NSUInteger lineCount);
 
 //字符串
 #import "NSMutableAttributedString+EasilyMake.h"
-#import "NSMutableAttributedString+NSStringNSMutableAttributedString.h"
 
 //NSObject
 #import "NSObject+GCD.h"

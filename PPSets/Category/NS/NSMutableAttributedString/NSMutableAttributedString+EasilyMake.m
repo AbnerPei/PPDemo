@@ -13,53 +13,63 @@
 {
     return [[self alloc]initWithString:text];
 }
-+(instancetype)pp_attributedStringWithText:(NSString *)text font:(id)font textColor:(UIColor *)textColor
+/**
+ (NSMutableAttributedString *)初始化。【整体】
+ @param text 【整体】文字
+ @param font 【整体】字体
+ @param kern 【整体】文字横间距
+ @param textColor 【整体】文字颜色
+ @param lineSpacing 【整体】文字行间距
+ @param textAligent 【整体】文字对齐方式
+ */
++(instancetype)pp_attributedStringWithText:(NSString *)text
+                                      font:(id)font
+                                      kern:(CGFloat)kern
+                                 textColor:(UIColor *)textColor
+                               lineSpacing:(CGFloat)lineSpacing
+                               textAligent:(NSTextAlignment)textAligent
 {
     NSMutableAttributedString *attributedStr = [self pp_attributedStringWithText:text];
     [UIFont pp_fontWithIdFont:font forAttributedStr:attributedStr];
-    if (textColor) {
-        attributedStr.yy_color = textColor;
-    }
-    return attributedStr;
-}
-+(instancetype)pp_attributedStringWithText:(NSString *)text font:(id)font textColor:(UIColor *)textColor lineSpacing:(CGFloat)lineSpacing
-{
-    NSMutableAttributedString *attributedStr = [self pp_attributedStringWithText:text font:font textColor:textColor];
-    if (lineSpacing >= 0) {
-        attributedStr.yy_lineSpacing = lineSpacing;
-    }
+    [UIColor pp_colorWithTextColor:textColor forAttributedStr:attributedStr];
+    if (lineSpacing < 0) { lineSpacing = 0; }
+    if (kern < 0) { kern = 0; }
+    attributedStr.yy_kern = [NSNumber numberWithFloat:kern];
+    attributedStr.yy_lineSpacing = lineSpacing;
+    attributedStr.yy_alignment = textAligent;
     return attributedStr;
 }
 
-
-+(instancetype)pp_attributedStringWithTextColor:(UIColor *)textColor
-                                           font:(id)font
-                                    lineSpacing:(CGFloat)lineSpacing
-                               specialTextColor:(UIColor *)specialTextColor
-                                specialTextFont:(id)specialTextFont
-                                    specialText:(NSString *)specialText
-                                         allStr:(NSString *)allStr
++(instancetype)pp_attributedStringWithText:(NSString *)text
+                                      font:(id)font
+                                      kern:(CGFloat)kern
+                                 textColor:(UIColor *)textColor
+                               lineSpacing:(CGFloat)lineSpacing
+                               textAligent:(NSTextAlignment)textAligent
+                               specialText:(NSString *)specialText
+                           specialTextFont:(id)specialTextFont
+                          specialTextColor:(UIColor *)specialTextColor
 {
-    
     //统配
-    NSMutableAttributedString *attributedStr = [self pp_attributedStringWithText:allStr font:font textColor:textColor lineSpacing:lineSpacing];
+    NSMutableAttributedString *attributedStr = [self pp_attributedStringWithText:text font:font kern:kern textColor:textColor lineSpacing:lineSpacing textAligent:textAligent];
     //特殊字符【字体】配置
     [UIFont pp_fontWithIdFont:specialTextFont forAttributedStr:attributedStr specailText:specialText];
     //特殊字符【颜色配置】
     [UIColor pp_colorWithSpecialColor:specialTextColor specialText:specialText forAttributedStr:attributedStr];
-    
     return attributedStr;
-    
 }
 
-#pragma mark ---
-+(instancetype)pp_attributedStringWithTextColor:(UIColor *)textColor font:(id)font lineSpacing:(CGFloat)lineSpacing specialTextColorArray:(NSArray<UIColor *> *)specialTextColorArray specialTextFontArray:(NSArray<UIFont *> *)specialTextFontArray specialTextArray:(NSArray<NSString *> *)specialTextArray allStr:(NSString *)allStr
++(instancetype)pp_attributedStringWithText:(NSString *)text
+                                      font:(id)font
+                                      kern:(CGFloat)kern
+                                 textColor:(UIColor *)textColor
+                               lineSpacing:(CGFloat)lineSpacing
+                               textAligent:(NSTextAlignment)textAligent
+                          specialTextArray:(NSArray<NSString *> *)specialTextArray
+                      specialTextFontArray:(NSArray<UIFont *> *)specialTextFontArray
+                     specialTextColorArray:(NSArray<UIColor *> *)specialTextColorArray
 {
-    NSMutableAttributedString *attributedStr =
-    [NSMutableAttributedString pp_attributedStringWithText:allStr
-                                                      font:font
-                                                 textColor:textColor
-                                               lineSpacing:lineSpacing];
+    NSMutableAttributedString *attributedStr = [self pp_attributedStringWithText:text font:font kern:kern textColor:textColor lineSpacing:lineSpacing textAligent:textAligent];
     
     if (specialTextArray.count > 0) {
         for (int i = 0; i<specialTextArray.count; i++) {
@@ -85,8 +95,8 @@
         }
     }
     return attributedStr;
-    
 }
+
 +(NSMutableArray <NSTextCheckingResult *>*)getOneSpecialTextRangeArrWithSpecialText:(NSString *)specialText allText:(NSString *)allText
 {
     if (specialText.length == 0 || allText.length == 0) {

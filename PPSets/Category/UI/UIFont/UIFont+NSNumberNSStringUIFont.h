@@ -38,3 +38,11 @@
         forAttributedStr:(NSMutableAttributedString *)attributedStr
              specailText:(NSString *)specialText;
 @end
+
+@interface UIFont (AttributedStr)
+
+/**
+ 获取一个计算字符串size时用的font字典
+ */
++(NSDictionary<NSString *, id> *)pp_fontForAttributedStrWithIdFont:(id)idFont;
+@end

@@ -9,15 +9,15 @@
 #import "UITextView+Event.h"
 #import "WKHookUtility.h"
 @implementation UITextView (Event)
-//+ (void)load
-//{
-//    static dispatch_once_t onceToken;
-//    dispatch_once(&onceToken, ^{
-//        SEL originalSel = @selector(setDelegate::);
-//        SEL swizzleSel = @selector(textViewSwizzle_setDelegate:);
-//        [WKHookUtility swizzlingInClass:[self class] originalSelector:originalSel swizzledSelector:swizzleSel];
-//    });
-//}
++ (void)load
+{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        SEL originalSel = @selector(setDelegate::);
+        SEL swizzleSel = @selector(textViewSwizzle_setDelegate:);
+        [WKHookUtility swizzlingInClass:[self class] originalSelector:originalSel swizzledSelector:swizzleSel];
+    });
+}
 - (void)textViewSwizzle_setDelegate:(id<UITextViewDelegate>)delegate
 {
     NSString *delegateClassStr = NSStringFromClass([delegate class]);

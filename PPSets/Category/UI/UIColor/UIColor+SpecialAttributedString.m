@@ -31,4 +31,10 @@
         lb.textColor = textColor;
     }
 }
++(void)pp_colorWithTextColor:(UIColor *)textColor forAttributedStr:(NSMutableAttributedString *)attributedStr
+{
+    if (textColor) {
+        attributedStr.yy_color = textColor;
+    }
+}
 @end

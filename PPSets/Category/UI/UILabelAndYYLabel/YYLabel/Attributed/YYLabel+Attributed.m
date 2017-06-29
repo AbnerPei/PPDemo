@@ -9,113 +9,47 @@
 #import "YYLabel+Attributed.h"
 
 @implementation YYLabel (Attributed)
-#pragma mark --- LB【单一文本】富文本设置
--(void)pp_attributedYYLabelWithTextColor:(UIColor *)textColor
-                                    font:(id)font
-                             lineSpacing:(CGFloat)lineSpacing
-                        specialTextColor:(UIColor *)specialTextColor
-                         specialTextFont:(id)specialTextFont
-                             specialText:(NSString *)specialText
-                                  allStr:(NSString *)allStr
-                             textAligent:(NSTextAlignment)textAligent
-{
-    
-    NSMutableAttributedString *attributedStr =
-    [NSMutableAttributedString pp_attributedStringWithTextColor:textColor
-                                                           font:font
-                                                    lineSpacing:lineSpacing
-                                               specialTextColor:specialTextColor
-                                                specialTextFont:specialTextFont
-                                                    specialText:specialText
-                                                         allStr:allStr];
-    
-    self.attributedText = attributedStr;
-    self.textAlignment = textAligent;
-}
 
-#pragma mark --- LB【复杂的】富文本设置
--(void)pp_attributedYYLabelWithTextColor:(UIColor *)textColor
-                                    font:(id)font
-                             lineSpacing:(CGFloat)lineSpacing
-                   specialTextColorArray:(NSArray<UIColor *> *)specialTextColorArray
-                    specialTextFontArray:(NSArray<UIFont *> *)specialTextFontArray
-                        specialTextArray:(NSArray<NSString *> *)specialTextArray
-                                  allStr:(NSString *)allStr
-                             textAligent:(NSTextAlignment)textAligent
+-(void)pp_attributedWithText:(NSString *)text
+                        font:(id)font
+                        kern:(CGFloat)kern
+                   textColor:(UIColor *)textColor
+                 lineSpacing:(CGFloat)lineSpacing
+                 textAligent:(NSTextAlignment)textAligent
 {
-    
-    NSMutableAttributedString *attributedStr =
-    [NSMutableAttributedString pp_attributedStringWithTextColor:textColor
-                                                           font:font
-                                                    lineSpacing:lineSpacing
-                                          specialTextColorArray:specialTextColorArray
-                                           specialTextFontArray:specialTextFontArray
-                                               specialTextArray:specialTextArray
-                                                         allStr:allStr];
-    
-    self.attributedText = attributedStr;
-    self.textAlignment = textAligent;
+    [self pp_attributedWithText:text font:font kern:kern textColor:textColor lineSpacing:lineSpacing textAligent:textAligent specialText:nil specialTextFont:nil specialTextColor:nil];
 }
 
 
-#pragma mark --- LB【复杂的】富文本设置 【block返回文字size 和 文字行数（numberLine = XX）】
--(void)pp_attributedYYLabelWithTextColor:(UIColor *)textColor
-                                    font:(id)font
-                             lineSpacing:(CGFloat)lineSpacing
-                           containerSize:(CGSize)containerSize
-                   specialTextColorArray:(NSArray<UIColor *> *)specialTextColorArray
-                    specialTextFontArray:(NSArray<UIFont *> *)specialTextFontArray
-                        specialTextArray:(NSArray<NSString *> *)specialTextArray
-                                  allStr:(NSString *)allStr
-                             textAligent:(NSTextAlignment)textAligent
-                          calculateBlock:(calculateBlock)calculateBlock
+-(void)pp_attributedWithText:(NSString *)text
+                        font:(id)font
+                        kern:(CGFloat)kern
+                   textColor:(UIColor *)textColor
+                 lineSpacing:(CGFloat)lineSpacing
+                 textAligent:(NSTextAlignment)textAligent
+                 specialText:(NSString *)specialText
+             specialTextFont:(id)specialTextFont
+            specialTextColor:(UIColor *)specialTextColor
 {
-    NSMutableAttributedString *attributedStr =
-    [NSMutableAttributedString pp_attributedStringWithTextColor:textColor
-                                                           font:font
-                                                    lineSpacing:lineSpacing
-                                          specialTextColorArray:specialTextColorArray
-                                           specialTextFontArray:specialTextFontArray
-                                               specialTextArray:specialTextArray
-                                                         allStr:allStr];
-    
+    NSParameterAssert(text);
+    NSMutableAttributedString *attributedStr = [NSMutableAttributedString pp_attributedStringWithText:text font:font kern:kern textColor:textColor lineSpacing:lineSpacing textAligent:textAligent specialText:specialText specialTextFont:specialTextFont specialTextColor:specialTextColor];
     self.attributedText = attributedStr;
-    self.textAlignment = textAligent;
-    
-    [YYLabel pp_calculateYYLabelWithContainerSize:containerSize
-                                             text:attributedStr
-                                   calculateBlock:calculateBlock];
-    
 }
--(void)pp_attributedYYLabelWithTextColor:(UIColor *)textColor
-                                    font:(id)font
-                             lineSpacing:(CGFloat)lineSpacing
-                           containerSize:(CGSize)containerSize
-                   specialTextColorArray:(NSArray<UIColor *> *)specialTextColorArray
-                    specialTextFontArray:(NSArray<UIFont *> *)specialTextFontArray
-                        specialTextArray:(NSArray<NSString *> *)specialTextArray
-                                  allStr:(NSString *)allStr
-                             textAligent:(NSTextAlignment)textAligent
-                              vaildLines:(NSUInteger)vaildLines
-                          calculateBlock:(calculateBlock)calculateBlock
+
+-(void)pp_attributedWithText:(NSString *)text
+                        font:(id)font
+                        kern:(CGFloat)kern
+                   textColor:(UIColor *)textColor
+                 lineSpacing:(CGFloat)lineSpacing
+                 textAligent:(NSTextAlignment)textAligent
+            specialTextArray:(NSArray<NSString *> *)specialTextArray
+        specialTextFontArray:(NSArray<UIFont *> *)specialTextFontArray
+       specialTextColorArray:(NSArray<UIColor *> *)specialTextColorArray
 {
-    NSMutableAttributedString *attributedStr =
-    [NSMutableAttributedString pp_attributedStringWithTextColor:textColor
-                                                           font:font
-                                                    lineSpacing:lineSpacing
-                                          specialTextColorArray:specialTextColorArray
-                                           specialTextFontArray:specialTextFontArray
-                                               specialTextArray:specialTextArray
-                                                         allStr:allStr];
-    
+    NSParameterAssert(text);
+    NSMutableAttributedString *attributedStr = [NSMutableAttributedString pp_attributedStringWithText:text font:font kern:kern textColor:textColor lineSpacing:lineSpacing textAligent:textAligent specialTextArray:specialTextArray specialTextFontArray:specialTextFontArray specialTextColorArray:specialTextColorArray];
     self.attributedText = attributedStr;
-    self.textAlignment = textAligent;
-    
-    [YYLabel pp_calculateYYLabelWithContainerSize:containerSize
-                                      lineSpacing:lineSpacing
-                                       vaildLines:vaildLines
-                                             text:attributedStr
-                                   calculateBlock:calculateBlock];
 }
+
 
 @end

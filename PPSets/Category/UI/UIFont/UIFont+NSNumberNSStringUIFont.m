@@ -95,3 +95,34 @@
     }
 }
 @end
+
+@implementation UIFont (AttributedStr)
+
++(NSDictionary<NSString *, id> *)pp_fontForAttributedStrWithIdFont:(id)idFont
+{
+    NSAssert(idFont, @"%s PP警告：您传入的font类型不是我们约定的，请检查后再试！！！",__func__);
+    if ([idFont isKindOfClass:[UIFont class]]) {
+        return @{NSFontAttributeName:idFont};
+    }else if ([idFont isKindOfClass:[NSString class]]){
+        NSString *fontStr = (NSString *)idFont;
+        if ([fontStr hasPrefix:@"B"] && fontStr.length > 2) {
+            NSString *secondStr = [[fontStr componentsSeparatedByString:@"B"] objectAtIndex:1];
+            CGFloat fontSize = [secondStr floatValue];
+            if (fontSize >= 0) {
+                return @{NSFontAttributeName:[UIFont boldSystemFontOfSize:fontSize]};
+            }
+        }else{
+            CGFloat fontSize = [fontStr floatValue];
+            if (fontSize >= 0) {
+                return @{NSFontAttributeName:[UIFont systemFontOfSize:fontSize]};
+            }
+        }
+    }else if ([idFont isKindOfClass:[NSNumber class]]){
+        NSNumber *fontSizeN = (NSNumber *)idFont;
+        CGFloat fontSizeF =  [fontSizeN floatValue];
+        return @{NSFontAttributeName:[UIFont systemFontOfSize:fontSizeF]};
+    }
+    return nil;
+}
+
+@end

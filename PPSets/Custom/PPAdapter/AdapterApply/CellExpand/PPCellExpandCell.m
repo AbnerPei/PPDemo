@@ -95,17 +95,10 @@
     
     if (model) {
         
-         CGFloat totalStringHeight = [YYLabel pp_calculateYYLabelWithContainerSize:CGSizeMake(ScreenWidth - 20.f, CGFLOAT_MAX) font:@14 text:model.inputString].height;
-//        [YYLabel pp_calculateYYLabelWithContainerSize:CGSizeMake(ScreenWidth - 20.f, CGFLOAT_MAX) text:model.inputString calculateBlock:^(CGSize size, NSUInteger lineCount) {
-//            totalStringHeight = size.height;
-//        }];
-        
-        
-         CGFloat oneLineHeight = [YYLabel pp_calculateYYLabelWithContainerSize:CGSizeMake(ScreenWidth - 20.f, CGFLOAT_MAX) font:@14 text:@"OneLine"].height;
-//        [YYLabel pp_calculateYYLabelWithContainerSize:CGSizeMake(200, CGFLOAT_MAX) text:@"one" calculateBlock:^(CGSize size, NSUInteger lineCount) {
-//            oneLineHeight = size.height;
-//        }];
-//        [self oneLineOfTextHeightWithStringFont:[UIFont systemFontOfSize:14.f]];
+        CGFloat totalStringHeight = [YYLabel pp_calculateSizeWithContainerSize:CGSizeMake(ScreenWidth - 20.f, CGFLOAT_MAX) text:model.inputString font:@14 calculateForType:PPCalculateSizeForTypeYYLabel].height;
+
+        CGFloat oneLineHeight = [YYLabel pp_calculatedSizeOneLineWithFont:@14 calculateForType:PPCalculateSizeForTypeYYLabel].height;
+
         CGFloat normalTextHeight  = totalStringHeight >= 3 * oneLineHeight ? 3 * oneLineHeight : totalStringHeight;
         
         // Expend string height.

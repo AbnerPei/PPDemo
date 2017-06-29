@@ -16,4 +16,8 @@
 
 +(void)pp_colorWithTextColor:(UIColor *)textColor
                   forYYLabel:(YYLabel *)lb;
+
+
++(void)pp_colorWithTextColor:(UIColor *)textColor
+            forAttributedStr:(NSMutableAttributedString *)attributedStr;
 @end
