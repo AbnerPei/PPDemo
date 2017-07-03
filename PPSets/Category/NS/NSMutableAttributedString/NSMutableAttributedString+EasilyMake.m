@@ -32,10 +32,8 @@
     NSMutableAttributedString *attributedStr = [self pp_attributedStringWithText:text];
     [UIFont pp_fontWithIdFont:font forAttributedStr:attributedStr];
     [UIColor pp_colorWithTextColor:textColor forAttributedStr:attributedStr];
-    if (lineSpacing < 0) { lineSpacing = 0; }
-    if (kern < 0) { kern = 0; }
-    attributedStr.yy_kern = [NSNumber numberWithFloat:kern];
-    attributedStr.yy_lineSpacing = lineSpacing;
+    if (lineSpacing > 0) { attributedStr.yy_lineSpacing = lineSpacing; }
+    if (kern > 0) { attributedStr.yy_kern = [NSNumber numberWithFloat:kern]; }    
     attributedStr.yy_alignment = textAligent;
     return attributedStr;
 }

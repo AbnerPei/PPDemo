@@ -123,6 +123,9 @@
 		57A6FDE71F03B2740032EFC4 /* UITextView+Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A6FDE51F03B2740032EFC4 /* UITextView+Event.m */; };
 		57A6FDEA1F03B2980032EFC4 /* WKHookUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A6FDE91F03B2980032EFC4 /* WKHookUtility.m */; };
 		57A6FDED1F0400820032EFC4 /* NSObject+CalculateSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A6FDEC1F0400820032EFC4 /* NSObject+CalculateSize.m */; };
+		57A6FDF01F04E86D0032EFC4 /* UIButton+MakeBT.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A6FDEF1F04E86D0032EFC4 /* UIButton+MakeBT.m */; };
+		57A6FDFA1F04F4B10032EFC4 /* CALayer+FSUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A6FDF61F04F4B10032EFC4 /* CALayer+FSUI.m */; };
+		57A6FDFB1F04F4B10032EFC4 /* FSCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A6FDF91F04F4B10032EFC4 /* FSCustomButton.m */; };
 		57BC34451E8BB4A900DD6175 /* PPBaiSiRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BC34441E8BB4A900DD6175 /* PPBaiSiRequest.m */; };
 		57BC34491E8BDDE200DD6175 /* PPJianFriendRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BC34481E8BDDE200DD6175 /* PPJianFriendRequest.m */; };
 		57C227FC1EF3B95C00BE2A30 /* PPBaiduFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C227F11EF3B95C00BE2A30 /* PPBaiduFactory.m */; };
@@ -434,6 +437,13 @@
 		57A6FDE91F03B2980032EFC4 /* WKHookUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKHookUtility.m; sourceTree = "<group>"; };
 		57A6FDEB1F0400820032EFC4 /* NSObject+CalculateSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CalculateSize.h"; sourceTree = "<group>"; };
 		57A6FDEC1F0400820032EFC4 /* NSObject+CalculateSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CalculateSize.m"; sourceTree = "<group>"; };
+		57A6FDEE1F04E86D0032EFC4 /* UIButton+MakeBT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+MakeBT.h"; sourceTree = "<group>"; };
+		57A6FDEF1F04E86D0032EFC4 /* UIButton+MakeBT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+MakeBT.m"; sourceTree = "<group>"; };
+		57A6FDF51F04F4B10032EFC4 /* CALayer+FSUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+FSUI.h"; sourceTree = "<group>"; };
+		57A6FDF61F04F4B10032EFC4 /* CALayer+FSUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+FSUI.m"; sourceTree = "<group>"; };
+		57A6FDF71F04F4B10032EFC4 /* FSCommenDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCommenDefine.h; sourceTree = "<group>"; };
+		57A6FDF81F04F4B10032EFC4 /* FSCustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCustomButton.h; sourceTree = "<group>"; };
+		57A6FDF91F04F4B10032EFC4 /* FSCustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCustomButton.m; sourceTree = "<group>"; };
 		57BC34431E8BB4A900DD6175 /* PPBaiSiRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPBaiSiRequest.h; sourceTree = "<group>"; };
 		57BC34441E8BB4A900DD6175 /* PPBaiSiRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPBaiSiRequest.m; sourceTree = "<group>"; };
 		57BC34461E8BDA6C00DD6175 /* PPDemoRequestMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPDemoRequestMacros.h; sourceTree = "<group>"; };
@@ -1146,8 +1156,11 @@
 		5773EE2A1EFBC5CA00014D95 /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
+				57A6FDF41F04F4B10032EFC4 /* FSCustomBUtton */,
 				5773EE2B1EFBC5CA00014D95 /* UIButton+PPSets.h */,
 				5773EE2C1EFBC5CA00014D95 /* UIButton+PPSets.m */,
+				57A6FDEE1F04E86D0032EFC4 /* UIButton+MakeBT.h */,
+				57A6FDEF1F04E86D0032EFC4 /* UIButton+MakeBT.m */,
 			);
 			path = UIButton;
 			sourceTree = "<group>";
@@ -1482,6 +1495,18 @@
 				57378AF81EEE5C36000ECA07 /* 地图 */,
 			);
 			path = "架构";
+			sourceTree = "<group>";
+		};
+		57A6FDF41F04F4B10032EFC4 /* FSCustomBUtton */ = {
+			isa = PBXGroup;
+			children = (
+				57A6FDF51F04F4B10032EFC4 /* CALayer+FSUI.h */,
+				57A6FDF61F04F4B10032EFC4 /* CALayer+FSUI.m */,
+				57A6FDF71F04F4B10032EFC4 /* FSCommenDefine.h */,
+				57A6FDF81F04F4B10032EFC4 /* FSCustomButton.h */,
+				57A6FDF91F04F4B10032EFC4 /* FSCustomButton.m */,
+			);
+			path = FSCustomBUtton;
 			sourceTree = "<group>";
 		};
 		57BC34421E8BB2B700DD6175 /* PPRequestTool */ = {
@@ -2286,6 +2311,7 @@
 				C67799951D508E9000007161 /* WholesaleViewController.m in Sources */,
 				571E04381E8F7F3C0037556C /* PPTextFieldDemoCell.m in Sources */,
 				5773EE841F00997600014D95 /* NSArray+SafeArray.m in Sources */,
+				57A6FDF01F04E86D0032EFC4 /* UIButton+MakeBT.m in Sources */,
 				57A6FDE61F03B2740032EFC4 /* UITableView+Event.m in Sources */,
 				578897301E07F35A00CD0595 /* EPeiResultModel.m in Sources */,
 				C67799941D508E9000007161 /* TwoMoreViewController.m in Sources */,
@@ -2325,6 +2351,7 @@
 				5773EE981F01F14C00014D95 /* PPCellAdapter.m in Sources */,
 				C683FBC51D29FF9900D1BF6A /* MJExtensionBaseViewController.m in Sources */,
 				578E56371E83C936004F5F5F /* NSString+Verify.m in Sources */,
+				57A6FDFA1F04F4B10032EFC4 /* CALayer+FSUI.m in Sources */,
 				C6AC8C131D124CA00008133E /* MJAnimationImageViewController.m in Sources */,
 				5742B4B11EA5BA1000C57BFB /* PPTransitionsViewController.m in Sources */,
 				5773EE431EFBC6C500014D95 /* UIColor+PPSets.m in Sources */,
@@ -2388,6 +2415,7 @@
 				5773EEA41F020D6600014D95 /* UITableViewCell+CellMake.m in Sources */,
 				5773EE8A1F00D92600014D95 /* UIView+SpecialUI.m in Sources */,
 				57F76FC11E5FFC9B001BD536 /* MJChiBaoZiFooter2.m in Sources */,
+				57A6FDFB1F04F4B10032EFC4 /* FSCustomButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,9 +18,9 @@
  (NSMutableAttributedString *)初始化。【整体】
  @param text 【整体】文字
  @param font 【整体】字体
- @param kern 【整体】文字横间距
+ @param kern 【整体】文字横间距  {大于0有效}
  @param textColor 【整体】文字颜色
- @param lineSpacing 【整体】文字行间距
+ @param lineSpacing 【整体】文字行间距  {大于0有效}
  @param textAligent 【整体】文字对齐方式
  */
 +(instancetype)pp_attributedStringWithText:(NSString *)text
