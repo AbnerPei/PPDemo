@@ -59,6 +59,31 @@
 
 @end
 
+@implementation NSObject (CalculateWidthOrHeight)
+
++(CGFloat)pp_calculateWidthWithFont:(id)font
+                             height:(CGFloat)height
+                               text:(NSString *)text
+{
+    NSString *className = NSStringFromClass([self class]);
+    if ([className isEqualToString:@"YYLable"]) {
+        return [self pp_calculateSizeWithContainerSize:CGSizeMake(CGFLOAT_MAX, height) text:text font:font calculateForType:PPCalculateSizeForTypeYYLabel].width;
+    }else{
+        return [self pp_calculateSizeWithContainerSize:CGSizeMake(CGFLOAT_MAX, height) text:text font:font calculateForType:PPCalculateSizeForTypeUILabel].width;
+    }
+}
++(CGFloat)pp_calculateHeightWithFont:(id)font width:(CGFloat)width text:(NSString *)text
+{
+    NSString *className = NSStringFromClass([self class]);
+    if ([className isEqualToString:@"YYLable"]) {
+        return [self pp_calculateSizeWithContainerSize:CGSizeMake(width, CGFLOAT_MAX) text:text font:font calculateForType:PPCalculateSizeForTypeYYLabel].height;
+    }else{
+        return [self pp_calculateSizeWithContainerSize:CGSizeMake(width, CGFLOAT_MAX) text:text font:font calculateForType:PPCalculateSizeForTypeUILabel].height;
+    }
+}
+
+@end
+
 @implementation NSObject (PPCalculate)
 
 +(CGSize)pp_calculateSizeWithContainerSize:(CGSize)containerSize attributedStr:(NSMutableAttributedString *)attributedStr calculateForType:(PPCalculateSizeForType)calculateForType maxLine:(NSUInteger)maxLine

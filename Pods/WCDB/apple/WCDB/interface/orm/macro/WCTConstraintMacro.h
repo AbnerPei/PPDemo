@@ -22,8 +22,8 @@
 #define __WCDB_PRIMARY_IMP(className, propertyName, order, autoIncrement,      \
                            onConflict)                                         \
     WCDB_IF(autoIncrement, @synthesize isAutoIncrement;)                       \
+    WCDB_IF(autoIncrement, @synthesize lastInsertedRowID;)                     \
     static const auto UNUSED_UNIQUE_ID = [](WCTBinding &binding) {             \
-        WCDB_PROPERTY_HINT(className, propertyName)                            \
         binding.getColumnBinding(className.propertyName)                       \
             ->makePrimary(order, autoIncrement, onConflict);                   \
         return nullptr;                                                        \
@@ -31,14 +31,12 @@
 
 #define __WCDB_NOT_NULL_IMP(className, propertyName)                           \
     static const auto UNUSED_UNIQUE_ID = [](WCTBinding &binding) {             \
-        WCDB_PROPERTY_HINT(className, propertyName)                            \
         binding.getColumnBinding(className.propertyName)->makeNotNull();       \
         return nullptr;                                                        \
     }(__WCDB_BINDING(className));
 
 #define __WCDB_UNIQUE_IMP(className, propertyName)                             \
     static const auto UNUSED_UNIQUE_ID = [](WCTBinding &binding) {             \
-        WCDB_PROPERTY_HINT(className, propertyName)                            \
         binding.getColumnBinding(className.propertyName)->makeUnique();        \
         return nullptr;                                                        \
     }(__WCDB_BINDING(className));
@@ -47,7 +45,6 @@
 #define __WCDB_MULTI_PRIMARY_IMP(className, constraintName, propertyName,      \
                                  order)                                        \
     static const auto UNUSED_UNIQUE_ID = [](WCTBinding &binding) {             \
-        WCDB_PROPERTY_HINT(className, propertyName)                            \
         binding                                                                \
             .getOrCreateConstraintBinding<WCTConstraintPrimaryKeyBinding>(     \
                 constraintName)                                                \
@@ -57,7 +54,6 @@
 
 #define __WCDB_MULTI_PRIMARY_CONFLICT_IMP(className, constraintName, conflict) \
     static const auto UNUSED_UNIQUE_ID = [](WCTBinding &binding) {             \
-        WCDB_PROPERTY_HINT(className, propertyName)                            \
         binding                                                                \
             .getOrCreateConstraintBinding<WCTConstraintPrimaryKeyBinding>(     \
                 constraintName)                                                \
@@ -68,7 +64,6 @@
 #define __WCDB_MULTI_UNIQUE_IMP(className, constraintName, propertyName,       \
                                 order)                                         \
     static const auto UNUSED_UNIQUE_ID = [](WCTBinding &binding) {             \
-        WCDB_PROPERTY_HINT(className, propertyName)                            \
         binding                                                                \
             .getOrCreateConstraintBinding<WCTConstraintUniqueBinding>(         \
                 constraintName)                                                \
@@ -78,7 +73,6 @@
 
 #define __WCDB_MULTI_UNIQUE_CONFLICT_IMP(className, constraintName, conflict)  \
     static const auto UNUSED_UNIQUE_ID = [](WCTBinding &binding) {             \
-        WCDB_PROPERTY_HINT(className, propertyName)                            \
         binding                                                                \
             .getOrCreateConstraintBinding<WCTConstraintUniqueBinding>(         \
                 constraintName)                                                \
@@ -88,7 +82,6 @@
 
 #define __WCDB_CHECK_IMP(className, cosntraintName, expr)                      \
     static const auto UNUSED_UNIQUE_ID = [](WCTBinding &binding) {             \
-        WCDB_PROPERTY_HINT(className, propertyName)                            \
         binding                                                                \
             .getOrCreateConstraintBinding<WCTConstraintCheckBinding>(          \
                 constraintName)                                                \

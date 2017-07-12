@@ -64,6 +64,6 @@
 {
     NSString * MOBILE = @"^1[3578]\\d{9}$";
     NSPredicate *regextestmobile = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", MOBILE];
-    return [regextestmobile evaluateWithObject:self] == YES;
+    return [regextestmobile evaluateWithObject:self];
 }
 @end

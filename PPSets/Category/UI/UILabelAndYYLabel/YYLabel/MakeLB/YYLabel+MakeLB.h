@@ -58,4 +58,7 @@
 +(instancetype)pp_lbMakeForAttributedWithSuperV:(UIView *)superV
                                         bgColor:(UIColor *)bgColor
                                   numberOfLines:(NSUInteger)numberOfLines;
+
++(instancetype)pp_lbMakeForAttributedWithSuperV:(UIView *)superV;
+
 @end

@@ -84,10 +84,7 @@
                 }
                 if (specialTextFontArray.count > i) {
                     id aFont = specialTextFontArray[i];
-                    if (aFont && [aFont isKindOfClass:[UIFont class]]) {
-                        [attributedStr yy_setFont:aFont range:result.range];
-                    }
-                }
+                    [UIFont pp_fontWithIdFont:aFont forAttributedStr:attributedStr specailText:aSpecialStr];                }
             }
             
         }
@@ -110,4 +107,37 @@
     return rangeArrs;
 }
 
+
+
+//===================-默认字间距、行间距(一般单行使用，多行的话系统的行间距太小)-====================\\
+
++(instancetype)pp_attributedStringWithText:(NSString *)text
+                                      font:(id)font
+                                 textColor:(UIColor *)textColor
+                               textAligent:(NSTextAlignment)textAligent
+{
+    return [self pp_attributedStringWithText:text font:font kern:-1 textColor:textColor lineSpacing:-1 textAligent:textAligent];
+}
+
++(instancetype)pp_attributedStringWithText:(NSString *)text
+                                      font:(id)font
+                                 textColor:(UIColor *)textColor
+                               textAligent:(NSTextAlignment)textAligent
+                               specialText:(NSString *)specialText
+                           specialTextFont:(id)specialTextFont
+                          specialTextColor:(UIColor *)specialTextColor
+{
+    return [self pp_attributedStringWithText:text font:font kern:-1 textColor:textColor lineSpacing:-1 textAligent:textAligent specialText:specialText specialTextFont:specialTextFont specialTextColor:specialTextColor];
+}
+
++(instancetype)pp_attributedStringWithText:(NSString *)text
+                                      font:(id)font
+                                 textColor:(UIColor *)textColor
+                               textAligent:(NSTextAlignment)textAligent
+                          specialTextArray:(NSArray<NSString *> *)specialTextArray
+                      specialTextFontArray:(NSArray<UIFont *> *)specialTextFontArray
+                     specialTextColorArray:(NSArray<UIColor *> *)specialTextColorArray
+{
+    return [self pp_attributedStringWithText:text font:font kern:-1 textColor:textColor lineSpacing:-1 textAligent:textAligent specialTextArray:specialTextArray specialTextFontArray:specialTextFontArray specialTextColorArray:specialTextColorArray];
+}
 @end

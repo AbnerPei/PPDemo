@@ -243,17 +243,6 @@
     if (_isPrice) {
         return [self limitPriceWithTextField:textField shouldChangeCharactersInRange:range replacementString:string];
     }
-    //特殊字符 【一定要放在该方法最后一个判断，要不会影响哪些它互斥的设置】
-//    if (!_isSpecialCharacter) {
-//        if ([self.canInputCharacters containsObject:string] ||[self.canInputPasswords containsObject:string]) {
-//            return YES;
-//        }else{
-//            if ([string pp_isSpecialLetter] || [self.canotInputCharacters containsObject:string]) {
-//                return NO;
-//            }
-//            return YES;
-//        }
-//    }
     return YES;
 }
 -(BOOL)limitPriceWithTextField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string

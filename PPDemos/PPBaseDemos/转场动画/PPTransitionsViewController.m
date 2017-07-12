@@ -5,7 +5,10 @@
 //  Created by ╰莪呮想好好宠Nǐつ on 2017/4/18.
 //  Copyright © 2017年 PPAbner. All rights reserved.
 //
-
+/* 
+ //参考：
+ [UIPresentationController简介]http://blog.csdn.net/ideaspress/article/details/51177934
+ */
 #import "PPTransitionsViewController.h"
 
 @interface PPTransitionsViewController ()
@@ -18,8 +21,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.titles = [@[
+                     @"UIPresentationController（继承自NSObject）使用"
                      ] mutableCopy];
     self.vcs = [@[
+                  @"PPUIPresentationControllerBaseDemoViewController"
                   ] mutableCopy];
 }
 
@@ -28,8 +33,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-[UIPresentationController简介]http://blog.csdn.net/ideaspress/article/details/51177934
-*/
+
 
 @end

@@ -23,6 +23,8 @@
 
 
 #import "UIView+SpecialUI.h"
+#import "UIView+Frame.h"
+
 
 //UIImageView
 #import "UIImageView+MakeImgV.h"
@@ -47,8 +49,14 @@
 //字符串
 #import "NSMutableAttributedString+EasilyMake.h"
 
+//NSString
+#import "NSString+KeyPath.h"
+
+
 //NSObject
 #import "NSObject+GCD.h"
+
+
 
 
 #endif /* PPCategoryMacros_h */

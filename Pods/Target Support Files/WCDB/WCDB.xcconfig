@@ -7,7 +7,7 @@ GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1 $(inherited) WCDB_BUILTI
 GCC_WARN_64_TO_32_BIT_CONVERSION = NO
 GCC_WARN_UNUSED_FUNCTION = NO
 GCC_WARN_UNUSED_VARIABLE = NO
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/WCDB" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/IQKeyboardManager" "${PODS_ROOT}/Headers/Public/MJExtension" "${PODS_ROOT}/Headers/Public/MJRefresh" "${PODS_ROOT}/Headers/Public/Masonry" "${PODS_ROOT}/Headers/Public/SDWebImage" "${PODS_ROOT}/Headers/Public/WCDB" "${PODS_ROOT}/Headers/Public/YTKNetwork" "${PODS_ROOT}/Headers/Public/YYModel" "${PODS_ROOT}/Headers/Public/YYText" $(inherited) ${PODS_ROOT}/WCDB
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/WCDB" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/IQKeyboardManager" "${PODS_ROOT}/Headers/Public/MJExtension" "${PODS_ROOT}/Headers/Public/MJRefresh" "${PODS_ROOT}/Headers/Public/Masonry" "${PODS_ROOT}/Headers/Public/SDWebImage" "${PODS_ROOT}/Headers/Public/Shimmer" "${PODS_ROOT}/Headers/Public/WCDB" "${PODS_ROOT}/Headers/Public/YTKNetwork" "${PODS_ROOT}/Headers/Public/YYModel" "${PODS_ROOT}/Headers/Public/YYText" $(inherited) ${PODS_ROOT}/WCDB
 LIBRARY_SEARCH_PATHS[sdk=macosx*] = $(inherited) $(SDKROOT)/usr/lib/system
 OTHER_LDFLAGS = -l"c++" -l"z" -framework "CoreFoundation" -framework "Foundation" -framework "Security" -framework "UIKit"
 PODS_BUILD_DIR = $BUILD_DIR

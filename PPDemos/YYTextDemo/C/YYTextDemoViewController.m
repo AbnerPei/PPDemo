@@ -7,6 +7,7 @@
 //
 
 #import "YYTextDemoViewController.h"
+#import "NSString+PPSets.h"
 
 @interface YYTextDemoViewController ()
 /*
@@ -33,8 +34,21 @@
     
     [self test001];
     [self test002];
+//    
+    CSToastStyle *style = [[CSToastStyle alloc] initWithDefaultStyle];
+    style.messageFont = [UIFont fontWithName:@"Zapfino" size:14.0];
+    style.messageColor = [UIColor redColor];
+    style.messageAlignment = NSTextAlignmentCenter;
+    style.backgroundColor = [UIColor yellowColor];
+    
+    [self.navigationController.view makeToast:@"This is a piece of toast with a custom style"
+                                     duration:3.0
+                                     position:CSToastPositionBottom
+                                        style:style];
+    
     
 }
+
 -(void)test002
 {
     

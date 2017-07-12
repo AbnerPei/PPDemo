@@ -105,5 +105,8 @@
     lb.numberOfLines = numberOfLines;
     return lb;
 }
-
++(instancetype)pp_lbMakeForAttributedWithSuperV:(UIView *)superV
+{
+    return [self pp_lbMakeWithSuperV:superV bgColor:nil];
+}
 @end

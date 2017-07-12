@@ -37,7 +37,8 @@
                      @"学习系统API知识，练习demos",
                      @"自定义个日历控件",
                      @"架构/地图",
-                     @"iOS适配器使用练习s"
+                     @"iOS适配器使用练习s",
+                     @"FaceBook开源库使用demo"
                      ] mutableCopy];
     
     self.vcs = [@[
@@ -55,7 +56,8 @@
                   @"LearnSystemAPIBaseViewController",
                   @"PPCustomCalendarViewController",
                   @"PPJiaGouMapBaseViewController",
-                  @"PPAdapterBaseTableViewController"
+                  @"PPAdapterBaseTableViewController",
+                  @"PPFaceBookBaswViewController"
                   ] mutableCopy];
     
 }

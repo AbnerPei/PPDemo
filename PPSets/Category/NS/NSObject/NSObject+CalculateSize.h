@@ -46,6 +46,34 @@ typedef NS_ENUM(NSInteger,PPCalculateSizeForType) {
 
 @end
 
+
+@interface NSObject (CalculateWidthOrHeight)
+
+
+/**
+ 计算文字宽 【建议用YYLabel或者UILabel来调用】【默认是YYLabel】
+ 
+ @param font 字体  只接受NSNumber/NSString/NSMutableAttributedString三种类型
+ @param height 给定的高度
+ @param text 文字
+ */
++(CGFloat)pp_calculateWidthWithFont:(id)font
+                             height:(CGFloat)height
+                               text:(NSString *)text;
+
+/**
+ 计算文字高 【建议用YYLabel或者UILabel来调用】【默认是YYLabel】
+ 
+ @param font 字体  只接受NSNumber/NSString/NSMutableAttributedString三种类型
+ @param width 给定的高度
+ @param text 文字
+ */
++(CGFloat)pp_calculateHeightWithFont:(id)font
+                               width:(CGFloat)width
+                                text:(NSString *)text;
+
+@end 
+
 @interface NSObject (PPCalculate)
 
 +(CGSize)pp_calculateSizeWithContainerSize:(CGSize)containerSize
