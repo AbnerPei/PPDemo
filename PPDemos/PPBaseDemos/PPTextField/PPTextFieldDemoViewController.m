@@ -10,6 +10,7 @@
 #import "PPTextFieldDemoCell.h"
 #import "PPTFModel.h"
 #import "NSString+Verify.h"
+#import "UITextField+EmptyWarning.h"
 
 @interface PPTextFieldDemoViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -47,12 +48,15 @@
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 60;
+    return 120;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     PPTextFieldDemoCell *cell = [PPTextFieldDemoCell cellWithTableView:tableView];
     [cell setupCellWithLimitStyle:indexPath.row andPPTFModel:_aPPTFModel];
+    if (indexPath.row%2 == 0) {
+        cell.rightTF.backgroundColor = [UIColor pp_lightGrayColor];
+    }
     
     cell.rightTF.ppTextfieldTextChangedBlock = ^(PPTextfield *tf){
         //只简单的列举两个例子
@@ -77,7 +81,8 @@
             if ([self.aPPTFModel.pptfPhone pp_isPhoneNumber]) {
                 UIAlertView(@"很好，你输入了正确的电话号码");
             }else{
-                UIAlertView(@"你是逗比吧，连个电话号码的格式都不知道！");
+//                UIAlertView(@"你是逗比吧，连个电话号码的格式都不知道！");
+                [tf pp_showEmptyWarning];
             }
         }
     };

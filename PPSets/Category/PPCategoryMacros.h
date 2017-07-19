@@ -21,13 +21,16 @@
 #import "YYLabel+MakeLB.h"
 #import "YYLabel+Attributed.h"
 
-
+//UIView
 #import "UIView+SpecialUI.h"
 #import "UIView+Frame.h"
 
 
 //UIImageView
 #import "UIImageView+MakeImgV.h"
+
+//UIImage
+#import "UIImage+ColorAtPixel.h"
 
 
 //UIFont
@@ -44,7 +47,8 @@
 //UITableViewCell
 #import "UITableViewCell+CellMake.h"
 
-
+//UIScreen
+#import "UIScreen+EasilySize.h"
 
 //字符串
 #import "NSMutableAttributedString+EasilyMake.h"

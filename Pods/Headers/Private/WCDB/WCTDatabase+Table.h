@@ -1,1 +1,0 @@
-../../../WCDB/apple/WCDB/interface/table/WCTDatabase+Table.h

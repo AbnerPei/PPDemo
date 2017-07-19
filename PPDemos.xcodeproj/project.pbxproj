@@ -34,6 +34,9 @@
 		5725821F1E0B77F600C41BAB /* NSString+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = 5725821E1E0B77F600C41BAB /* NSString+PPSets.m */; };
 		572582231E0B781300C41BAB /* NSObject+PPSets.m in Sources */ = {isa = PBXBuildFile; fileRef = 572582221E0B781300C41BAB /* NSObject+PPSets.m */; };
 		572582261E0B791F00C41BAB /* NSString+PPProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 572582251E0B791F00C41BAB /* NSString+PPProcess.m */; };
+		573355FC1F18587700BF6BEA /* UIImage+ColorAtPixel.m in Sources */ = {isa = PBXBuildFile; fileRef = 573355FB1F18587700BF6BEA /* UIImage+ColorAtPixel.m */; };
+		573356101F18BE2800BF6BEA /* JXTPushInButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5733560F1F18BE2800BF6BEA /* JXTPushInButton.m */; };
+		573356141F18C02E00BF6BEA /* PPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 573356131F18C02E00BF6BEA /* PPButton.m */; };
 		57378AFF1EEE5C74000ECA07 /* PPJiaGouMapBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57378AFE1EEE5C74000ECA07 /* PPJiaGouMapBaseViewController.m */; };
 		57378B021EEE5D08000ECA07 /* PPJiaGouCommonMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57378B011EEE5D08000ECA07 /* PPJiaGouCommonMapViewController.m */; };
 		57378B051EEE5D48000ECA07 /* PPJiaGouBaiduMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57378B041EEE5D48000ECA07 /* PPJiaGouBaiduMapViewController.m */; };
@@ -68,7 +71,6 @@
 		5742B4B11EA5BA1000C57BFB /* PPTransitionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742B4B01EA5BA1000C57BFB /* PPTransitionsViewController.m */; };
 		5744CC661E8A153000A15DB9 /* ASDKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5744CC651E8A153000A15DB9 /* ASDKViewController.m */; };
 		57469CE31EC2E53E00F557B8 /* HYBNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 57469CE21EC2E53E00F557B8 /* HYBNetworking.m */; };
-		575C1D751D7326F200357B39 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 575C1D741D7326F200357B39 /* libsqlite3.0.tbd */; };
 		575C1D851D85021D00357B39 /* UIGestureRecognizer+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C1D821D85021D00357B39 /* UIGestureRecognizer+BlocksKit.m */; };
 		575C1D861D85021D00357B39 /* UIView+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C1D841D85021D00357B39 /* UIView+BlocksKit.m */; };
 		575C1D931D85029600357B39 /* LPLevelView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 575C1D891D85029600357B39 /* LPLevelView.bundle */; };
@@ -129,7 +131,6 @@
 		578897331E07F48C00CD0595 /* EPeiDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 578897321E07F48C00CD0595 /* EPeiDataModel.m */; };
 		578897361E07F5C900CD0595 /* EPeiOrderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 578897351E07F5C900CD0595 /* EPeiOrderModel.m */; };
 		578E56371E83C936004F5F5F /* NSString+Verify.m in Sources */ = {isa = PBXBuildFile; fileRef = 578E56361E83C936004F5F5F /* NSString+Verify.m */; };
-		578E5DDE1E9DD79F003BB111 /* PPCustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 578E5DDD1E9DD79F003BB111 /* PPCustomTextField.m */; };
 		578E5DE21E9DD8E0003BB111 /* NSMutableAttributedString+PPTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 578E5DE11E9DD8E0003BB111 /* NSMutableAttributedString+PPTextField.m */; };
 		57A6FDED1F0400820032EFC4 /* NSObject+CalculateSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A6FDEC1F0400820032EFC4 /* NSObject+CalculateSize.m */; };
 		57A6FDF01F04E86D0032EFC4 /* UIButton+MakeBT.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A6FDEF1F04E86D0032EFC4 /* UIButton+MakeBT.m */; };
@@ -150,6 +151,8 @@
 		57CC4E2C1E5ECEF8001CA8E3 /* JRDeviceTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CC4E291E5ECEF8001CA8E3 /* JRDeviceTool.m */; };
 		57CC4E2F1E5ED015001CA8E3 /* PPSizeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CC4E2E1E5ED015001CA8E3 /* PPSizeTool.m */; };
 		57CC4E321E5ED144001CA8E3 /* RTDateFormatterTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CC4E311E5ED144001CA8E3 /* RTDateFormatterTool.m */; };
+		57CD8A911F1F2A7A000A274E /* PPDebugTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CD8A901F1F2A7A000A274E /* PPDebugTool.m */; };
+		57CD8A951F1F3131000A274E /* UITextField+EmptyWarning.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CD8A941F1F3131000A274E /* UITextField+EmptyWarning.m */; };
 		57DAAB101E703C83001C127E /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DAAAFF1E703C83001C127E /* BaseNavigationController.m */; };
 		57DAAB111E703C83001C127E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DAAB011E703C83001C127E /* BaseViewController.m */; };
 		57DAAB121E703C83001C127E /* ScreenShotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DAAB041E703C83001C127E /* ScreenShotView.m */; };
@@ -276,6 +279,12 @@
 		572582241E0B791F00C41BAB /* NSString+PPProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PPProcess.h"; sourceTree = "<group>"; };
 		572582251E0B791F00C41BAB /* NSString+PPProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PPProcess.m"; sourceTree = "<group>"; };
 		572582271E0B7C3700C41BAB /* PPNSStringCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPNSStringCategory.h; sourceTree = "<group>"; };
+		573355FA1F18587700BF6BEA /* UIImage+ColorAtPixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorAtPixel.h"; sourceTree = "<group>"; };
+		573355FB1F18587700BF6BEA /* UIImage+ColorAtPixel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorAtPixel.m"; sourceTree = "<group>"; };
+		5733560E1F18BE2800BF6BEA /* JXTPushInButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXTPushInButton.h; sourceTree = "<group>"; };
+		5733560F1F18BE2800BF6BEA /* JXTPushInButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXTPushInButton.m; sourceTree = "<group>"; };
+		573356121F18C02E00BF6BEA /* PPButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPButton.h; sourceTree = "<group>"; };
+		573356131F18C02E00BF6BEA /* PPButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPButton.m; sourceTree = "<group>"; };
 		57378AFD1EEE5C74000ECA07 /* PPJiaGouMapBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPJiaGouMapBaseViewController.h; sourceTree = "<group>"; };
 		57378AFE1EEE5C74000ECA07 /* PPJiaGouMapBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPJiaGouMapBaseViewController.m; sourceTree = "<group>"; };
 		57378B001EEE5D08000ECA07 /* PPJiaGouCommonMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPJiaGouCommonMapViewController.h; sourceTree = "<group>"; };
@@ -318,7 +327,6 @@
 		57469CE11EC2E53E00F557B8 /* HYBNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBNetworking.h; sourceTree = "<group>"; };
 		57469CE21EC2E53E00F557B8 /* HYBNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBNetworking.m; sourceTree = "<group>"; };
 		575749AD1DCA42FF0028447B /* 开源库.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "开源库.h"; sourceTree = "<group>"; };
-		575C1D741D7326F200357B39 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		575C1D811D85021D00357B39 /* UIGestureRecognizer+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+BlocksKit.h"; sourceTree = "<group>"; };
 		575C1D821D85021D00357B39 /* UIGestureRecognizer+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+BlocksKit.m"; sourceTree = "<group>"; };
 		575C1D831D85021D00357B39 /* UIView+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BlocksKit.h"; sourceTree = "<group>"; };
@@ -455,8 +463,6 @@
 		578897351E07F5C900CD0595 /* EPeiOrderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPeiOrderModel.m; sourceTree = "<group>"; };
 		578E56351E83C936004F5F5F /* NSString+Verify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Verify.h"; sourceTree = "<group>"; };
 		578E56361E83C936004F5F5F /* NSString+Verify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Verify.m"; sourceTree = "<group>"; };
-		578E5DDC1E9DD79F003BB111 /* PPCustomTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPCustomTextField.h; sourceTree = "<group>"; };
-		578E5DDD1E9DD79F003BB111 /* PPCustomTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPCustomTextField.m; sourceTree = "<group>"; };
 		578E5DE01E9DD8E0003BB111 /* NSMutableAttributedString+PPTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+PPTextField.h"; sourceTree = "<group>"; };
 		578E5DE11E9DD8E0003BB111 /* NSMutableAttributedString+PPTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+PPTextField.m"; sourceTree = "<group>"; };
 		579A450C1DA94A9400D61BD8 /* PPSets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPSets.h; sourceTree = "<group>"; };
@@ -506,6 +512,10 @@
 		57CC4E2E1E5ED015001CA8E3 /* PPSizeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSizeTool.m; sourceTree = "<group>"; };
 		57CC4E301E5ED144001CA8E3 /* RTDateFormatterTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTDateFormatterTool.h; sourceTree = "<group>"; };
 		57CC4E311E5ED144001CA8E3 /* RTDateFormatterTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTDateFormatterTool.m; sourceTree = "<group>"; };
+		57CD8A8F1F1F2A7A000A274E /* PPDebugTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPDebugTool.h; sourceTree = "<group>"; };
+		57CD8A901F1F2A7A000A274E /* PPDebugTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPDebugTool.m; sourceTree = "<group>"; };
+		57CD8A931F1F3131000A274E /* UITextField+EmptyWarning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+EmptyWarning.h"; sourceTree = "<group>"; };
+		57CD8A941F1F3131000A274E /* UITextField+EmptyWarning.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+EmptyWarning.m"; sourceTree = "<group>"; };
 		57DAAAFE1E703C83001C127E /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		57DAAAFF1E703C83001C127E /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		57DAAB001E703C83001C127E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -680,7 +690,6 @@
 				C66BFBD01DB891A6008A0ACF /* libz.tbd in Frameworks */,
 				57378B131EEE66CB000ECA07 /* AMapSearchKit.framework in Frameworks */,
 				C66BFBCE1DB89192008A0ACF /* libicucore.tbd in Frameworks */,
-				575C1D751D7326F200357B39 /* libsqlite3.0.tbd in Frameworks */,
 				E8B686D5BC6F2B71E2BACD86 /* libPods-PPDemos.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -833,8 +842,8 @@
 				571E04311E8F7D330037556C /* NSString+PPTextField.m */,
 				571E04321E8F7D330037556C /* PPTextfield.h */,
 				571E04331E8F7D330037556C /* PPTextfield.m */,
-				578E5DDC1E9DD79F003BB111 /* PPCustomTextField.h */,
-				578E5DDD1E9DD79F003BB111 /* PPCustomTextField.m */,
+				57CD8A931F1F3131000A274E /* UITextField+EmptyWarning.h */,
+				57CD8A941F1F3131000A274E /* UITextField+EmptyWarning.m */,
 			);
 			path = PPTextField;
 			sourceTree = "<group>";
@@ -870,6 +879,48 @@
 				57A6FDEC1F0400820032EFC4 /* NSObject+CalculateSize.m */,
 			);
 			path = NSObject;
+			sourceTree = "<group>";
+		};
+		573356061F18BDE000BF6BEA /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				573356071F18BDE000BF6BEA /* NS */,
+				573356081F18BDE000BF6BEA /* UI */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		573356071F18BDE000BF6BEA /* NS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NS;
+			sourceTree = "<group>";
+		};
+		573356081F18BDE000BF6BEA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5733560D1F18BE2800BF6BEA /* JXTPushInButton */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5733560D1F18BE2800BF6BEA /* JXTPushInButton */ = {
+			isa = PBXGroup;
+			children = (
+				5733560E1F18BE2800BF6BEA /* JXTPushInButton.h */,
+				5733560F1F18BE2800BF6BEA /* JXTPushInButton.m */,
+			);
+			path = JXTPushInButton;
+			sourceTree = "<group>";
+		};
+		573356111F18C01500BF6BEA /* PPButton */ = {
+			isa = PBXGroup;
+			children = (
+				573356121F18C02E00BF6BEA /* PPButton.h */,
+				573356131F18C02E00BF6BEA /* PPButton.m */,
+			);
+			path = PPButton;
 			sourceTree = "<group>";
 		};
 		57378AF81EEE5C36000ECA07 /* 地图 */ = {
@@ -1071,6 +1122,7 @@
 		575C1D9A1D85033500357B39 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				57CD8A8E1F1F2A2F000A274E /* PPDebugTools */,
 				57CC4E201E5ECE03001CA8E3 /* PPHandleTools */,
 				575C1D9D1D85033500357B39 /* PP_Manager */,
 				575C1DAC1D85033500357B39 /* PPMTHandle */,
@@ -1391,6 +1443,8 @@
 			children = (
 				5773EE541EFBC76F00014D95 /* UIImage+PPSets.h */,
 				5773EE551EFBC76F00014D95 /* UIImage+PPSets.m */,
+				573355FA1F18587700BF6BEA /* UIImage+ColorAtPixel.h */,
+				573355FB1F18587700BF6BEA /* UIImage+ColorAtPixel.m */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -1680,6 +1734,15 @@
 			path = PPHandleTools;
 			sourceTree = "<group>";
 		};
+		57CD8A8E1F1F2A2F000A274E /* PPDebugTools */ = {
+			isa = PBXGroup;
+			children = (
+				57CD8A8F1F1F2A7A000A274E /* PPDebugTool.h */,
+				57CD8A901F1F2A7A000A274E /* PPDebugTool.m */,
+			);
+			path = PPDebugTools;
+			sourceTree = "<group>";
+		};
 		57DAAAFC1E703C62001C127E /* ScreenShotBackLib */ = {
 			isa = PBXGroup;
 			children = (
@@ -1806,14 +1869,6 @@
 				FF75996A90673634F5AD719B /* Pods-PPDemos.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		C62DA8F91D816AFD0003945C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				575C1D741D7326F200357B39 /* libsqlite3.0.tbd */,
-			);
-			path = Frameworks;
 			sourceTree = "<group>";
 		};
 		C62DA8FA1D816B050003945C /* PPSets */ = {
@@ -2065,7 +2120,6 @@
 				57DAAB331E7053A1001C127E /* PPBaseDemos */,
 				57F76FA21E5FD961001BD536 /* PPBase */,
 				C64D57D11D82A477000C25CC /* YYTextDemo */,
-				C62DA8F91D816AFD0003945C /* Frameworks */,
 				575C1D5F1D4C92D500357B39 /* Notes */,
 				C67799961D508EE500007161 /* V */,
 				C683FBBA1D29F36600D1BF6A /* MJExtension和YYModel */,
@@ -2196,6 +2250,8 @@
 		C6FEE3BC1DA8DF5700316D14 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				573356111F18C01500BF6BEA /* PPButton */,
+				573356061F18BDE000BF6BEA /* Libs */,
 				5711AD9D1F0C85C5004D93F4 /* PPVerificationCodeView */,
 				5773EE951F01F12C00014D95 /* PPAdapter */,
 				571E042F1E8F7D330037556C /* PPTextField */,
@@ -2349,7 +2405,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				578E5DDE1E9DD79F003BB111 /* PPCustomTextField.m in Sources */,
 				572582261E0B791F00C41BAB /* NSString+PPProcess.m in Sources */,
 				C683FBCB1D2A00AF00D1BF6A /* User.m in Sources */,
 				570F724C1E82A4C5006BCAFC /* Quartz2DFirstCustomView.m in Sources */,
@@ -2368,6 +2423,7 @@
 				5711ADF31F0DC83E004D93F4 /* PPCellAutoHeightViewController.m in Sources */,
 				57CC4E2B1E5ECEF8001CA8E3 /* JRCalculateTool.m in Sources */,
 				5711AE0E1F0DC9D6004D93F4 /* PPAutoHeightCell.m in Sources */,
+				573355FC1F18587700BF6BEA /* UIImage+ColorAtPixel.m in Sources */,
 				578E5DE21E9DD8E0003BB111 /* NSMutableAttributedString+PPTextField.m in Sources */,
 				57CC4E2C1E5ECEF8001CA8E3 /* JRDeviceTool.m in Sources */,
 				571E04351E8F7D330037556C /* PPTextfield.m in Sources */,
@@ -2406,7 +2462,9 @@
 				C65643A91D868B880079B58B /* YYTextDemoViewController.m in Sources */,
 				5773EE561EFBC76F00014D95 /* UIApplication+PPSets.m in Sources */,
 				C6C1CC121D4EF9660082A717 /* RuntimeViewController.m in Sources */,
+				573356141F18C02E00BF6BEA /* PPButton.m in Sources */,
 				57CC4E2F1E5ED015001CA8E3 /* PPSizeTool.m in Sources */,
+				57CD8A951F1F3131000A274E /* UITextField+EmptyWarning.m in Sources */,
 				57CC4E2A1E5ECEF8001CA8E3 /* JRAccessPermissionsTool.m in Sources */,
 				57378B081EEE5D5B000ECA07 /* PPJiaGouGaodeMapViewController.m in Sources */,
 				C6C6D1D41D0F97EB00F82C39 /* MJViewController.m in Sources */,
@@ -2421,6 +2479,7 @@
 				575C1DB31D85033500357B39 /* PP_CameraManager.m in Sources */,
 				5773EEB41F022BB500014D95 /* PPAdapterBaseTableViewController.m in Sources */,
 				575C1D851D85021D00357B39 /* UIGestureRecognizer+BlocksKit.m in Sources */,
+				573356101F18BE2800BF6BEA /* JXTPushInButton.m in Sources */,
 				C6C6D1CA1D0F94DB00F82C39 /* MJPicture.m in Sources */,
 				572582231E0B781300C41BAB /* NSObject+PPSets.m in Sources */,
 				575C1DB41D85033500357B39 /* PP_NSArrayManager.m in Sources */,
@@ -2456,6 +2515,7 @@
 				57C228071EF76DD700BE2A30 /* KVCKeyPaths.m in Sources */,
 				C683FBDA1D2A35F200D1BF6A /* Bag.m in Sources */,
 				C6DC36D11DD07799003EC552 /* NSDate+TimeAgo.m in Sources */,
+				57CD8A911F1F2A7A000A274E /* PPDebugTool.m in Sources */,
 				5773EE581EFBC76F00014D95 /* UIImage+PPSets.m in Sources */,
 				57C227FF1EF3B95C00BE2A30 /* PPGaodeMapView.m in Sources */,
 				C677999A1D508F0F00007161 /* WholesaleCell.m in Sources */,

@@ -15,7 +15,6 @@ target 'PPDemos' do
 
        pod "YTKNetwork"
        pod "IQKeyboardManager"
-       pod "WCDB"
 
 
 pod 'Shimmer', '~> 1.0.2'

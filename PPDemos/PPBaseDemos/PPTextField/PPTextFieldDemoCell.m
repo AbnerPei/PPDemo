@@ -22,12 +22,13 @@
 -(void)setupCellWithLimitStyle:(PPTextFieldLimitStyle)style andPPTFModel:(PPTFModel *)aPPTFModel
 {
 
+#warning demo实例没有考虑具体数据源，滑动时会出现数据错位
     NSString *leftStr;
     NSString *placeholderStr;
     switch (style) {
         case PPTextFieldLimitStyleName:
             leftStr = @"姓名";
-            placeholderStr = @"不区分中英文算长度";
+            placeholderStr = @"不区分中英文算长度10";
             self.rightTF.maxTextLength = 10;  //字符串最多10个，便于观察
             self.rightTF.font = [UIFont systemFontOfSize:20];
             
@@ -43,7 +44,7 @@
             break;
         case PPTextFieldLimitStyleNameDifferentiateENCN:
             leftStr = @"姓名";
-            placeholderStr = @"区分中英文算长度";
+            placeholderStr = @"区分中英文算长度10";
             self.rightTF.maxCharactersLength = 10;
             
             self.rightTF.returnKeyType = UIReturnKeyDone;  //测试ppTextFieldReturnTypeBlock的回调
@@ -111,7 +112,7 @@
     [self.contentView addSubview:self.leftLB];
     self.leftLB.font = [UIFont systemFontOfSize:15];
     
-    self.rightTF = [[PPCustomTextField alloc]init];
+    self.rightTF = [[PPTextfield alloc]init];
     [self.contentView addSubview:self.rightTF];
     self.rightTF.font = [UIFont systemFontOfSize:15];
     
@@ -119,9 +120,9 @@
 -(void)layoutSubviews
 {
     [super layoutSubviews];
-    self.leftLB.frame = CGRectMake(10, 10, 60, 40);
+    self.leftLB.frame = CGRectMake(10, 0, 60, self.contentView.frame.size.height);
     
-    self.rightTF.frame = CGRectMake(75, 0, ScreenWidth-90, 60);
+    self.rightTF.frame = CGRectMake(75, 0, ScreenWidth-90, self.contentView.frame.size.height);
 }
 +(instancetype)cellWithTableView:(UITableView *)tableView{
     static NSString * identifier = @"PPTextFieldDemoCellIdentifier";

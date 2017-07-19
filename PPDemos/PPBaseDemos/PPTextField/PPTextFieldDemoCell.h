@@ -27,8 +27,8 @@ typedef NS_ENUM(NSInteger,PPTextFieldLimitStyle) {
 };
 
 #import <UIKit/UIKit.h>
-#import "PPCustomTextField.h"
 #import "PPTFModel.h"
+#import "PPTextfield.h"
 
 @interface PPTextFieldDemoCell : UITableViewCell
 
@@ -36,7 +36,7 @@ typedef NS_ENUM(NSInteger,PPTextFieldLimitStyle) {
 @property(nonatomic,strong)UILabel *leftLB;
 
 /** PPTextField 输入框  */
-@property(nonatomic,strong)PPCustomTextField *rightTF;
+@property(nonatomic,strong)PPTextfield *rightTF;
 
 +(instancetype)cellWithTableView:(UITableView *)tableView;
 

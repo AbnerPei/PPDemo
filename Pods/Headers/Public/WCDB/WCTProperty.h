@@ -1,1 +1,0 @@
-../../../WCDB/apple/WCDB/interface/orm/coding/WCTProperty.h

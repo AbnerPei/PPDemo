@@ -30,31 +30,6 @@
 
 @end
 @implementation PPTextfield
-
--(void)configurePPTextfield
-{
-    self.delegate = (id<UITextFieldDelegate>)self;
-    [self pp_addTargetEditingChanged];
-    [self setupDefaultConfigure];
-    
-}
-#pragma mark --- 配置默认设置
--(void)setupDefaultConfigure
-{
-    self.autocorrectionType = UITextAutocorrectionTypeNo;//不自动提示
-
-    _isOnlyNumber = NO;
-    _isPriceHeaderPoint = NO;
-    
-    //清楚按钮默认设置
-    _isClearWhileEditing = YES;
-    if (_isClearWhileEditing) {
-        self.clearButtonMode = UITextFieldViewModeWhileEditing;
-    }
-    
-    _isSpecialCharacter = YES;
-    
-}
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -70,18 +45,59 @@
     [self configurePPTextfield];
 }
 
+-(void)configurePPTextfield
+{
+    self.delegate = (id<UITextFieldDelegate>)self;
+    [self pp_addTargetEditingChanged];
+    [self setupDefaultConfigure];
+}
+#pragma mark --- 监听tf的文字变化
+- (void)pp_addTargetEditingChanged
+{
+    [self addTarget:self action:@selector(textFieldTextEditingChanged:) forControlEvents:UIControlEventEditingChanged];
+}
+#pragma mark --- 配置默认设置
+-(void)setupDefaultConfigure
+{
+    self.autocorrectionType = UITextAutocorrectionTypeNo;//不自动提示
+    self.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter; //垂直居中
+    self.clearButtonMode = UITextFieldViewModeWhileEditing;
+    _isClearWhileEditing = YES;
+    _isSpecialCharacter = YES;
+    _isOnlyNumber = NO;
+    _isPriceHeaderPoint = NO;
+}
+#pragma mark --- 更新对tf的设置（因为每次设置一个属性，都需要重新配置一次tf,所以抽出来）
+-(void)updateConfigure
+{
+    self.clearButtonMode = _isClearWhileEditing ? UITextFieldViewModeWhileEditing:UITextFieldViewModeNever;
+    
+    if (_isOnlyNumber) {
+        _isSpecialCharacter = NO;
+        _isPrice = NO;
+        self.keyboardType = UIKeyboardTypeNumberPad;
+    }
+    
+    //防止冲突
+    if (_isPrice) {
+        _isSpecialCharacter = NO;
+        _isOnlyNumber = NO;
+        self.keyboardType = UIKeyboardTypeDecimalPad;
+    }
+    
+}
+
+
 -(void)setIsClearWhileEditing:(BOOL)isClearWhileEditing
 {
     _isClearWhileEditing = isClearWhileEditing;
-    if (isClearWhileEditing) {
-        self.clearButtonMode = UITextFieldViewModeWhileEditing;
-    }else{
-        self.clearButtonMode = UITextFieldViewModeNever;
-    }
+    [self updateConfigure];
 }
 -(void)setIsSpecialCharacter:(BOOL)isSpecialCharacter
 {
     _isSpecialCharacter = isSpecialCharacter;
+    //可以输入特殊字符，不能断定isOnlyNumber为NO,或者isPhoneNumber为NO，等。
+    [self updateConfigure];
 }
 -(void)setCanInputCharacters:(NSArray<NSString *> *)canInputCharacters
 {
@@ -90,40 +106,25 @@
     if (canInputCharacters && canInputCharacters.count > 0) {
         [self setIsSpecialCharacter:NO];
     }
-    
 }
 -(void)setCanotInputCharacters:(NSArray<NSString *> *)canotInputCharacters
 {
     _canotInputCharacters = canotInputCharacters;
+    [self updateConfigure];
 }
 
 -(void)setIsOnlyNumber:(BOOL)isOnlyNumber
 {
     _isOnlyNumber = isOnlyNumber;
-    if (_isOnlyNumber) {
-        _isSpecialCharacter = NO;
-        _isPrice = NO;
-        self.keyboardType = UIKeyboardTypeNumberPad;
-    }
-
+    [self updateConfigure];
 }
 
 -(void)setIsPrice:(BOOL)isPrice
 {
     _isPrice = isPrice;
-   
-    //防止冲突
-    if (_isPrice) {
-        
-        if (_canotInputCharacters) {
-            _canotInputCharacters = [NSArray array];
-        }
-        _isSpecialCharacter = NO;
-        _isOnlyNumber = NO;
-        self.keyboardType = UIKeyboardTypeDecimalPad;
-    }
-    
+    [self updateConfigure];
 }
+
 -(void)setIsPriceHeaderPoint:(BOOL)isPriceHeaderPoint
 {
     _isPriceHeaderPoint = isPriceHeaderPoint;
@@ -135,9 +136,7 @@
 -(void)setMaxNumberCount:(NSInteger)maxNumberCount
 {
     _maxNumberCount = maxNumberCount;
-    if (maxNumberCount) {
-        [self setIsOnlyNumber:YES];
-    }
+    [self setIsOnlyNumber:YES];
 }
 #pragma mark ---  电话号码
 -(void)setIsPhoneNumber:(BOOL)isPhoneNumber
@@ -156,7 +155,7 @@
     _isPassword = isPassword;
     if (isPassword) {
         self.secureTextEntry = YES;
-        _isSpecialCharacter = NO;
+        [self setIsSpecialCharacter:NO];
     }
 }
 -(void)setCanInputPassword:(NSArray<NSString *> *)canInputPasswords
@@ -173,17 +172,16 @@
     _maxCharactersLength = maxCharactersLength;
     //说明：maxCharactersLength和maxTextLength互斥，无论谁，都是要判断其值是否大于0，所以，其中一个大于0时，另一个就要为0
     if (_maxCharactersLength > 0) {
-        _maxTextLength = 0;
+        [self setMaxTextLength:0];
     }
 }
 -(void)setMaxTextLength:(NSInteger)maxTextLength
 {
     _maxTextLength = maxTextLength;
     if (_maxTextLength > 0) {
-        _maxCharactersLength = 0;
+        [self setMaxCharactersLength:0];
     }
 }
-
 
 //===================---☮☮☮UITextfieldDelegate☮☮☮---===================
 
@@ -324,10 +322,7 @@
 }
 
 
-- (void)pp_addTargetEditingChanged
-{
-    [self addTarget:self action:@selector(textFieldTextEditingChanged:) forControlEvents:UIControlEventEditingChanged];
-}
+
 
 - (void)textFieldTextEditingChanged:(id)sender
 {
@@ -445,4 +440,5 @@
 }
 
 @end
+
 

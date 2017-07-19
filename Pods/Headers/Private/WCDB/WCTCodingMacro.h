@@ -1,1 +1,0 @@
-../../../WCDB/apple/WCDB/interface/orm/macro/WCTCodingMacro.h

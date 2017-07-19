@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "TabBarViewController.h"
 #import "NSString+WordCount.h"
+#import "PPDebugTool.h"
 @interface AppDelegate ()
 
 @end
@@ -30,6 +31,8 @@
     
     NSUInteger givenStrCount = [testStr pp_wordCountWithGivenStr:@"This"];
     NSLog(@"givenStrCount is %ld",givenStrCount);
+    
+//    [PPDebugTool pp_printIvarListWithClass:[UITextField class]];
 
     
 #warning 第三步
