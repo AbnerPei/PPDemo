@@ -8,6 +8,7 @@
 
 #import "PPFourthViewController.h"
 #import "PPButton.h"
+#import "RegistViewController.h"
 
 @interface PPFourthViewController ()
 
@@ -25,28 +26,27 @@
     PPButton * bt = [[PPButton alloc]initWithFrame:CGRectMake(100, 240, 100, 100)];
     bt.bgColor = [UIColor redColor];
     [self.view addSubview:bt];
-    
-    [bt setTitle:@"今日出行" forState:UIControlStateNormal];
+    NSString *titleStr = NSLocalizedString(@"text", nil);
+    [bt setTitle:titleStr forState:UIControlStateNormal];
     [bt setTitle:@"88888888" forState:UIControlStateHighlighted];
     
     bt.highlightedAlpha = 0.4;
-    bt.enabled = NO;
-    bt.disenabledBgColor = [UIColor purpleColor];
+//    bt.enabled = NO;
     
-    bt.disenabledAlpha = 0.05;
-    
-    bt.layer.masksToBounds = YES;
-    bt.layer.borderWidth = 3;
-    bt.layer.cornerRadius = 10;
-    bt.layer.borderColor = [UIColor pp_violetColor].CGColor;
-    
+
+    [bt addTarget:self action:@selector(showRegist:) forControlEvents:UIControlEventTouchUpInside];
     
     
 }
 
-- (void)tapImageControl:(id)sender {
+- (void)showRegist:(id)sender {
     
     NSLog(@"sender = %@", sender);
+    RegistViewController *registVC = [[RegistViewController alloc]init];
+//    registVC.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+
+    registVC.modalPresentationStyle = UIModalPresentationPopover;
+    [self presentViewController:registVC animated:YES completion:nil];
 }
 
 

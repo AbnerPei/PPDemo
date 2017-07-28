@@ -130,8 +130,15 @@
 		578897301E07F35A00CD0595 /* EPeiResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5788972F1E07F35A00CD0595 /* EPeiResultModel.m */; };
 		578897331E07F48C00CD0595 /* EPeiDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 578897321E07F48C00CD0595 /* EPeiDataModel.m */; };
 		578897361E07F5C900CD0595 /* EPeiOrderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 578897351E07F5C900CD0595 /* EPeiOrderModel.m */; };
+		578C9C611F29B82100235B92 /* RegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 578C9C601F29B59100235B92 /* RegistViewController.m */; };
+		578C9C661F29C96C00235B92 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 578C9C681F29C96C00235B92 /* Localizable.strings */; };
+		578C9C701F29E95200235B92 /* PPPushPopFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 578C9C6F1F29E95200235B92 /* PPPushPopFirstViewController.m */; };
+		578C9C731F29E96500235B92 /* PPPushPopSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 578C9C721F29E96500235B92 /* PPPushPopSecondViewController.m */; };
+		578C9C761F29E9A700235B92 /* PPPushPopAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 578C9C751F29E9A700235B92 /* PPPushPopAnimationManager.m */; };
 		578E56371E83C936004F5F5F /* NSString+Verify.m in Sources */ = {isa = PBXBuildFile; fileRef = 578E56361E83C936004F5F5F /* NSString+Verify.m */; };
 		578E5DE21E9DD8E0003BB111 /* NSMutableAttributedString+PPTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 578E5DE11E9DD8E0003BB111 /* NSMutableAttributedString+PPTextField.m */; };
+		579ABC1E1F2B35010002E099 /* PPPresentDismissViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579ABC1D1F2B35010002E099 /* PPPresentDismissViewController.m */; };
+		579ABC211F2B36F30002E099 /* PPPresentDIsmissAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 579ABC201F2B36F30002E099 /* PPPresentDIsmissAnimationManager.m */; };
 		57A6FDED1F0400820032EFC4 /* NSObject+CalculateSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A6FDEC1F0400820032EFC4 /* NSObject+CalculateSize.m */; };
 		57A6FDF01F04E86D0032EFC4 /* UIButton+MakeBT.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A6FDEF1F04E86D0032EFC4 /* UIButton+MakeBT.m */; };
 		57A6FDFA1F04F4B10032EFC4 /* CALayer+FSUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A6FDF61F04F4B10032EFC4 /* CALayer+FSUI.m */; };
@@ -461,12 +468,28 @@
 		578897321E07F48C00CD0595 /* EPeiDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPeiDataModel.m; sourceTree = "<group>"; };
 		578897341E07F5C900CD0595 /* EPeiOrderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPeiOrderModel.h; sourceTree = "<group>"; };
 		578897351E07F5C900CD0595 /* EPeiOrderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPeiOrderModel.m; sourceTree = "<group>"; };
+		578C9C5F1F29B59100235B92 /* RegistViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegistViewController.h; sourceTree = "<group>"; };
+		578C9C601F29B59100235B92 /* RegistViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegistViewController.m; sourceTree = "<group>"; };
+		578C9C621F29C8FD00235B92 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		578C9C631F29C8FD00235B92 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		578C9C671F29C96C00235B92 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		578C9C691F29C97700235B92 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		578C9C6E1F29E95200235B92 /* PPPushPopFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPPushPopFirstViewController.h; sourceTree = "<group>"; };
+		578C9C6F1F29E95200235B92 /* PPPushPopFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPPushPopFirstViewController.m; sourceTree = "<group>"; };
+		578C9C711F29E96500235B92 /* PPPushPopSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPPushPopSecondViewController.h; sourceTree = "<group>"; };
+		578C9C721F29E96500235B92 /* PPPushPopSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPPushPopSecondViewController.m; sourceTree = "<group>"; };
+		578C9C741F29E9A700235B92 /* PPPushPopAnimationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPPushPopAnimationManager.h; sourceTree = "<group>"; };
+		578C9C751F29E9A700235B92 /* PPPushPopAnimationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPPushPopAnimationManager.m; sourceTree = "<group>"; };
 		578E56351E83C936004F5F5F /* NSString+Verify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Verify.h"; sourceTree = "<group>"; };
 		578E56361E83C936004F5F5F /* NSString+Verify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Verify.m"; sourceTree = "<group>"; };
 		578E5DE01E9DD8E0003BB111 /* NSMutableAttributedString+PPTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+PPTextField.h"; sourceTree = "<group>"; };
 		578E5DE11E9DD8E0003BB111 /* NSMutableAttributedString+PPTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+PPTextField.m"; sourceTree = "<group>"; };
 		579A450C1DA94A9400D61BD8 /* PPSets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPSets.h; sourceTree = "<group>"; };
 		579A450E1DABE88200D61BD8 /* AnimationsLearn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationsLearn.h; sourceTree = "<group>"; };
+		579ABC1C1F2B35010002E099 /* PPPresentDismissViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPPresentDismissViewController.h; sourceTree = "<group>"; };
+		579ABC1D1F2B35010002E099 /* PPPresentDismissViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPPresentDismissViewController.m; sourceTree = "<group>"; };
+		579ABC1F1F2B36F30002E099 /* PPPresentDIsmissAnimationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPPresentDIsmissAnimationManager.h; sourceTree = "<group>"; };
+		579ABC201F2B36F30002E099 /* PPPresentDIsmissAnimationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPPresentDIsmissAnimationManager.m; sourceTree = "<group>"; };
 		57A6FDEB1F0400820032EFC4 /* NSObject+CalculateSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CalculateSize.h"; sourceTree = "<group>"; };
 		57A6FDEC1F0400820032EFC4 /* NSObject+CalculateSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CalculateSize.m"; sourceTree = "<group>"; };
 		57A6FDEE1F04E86D0032EFC4 /* UIButton+MakeBT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+MakeBT.h"; sourceTree = "<group>"; };
@@ -700,6 +723,7 @@
 		570149E21E8B81FE007CD99E /* 转场动画 */ = {
 			isa = PBXGroup;
 			children = (
+				578C9C6A1F29E8C000235B92 /* PushPop */,
 				5785B4EB1F15ED6B00D47461 /* UIPresentationController */,
 				5742B4AF1EA5BA1000C57BFB /* PPTransitionsViewController.h */,
 				5742B4B01EA5BA1000C57BFB /* PPTransitionsViewController.m */,
@@ -1616,6 +1640,23 @@
 			path = "简书-_de_bug_life同学";
 			sourceTree = "<group>";
 		};
+		578C9C6A1F29E8C000235B92 /* PushPop */ = {
+			isa = PBXGroup;
+			children = (
+				578C9C6E1F29E95200235B92 /* PPPushPopFirstViewController.h */,
+				578C9C6F1F29E95200235B92 /* PPPushPopFirstViewController.m */,
+				578C9C711F29E96500235B92 /* PPPushPopSecondViewController.h */,
+				578C9C721F29E96500235B92 /* PPPushPopSecondViewController.m */,
+				578C9C741F29E9A700235B92 /* PPPushPopAnimationManager.h */,
+				578C9C751F29E9A700235B92 /* PPPushPopAnimationManager.m */,
+				579ABC1C1F2B35010002E099 /* PPPresentDismissViewController.h */,
+				579ABC1D1F2B35010002E099 /* PPPresentDismissViewController.m */,
+				579ABC1F1F2B36F30002E099 /* PPPresentDIsmissAnimationManager.h */,
+				579ABC201F2B36F30002E099 /* PPPresentDIsmissAnimationManager.m */,
+			);
+			path = PushPop;
+			sourceTree = "<group>";
+		};
 		578E5DDF1E9DD8BF003BB111 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -1810,6 +1851,8 @@
 		57F76FA21E5FD961001BD536 /* PPBase */ = {
 			isa = PBXGroup;
 			children = (
+				578C9C5F1F29B59100235B92 /* RegistViewController.h */,
+				578C9C601F29B59100235B92 /* RegistViewController.m */,
 				57DAAB241E703CF9001C127E /* PPFirstViewController.h */,
 				57DAAB2E1E703DF4001C127E /* PPFirstViewController.m */,
 				57DAAB251E703CF9001C127E /* PPFourthViewController.h */,
@@ -2142,6 +2185,7 @@
 			isa = PBXGroup;
 			children = (
 				C6C6D0A41D0F94BB00F82C39 /* main.mm */,
+				578C9C681F29C96C00235B92 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -2337,6 +2381,7 @@
 				575C1DE11D8503F000357B39 /* AutoLayout相对处理pin.png in Resources */,
 				575C1DE61D8503F000357B39 /* 响应者链条示意图.png in Resources */,
 				575C1D951D85029600357B39 /* b27_icon_star_gray@2x.png in Resources */,
+				578C9C661F29C96C00235B92 /* Localizable.strings in Resources */,
 				C6C6D0B01D0F94BB00F82C39 /* Assets.xcassets in Resources */,
 				C64D57D01D82A302000C25CC /* city.json in Resources */,
 				575C1DE41D8503F000357B39 /* tujieGCD.png in Resources */,
@@ -2405,9 +2450,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				578C9C611F29B82100235B92 /* RegistViewController.m in Sources */,
 				572582261E0B791F00C41BAB /* NSString+PPProcess.m in Sources */,
 				C683FBCB1D2A00AF00D1BF6A /* User.m in Sources */,
 				570F724C1E82A4C5006BCAFC /* Quartz2DFirstCustomView.m in Sources */,
+				579ABC211F2B36F30002E099 /* PPPresentDIsmissAnimationManager.m in Sources */,
 				57F76FC31E5FFC9B001BD536 /* MJDIYAutoFooter.m in Sources */,
 				57FFA5431EE3C32500FAFD94 /* NSURL+LegalUrl.m in Sources */,
 				575C1D991D85029600357B39 /* CWStarRateView.m in Sources */,
@@ -2420,6 +2467,7 @@
 				57DAAB2D1E703CF9001C127E /* PPThirdViewController.m in Sources */,
 				5711AD981F0B9347004D93F4 /* CALayer+KeyPath.m in Sources */,
 				C63B35911D1D3CED006277E8 /* Person.m in Sources */,
+				578C9C761F29E9A700235B92 /* PPPushPopAnimationManager.m in Sources */,
 				5711ADF31F0DC83E004D93F4 /* PPCellAutoHeightViewController.m in Sources */,
 				57CC4E2B1E5ECEF8001CA8E3 /* JRCalculateTool.m in Sources */,
 				5711AE0E1F0DC9D6004D93F4 /* PPAutoHeightCell.m in Sources */,
@@ -2451,6 +2499,7 @@
 				C677999D1D508F7700007161 /* MasonryBaseViewController.m in Sources */,
 				57378B051EEE5D48000ECA07 /* PPJiaGouBaiduMapViewController.m in Sources */,
 				C67799951D508E9000007161 /* WholesaleViewController.m in Sources */,
+				578C9C701F29E95200235B92 /* PPPushPopFirstViewController.m in Sources */,
 				571E04381E8F7F3C0037556C /* PPTextFieldDemoCell.m in Sources */,
 				5773EE841F00997600014D95 /* NSArray+SafeArray.m in Sources */,
 				57A6FDF01F04E86D0032EFC4 /* UIButton+MakeBT.m in Sources */,
@@ -2512,6 +2561,7 @@
 				57C227FE1EF3B95C00BE2A30 /* PPGaodeFactory.m in Sources */,
 				57BC34491E8BDDE200DD6175 /* PPJianFriendRequest.m in Sources */,
 				57DAAB171E703C83001C127E /* TabBarViewController.m in Sources */,
+				579ABC1E1F2B35010002E099 /* PPPresentDismissViewController.m in Sources */,
 				57C228071EF76DD700BE2A30 /* KVCKeyPaths.m in Sources */,
 				C683FBDA1D2A35F200D1BF6A /* Bag.m in Sources */,
 				C6DC36D11DD07799003EC552 /* NSDate+TimeAgo.m in Sources */,
@@ -2546,6 +2596,7 @@
 				578897331E07F48C00CD0595 /* EPeiDataModel.m in Sources */,
 				C681C07D1DC9B2ED003637CD /* PP_LabelManager.m in Sources */,
 				57B053101F14610600F1CFB9 /* PPFBShimmeringDemoViewController.m in Sources */,
+				578C9C731F29E96500235B92 /* PPPushPopSecondViewController.m in Sources */,
 				571E042E1E8F7CBC0037556C /* PPTextFieldDemoViewController.m in Sources */,
 				570F72461E82A3A0006BCAFC /* LearnSystemAPIBaseViewController.m in Sources */,
 				57F76FC51E5FFC9B001BD536 /* MJDIYHeader.m in Sources */,
@@ -2572,10 +2623,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		578C9C681F29C96C00235B92 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				578C9C671F29C96C00235B92 /* zh-Hans */,
+				578C9C691F29C97700235B92 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		C6C6D0AC1D0F94BB00F82C39 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C6C6D0AD1D0F94BB00F82C39 /* Base */,
+				578C9C621F29C8FD00235B92 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -2584,6 +2645,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				C6C6D0B21D0F94BB00F82C39 /* Base */,
+				578C9C631F29C8FD00235B92 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -2595,6 +2657,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -2639,6 +2702,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";

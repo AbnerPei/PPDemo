@@ -21,10 +21,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.titles = [@[
-                     @"UIPresentationController（继承自NSObject）使用"
+                     @"UIPresentationController（继承自NSObject）使用",
+                     @"自定义push/pop转场"
                      ] mutableCopy];
     self.vcs = [@[
-                  @"PPUIPresentationControllerBaseDemoViewController"
+                  @"PPUIPresentationControllerBaseDemoViewController",
+                  @"PPPushPopFirstViewController"
                   ] mutableCopy];
 }
 
