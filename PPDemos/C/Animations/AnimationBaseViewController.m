@@ -24,20 +24,15 @@
 -(void)setupArrs
 {
     self.titles = [@[
-                     @"animation示例"
+                     @"animation示例",
+                     @"layer动画学习"
                      ] mutableCopy];
     
     self.vcs = [@[
-                  @"AnimationShowViewController"
+                  @"AnimationShowViewController",
+                  @"PPLayerAnimationsViewController"
                   ] mutableCopy];
 
 }
 
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    [tableView deselectRowAtIndexPath:indexPath animated:NO];
-    
-    AnimationShowViewController * showVC = [AnimationShowViewController new];
-    [self.navigationController pushViewController:showVC animated:YES];
-}
 @end

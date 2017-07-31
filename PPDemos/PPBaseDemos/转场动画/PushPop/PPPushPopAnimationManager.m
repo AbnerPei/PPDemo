@@ -21,43 +21,7 @@
     return manager;
 }
 
-//- (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext
-//
-//{
-//
-//    return 2.0;
-//
-//}
-//
-//- (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext
-//
-//{
-//
-//    //目的ViewController
-//
-//    UIViewController *toViewController = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
-//
-//    //起始ViewController
-//
-//    UIViewController *fromViewController = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
-//
-//
-//
-//    //添加toView到上下文
-//
-//    [[transitionContext containerView] insertSubview:toViewController.view belowSubview:fromViewController.view];
-//
-//
-//
-//    //自定义动画
-//
-//    toViewController.view.transform = CGAffineTransformMakeTranslation(0, -568);
-//
-//
-//
 
-//
-//}
 
 - (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext
 {
@@ -73,9 +37,8 @@
     //起始ViewController
     UIViewController *fromViewController = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     
-    //添加toView到上下文    
+    //添加toView到上下文
     [transitionContext.containerView insertSubview:toViewController.view belowSubview:fromViewController.view];
-    
  
     
     if (_isPush) {

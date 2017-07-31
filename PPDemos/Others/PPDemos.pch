@@ -73,5 +73,6 @@
 #import "PPAdapterMacro.h"
 
 
+#define pAngleToRadian(angle)  ((angle)*M_PI/180)  //p代表parameter
 
 #endif /* PPDemos_pch */

@@ -14,7 +14,6 @@
 		5711AD8D1F0B8682004D93F4 /* NSObject+DateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5711AD8C1F0B8682004D93F4 /* NSObject+DateTool.m */; };
 		5711AD901F0B89D6004D93F4 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 5711AD8F1F0B89D6004D93F4 /* UIView+Frame.m */; };
 		5711AD941F0B9251004D93F4 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 5711AD931F0B9251004D93F4 /* UIView+Toast.m */; };
-		5711AD981F0B9347004D93F4 /* CALayer+KeyPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 5711AD971F0B9347004D93F4 /* CALayer+KeyPath.m */; };
 		5711AD9C1F0B94F3004D93F4 /* NSString+KeyPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 5711AD9B1F0B94F3004D93F4 /* NSString+KeyPath.m */; };
 		5711ADA01F0C85E3004D93F4 /* PPVerificationCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5711AD9F1F0C85E3004D93F4 /* PPVerificationCodeView.m */; };
 		5711ADF31F0DC83E004D93F4 /* PPCellAutoHeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5711ADF21F0DC83E004D93F4 /* PPCellAutoHeightViewController.m */; };
@@ -139,6 +138,16 @@
 		578E5DE21E9DD8E0003BB111 /* NSMutableAttributedString+PPTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 578E5DE11E9DD8E0003BB111 /* NSMutableAttributedString+PPTextField.m */; };
 		579ABC1E1F2B35010002E099 /* PPPresentDismissViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579ABC1D1F2B35010002E099 /* PPPresentDismissViewController.m */; };
 		579ABC211F2B36F30002E099 /* PPPresentDIsmissAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 579ABC201F2B36F30002E099 /* PPPresentDIsmissAnimationManager.m */; };
+		579ABC241F2CF5BA0002E099 /* PPLayerAnimationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579ABC231F2CF5BA0002E099 /* PPLayerAnimationsViewController.m */; };
+		579ABC291F2ED0AC0002E099 /* ModalMoveTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 579ABC281F2ED0AC0002E099 /* ModalMoveTransitionAnimation.m */; };
+		579ABC2C1F2ED1730002E099 /* ModalInterActiveTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 579ABC2B1F2ED1730002E099 /* ModalInterActiveTransitionAnimation.m */; };
+		579ABC2F1F2ED1C90002E099 /* ModalCustomPresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579ABC2E1F2ED1C90002E099 /* ModalCustomPresentViewController.m */; };
+		579ABC321F2ED2720002E099 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579ABC311F2ED2720002E099 /* ModalViewController.m */; };
+		579ABC351F2ED36D0002E099 /* ModalTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 579ABC341F2ED36D0002E099 /* ModalTransitionAnimation.m */; };
+		579ABC391F2EF7DC0002E099 /* PPCustomLayer01.m in Sources */ = {isa = PBXBuildFile; fileRef = 579ABC381F2EF7DC0002E099 /* PPCustomLayer01.m */; };
+		579ABC3D1F2F1F670002E099 /* CALayer+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 579ABC3C1F2F1F670002E099 /* CALayer+Animation.m */; };
+		579ABC411F2F20080002E099 /* CAAnimation+LayerAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 579ABC401F2F20080002E099 /* CAAnimation+LayerAnimation.m */; };
+		579ABC441F2F2D380002E099 /* NSString+CATransitionType.m in Sources */ = {isa = PBXBuildFile; fileRef = 579ABC431F2F2D380002E099 /* NSString+CATransitionType.m */; };
 		57A6FDED1F0400820032EFC4 /* NSObject+CalculateSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A6FDEC1F0400820032EFC4 /* NSObject+CalculateSize.m */; };
 		57A6FDF01F04E86D0032EFC4 /* UIButton+MakeBT.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A6FDEF1F04E86D0032EFC4 /* UIButton+MakeBT.m */; };
 		57A6FDFA1F04F4B10032EFC4 /* CALayer+FSUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A6FDF61F04F4B10032EFC4 /* CALayer+FSUI.m */; };
@@ -152,7 +161,6 @@
 		57C227FE1EF3B95C00BE2A30 /* PPGaodeFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C227F51EF3B95C00BE2A30 /* PPGaodeFactory.m */; };
 		57C227FF1EF3B95C00BE2A30 /* PPGaodeMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C227F71EF3B95C00BE2A30 /* PPGaodeMapView.m */; };
 		57C228001EF3B95C00BE2A30 /* PPMapEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C227F91EF3B95C00BE2A30 /* PPMapEngine.m */; };
-		57C228071EF76DD700BE2A30 /* KVCKeyPaths.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C228061EF76DD700BE2A30 /* KVCKeyPaths.m */; };
 		57CC4E2A1E5ECEF8001CA8E3 /* JRAccessPermissionsTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CC4E251E5ECEF8001CA8E3 /* JRAccessPermissionsTool.m */; };
 		57CC4E2B1E5ECEF8001CA8E3 /* JRCalculateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CC4E271E5ECEF8001CA8E3 /* JRCalculateTool.m */; };
 		57CC4E2C1E5ECEF8001CA8E3 /* JRDeviceTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CC4E291E5ECEF8001CA8E3 /* JRDeviceTool.m */; };
@@ -245,8 +253,6 @@
 		5711AD8F1F0B89D6004D93F4 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		5711AD921F0B9251004D93F4 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
 		5711AD931F0B9251004D93F4 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
-		5711AD961F0B9347004D93F4 /* CALayer+KeyPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+KeyPath.h"; sourceTree = "<group>"; };
-		5711AD971F0B9347004D93F4 /* CALayer+KeyPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+KeyPath.m"; sourceTree = "<group>"; };
 		5711AD9A1F0B94F3004D93F4 /* NSString+KeyPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+KeyPath.h"; sourceTree = "<group>"; };
 		5711AD9B1F0B94F3004D93F4 /* NSString+KeyPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+KeyPath.m"; sourceTree = "<group>"; };
 		5711AD9E1F0C85E3004D93F4 /* PPVerificationCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPVerificationCodeView.h; sourceTree = "<group>"; };
@@ -490,6 +496,27 @@
 		579ABC1D1F2B35010002E099 /* PPPresentDismissViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPPresentDismissViewController.m; sourceTree = "<group>"; };
 		579ABC1F1F2B36F30002E099 /* PPPresentDIsmissAnimationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPPresentDIsmissAnimationManager.h; sourceTree = "<group>"; };
 		579ABC201F2B36F30002E099 /* PPPresentDIsmissAnimationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPPresentDIsmissAnimationManager.m; sourceTree = "<group>"; };
+		579ABC221F2CF5BA0002E099 /* PPLayerAnimationsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPLayerAnimationsViewController.h; sourceTree = "<group>"; };
+		579ABC231F2CF5BA0002E099 /* PPLayerAnimationsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPLayerAnimationsViewController.m; sourceTree = "<group>"; };
+		579ABC251F2ECB880002E099 /* 转场动画学习参考.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "转场动画学习参考.h"; sourceTree = "<group>"; };
+		579ABC271F2ED0AC0002E099 /* ModalMoveTransitionAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModalMoveTransitionAnimation.h; sourceTree = "<group>"; };
+		579ABC281F2ED0AC0002E099 /* ModalMoveTransitionAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModalMoveTransitionAnimation.m; sourceTree = "<group>"; };
+		579ABC2A1F2ED1730002E099 /* ModalInterActiveTransitionAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModalInterActiveTransitionAnimation.h; sourceTree = "<group>"; };
+		579ABC2B1F2ED1730002E099 /* ModalInterActiveTransitionAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModalInterActiveTransitionAnimation.m; sourceTree = "<group>"; };
+		579ABC2D1F2ED1C90002E099 /* ModalCustomPresentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModalCustomPresentViewController.h; sourceTree = "<group>"; };
+		579ABC2E1F2ED1C90002E099 /* ModalCustomPresentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModalCustomPresentViewController.m; sourceTree = "<group>"; };
+		579ABC301F2ED2720002E099 /* ModalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
+		579ABC311F2ED2720002E099 /* ModalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
+		579ABC331F2ED36D0002E099 /* ModalTransitionAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModalTransitionAnimation.h; sourceTree = "<group>"; };
+		579ABC341F2ED36D0002E099 /* ModalTransitionAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModalTransitionAnimation.m; sourceTree = "<group>"; };
+		579ABC371F2EF7DC0002E099 /* PPCustomLayer01.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCustomLayer01.h; sourceTree = "<group>"; };
+		579ABC381F2EF7DC0002E099 /* PPCustomLayer01.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCustomLayer01.m; sourceTree = "<group>"; };
+		579ABC3B1F2F1F670002E099 /* CALayer+Animation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+Animation.h"; sourceTree = "<group>"; };
+		579ABC3C1F2F1F670002E099 /* CALayer+Animation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Animation.m"; sourceTree = "<group>"; };
+		579ABC3F1F2F20080002E099 /* CAAnimation+LayerAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+LayerAnimation.h"; sourceTree = "<group>"; };
+		579ABC401F2F20080002E099 /* CAAnimation+LayerAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+LayerAnimation.m"; sourceTree = "<group>"; };
+		579ABC421F2F2D380002E099 /* NSString+CATransitionType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+CATransitionType.h"; sourceTree = "<group>"; };
+		579ABC431F2F2D380002E099 /* NSString+CATransitionType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+CATransitionType.m"; sourceTree = "<group>"; };
 		57A6FDEB1F0400820032EFC4 /* NSObject+CalculateSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CalculateSize.h"; sourceTree = "<group>"; };
 		57A6FDEC1F0400820032EFC4 /* NSObject+CalculateSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CalculateSize.m"; sourceTree = "<group>"; };
 		57A6FDEE1F04E86D0032EFC4 /* UIButton+MakeBT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+MakeBT.h"; sourceTree = "<group>"; };
@@ -522,8 +549,6 @@
 		57C227F91EF3B95C00BE2A30 /* PPMapEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPMapEngine.m; sourceTree = "<group>"; };
 		57C227FA1EF3B95C00BE2A30 /* PPMapFactoryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPMapFactoryProtocol.h; sourceTree = "<group>"; };
 		57C227FB1EF3B95C00BE2A30 /* PPMapViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPMapViewProtocol.h; sourceTree = "<group>"; };
-		57C228051EF76DD700BE2A30 /* KVCKeyPaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVCKeyPaths.h; sourceTree = "<group>"; };
-		57C228061EF76DD700BE2A30 /* KVCKeyPaths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVCKeyPaths.m; sourceTree = "<group>"; };
 		57CC4E231E5ECE4C001CA8E3 /* PPHandleTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPHandleTools.h; sourceTree = "<group>"; };
 		57CC4E241E5ECEF8001CA8E3 /* JRAccessPermissionsTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRAccessPermissionsTool.h; sourceTree = "<group>"; };
 		57CC4E251E5ECEF8001CA8E3 /* JRAccessPermissionsTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRAccessPermissionsTool.m; sourceTree = "<group>"; };
@@ -723,10 +748,12 @@
 		570149E21E8B81FE007CD99E /* 转场动画 */ = {
 			isa = PBXGroup;
 			children = (
+				579ABC261F2ED08F0002E099 /* present交互转场 */,
 				578C9C6A1F29E8C000235B92 /* PushPop */,
 				5785B4EB1F15ED6B00D47461 /* UIPresentationController */,
 				5742B4AF1EA5BA1000C57BFB /* PPTransitionsViewController.h */,
 				5742B4B01EA5BA1000C57BFB /* PPTransitionsViewController.m */,
+				579ABC251F2ECB880002E099 /* 转场动画学习参考.h */,
 			);
 			path = "转场动画";
 			sourceTree = "<group>";
@@ -764,8 +791,8 @@
 		5711AD951F0B9292004D93F4 /* CA */ = {
 			isa = PBXGroup;
 			children = (
-				5711AD961F0B9347004D93F4 /* CALayer+KeyPath.h */,
-				5711AD971F0B9347004D93F4 /* CALayer+KeyPath.m */,
+				579ABC3E1F2F1FD30002E099 /* CAAnimation */,
+				579ABC3A1F2F1F2F0002E099 /* CALyer */,
 			);
 			path = CA;
 			sourceTree = "<group>";
@@ -775,6 +802,8 @@
 			children = (
 				5711AD9A1F0B94F3004D93F4 /* NSString+KeyPath.h */,
 				5711AD9B1F0B94F3004D93F4 /* NSString+KeyPath.m */,
+				579ABC421F2F2D380002E099 /* NSString+CATransitionType.h */,
+				579ABC431F2F2D380002E099 /* NSString+CATransitionType.m */,
 			);
 			path = KeyPath;
 			sourceTree = "<group>";
@@ -1676,6 +1705,50 @@
 			path = "架构";
 			sourceTree = "<group>";
 		};
+		579ABC261F2ED08F0002E099 /* present交互转场 */ = {
+			isa = PBXGroup;
+			children = (
+				579ABC271F2ED0AC0002E099 /* ModalMoveTransitionAnimation.h */,
+				579ABC281F2ED0AC0002E099 /* ModalMoveTransitionAnimation.m */,
+				579ABC2A1F2ED1730002E099 /* ModalInterActiveTransitionAnimation.h */,
+				579ABC2B1F2ED1730002E099 /* ModalInterActiveTransitionAnimation.m */,
+				579ABC2D1F2ED1C90002E099 /* ModalCustomPresentViewController.h */,
+				579ABC2E1F2ED1C90002E099 /* ModalCustomPresentViewController.m */,
+				579ABC301F2ED2720002E099 /* ModalViewController.h */,
+				579ABC311F2ED2720002E099 /* ModalViewController.m */,
+				579ABC331F2ED36D0002E099 /* ModalTransitionAnimation.h */,
+				579ABC341F2ED36D0002E099 /* ModalTransitionAnimation.m */,
+			);
+			path = "present交互转场";
+			sourceTree = "<group>";
+		};
+		579ABC361F2EF7B40002E099 /* CALayer相关 */ = {
+			isa = PBXGroup;
+			children = (
+				579ABC371F2EF7DC0002E099 /* PPCustomLayer01.h */,
+				579ABC381F2EF7DC0002E099 /* PPCustomLayer01.m */,
+			);
+			path = "CALayer相关";
+			sourceTree = "<group>";
+		};
+		579ABC3A1F2F1F2F0002E099 /* CALyer */ = {
+			isa = PBXGroup;
+			children = (
+				579ABC3B1F2F1F670002E099 /* CALayer+Animation.h */,
+				579ABC3C1F2F1F670002E099 /* CALayer+Animation.m */,
+			);
+			path = CALyer;
+			sourceTree = "<group>";
+		};
+		579ABC3E1F2F1FD30002E099 /* CAAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				579ABC3F1F2F20080002E099 /* CAAnimation+LayerAnimation.h */,
+				579ABC401F2F20080002E099 /* CAAnimation+LayerAnimation.m */,
+			);
+			path = CAAnimation;
+			sourceTree = "<group>";
+		};
 		57A6FDF41F04F4B10032EFC4 /* FSCustomBUtton */ = {
 			isa = PBXGroup;
 			children = (
@@ -2256,14 +2329,15 @@
 		C6D808A31D4B255900C8B2FF /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				579ABC361F2EF7B40002E099 /* CALayer相关 */,
 				C6D808A41D4B25E500C8B2FF /* AnimationBaseViewController.h */,
 				C6D808A51D4B25E500C8B2FF /* AnimationBaseViewController.m */,
 				C6D808A71D4B265200C8B2FF /* AnimationShowViewController.h */,
 				C6D808A81D4B265200C8B2FF /* AnimationShowViewController.m */,
 				579A450E1DABE88200D61BD8 /* AnimationsLearn.h */,
 				C682E65A1DB9C7D000CD86CB /* 动画学习资料.h */,
-				57C228051EF76DD700BE2A30 /* KVCKeyPaths.h */,
-				57C228061EF76DD700BE2A30 /* KVCKeyPaths.m */,
+				579ABC221F2CF5BA0002E099 /* PPLayerAnimationsViewController.h */,
+				579ABC231F2CF5BA0002E099 /* PPLayerAnimationsViewController.m */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -2465,7 +2539,6 @@
 				5711AD941F0B9251004D93F4 /* UIView+Toast.m in Sources */,
 				5711AE081F0DC991004D93F4 /* ShowTextModel.m in Sources */,
 				57DAAB2D1E703CF9001C127E /* PPThirdViewController.m in Sources */,
-				5711AD981F0B9347004D93F4 /* CALayer+KeyPath.m in Sources */,
 				C63B35911D1D3CED006277E8 /* Person.m in Sources */,
 				578C9C761F29E9A700235B92 /* PPPushPopAnimationManager.m in Sources */,
 				5711ADF31F0DC83E004D93F4 /* PPCellAutoHeightViewController.m in Sources */,
@@ -2483,6 +2556,8 @@
 				57C228001EF3B95C00BE2A30 /* PPMapEngine.m in Sources */,
 				5773EE681EFC176E00014D95 /* UIFont+NSNumberNSStringUIFont.m in Sources */,
 				5773EE9B1F01F3B000014D95 /* PPBaseCell.m in Sources */,
+				579ABC351F2ED36D0002E099 /* ModalTransitionAnimation.m in Sources */,
+				579ABC241F2CF5BA0002E099 /* PPLayerAnimationsViewController.m in Sources */,
 				C67799911D508E9000007161 /* CenterOneViewController.m in Sources */,
 				570149DD1E8B4CC7007CD99E /* NSString+WordCount.m in Sources */,
 				C6D808A91D4B265200C8B2FF /* AnimationShowViewController.m in Sources */,
@@ -2497,8 +2572,10 @@
 				57DAAB371E7053E2001C127E /* PPBaseCellDisplayAnimationViewController.m in Sources */,
 				57378AFF1EEE5C74000ECA07 /* PPJiaGouMapBaseViewController.m in Sources */,
 				C677999D1D508F7700007161 /* MasonryBaseViewController.m in Sources */,
+				579ABC291F2ED0AC0002E099 /* ModalMoveTransitionAnimation.m in Sources */,
 				57378B051EEE5D48000ECA07 /* PPJiaGouBaiduMapViewController.m in Sources */,
 				C67799951D508E9000007161 /* WholesaleViewController.m in Sources */,
+				579ABC2F1F2ED1C90002E099 /* ModalCustomPresentViewController.m in Sources */,
 				578C9C701F29E95200235B92 /* PPPushPopFirstViewController.m in Sources */,
 				571E04381E8F7F3C0037556C /* PPTextFieldDemoCell.m in Sources */,
 				5773EE841F00997600014D95 /* NSArray+SafeArray.m in Sources */,
@@ -2525,6 +2602,7 @@
 				57DAAB121E703C83001C127E /* ScreenShotView.m in Sources */,
 				57DAAB3D1E705907001C127E /* JRNumberTool.m in Sources */,
 				5711AD9C1F0B94F3004D93F4 /* NSString+KeyPath.m in Sources */,
+				579ABC391F2EF7DC0002E099 /* PPCustomLayer01.m in Sources */,
 				575C1DB31D85033500357B39 /* PP_CameraManager.m in Sources */,
 				5773EEB41F022BB500014D95 /* PPAdapterBaseTableViewController.m in Sources */,
 				575C1D851D85021D00357B39 /* UIGestureRecognizer+BlocksKit.m in Sources */,
@@ -2537,6 +2615,7 @@
 				C67799921D508E9000007161 /* LongPressToSaveViewController.m in Sources */,
 				5725821F1E0B77F600C41BAB /* NSString+PPSets.m in Sources */,
 				57F76FC21E5FFC9B001BD536 /* MJChiBaoZiHeader.m in Sources */,
+				579ABC3D1F2F1F670002E099 /* CALayer+Animation.m in Sources */,
 				57B0530C1F14608300F1CFB9 /* PPFaceBookBaswViewController.m in Sources */,
 				C683FBD41D2A15B500D1BF6A /* Ad.m in Sources */,
 				5785B4F41F15F1D100D47461 /* PPUIPresentationControllerPresentedViewController.m in Sources */,
@@ -2562,7 +2641,6 @@
 				57BC34491E8BDDE200DD6175 /* PPJianFriendRequest.m in Sources */,
 				57DAAB171E703C83001C127E /* TabBarViewController.m in Sources */,
 				579ABC1E1F2B35010002E099 /* PPPresentDismissViewController.m in Sources */,
-				57C228071EF76DD700BE2A30 /* KVCKeyPaths.m in Sources */,
 				C683FBDA1D2A35F200D1BF6A /* Bag.m in Sources */,
 				C6DC36D11DD07799003EC552 /* NSDate+TimeAgo.m in Sources */,
 				57CD8A911F1F2A7A000A274E /* PPDebugTool.m in Sources */,
@@ -2571,6 +2649,7 @@
 				C677999A1D508F0F00007161 /* WholesaleCell.m in Sources */,
 				C64D57D71D82A4D2000C25CC /* ProductDetailResult.m in Sources */,
 				C6C6D0A51D0F94BB00F82C39 /* main.mm in Sources */,
+				579ABC411F2F20080002E099 /* CAAnimation+LayerAnimation.m in Sources */,
 				57DAAB101E703C83001C127E /* BaseNavigationController.m in Sources */,
 				5780E70E1DCB803A00156B12 /* ClassObj.m in Sources */,
 				571E04341E8F7D330037556C /* NSString+PPTextField.m in Sources */,
@@ -2597,16 +2676,19 @@
 				C681C07D1DC9B2ED003637CD /* PP_LabelManager.m in Sources */,
 				57B053101F14610600F1CFB9 /* PPFBShimmeringDemoViewController.m in Sources */,
 				578C9C731F29E96500235B92 /* PPPushPopSecondViewController.m in Sources */,
+				579ABC321F2ED2720002E099 /* ModalViewController.m in Sources */,
 				571E042E1E8F7CBC0037556C /* PPTextFieldDemoViewController.m in Sources */,
 				570F72461E82A3A0006BCAFC /* LearnSystemAPIBaseViewController.m in Sources */,
 				57F76FC51E5FFC9B001BD536 /* MJDIYHeader.m in Sources */,
 				5773EE491EFBC6F100014D95 /* UITableViewCell+ShowAnimations.m in Sources */,
 				570F72491E82A418006BCAFC /* Quartz2DViewController.m in Sources */,
 				5773EE761EFCBBD600014D95 /* NSMutableAttributedString+EasilyMake.m in Sources */,
+				579ABC441F2F2D380002E099 /* NSString+CATransitionType.m in Sources */,
 				5780E7111DCB81B900156B12 /* ClassClassModel.m in Sources */,
 				C682E6551DB9A60600CD86CB /* CalendarEvent.m in Sources */,
 				57BC34451E8BB4A900DD6175 /* PPBaiSiRequest.m in Sources */,
 				57DAAB2C1E703CF9001C127E /* PPSecondViewController.m in Sources */,
+				579ABC2C1F2ED1730002E099 /* ModalInterActiveTransitionAnimation.m in Sources */,
 				5785B4F11F15F1AA00D47461 /* PPUIPresentationControllerBaseDemoViewController.m in Sources */,
 				5773EE6B1EFCAFE100014D95 /* UIColor+SpecialAttributedString.m in Sources */,
 				C6C6D1DD1D0F99CB00F82C39 /* MJBaseViewController.m in Sources */,

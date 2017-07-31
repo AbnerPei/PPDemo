@@ -9,8 +9,25 @@
 
 
 #import <Foundation/Foundation.h>
+extern NSString * const Transform;
+
+extern NSString * const TransformTranslation;
+extern NSString * const TransformTranslationX;
+extern NSString * const TransformTranslationY;
+extern NSString * const TransformTranslationZ;
+
+extern NSString * const TransformRotation;
+extern NSString * const TransformRotationX;
+extern NSString * const TransformRotationY;
+extern NSString * const TransformRotationZ;
+
+extern NSString *const TransformScale;
+extern NSString *const TransformScaleX;
+extern NSString *const TransformScaleY;
+extern NSString *const TransformScaleZ;
 
 @interface NSString (KeyPath)
++(instancetype)pp_kpTransform;
 
 +(instancetype)pp_kpTransformTranslation;
 +(instancetype)pp_kpTransformTranslationX;
@@ -26,5 +43,10 @@
 +(instancetype)pp_kpTransformScaleX;
 +(instancetype)pp_kpTransformScaleY;
 +(instancetype)pp_kpTransformScaleZ;
+@end
+
+CA_EXTERN NSString * const kCAPosition;
+
+@interface NSString (KeyPathForCALyer)
 
 @end

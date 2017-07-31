@@ -7,9 +7,28 @@
 //
 
 #import "NSString+KeyPath.h"
+NSString *const Transform = @"transform";
+
+NSString *const TransformTranslation = @"transform.translation";
+NSString *const TransformTranslationX = @"transform.translation.x";
+NSString *const TransformTranslationY = @"transform.translation.y";
+NSString *const TransformTranslationZ = @"transform.translation.z";
+
+NSString *const TransformRotation = @"transform.rotation";
+NSString *const TransformRotationX = @"transform.rotation.x";
+NSString *const TransformRotationY = @"transform.rotation.y";
+NSString *const TransformRotationZ = @"transform.rotation.z";
+
+NSString *const TransformScale = @"transform.scale";
+NSString *const TransformScaleX = @"transform.scale.x";
+NSString *const TransformScaleY = @"transform.scale.y";
+NSString *const TransformScaleZ = @"transform.scale.z";
 
 @implementation NSString (KeyPath)
-
++(instancetype)pp_kpTransform
+{
+    return @"transform";
+}
 +(instancetype)pp_kpTransformTranslation
 {
     return @"transform.translation";
@@ -60,4 +79,11 @@
 {
     return @"transform.scale.z";
 }
+@end
+
+//// CALyer的keyPaths
+NSString *const kCAPosition = @"position";
+
+@implementation NSString (KeyPathForCALyer)
+
 @end

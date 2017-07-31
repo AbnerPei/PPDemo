@@ -13,9 +13,7 @@
 
 #define KSystemVersionEight  1
 
-//typedef void(^calculateBlock)(CGSize size,NSUInteger lineCount);
 
-#import "NSObject+CalculateSize.h"
 
 //label
 #import "YYLabel+MakeLB.h"
@@ -55,11 +53,15 @@
 
 //NSString
 #import "NSString+KeyPath.h"
+#import "NSString+CATransitionType.h"
 
 
 //NSObject
 #import "NSObject+GCD.h"
+#import "NSObject+CalculateSize.h"
 
+//CAAnimation
+#import "CAAnimation+LayerAnimation.h"
 
 
 
