@@ -161,13 +161,13 @@ static const NSString * CSToastQueueKey             = @"CSToastQueueKey";
 
 - (void)addAnimationGroup:(UIView *)toast
 {
-    CABasicAnimation *forwardAnimation = [CABasicAnimation animationWithKeyPath:[NSString pp_kpTransformScale]];
+    CABasicAnimation *forwardAnimation = [CABasicAnimation animationWithKeyPath:[NSString pp_transformScale]];
     forwardAnimation.duration = 0.5;
     forwardAnimation.timingFunction = [CAMediaTimingFunction functionWithControlPoints:0.5f :1.7f :0.6f :0.85f];
     forwardAnimation.fromValue = [NSNumber numberWithFloat:0.0f];
     forwardAnimation.toValue = [NSNumber numberWithFloat:1.0f];
     
-    CABasicAnimation *backwardAnimation = [CABasicAnimation animationWithKeyPath:[NSString pp_kpTransformScale]];
+    CABasicAnimation *backwardAnimation = [CABasicAnimation animationWithKeyPath:[NSString pp_transformScale]];
     backwardAnimation.duration = 0.5;
     backwardAnimation.beginTime = forwardAnimation.duration + 1;
     backwardAnimation.timingFunction = [CAMediaTimingFunction functionWithControlPoints:0.4f :0.15f :0.5f :-0.7f];
@@ -178,7 +178,6 @@ static const NSString * CSToastQueueKey             = @"CSToastQueueKey";
     animationGroup.animations = @[forwardAnimation,backwardAnimation];
     animationGroup.duration = forwardAnimation.duration + backwardAnimation.duration + 1;
     animationGroup.removedOnCompletion = NO;
-//    animationGroup.delegate = self;
     animationGroup.fillMode = kCAFillModeForwards;
     
     [toast.layer addAnimation:animationGroup forKey:nil];

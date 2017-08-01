@@ -25,12 +25,14 @@
 {
     self.titles = [@[
                      @"animation示例",
-                     @"layer动画学习"
+                     @"layer动画学习",
+                     @"CGAffineTransform学习"
                      ] mutableCopy];
     
     self.vcs = [@[
                   @"AnimationShowViewController",
-                  @"PPLayerAnimationsViewController"
+                  @"PPLayerAnimationsViewController",
+                  @"CGAffineTransformDemoViewController"
                   ] mutableCopy];
 
 }

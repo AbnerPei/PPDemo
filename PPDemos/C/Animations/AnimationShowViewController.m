@@ -132,7 +132,7 @@
 -(void)testAnimationGroup
 {
     CABasicAnimation *animation1 = [CABasicAnimation animation];
-    animation1.keyPath = kCAPosition;
+    animation1.keyPath = kCALayerPosition;
     animation1.toValue = [NSValue valueWithCGPoint:CGPointMake(280, 280)];
     
     CABasicAnimation *animation2 = [CABasicAnimation animation];
@@ -156,7 +156,7 @@
 -(void)testKeyFrameAnimation
 {
     CAKeyframeAnimation *animation = [CAKeyframeAnimation animation];
-    animation.keyPath = kCAPosition;
+    animation.keyPath = kCALayerPosition;
     CGMutablePathRef path = CGPathCreateMutable();
     CGPathAddArc(path, NULL, 150, 150, 50, 0, M_PI * 2, 1);
     animation.path = path;
@@ -172,7 +172,7 @@
 {
     CABasicAnimation *animation = [CABasicAnimation animation];
     animation.toValue = [NSValue valueWithCGPoint:CGPointMake(280, 280)];
-    animation.keyPath = kCAPosition;
+    animation.keyPath = kCALayerPosition;
     
     animation.removedOnCompletion = NO;
     animation.fillMode = kCAFillModeBoth;

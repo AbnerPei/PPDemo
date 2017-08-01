@@ -8,9 +8,9 @@
 
 #import "PPUIPresentationControllerBaseDemoViewController.h"
 #import "PPUIPresentationControllerPresentedViewController.h"
-#import "PPCustomPresentationController.h"
+#import "PPPresentationController.h"
 
-@interface PPUIPresentationControllerBaseDemoViewController ()<UIViewControllerTransitioningDelegate>
+@interface PPUIPresentationControllerBaseDemoViewController ()
 
 @end
 
@@ -35,21 +35,13 @@
 -(void)buttonClicked:(UIButton *)btn
 {
     PPUIPresentationControllerPresentedViewController *presentedVC = [[PPUIPresentationControllerPresentedViewController alloc]init];
-    presentedVC.modalPresentationStyle = UIModalPresentationCustom;// 设置 动画样式
-    presentedVC.transitioningDelegate = self;// 此对象要实现 UIViewControllerTransitioningDelegate 协议
-    [self presentViewController:presentedVC animated:YES completion:nil];
+    
+    PPPresentationController *p = [[PPPresentationController alloc]initWithPresentedViewController:presentedVC presentingViewController:self];
+    //默认是CGRectMake(0, ScreenHeight-300, ScreenWidth, 300);
+    p.presentedViewFrame = CGRectMake(0, ScreenHeight-100, ScreenWidth, 100);
+    [p present];
     
 }
-#pragma mark - UIViewControllerTransitioningDelegate
-// 返回控制控制器弹出动画的对象
-/**
- *  参数: presentedViewController     将要跳转到的目标控制器
-         presentingViewController    跳转前的原控制器
- */
-- (nullable UIPresentationController *)presentationControllerForPresentedViewController:(UIViewController *)presented presentingViewController:(nullable UIViewController *)presenting sourceViewController:(UIViewController *)source
-{
-    return [[PPCustomPresentationController alloc] initWithPresentedViewController:presented presentingViewController:presenting];
 
-}
 
 @end

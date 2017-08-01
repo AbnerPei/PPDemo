@@ -51,9 +51,11 @@
 //字符串
 #import "NSMutableAttributedString+EasilyMake.h"
 
+
 //NSString
-#import "NSString+KeyPath.h"
 #import "NSString+CATransitionType.h"
+#import "NSString+CALyerProperties.h"
+#import "NSString+Transform.h"
 
 
 //NSObject
