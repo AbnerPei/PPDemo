@@ -19,13 +19,31 @@
     // Do any additional setup after loading the view.
     [self setupArrs];
  
+    self.tableView.indicatorStyle = UIScrollViewIndicatorStyleBlack;
+    self.tableView.showsVerticalScrollIndicator = YES;
     
+}
+
+#pragma mark - Scrollview代理
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    CGPoint vel = [scrollView.panGestureRecognizer velocityInView:scrollView];
+    if (vel.y > 0) {
+        // 下拉
+        NSLog(@"下拉 %f",vel.y);
+    }else
+    {
+        // 上拉
+        NSLog(@"上拉 %f",vel.y);
+
+    }
 }
 -(void)setupArrs
 {
     self.titles = [@[
                      @"MJRefrsh使用Demos",
                      @"MJExtension使用Demos",
+                     @"RAC集中学习",
                      @"TextField限制那些事，一个属性满足你的需求！",
                      @"转场动画",
                      @"cell加载时各种动画",
@@ -45,6 +63,7 @@
                   
                   @"MJBaseViewController",
                   @"MJExtensionBaseViewController",
+                  @"RACBaseTableViewController",
                   @"PPTextFieldDemoViewController",
                   @"PPTransitionsViewController",
                   @"PPBaseCellDisplayAnimationViewController",

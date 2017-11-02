@@ -37,7 +37,7 @@
 {
     _v1.transform = CGAffineTransformMake(0.5, 0, 0, 1, 0, 0);
     [UIView animateWithDuration:2.0 animations:^{
-        
+          
         if (_clicked) {
             _v2.transform = CGAffineTransformIdentity;
         }else{
@@ -55,7 +55,7 @@
              */
             
             //左右向中间缩小
-//            _v2.transform = CGAffineTransformMake(0.2, 0, 0, 1, 0, 0);
+            _v2.transform = CGAffineTransformMake(0.2, 0, 0, 1, 0, 0);
             
             //根据本身的transform进行缩放
 //            _v2.transform = CGAffineTransformMakeScale(0.5, 0.5);

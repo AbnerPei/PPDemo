@@ -15,7 +15,7 @@
         NSLog(@"%@%s",@"你未传入有效tableView,虽然不影响获取cell,但无法复用！！！",__func__);
     }
     NSString * identifier = [NSString stringWithFormat:@"%@Identifier",NSStringFromClass(self)];
-    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (!cell) {
         cell = [[self alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }

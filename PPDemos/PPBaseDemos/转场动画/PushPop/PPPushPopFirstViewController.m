@@ -62,7 +62,6 @@
 - (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
 {
     customPresent.animationType = AnimationTypePresent;
-    
     return customPresent;
 }
 

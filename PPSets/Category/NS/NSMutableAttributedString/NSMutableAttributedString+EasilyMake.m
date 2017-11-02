@@ -36,6 +36,7 @@
     if (kern > 0) { attributedStr.yy_kern = [NSNumber numberWithFloat:kern]; }    
     attributedStr.yy_alignment = textAligent;
     return attributedStr;
+    
 }
 
 +(instancetype)pp_attributedStringWithText:(NSString *)text

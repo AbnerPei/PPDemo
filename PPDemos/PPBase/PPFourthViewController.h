@@ -11,3 +11,8 @@
 @interface PPFourthViewController : PPBaseViewController
 
 @end
+
+
+@interface ppFourView : UIView
+
+@end
