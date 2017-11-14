@@ -19,6 +19,8 @@ target 'PPDemos' do
    pod 'ReactiveCocoa', '~> 6.0.0-rc.3'
    pod 'ReactiveObjC', '~> 3.0.0'
 
+pod 'Realm'
+
 
 pod 'Shimmer', '~> 1.0.2'
        

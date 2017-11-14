@@ -13,15 +13,6 @@
 +(PP_NSArrayManager *)pp_shareInstance;
 
 /*!
- *  @author ╰莪呮想好好宠Nǐつ, 16-04-06 14:04:10
- *  数组倒序排序
- *  方法1相对消耗时间长些，但也很小很小 
- *  @param givenArray 需要排序的数组 如：@[@1,@2,@3,@4,@5,@6]
- *  @return 排序后的数组  结果:@[@6,@5,@4,@3,@2,@1]
- */
--(NSMutableArray *)pp_exchangedArray:(NSMutableArray *)givenArray;
--(NSArray *)pp_exchangedArrayUsingShortTime:(NSArray *)givenArray;
-/*!
  *  @author ╰莪呮想好好宠Nǐつ, 16-04-06 15:04:01
  *
  *  包含字典的数组，按照字典的某个key升【降】排序

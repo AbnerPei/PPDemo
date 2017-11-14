@@ -65,13 +65,12 @@
 
 -(void)callMe_nomal
 {
-    [PPMTHandle pp_callTel:@"13569422574" isUseWebView:NO];
-    
+    [PPToolsHelper pp_tool_phone:@"18217051949" isUseWebView:NO];
 }
 
 -(void)callMe_webview
 {
-    [PPMTHandle pp_callTel:@"13569422574" isUseWebView:YES];
+    [PPToolsHelper pp_tool_phone:@"18217051949" isUseWebView:YES];
 }
 - (void)calendarEvent:(CalendarEvent *)event removedStatus:(ECalendarEventStatus)status error:(NSError *)error {
     

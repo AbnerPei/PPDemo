@@ -23,6 +23,9 @@ PODS:
   - ReactiveObjC (3.0.0)
   - ReactiveSwift (2.0.0-rc.3):
     - Result (~> 3.2)
+  - Realm (3.0.1):
+    - Realm/Headers (= 3.0.1)
+  - Realm/Headers (3.0.1)
   - Result (3.2.3)
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
@@ -41,6 +44,7 @@ DEPENDENCIES:
   - MJRefresh
   - ReactiveCocoa (~> 6.0.0-rc.3)
   - ReactiveObjC (~> 3.0.0)
+  - Realm
   - SDWebImage
   - Shimmer (~> 1.0.2)
   - YTKNetwork
@@ -56,6 +60,7 @@ SPEC CHECKSUMS:
   ReactiveCocoa: 9f35dce8cc0a97995774d900df9655d544bdce63
   ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
   ReactiveSwift: b1d3e63bd166566478508d75007bb335c568bd29
+  Realm: ba6144c74f835f7497791f6599d63a7755377b83
   Result: 128640a6347e8d2ae48b142556739a2d13f90ce6
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
@@ -63,6 +68,6 @@ SPEC CHECKSUMS:
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: bd12758fca419aaf059a01ac4abe6004d6f181bd
+PODFILE CHECKSUM: 8b196caf105d01a241acc0c09d34c0f13cf4b22b
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.3.1

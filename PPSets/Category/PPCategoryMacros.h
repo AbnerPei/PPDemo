@@ -14,6 +14,9 @@
 #define KSystemVersionEight  1
 
 
+//综合
+#import "PPNSStringCategoryMacros.h"
+#import "PPUIViewCategoryMacros.h"
 
 //label
 #import "YYLabel+MakeLB.h"
@@ -48,14 +51,12 @@
 //UIScreen
 #import "UIScreen+EasilySize.h"
 
+//UIDevice
+#import "UIDevice+GetDeviceMessages.h"
+#import "UIDevice+GetAPPMessages.h"
+
 //字符串
 #import "NSMutableAttributedString+EasilyMake.h"
-
-
-//NSString
-#import "NSString+CATransitionType.h"
-#import "NSString+CALyerProperties.h"
-#import "NSString+Transform.h"
 
 
 //NSObject
@@ -64,6 +65,8 @@
 
 //CAAnimation
 #import "CAAnimation+LayerAnimation.h"
+
+#import "NSPredicate+EasyMake.h"
 
 
 

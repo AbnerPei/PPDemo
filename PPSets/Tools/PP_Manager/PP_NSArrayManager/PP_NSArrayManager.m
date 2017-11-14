@@ -20,25 +20,16 @@
     return aArrayManage;
 }
 
--(NSMutableArray *)pp_exchangedArray:(NSMutableArray *)givenArray
-{
-    NSMutableArray *pp_newArray = [givenArray mutableCopy];
-    for (int i = 0; i < pp_newArray.count/2.0; i++) {
-        [pp_newArray exchangeObjectAtIndex:i withObjectAtIndex:pp_newArray.count-1-i];
-    }
-    return pp_newArray;
-}
-
--(NSArray *)pp_exchangedArrayUsingShortTime:(NSArray *)givenArray
-{
-    return [givenArray reverseObjectEnumerator].allObjects;
-}
 
 -(NSMutableArray *)pp_sortArrayJustContainsDictionary:(NSArray *)givenArray dicKey:(NSString *)dicKey ascending:(BOOL)ascending
 {
     NSMutableArray *pp_newArray = [givenArray mutableCopy];
     NSArray *sortDescriptors = [NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:dicKey ascending:ascending]];
     [pp_newArray sortUsingDescriptors:sortDescriptors];
+    
+//    givenArray sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+//        <#code#>
+//    }
     return pp_newArray;
 }
 @end

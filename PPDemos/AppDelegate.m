@@ -10,6 +10,8 @@
 #import "TabBarViewController.h"
 #import "NSString+WordCount.h"
 #import "PPDebugTool.h"
+#import <realm/realm.h>
+
 @interface AppDelegate ()
 
 @end
@@ -24,6 +26,7 @@
     TabBarViewController *tabBarVC = [[TabBarViewController alloc]init];
     self.window.rootViewController = tabBarVC;
     
+        
     
     NSString *testStr = @"This is a test. This is only a test.";
     NSUInteger wordCount = [testStr pp_wordCount];
@@ -32,8 +35,6 @@
     NSUInteger givenStrCount = [testStr pp_wordCountWithGivenStr:@"This"];
     NSLog(@"givenStrCount is %ld",givenStrCount);
     
-//    [PPDebugTool pp_printIvarListWithClass:[UITextField class]];
-
     
 #warning 第三步
     
