@@ -19,6 +19,8 @@
 		570971C31FBAD1CD002491F2 /* NSString+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 570971C21FBAD1CD002491F2 /* NSString+Helper.m */; };
 		570971C71FBAD5C4002491F2 /* UIView+TransformToImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 570971C61FBAD5C4002491F2 /* UIView+TransformToImage.m */; };
 		570971CD1FBAD7FF002491F2 /* UILabel+EasyMake.m in Sources */ = {isa = PBXBuildFile; fileRef = 570971CC1FBAD7FF002491F2 /* UILabel+EasyMake.m */; };
+		570971DC1FBBDD10002491F2 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 570971DB1FBBDD10002491F2 /* NSString+MD5.m */; };
+		570971E11FBBE369002491F2 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 570971E01FBBE369002491F2 /* NSData+Base64.m */; };
 		570F72461E82A3A0006BCAFC /* LearnSystemAPIBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 570F72451E82A3A0006BCAFC /* LearnSystemAPIBaseViewController.m */; };
 		570F72491E82A418006BCAFC /* Quartz2DViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 570F72481E82A418006BCAFC /* Quartz2DViewController.m */; };
 		570F724C1E82A4C5006BCAFC /* Quartz2DFirstCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 570F724B1E82A4C5006BCAFC /* Quartz2DFirstCustomView.m */; };
@@ -285,6 +287,10 @@
 		570971C81FBAD5ED002491F2 /* PPUIViewCategoryMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPUIViewCategoryMacros.h; sourceTree = "<group>"; };
 		570971CB1FBAD7FF002491F2 /* UILabel+EasyMake.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+EasyMake.h"; sourceTree = "<group>"; };
 		570971CC1FBAD7FF002491F2 /* UILabel+EasyMake.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+EasyMake.m"; sourceTree = "<group>"; };
+		570971DA1FBBDD10002491F2 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		570971DB1FBBDD10002491F2 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		570971DF1FBBE369002491F2 /* NSData+Base64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		570971E01FBBE369002491F2 /* NSData+Base64.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		570F72441E82A3A0006BCAFC /* LearnSystemAPIBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnSystemAPIBaseViewController.h; sourceTree = "<group>"; };
 		570F72451E82A3A0006BCAFC /* LearnSystemAPIBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnSystemAPIBaseViewController.m; sourceTree = "<group>"; };
 		570F72471E82A418006BCAFC /* Quartz2DViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quartz2DViewController.h; sourceTree = "<group>"; };
@@ -909,6 +915,39 @@
 			path = EasyMake;
 			sourceTree = "<group>";
 		};
+		570971D81FBBDD10002491F2 /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base64;
+			sourceTree = "<group>";
+		};
+		570971D91FBBDD10002491F2 /* MD5 */ = {
+			isa = PBXGroup;
+			children = (
+				570971DA1FBBDD10002491F2 /* NSString+MD5.h */,
+				570971DB1FBBDD10002491F2 /* NSString+MD5.m */,
+			);
+			path = MD5;
+			sourceTree = "<group>";
+		};
+		570971DD1FBBE354002491F2 /* NSData */ = {
+			isa = PBXGroup;
+			children = (
+				570971DE1FBBE354002491F2 /* Base64 */,
+			);
+			path = NSData;
+			sourceTree = "<group>";
+		};
+		570971DE1FBBE354002491F2 /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				570971DF1FBBE369002491F2 /* NSData+Base64.h */,
+				570971E01FBBE369002491F2 /* NSData+Base64.m */,
+			);
+			path = Base64;
+			sourceTree = "<group>";
+		};
 		570F723F1E82A16B006BCAFC /* LearnSystemAPIS */ = {
 			isa = PBXGroup;
 			children = (
@@ -1057,6 +1096,9 @@
 		5725821C1E0B77F600C41BAB /* NSString */ = {
 			isa = PBXGroup;
 			children = (
+				570971A71FBAB5FC002491F2 /* PPNSStringCategoryMacros.h */,
+				570971D81FBBDD10002491F2 /* Base64 */,
+				570971D91FBBDD10002491F2 /* MD5 */,
 				570971C01FBAD1B7002491F2 /* Helper */,
 				570971B61FBAC963002491F2 /* EasyUsed */,
 				570971A21FBA9E4C002491F2 /* IsValid */,
@@ -1070,7 +1112,6 @@
 				578E56361E83C936004F5F5F /* NSString+Verify.m */,
 				570149DB1E8B4CC7007CD99E /* NSString+WordCount.h */,
 				570149DC1E8B4CC7007CD99E /* NSString+WordCount.m */,
-				570971A71FBAB5FC002491F2 /* PPNSStringCategoryMacros.h */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -2547,6 +2588,7 @@
 		C6EBE8EC1DACD9E70067EF2A /* NS */ = {
 			isa = PBXGroup;
 			children = (
+				570971DD1FBBE354002491F2 /* NSData */,
 				570971A81FBAB7E3002491F2 /* NSPredicate */,
 				5773EE811F0096B200014D95 /* NSArray */,
 				5773EE5D1EFC09E600014D95 /* NSMutableAttributedString */,
@@ -2758,6 +2800,7 @@
 				570F724C1E82A4C5006BCAFC /* Quartz2DFirstCustomView.m in Sources */,
 				579ABC211F2B36F30002E099 /* PPPresentDIsmissAnimationManager.m in Sources */,
 				57F76FC31E5FFC9B001BD536 /* MJDIYAutoFooter.m in Sources */,
+				570971E11FBBE369002491F2 /* NSData+Base64.m in Sources */,
 				57FFA5431EE3C32500FAFD94 /* NSURL+LegalUrl.m in Sources */,
 				575C1D991D85029600357B39 /* CWStarRateView.m in Sources */,
 				57CC4E321E5ED144001CA8E3 /* RTDateFormatterTool.m in Sources */,
@@ -2817,6 +2860,7 @@
 				57A6FDF01F04E86D0032EFC4 /* UIButton+MakeBT.m in Sources */,
 				578897301E07F35A00CD0595 /* EPeiResultModel.m in Sources */,
 				C67799941D508E9000007161 /* TwoMoreViewController.m in Sources */,
+				570971DC1FBBDD10002491F2 /* NSString+MD5.m in Sources */,
 				5773EE941F010C7700014D95 /* UIImageView+CornerRadius.m in Sources */,
 				5773EDD51EFA420D00014D95 /* NSString+ContainsString.m in Sources */,
 				5780E70B1DCB802600156B12 /* ClassEntryModel.m in Sources */,

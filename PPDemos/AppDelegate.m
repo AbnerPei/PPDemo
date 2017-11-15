@@ -11,13 +11,13 @@
 #import "NSString+WordCount.h"
 #import "PPDebugTool.h"
 #import <realm/realm.h>
+#import <CommonCrypto/CommonDigest.h>
 
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
-
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
@@ -26,7 +26,8 @@
     TabBarViewController *tabBarVC = [[TabBarViewController alloc]init];
     self.window.rootViewController = tabBarVC;
     
-        
+    NSString *md5Str2 = [@"123123" pp_string_md5];
+    NSLog(@"md52---%@",md5Str2);
     
     NSString *testStr = @"This is a test. This is only a test.";
     NSUInteger wordCount = [testStr pp_wordCount];

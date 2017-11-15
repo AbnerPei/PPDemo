@@ -67,6 +67,7 @@
 #import "CAAnimation+LayerAnimation.h"
 
 #import "NSPredicate+EasyMake.h"
+#import "NSData+Base64.h"
 
 
 
