@@ -72,6 +72,8 @@
 #import "PPCategoryMacros.h"
 #import "PPAdapterMacro.h"
 
+#import "PPCharlesUrls.h"
+
 
 #define pAngleToRadian(angle)  ((angle)*M_PI/180)  //p代表parameter
 

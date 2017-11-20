@@ -42,6 +42,7 @@
 {
     self.titles = [@[
                      @"MJRefrsh使用Demos",
+                     @"Realm使用集合",
                      @"MJExtension使用Demos",
                      @"RAC集中学习",
                      @"TextField限制那些事，一个属性满足你的需求！",
@@ -62,6 +63,7 @@
     self.vcs = [@[
                   
                   @"MJBaseViewController",
+                  @"PPRealmBaseViewController",
                   @"MJExtensionBaseViewController",
                   @"RACBaseTableViewController",
                   @"PPTextFieldDemoViewController",

@@ -17,6 +17,7 @@
 //综合
 #import "PPNSStringCategoryMacros.h"
 #import "PPUIViewCategoryMacros.h"
+#import "PPNSObjectCategoryMacros.h"
 
 //label
 #import "YYLabel+MakeLB.h"
@@ -54,6 +55,9 @@
 //UIDevice
 #import "UIDevice+GetDeviceMessages.h"
 #import "UIDevice+GetAPPMessages.h"
+
+//UIViewController
+#import "UIViewController+LogVCLevelRelationship.h"
 
 //字符串
 #import "NSMutableAttributedString+EasilyMake.h"

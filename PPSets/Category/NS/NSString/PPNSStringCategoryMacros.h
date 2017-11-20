@@ -17,6 +17,7 @@
 #import "NSString+IsValid.h"            //验证手机号、邮箱、身份证等
 #import "NSString+EasyHandle.h"         //字符串便捷处理
 #import "NSString+MD5.h"
+#import "NSString+Directory.h"
 
 
 #endif /* PPNSStringCategoryMacros_h */

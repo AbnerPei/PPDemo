@@ -16,4 +16,7 @@
 
 + (CGFloat)pp_height;
 
++ (CGFloat)pp_scale;
+
+
 @end

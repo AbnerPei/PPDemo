@@ -8,20 +8,26 @@
 
 #import "UIScreen+EasilySize.h"
 
+
 @implementation UIScreen (EasilySize)
-+ (CGSize)pp_size
++ (CGSize)pp_size{
+    return getScreenSize();
+}
+
++ (CGFloat)pp_width{
+    return getScreenSize().width;
+}
+
++ (CGFloat)pp_height{
+    return getScreenSize().height;
+}
+
++ (CGFloat)pp_scale
 {
+    return [UIScreen mainScreen].scale;
+}
+
+static CGSize getScreenSize(){
     return [[UIScreen mainScreen] bounds].size;
 }
-
-+ (CGFloat)pp_width
-{
-    return [[UIScreen mainScreen] bounds].size.width;
-}
-
-+ (CGFloat)pp_height
-{
-    return [[UIScreen mainScreen] bounds].size.height;
-}
-
 @end
