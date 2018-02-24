@@ -46,7 +46,7 @@
 -(void)setupMJRefreshCellData:(MJPicture *)pic
 {
     [self.imageV sd_setImageWithURL:[NSURL URLWithString:pic.profile_image] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-        PPLog(@"图片下载设置完成");
+//        PPLog(@"图片下载设置完成");
     }];
     self.lb.text = pic.name;
 }

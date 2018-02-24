@@ -55,7 +55,7 @@
     Quartz2DFirstCustomView *customV = [Quartz2DFirstCustomView new];
     [self.view addSubview:customV];
     customV.frame = CGRectMake(50, 90, 200, 240);
-    customV.backgroundColor = [UIColor pp_tomatoColor];
+    customV.backgroundColor = [UIColor yellowColor];
 }
 
 @end

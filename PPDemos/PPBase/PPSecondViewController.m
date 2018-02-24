@@ -21,9 +21,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    UIImageView *imgV = [UIImageView pp_imgVMakeWithSuperV:self.view imgName:@"meinv"];
-    imgV.frame = CGRectMake(20, 84, [UIScreen pp_width]-40, [UIScreen pp_height]-150);
-    _imgV = imgV;
+//    UIImageView *imgV = [UIImageView pp_imgVMakeWithSuperV:self.view imgName:@"meinv"];
+//    imgV.frame = CGRectMake(20, 84, [UIScreen pp_width]-40, [UIScreen pp_height]-150);
+//    _imgV = imgV;
     
     UIView *line = [[UIView alloc]initWithFrame:CGRectMake(10, 100, 8, 100)];
     [self.view addSubview:line];
@@ -46,8 +46,8 @@
     int y = point.y;
     NSLog(@"touch (x, y) is (%d, %d)", x, y);
     
-    UIColor *currentColor = [_imgV.image pp_colorAtPixel:point];
-    _line.backgroundColor = currentColor;
+//    UIColor *currentColor = [_imgV.image pp_colorAtPixel:point];
+//    _line.backgroundColor = currentColor;
 }
 
 

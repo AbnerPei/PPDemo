@@ -31,7 +31,7 @@
     customPop = [PPPushPopAnimationManager managerWithIsPush:NO];
     customPresent = [[PPPresentDIsmissAnimationManager alloc]init];
     
-    self.view.backgroundColor = [UIColor pp_cyanColor];
+    self.view.backgroundColor = [UIColor cyanColor];
     
     
     UIButton * bt = [[UIButton alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];

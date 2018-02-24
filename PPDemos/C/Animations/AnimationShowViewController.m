@@ -39,14 +39,15 @@
 #pragma mark --- 图片转场
 -(void)testImgTransform
 {
-    UIImageView *imgV = [UIImageView pp_imgVMakeWithSuperV:self.view imgName:@"001"];
-    imgV.frame = CGRectMake(30, ScreenHeight-240, 70, 70);
-    NSString *imgName = [NSString stringWithFormat:@"00%d",_imgIndex+1];
-    imgV.image = [UIImage imageNamed:imgName];
-    imgV.layer.backgroundColor = [UIColor whiteColor].CGColor;
-    imgV.backgroundColor = [UIColor whiteColor];
-    _shakeImgV = imgV;
-    
+#warning pp605 img start
+//    UIImageView *imgV = [UIImageView pp_imgVMakeWithSuperV:self.view imgName:@"001"];
+//    imgV.frame = CGRectMake(30, ScreenHeight-240, 70, 70);
+//    NSString *imgName = [NSString stringWithFormat:@"00%d",_imgIndex+1];
+//    imgV.image = [UIImage imageNamed:imgName];
+//    imgV.layer.backgroundColor = [UIColor whiteColor].CGColor;
+//    imgV.backgroundColor = [UIColor whiteColor];
+//    _shakeImgV = imgV;
+#warning pp605 img start
     
     UIButton * bt = [[UIButton alloc]initWithFrame:CGRectMake(140, ScreenHeight-240, 80, 50)];
     bt.backgroundColor = [UIColor redColor];
@@ -66,10 +67,13 @@
 #pragma mark --- 左右摇摆
 -(void)testShake
 {
-    UIImageView *imgV = [UIImageView pp_imgVMakeWithSuperV:self.view imgName:@"001"];
-    imgV.frame = CGRectMake(30, ScreenHeight-80, 40, 40);
-    _imgV = imgV;
-    
+#warning pp605 img start
+
+//    UIImageView *imgV = [UIImageView pp_imgVMakeWithSuperV:self.view imgName:@"001"];
+//    imgV.frame = CGRectMake(30, ScreenHeight-80, 40, 40);
+//    _imgV = imgV;
+#warning pp605 img start
+
     UIButton * bt = [[UIButton alloc]initWithFrame:CGRectMake(100, ScreenHeight-80, 50, 50)];
     bt.backgroundColor = [UIColor redColor];
     [bt setTitle:@"shake" forState:UIControlStateNormal];
@@ -88,7 +92,11 @@
 -(void)ButtonClicked:(UIButton *)sender
 {
     if (sender.tag == 10) {
-        [_imgV.layer addAnimation:[CAAnimation pp_shakeRepeat] forKey:@"shakeAction"];
+#warning pp605 img start
+
+//        [_imgV.layer addAnimation:[CAAnimation pp_shakeRepeat] forKey:@"shakeAction"];
+#warning pp605 img start
+
     }else if(sender.tag == 20) {
         [_imgV.layer removeAnimationForKey:@"shakeAction"];
     }else if (sender.tag == 30){
@@ -110,7 +118,11 @@
         NSString *imgName = [NSString stringWithFormat:@"00%d",_imgIndex+1];
         _shakeImgV.image = [UIImage imageNamed:imgName];
         CATransition *transition = [CATransition animation];
-        transition.type = kCATransitionCameraIrisHollowOpen;
+#warning pp605 img start
+
+//        transition.type = kCATransitionCameraIrisHollowOpen;
+#warning pp605 img start
+
         transition.subtype = kCATransitionFromRight;
         [_shakeImgV.layer addAnimation:transition forKey:nil];
     }
@@ -132,15 +144,26 @@
 -(void)testAnimationGroup
 {
     CABasicAnimation *animation1 = [CABasicAnimation animation];
-    animation1.keyPath = kCALayerPosition;
+#warning pp605 img start
+
+//    animation1.keyPath = kCALayerPosition;
+#warning pp605 img start
+
     animation1.toValue = [NSValue valueWithCGPoint:CGPointMake(280, 280)];
     
     CABasicAnimation *animation2 = [CABasicAnimation animation];
-    animation2.keyPath = TransformScale;
+#warning pp605 img start
+
+//    animation2.keyPath = TransformScale;
+#warning pp605 img start
     animation2.toValue = @(0.0);
     
     CABasicAnimation *animation3 = [CABasicAnimation animation];
-    animation3.keyPath = TransformRotation;
+#warning pp605 img start
+
+//    animation3.keyPath = TransformRotation;
+#warning pp605 img start
+
     animation3.toValue = @(M_PI);
     
     CAAnimationGroup *animationGroup = [CAAnimationGroup animation];
@@ -156,7 +179,11 @@
 -(void)testKeyFrameAnimation
 {
     CAKeyframeAnimation *animation = [CAKeyframeAnimation animation];
-    animation.keyPath = kCALayerPosition;
+#warning pp605 img start
+
+//    animation.keyPath = kCALayerPosition;
+#warning pp605 img start
+
     CGMutablePathRef path = CGPathCreateMutable();
     CGPathAddArc(path, NULL, 150, 150, 50, 0, M_PI * 2, 1);
     animation.path = path;
@@ -172,7 +199,11 @@
 {
     CABasicAnimation *animation = [CABasicAnimation animation];
     animation.toValue = [NSValue valueWithCGPoint:CGPointMake(280, 280)];
-    animation.keyPath = kCALayerPosition;
+#warning pp605 img start
+
+//    animation.keyPath = kCALayerPosition;
+#warning pp605 img start
+
     
     animation.removedOnCompletion = NO;
     animation.fillMode = kCAFillModeBoth;

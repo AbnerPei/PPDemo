@@ -22,16 +22,30 @@
 // THE SOFTWARE.
 
 #import "IQKeyboardManagerConstants.h"
+#import "IQUIView+IQKeyboardToolbar.h"
+#import "IQPreviousNextView.h"
+#import "IQUIViewController+Additions.h"
+#import "IQKeyboardReturnKeyHandler.h"
+#import "IQUIWindow+Hierarchy.h"
+#import "IQTextView.h"
+#import "IQToolbar.h"
+#import "IQUIScrollView+Additions.h"
+#import "IQUITextFieldView+Additions.h"
+#import "IQBarButtonItem.h"
+#import "IQTitleBarButtonItem.h"
+#import "IQUIView+Hierarchy.h"
 
 #import <CoreGraphics/CGBase.h>
 
 #import <Foundation/NSObject.h>
 #import <Foundation/NSObjCRuntime.h>
+#import <Foundation/NSSet.h>
 
 #import <UIKit/UITextInputTraits.h>
-#import <UIKit/UIView.h>
 
-@class UIFont;
+@class UIFont, UIColor, UITapGestureRecognizer, UIView, UIImage;
+
+@class NSString;
 
 ///---------------------
 /// @name IQToolbar tags
@@ -59,7 +73,7 @@ extern NSInteger const kIQPreviousNextButtonToolbarTag;
 ///--------------------------
 
 /**
- Returns the default singleton instance.
+ Returns the default singleton instance. You are not allowed to create your own instances of this class.
  */
 + (nonnull instancetype)sharedManager;
 
@@ -123,6 +137,11 @@ extern NSInteger const kIQPreviousNextButtonToolbarTag;
 @property(nullable, nonatomic, strong) UIColor *toolbarTintColor;
 
 /**
+ This is used for toolbar.barTintColor. Default is nil and uses white color.
+ */
+@property(nullable, nonatomic, strong) UIColor *toolbarBarTintColor;
+
+/**
  IQPreviousNextDisplayModeDefault:      Show NextPrevious when there are more than 1 textField otherwise hide.
  IQPreviousNextDisplayModeAlwaysHide:   Do not show NextPrevious buttons in any case.
  IQPreviousNextDisplayModeAlwaysShow:   Always show nextPrevious buttons, if there are more than 1 textField then both buttons will be visible but will be shown as disabled.
@@ -142,7 +161,8 @@ extern NSInteger const kIQPreviousNextButtonToolbarTag;
 /**
  If YES, then it add the textField's placeholder text on IQToolbar. Default is YES.
  */
-@property(nonatomic, assign) BOOL shouldShowTextFieldPlaceholder;
+@property(nonatomic, assign) BOOL shouldShowTextFieldPlaceholder __attribute__((deprecated("This is renamed to `shouldShowToolbarPlaceholder` for more clear naming.")));
+@property(nonatomic, assign) BOOL shouldShowToolbarPlaceholder;
 
 /**
  Placeholder Font. Default is nil.
@@ -176,6 +196,9 @@ extern NSInteger const kIQPreviousNextButtonToolbarTag;
  Resigns Keyboard on touching outside of UITextField/View. Default is NO.
  */
 @property(nonatomic, assign) BOOL shouldResignOnTouchOutside;
+
+/** TapGesture to resign keyboard on view's touch. It's a readonly property and exposed only for adding/removing dependencies if your added gesture does have collision with this one */
+@property(nonnull, nonatomic, strong, readonly) UITapGestureRecognizer  *resignFirstResponderGesture;
 
 /**
  Resigns currently first responder field.
@@ -228,6 +251,17 @@ extern NSInteger const kIQPreviousNextButtonToolbarTag;
  If YES, then always consider UINavigationController.view begin point as {0,0}, this is a workaround to fix a bug #464 because there are no notification mechanism exist when UINavigationController.view.frame gets changed internally.
  */
 @property(nonatomic, assign) BOOL shouldFixInteractivePopGestureRecognizer;
+
+#ifdef __IPHONE_11_0
+///---------------------------
+/// @name Safe Area
+///---------------------------
+
+/**
+ If YES, then library will try to adjust viewController.additionalSafeAreaInsets to automatically handle layout guide. Default is NO.
+ */
+@property(nonatomic, assign) BOOL canAdjustAdditionalSafeAreaInsets;
+#endif
 
 ///---------------------------------------------
 /// @name Class Level enabling/disabling methods
@@ -297,7 +331,7 @@ extern NSInteger const kIQPreviousNextButtonToolbarTag;
 @property(nonatomic, assign) BOOL enableDebugging;
 
 /**
- @warning Use below methods to completely enable/disable notifications registered by library internally. Please keep in mind that library is totally dependent on NSNotification of UITextField, UITextField, Keyboard etc. If you do unregisterAllNotifications then library will not work at all. You should only use below methods if you want to completedly disable all library functions. You should use below methods at your own risk.
+ @warning Use these methods to completely enable/disable notifications registered by library internally. Please keep in mind that library is totally dependent on NSNotification of UITextField, UITextField, Keyboard etc. If you do unregisterAllNotifications then library will not work at all. You should only use below methods if you want to completedly disable all library functions. You should use below methods at your own risk.
  */
 -(void)registerAllNotifications;
 -(void)unregisterAllNotifications;

@@ -57,8 +57,6 @@
 #import "UIImageView+WebCache.h"
 #import "AFNetworking.h"
 #import "Masonry.h"
-#import "UIView+Toast.h"
-#import "YYText.h"
 #import "PPSets.h"
 
 #import "ScreenShotBackConfig.h"
@@ -69,12 +67,23 @@
 
 
 #import "PPToolsHelper.h"
-#import "PPCategoryMacros.h"
 #import "PPAdapterMacro.h"
 
 #import "PPCharlesUrls.h"
 
+#import <YYText/YYText.h>
+#import <PPKit/YYLabel+EasyMake.h>
+#import <PPKit/YYLabel+Attributed.h>
+#import <PPKit/NSMutableAttributedString+EasilyMake.h>
+#import <PPKit/NSObject+CalculateSize.h>
+#import <PPKit/UITableView+MakeTableV.h>
+#import <PPKit/NSObject+Runtime.h>
+#import <PPKit/NSString+Directory.h>
+#import <PPKit/NSArray+Sort.h>
+#import <PPKit/NSString+IsValid.h>
 
-#define pAngleToRadian(angle)  ((angle)*M_PI/180)  //p代表parameter
+//2018-01-15
+#import "PPKitDefines.h"
+
 
 #endif /* PPDemos_pch */

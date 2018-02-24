@@ -35,7 +35,7 @@
         {
             
             NSMutableAttributedString *nameMutStr = [[NSMutableAttributedString alloc]initWithString:placeholderStr];
-            [nameMutStr pp_setColor:[UIColor pp_randomColor]];
+            [nameMutStr pp_setColor:[UIColor purpleColor]];
             [nameMutStr pp_setFont:[UIFont systemFontOfSize:6]];
             [nameMutStr pp_setKern:@2];
             self.rightTF.attributedPlaceholder = nameMutStr;

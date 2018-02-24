@@ -7,7 +7,7 @@
 //
 
 #import "PPDetailCellDisplyAnimationViewController.h"
-#import "UITableViewCell+ShowAnimations.h"
+//#import "UITableViewCell+ShowAnimations.h"
 
 @interface PPDetailCellDisplyAnimationViewController ()
 {
@@ -65,12 +65,15 @@
 }
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    cell.backgroundColor = [UIColor pp_randomColor];
+    cell.backgroundColor = [UIColor blueColor];
     
     if (![self.cellAnimationIndexPaths containsObject:indexPath]) {
         [self.cellAnimationIndexPaths addObject:indexPath];
         CGFloat rowHeight = [self tableView:tableView heightForRowAtIndexPath:indexPath];
-        [cell pp_showAnimationWithAnimationStyle:UITableViewCellShowAnimationStyleBottomTop cellHeight:rowHeight tableView:tableView indexPath:indexPath];
+#warning pp605 img start
+//        [cell pp_showAnimationWithAnimationStyle:UITableViewCellShowAnimationStyleBottomTop cellHeight:rowHeight tableView:tableView indexPath:indexPath];
+#warning pp605 img start
+
     }
 }
 

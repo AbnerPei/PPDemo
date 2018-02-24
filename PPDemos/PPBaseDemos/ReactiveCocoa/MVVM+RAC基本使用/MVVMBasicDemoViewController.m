@@ -83,7 +83,7 @@
         _loginBT = [UIButton buttonWithType:UIButtonTypeCustom];
         [_loginBT setTitle:@"login" forState:(UIControlStateNormal)];
         _loginBT.frame = CGRectMake(40, 200, ScreenWidth-80, 45);
-        [_loginBT setTitleColor:[UIColor pp_blueColor] forState:UIControlStateNormal];
+        [_loginBT setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     }
     return _loginBT;
 }

@@ -24,7 +24,7 @@
 {
     UIButton * bt = [UIButton buttonWithType:UIButtonTypeCustom];
     bt.frame = CGRectMake(30, 30, 100, 50);
-    bt.backgroundColor = [UIColor pp_tawnyColor];
+    bt.backgroundColor = [UIColor blueColor];
     [bt setTitle:@"点击" forState:UIControlStateNormal];
     [bt addTarget:self action:@selector(ButtonClicked) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:bt];

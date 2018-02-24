@@ -37,20 +37,38 @@
 //    UIView *redv = [[UIView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 120)];
 //    redv.backgroundColor = [UIColor redColor];
 //    self.tableView.tableHeaderView = redv;
+
     
+    //2018-02-23 更新 --- start
     
+    //"不建议使用此属性，开发者请自行控制footer的显示和隐藏。基于安全考虑，在未来的某些版本此属性可能作废"
     
-    //感谢[生活要多点蛋定](http://www.jianshu.com/u/001cb51446ab)
-    //Q:第一次运行程序,上拉和下拉的刷新控件都会显示,如果没有网的时候就两个都显示
-    
-    /** 自动根据有无数据来显示和隐藏（有数据就显示，没有数据隐藏。默认是NO） */
+    /*
+     //感谢[生活要多点蛋定](http://www.jianshu.com/u/001cb51446ab)
+     //Q:第一次运行程序,上拉和下拉的刷新控件都会显示,如果没有网的时候就两个都显示
+    // 自动根据有无数据来显示和隐藏（有数据就显示，没有数据隐藏。默认是NO）
     self.tableView.mj_footer.automaticallyHidden = YES;
+    */
+    
+    self.tableView.mj_footer.hidden = YES;
+    //记住，如果需要footer的话，需要在数据加载完成后（比如：getNetworkData方法里面），修改为No。
+    
+    //2018-02-23 更新 --- end
+
     
 }
 
 -(void)refresh
 {
-    [self getNetworkData:YES];
+    NSLog(@"%s---%@",__func__,[NSThread currentThread]);
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSLog(@"%s---%@",__func__,[NSThread currentThread]);
+
+        [self getNetworkData:YES];
+    });
+    NSLog(@"%s---%@",__func__,[NSThread currentThread]);
+
+    
 }
 -(void)loadMore
 {

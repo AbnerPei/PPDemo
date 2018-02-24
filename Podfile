@@ -11,19 +11,17 @@ target 'PPDemos' do
        pod "MJExtension"
        pod "MJRefresh"
        pod "Masonry"
-       pod "YYText"
-       pod "YYModel"
+     #  pod "YYKit"
 
        pod "YTKNetwork"
        pod "IQKeyboardManager"
-   pod 'ReactiveCocoa', '~> 6.0.0-rc.3'
-   pod 'ReactiveObjC', '~> 3.0.0'
+      # pod 'ReactiveCocoa', '~> 6.0.0-rc.3'
+       pod 'ReactiveObjC', '~> 3.0.0'
+       pod 'Realm'
+       pod 'Shimmer', '~> 1.0.2'
 
-pod 'Realm'
+       pod 'PPKit', '0.0.00060'
 
-
-pod 'Shimmer', '~> 1.0.2'
-       
 
        
        

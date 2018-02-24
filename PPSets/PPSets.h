@@ -9,23 +9,6 @@
 #ifndef PPSets_h
 #define PPSets_h
 
-/**
- *  UI 系列
- */
-#import "UIImage+PPSets.h"
-#import "UIColor+PPSets.h"
-#import "UIButton+PPSets.h"
-#import "UIApplication+PPSets.h"
-#import "UIImageView+PPSets.h"
-
-
-
-/**
- *  NS 系列
- */
-#import "NSObject+PPSets.h"
-
-
 /*
  * PPTool 工具
  */

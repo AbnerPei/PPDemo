@@ -118,7 +118,7 @@ void arraySort4() {
 -(void)arrayInverted
 {
     NSArray *originalArr = @[@"1",@"2",@"3",@"4",@"5"];
-    NSArray *resultArr = [originalArr pp_array_reversed];
+    NSArray *resultArr = [originalArr pp_arrReversed];
     NSLog(@"end11 %@",resultArr);
     
     [originalArr enumerateObjectsWithOptions:NSEnumerationReverse usingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {

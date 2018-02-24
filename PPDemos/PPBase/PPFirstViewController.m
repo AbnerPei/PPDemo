@@ -41,6 +41,10 @@
 -(void)setupArrs
 {
     self.titles = [@[
+//                     @"tableview右边索引",
+                     @"学点新知识（API学习）",
+                     @"轻轻松松runtime学习",
+                     @"好的博客demos",
                      @"MJRefrsh使用Demos",
                      @"Realm使用集合",
                      @"MJExtension使用Demos",
@@ -61,7 +65,10 @@
                      ] mutableCopy];
     
     self.vcs = [@[
-                  
+//                  @"PPSectionTitleIndexDemoViewController",
+                  @"PPLearningBaseViewController",
+                  @"PPRuntimeBlogDemosBaseViewController",
+                  @"PPOtherBlogDemosBaseViewController",
                   @"MJBaseViewController",
                   @"PPRealmBaseViewController",
                   @"MJExtensionBaseViewController",

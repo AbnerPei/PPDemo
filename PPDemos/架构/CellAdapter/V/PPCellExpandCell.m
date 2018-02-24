@@ -35,59 +35,63 @@
     self.stateView.backgroundColor = [UIColor grayColor];
     [self.contentView addSubview:self.stateView];
     
-    self.normalLabel = [YYLabel pp_lbMakeWithSuperV:self.contentView bgColor:nil font:@14 textColor:[UIColor blackColor] numberOfLines:3];
+    self.normalLabel = [YYLabel pp_lbMakeWithSuperV:self.contentView bgColor:nil font:@"14" textColor:[UIColor blackColor] numberOfLines:3];
     
-    self.expendLabel = [YYLabel pp_lbMakeWithSuperV:self.contentView bgColor:nil font:@14 textColor:[UIColor blackColor] numberOfLines:0];
+    self.expendLabel = [YYLabel pp_lbMakeWithSuperV:self.contentView bgColor:nil font:@"14" textColor:[UIColor blackColor] numberOfLines:0];
 
 }
 
--(void)pp_cellAddDataAndFrame
-{
-    ShowTextModel   *model   = self.cellAdapter.cellData;
-    PPCellAdapter *adapter = self.cellAdapter;
+//-(void)pp_cellAddDataAndFrame
+//{
+//#warning pp605 img start
+//    ShowTextModel   *model   = self.cellAdapter.cellData;
+//
+//    PPCellAdapter *adapter = self.cellAdapter;
+//
+//    if (adapter.cellType == kShowTextCellNormalType) {
+//
+//        self.normalLabel.text  = model.inputString;
+//        self.normalLabel.frame = CGRectMake(10, KLBTop, ScreenWidth - 20, model.normalStringHeight);
+//        self.normalLabel.alpha = 1;
+//        [self.normalLabel sizeToFit];
+//
+//        self.expendLabel.text  = model.inputString;
+//        self.expendLabel.frame = CGRectMake(10, KLBTop, ScreenWidth - 20, model.normalStringHeight);
+//        self.expendLabel.alpha = 0;
+//        [self.expendLabel sizeToFit];
+//
+//        self.stateView.backgroundColor = [UIColor grayColor];
+//
+//    } else {
+//
+//        self.normalLabel.text  = model.inputString;
+//        self.normalLabel.frame = CGRectMake(10, KLBTop, ScreenWidth - 20, model.expendStringHeight);
+//        self.normalLabel.alpha = 0;
+//        [self.normalLabel sizeToFit];
+//        self.normalLabel.numberOfLines = 0;
+//
+//        self.expendLabel.text  = model.inputString;
+//        self.expendLabel.frame = CGRectMake(10, KLBTop, ScreenWidth - 20, model.expendStringHeight);
+//        self.expendLabel.alpha = 1;
+//        self.expendLabel.numberOfLines = 0;
+//
+//        [self.expendLabel sizeToFit];
+//
+//        self.stateView.backgroundColor = [UIColor redColor];
+//    }
+//
+//    if (self.indexPath.row == 0) {
+//
+//        self.line.hidden = YES;
+//
+//    } else {
+//
+//        self.line.hidden = NO;
+//    }
+//
+//}
+#warning pp605 img start
 
-    if (adapter.cellType == kShowTextCellNormalType) {
-        
-        self.normalLabel.text  = model.inputString;
-        self.normalLabel.frame = CGRectMake(10, KLBTop, ScreenWidth - 20, model.normalStringHeight);
-        self.normalLabel.alpha = 1;
-        [self.normalLabel sizeToFit];
-        
-        self.expendLabel.text  = model.inputString;
-        self.expendLabel.frame = CGRectMake(10, KLBTop, ScreenWidth - 20, model.normalStringHeight);
-        self.expendLabel.alpha = 0;
-        [self.expendLabel sizeToFit];
-        
-        self.stateView.backgroundColor = [UIColor grayColor];
-        
-    } else {
-        
-        self.normalLabel.text  = model.inputString;
-        self.normalLabel.frame = CGRectMake(10, KLBTop, ScreenWidth - 20, model.expendStringHeight);
-        self.normalLabel.alpha = 0;
-        [self.normalLabel sizeToFit];
-        self.normalLabel.numberOfLines = 0;
-        
-        self.expendLabel.text  = model.inputString;
-        self.expendLabel.frame = CGRectMake(10, KLBTop, ScreenWidth - 20, model.expendStringHeight);
-        self.expendLabel.alpha = 1;
-        self.expendLabel.numberOfLines = 0;
-
-        [self.expendLabel sizeToFit];
-        
-        self.stateView.backgroundColor = [UIColor redColor];
-    }
-    
-    if (self.indexPath.row == 0) {
-        
-        self.line.hidden = YES;
-        
-    } else {
-        
-        self.line.hidden = NO;
-    }
-
-}
 
 +(CGFloat)pp_cellHeightWithCellData:(id)data
 {
@@ -95,9 +99,9 @@
     
     if (model) {
         
-        CGFloat totalStringHeight = [YYLabel pp_calculateSizeWithContainerSize:CGSizeMake(ScreenWidth - 20.f, CGFLOAT_MAX) text:model.inputString font:@14 calculateForType:PPCalculateSizeForTypeYYLabel].height;
+        CGFloat totalStringHeight = [YYLabel pp_calculateSizeWithContainerSize:CGSizeMake(ScreenWidth - 20.f, CGFLOAT_MAX) text:model.inputString font:@"14" calculateForType:PPCalculateSizeForTypeYYLabel].height;
 
-        CGFloat oneLineHeight = [YYLabel pp_calculatedSizeOneLineWithFont:@14 calculateForType:PPCalculateSizeForTypeYYLabel].height;
+        CGFloat oneLineHeight = [YYLabel pp_calculateSizeOneLineWithFontStr:@"14" calculateForType:PPCalculateSizeForTypeYYLabel].height;
 
         CGFloat normalTextHeight  = totalStringHeight >= 3 * oneLineHeight ? 3 * oneLineHeight : totalStringHeight;
         
@@ -113,22 +117,24 @@
 
 
 - (void)changeState {
-    
-    ShowTextModel   *model   = self.cellAdapter.cellData;
-    PPCellAdapter *adapter = self.cellAdapter;
-    
-    if (adapter.cellType == kShowTextCellNormalType) {
-        
-        adapter.cellType = kShowTextCellExpendType;
-        [self pp_cellUpdateWithNewCellHeight:model.expendStringHeight animated:YES];
-        [self expendState];
-        
-    } else {
-        
-        adapter.cellType = kShowTextCellNormalType;
-        [self pp_cellUpdateWithNewCellHeight:model.normalStringHeight animated:YES];
-        [self normalState];
-    }
+#warning pp605 img start
+//    ShowTextModel   *model   = self.cellAdapter.cellData;
+//    PPCellAdapter *adapter = self.cellAdapter;
+//
+//    if (adapter.cellType == kShowTextCellNormalType) {
+//
+//        adapter.cellType = kShowTextCellExpendType;
+//        [self pp_cellUpdateWithNewCellHeight:model.expendStringHeight animated:YES];
+//        [self expendState];
+//
+//    } else {
+//
+//        adapter.cellType = kShowTextCellNormalType;
+//        [self pp_cellUpdateWithNewCellHeight:model.normalStringHeight animated:YES];
+//        [self normalState];
+//    }
+#warning pp605 img start
+
 }
 
 -(void)pp_cellDidSelected

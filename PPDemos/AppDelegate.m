@@ -8,10 +8,14 @@
 
 #import "AppDelegate.h"
 #import "TabBarViewController.h"
-#import "NSString+WordCount.h"
 #import "PPDebugTool.h"
 #import <realm/realm.h>
 #import <CommonCrypto/CommonDigest.h>
+
+#import "NSDate+Helper.h"
+#import "NSDate+EasyDateHelper.h"
+#import "NSDateFormatter+Helper.h"
+#import "NSDateFormatter+EasyDateFormatterHelper.h"
 
 @interface AppDelegate ()
 
@@ -64,6 +68,19 @@
     
     
 }
+-(void)dateTest{
+    NSString *dateStr1 = @"2018-01-09 21:15:00";
+    NSString *dateStr2 = @"2018-01-09 23:40:00";
+    NSInteger p1 = [NSDate pp_dateIntervalBetweenADateStr:dateStr1 bDateStr:dateStr2 dateStyle:PPNSDateStyleLine_yyyyMMdd_HHmmss];
+    NSInteger p2 = [NSDate pp_dateIntervalBetweenADateStr:dateStr2 bDateStr:dateStr1 dateStyle:PPNSDateStyleLine_yyyyMMdd_HHmmss];
+    NSInteger p3 = labs(p2);
+    PPLog(@"p1 is %ld \n p2 is %ld \n p3 is %ld",(long)p1,(long)p2,(long)p3);
+    
+    NSString *a = @"20TT7888T09";
+    NSString *b = [a stringByReplacingOccurrencesOfString:@"T" withString:@"波"];
+    PPLog(@"a is %@\n b is %@",a,b);
+    
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
@@ -72,18 +89,10 @@
     TabBarViewController *tabBarVC = [[TabBarViewController alloc]init];
     self.window.rootViewController = tabBarVC;
     
-    NSString *md5Str2 = [@"123123" pp_string_md5];
-    NSLog(@"md52---%@",md5Str2);
+//    [self urlSessionTest];
     
-    NSString *testStr = @"This is a test. This is only a test.";
-    NSUInteger wordCount = [testStr pp_wordCount];
-    NSLog(@"wordCount is %ld",wordCount);
     
-    NSUInteger givenStrCount = [testStr pp_wordCountWithGivenStr:@"This"];
-    NSLog(@"givenStrCount is %ld",givenStrCount);
-    
-    [self urlSessionTest];
-    
+    [self dateTest];
     
 #warning 第三步
     

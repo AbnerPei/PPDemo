@@ -30,6 +30,8 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.tableView setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
+    
+    NSLog(@"%s--%@",__func__,self.tableView);
 }
 #pragma mark - Table view data source
 
@@ -44,7 +46,11 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
-    UITableViewCell *cell = [UITableViewCell pp_cellMakeWithTableView:tableView];
+#warning pp605 img start
+    UITableViewCell *cell = [self pp_cellMakeWithTableView:tableView];
+//    [UITableViewCell pp_cellMakeWithTableView:tableView];
+#warning pp605 img start
+
     cell.textLabel.textColor = PPRandomColor;
     cell.textLabel.text = self.titles[indexPath.row];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
@@ -52,9 +58,24 @@
 
     return cell;
 }
+-(UITableViewCell *)pp_cellMakeWithTableView:(UITableView *)tableView
+{
+    if (!tableView) {
+        NSLog(@"%@%s",@"你未传入有效tableView,虽然不影响获取cell,但无法复用！！！",__func__);
+    }
+    NSString * identifier = [NSString stringWithFormat:@"%@Identifier",NSStringFromClass([UITableViewCell class])];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    if (!cell) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+    }
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    return cell;
+}
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSLog(@"%s--%@",__func__,tableView);
+
     // 取消选中状态
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     

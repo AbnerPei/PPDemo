@@ -20,7 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.view.backgroundColor = [UIColor pp_violetColor];
+    self.view.backgroundColor = [UIColor purpleColor];
     
     [self creatBtWithFrame:CGRectMake(10, 70, 190, 40) title:@"1给日历添加一个事件" andTarget:@selector(addEvent)];
     
@@ -32,7 +32,7 @@
     lb.text = @"没进来就会创建一个日历事件\n然后切换到系统对应今天会增加一个事件\n11分钟后会弹出提醒事件\n15分钟后会关闭这个事件";
     lb.numberOfLines = 0;
     lb.font = [UIFont systemFontOfSize:18];
-    lb.textColor = [UIColor pp_whiteColor];
+    lb.textColor = [UIColor whiteColor];
     [self.view addSubview:lb];
     
     
@@ -42,7 +42,7 @@
 {
     UIButton *bt = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     bt.frame = frame;
-    bt.backgroundColor = [UIColor pp_cyanColor];
+    bt.backgroundColor = [UIColor cyanColor];
     [self.view addSubview:bt];
     [bt setTitle:title forState:UIControlStateNormal];
     [bt addTarget:self action:target forControlEvents:UIControlEventTouchUpInside];

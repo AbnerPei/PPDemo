@@ -13,11 +13,11 @@
                             cellAdapter:(PPCellAdapter *)cellAdapter
                               indexPath:(NSIndexPath *)indexPath
 {
-    PPBaseCell *cell = [tableView dequeueReusableCellWithIdentifier:cellAdapter.cellIdentifier];
+    PPBaseCell *cell = [tableView dequeueReusableCellWithIdentifier:cellAdapter.pp_ca_reuseIdentifier];
     if (!cell) {
-        cell = [[self alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellAdapter.cellIdentifier];
+        cell = [[self alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellAdapter.pp_ca_reuseIdentifier];
     }
-    [cell pp_cellSetupWithAdapter:cellAdapter cellData:cellAdapter.cellData tableView:tableView indexPath:indexPath];
+    [cell pp_cellSetupWithAdapter:cellAdapter cellData:cellAdapter.pp_ca_dataSource tableView:tableView indexPath:indexPath];
     [cell pp_cellAddDataAndFrame];
     return cell;
 }

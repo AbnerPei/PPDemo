@@ -9,7 +9,6 @@
 #import "PPTextFieldDemoViewController.h"
 #import "PPTextFieldDemoCell.h"
 #import "PPTFModel.h"
-#import "NSString+Verify.h"
 #import "UITextField+EmptyWarning.h"
 
 @interface PPTextFieldDemoViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -35,7 +34,7 @@
 -(void)creatVCUI
 {
     _tableView= [[UITableView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight) style:UITableViewStylePlain];
-    _tableView.backgroundColor = [UIColor pp_strawberryColor];
+    _tableView.backgroundColor = [UIColor whiteColor];
     _tableView.delegate = self;
     _tableView.dataSource = self;
     //去掉多余的分割线
@@ -55,7 +54,7 @@
     PPTextFieldDemoCell *cell = [PPTextFieldDemoCell cellWithTableView:tableView];
     [cell setupCellWithLimitStyle:indexPath.row andPPTFModel:_aPPTFModel];
     if (indexPath.row%2 == 0) {
-        cell.rightTF.backgroundColor = [UIColor pp_lightGrayColor];
+        cell.rightTF.backgroundColor = [UIColor lightGrayColor];
     }
     
     cell.rightTF.ppTextfieldTextChangedBlock = ^(PPTextfield *tf){
@@ -78,12 +77,12 @@
             NSLog(@"(电话号码)phoneNumber is %@",self.aPPTFModel.pptfPhone);
             [self.view endEditing:YES];
 
-            if ([self.aPPTFModel.pptfPhone pp_isPhoneNumber]) {
-                UIAlertView(@"很好，你输入了正确的电话号码");
-            }else{
+//            if ([self.aPPTFModel.pptfPhone pp_isPhoneNumber]) {
+//                UIAlertView(@"很好，你输入了正确的电话号码");
+//            }else{
 //                UIAlertView(@"你是逗比吧，连个电话号码的格式都不知道！");
                 [tf pp_showEmptyWarning];
-            }
+//            }
         }
     };
     

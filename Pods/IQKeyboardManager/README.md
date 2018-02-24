@@ -20,7 +20,7 @@ Often while developing an app, We ran into an issues where the iPhone keyboard s
 [![Issue Stats](http://issuestats.com/github/hackiftekhar/iqkeyboardmanager/badge/pr?style=flat)](http://issuestats.com/github/hackiftekhar/iqkeyboardmanager)
 [![Issue Stats](http://issuestats.com/github/hackiftekhar/iqkeyboardmanager/badge/issue?style=flat)](http://issuestats.com/github/hackiftekhar/iqkeyboardmanager)
 
-1) `**CODELESS**, Zero Line Of Code`
+1) `**CODELESS**, Zero Lines Of Code`
 
 2) `Works Automatically`
 
@@ -47,6 +47,15 @@ Often while developing an app, We ran into an issues where the iPhone keyboard s
 <a href="http://youtu.be/WAYc2Qj-OQg" target="_blank"><img src="http://img.youtube.com/vi/WAYc2Qj-OQg/0.jpg"
 alt="IQKeyboardManager Demo Video" width="480" height="360" border="10" /></a>
 
+## Tutorial video by @rebeloper ([#1135](https://github.com/hackiftekhar/IQKeyboardManager/issues/1135))
+
+@rebeloper demonstrated two videos on how to implement this library at it's core:
+
+<a href="https://www.youtube.com/playlist?list=PL_csAAO9PQ8aTL87XnueOXi3RpWE2m_8v" target="_blank"><img src="https://raw.githubusercontent.com/hackiftekhar/IQKeyboardManager/master/Screenshot/ThirdPartyYoutubeTutorial.jpg"
+alt="Youtube Tutorial Playlist"/></a>
+
+https://www.youtube.com/playlist?list=PL_csAAO9PQ8aTL87XnueOXi3RpWE2m_8v
+
 ## Warning
 
 - **If you're planning to build SDK/library/framework and wants to handle UITextField/UITextView with IQKeyboardManager then you're totally going on wrong way.** I would never suggest to add IQKeyboardManager as dependency/adding/shipping with any third-party library, instead of adding IQKeyboardManager you should implement your custom solution to achieve same result. IQKeyboardManager is totally designed for projects to help developers for their convenience, it's not designed for adding/dependency/shipping with any third-party library, because **doing this could block adoption by other developers for their projects as well(who are not using IQKeyboardManager and implemented their custom solution to handle UITextField/UITextView thought the project).**
@@ -55,60 +64,60 @@ alt="IQKeyboardManager Demo Video" width="480" height="360" border="10" /></a>
 ## Requirements
 [![Platform iOS](https://img.shields.io/badge/Platform-iOS-blue.svg?style=fla)]()
 
-#### IQKeyboardManager:-
-[![Objective-c](https://img.shields.io/badge/Language-Objective C-blue.svg?style=flat)](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html)
+|                        | Language | Minimum iOS Target | Minimum Xcode Version |
+|------------------------|----------|--------------------|-----------------------|
+| IQKeyboardManager      | Obj-C    | iOS 8.0            | Xcode 8.2.1           |
+| IQKeyboardManagerSwift | Swift    | iOS 8.0            | Xcode 8.2.1           |
+| Demo Project           |          |                    | Xcode 9.0             |
 
-Minimum iOS Target: iOS 8.0
+**Note**
+- 3.3.7 is the last iOS 7 supported version.
 
-Minimum Xcode Version: Xcode 6.0.1
+#### Swift versions support
 
-#### IQKeyboardManagerSwift:-
-[![Swift 3.1 compatible](https://img.shields.io/badge/Language-Swift3-blue.svg?style=flat)](https://developer.apple.com/swift)
+| Swift       | Xcode | IQKeyboardManagerSwift |
+|-------------|-------|------------------------|
+| 4.X         | 9.0   | >= 5.0.0               |
+| 4.0         | 9.0   | 5.0.0                  |
+| 3.1         | 8.3   | 4.0.10                 |
+| 3.0 (3.0.2) | 8.2   | 4.0.8                  |
+| 2.2 or 2.3  | 7.3   | 4.0.5                  |
+| 2.1.1       | 7.2   | 4.0.0                  |
+| 2.0         | 7.0   | 3.3.3.1                |
 
-Minimum iOS Target: iOS 8.0
-
-Minimum Xcode Version: Xcode 8.0
-
-#### Demo Project:-
-
-Minimum Xcode Version: Xcode 8.3
-
+**Note**
+- `5.0.0` is backward compatible till Swift 3.
 
 Installation
 ==========================
 
-#### Installation with Cocoapod:-
+#### Installation with CocoaPods
 
 [![CocoaPods](https://img.shields.io/cocoapods/v/IQKeyboardManager.svg)](http://cocoadocs.org/docsets/IQKeyboardManager)
 
-**Note:-** 
-- 3.3.7 is the last iOS 7 supported version.
-
-***IQKeyboardManager (Objective-C):-*** IQKeyboardManager is available through [CocoaPods](http://cocoapods.org), to install
+***IQKeyboardManager (Objective-C):*** IQKeyboardManager is available through [CocoaPods](http://cocoapods.org), to install
 it simply add the following line to your Podfile: ([#9](https://github.com/hackiftekhar/IQKeyboardManager/issues/9))
 
-*iOS8 and later* `pod 'IQKeyboardManager'`
+```ruby
+pod 'IQKeyboardManager' #iOS8 and later
 
-*iOS7* `pod 'IQKeyboardManagerSwift', '3.3.7'`
+pod 'IQKeyboardManager', '3.3.7' #iOS7
+```
 
-***IQKeyboardManager (Swift):-*** IQKeyboardManagerSwift is available through [CocoaPods](http://cocoapods.org), to install
+***IQKeyboardManager (Swift):*** IQKeyboardManagerSwift is available through [CocoaPods](http://cocoapods.org), to install
 it simply add the following line to your Podfile: ([#236](https://github.com/hackiftekhar/IQKeyboardManager/issues/236))
 
-*Swift 3.1 (Xcode 8.0)*
+*Swift 4.0 (Xcode 9.0)*
 
-`pod 'IQKeyboardManagerSwift'`
+```ruby
+pod 'IQKeyboardManagerSwift'
+```
 
-*Or*
+*Or you can choose version you need based on Swift support table from [Requirements](README.md#requirements)*
 
-`pod 'IQKeyboardManagerSwift', '4.0.9'`
-
-*Swift 3.0(3.0.2) (Xcode 8.2)* `pod 'IQKeyboardManagerSwift', '4.0.8'`
-
-*Swift 2.2 or 2.3 (Xcode 7.3)* `pod 'IQKeyboardManagerSwift', '4.0.5'`
-
-*Swift 2.1.1 (Xcode 7.2)* `pod 'IQKeyboardManagerSwift', '4.0.0'`
-
-*Swift 2.0 (Xcode 7.0)* `pod 'IQKeyboardManagerSwift', '3.3.3.1'`
+```ruby
+pod 'IQKeyboardManagerSwift', '5.0.0'
+```
 
 In AppDelegate.swift, just import IQKeyboardManagerSwift framework and enable IQKeyboardManager.
 
@@ -149,15 +158,15 @@ github "hackiftekhar/IQKeyboardManager"
 Run `carthage` to build the frameworks and drag the appropriate framework (`IQKeyboardManager.framework` or `IQKeyboardManagerSwift.framework`) into your Xcode project according to your need. Make sure to add only one framework and not both.
 
 
-#### Installation with Source Code:-
+#### Installation with Source Code
 
 [![Github tag](https://img.shields.io/github/tag/hackiftekhar/iqkeyboardmanager.svg)]()
 
 
 
-***IQKeyboardManager (Objective-C):-*** Just ***drag and drop*** `IQKeyboardManager` directory from demo project to your project. That's it.
+***IQKeyboardManager (Objective-C):*** Just ***drag and drop*** `IQKeyboardManager` directory from demo project to your project. That's it.
 
-***IQKeyboardManager (Swift):-*** ***Drag and drop*** `IQKeyboardManagerSwift` directory from demo project to your project
+***IQKeyboardManager (Swift):*** ***Drag and drop*** `IQKeyboardManagerSwift` directory from demo project to your project
 
 In AppDelegate.swift, just enable IQKeyboardManager.
 
@@ -177,22 +186,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 ```
 
 
-## Known Issues:-
+## Known Issues
 
 You can find known issues list [here](https://github.com/hackiftekhar/IQKeyboardManager/blob/master/KNOWN%20ISSUES.md).
 
-Manual Management:-
+Manual Management:
 ---
 
 You can find some manual management tweaks & examples [here](https://github.com/hackiftekhar/IQKeyboardManager/blob/master/MANUAL%20MANAGEMENT.md).
 
 
 
-## Control Flow Diagram
-[![IQKeyboardManager CFD](https://raw.githubusercontent.com/hackiftekhar/IQKeyboardManager/v3.3.0/Screenshot/IQKeyboardManagerCFD.jpg)](https://raw.githubusercontent.com/hackiftekhar/IQKeyboardManager/v3.3.0/Screenshot/IQKeyboardManagerCFD.jpg)
+## Flow Diagram
+[![IQKeyboardManager CFD](https://raw.githubusercontent.com/hackiftekhar/IQKeyboardManager/master/Screenshot/IQKeyboardManagerFlowDiagram.jpg)](https://raw.githubusercontent.com/hackiftekhar/IQKeyboardManager/master/Screenshot/IQKeyboardManagerFlowDiagram.jpg)
+
+If you would like to see detailed Flow diagram then see [here](https://raw.githubusercontent.com/hackiftekhar/IQKeyboardManager/v3.3.0/Screenshot/IQKeyboardManagerCFD.jpg).
 
 
-## Properties and functions usage:-
+
+## Properties and functions usage
 
 You can find some documentation about properties, methods and their uses [here](https://github.com/hackiftekhar/IQKeyboardManager/blob/master/PROPERTIES%20%26%20FUNCTIONS.md).
 

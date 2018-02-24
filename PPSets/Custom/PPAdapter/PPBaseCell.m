@@ -61,7 +61,7 @@
 - (void)pp_cellUpdateWithNewCellHeight:(CGFloat)newCellHeight animated:(BOOL)animated
 {
     if (_tableView && _cellAdapter) {
-        _cellAdapter.cellHeight = newCellHeight;
+        _cellAdapter.pp_ca_height = newCellHeight;
         if (animated) {
             [_tableView beginUpdates];
             [_tableView endUpdates];

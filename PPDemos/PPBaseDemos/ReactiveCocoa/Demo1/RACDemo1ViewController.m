@@ -91,7 +91,7 @@
     [_btn setTitle:@"rac实现btn点击事件监听" forState:UIControlStateNormal];
     [self.view addSubview:_btn];
     _btn.frame = CGRectMake(0, ScreenHeight-50, ScreenWidth, 50);
-    _btn.backgroundColor = [UIColor pp_tawnyColor];
+    _btn.backgroundColor = [UIColor redColor];
     
     _textField = [[UITextField alloc]initWithFrame:CGRectMake(20, 80, ScreenWidth-40, 50)];
     _textField.placeholder = @"RAC实现tf代理做的事情";

@@ -8,7 +8,6 @@
 
 #import "MJExtensionViewController.h"
 #import "MJExtension.h"
-#import "YYModel.h"
 #import "User.h"
 #import "Status.h"
 #import "Ad.h"
@@ -26,6 +25,10 @@
 #import "EPeiResultModel.h"
 #import "EPeiDataModel.h"
 #import "EPeiOrderModel.h"
+
+
+#import <YYText/YYText.h>
+#import "PPLabel.h"
 
 
 @interface MJExtensionViewController ()
@@ -48,6 +51,62 @@
     self.title = @"模型转换demos";
     [self setupDatas];
     [self setupDatas_MJ];
+    
+    YYLabel *lb = [YYLabel new];
+    lb.backgroundColor = [UIColor lightGrayColor];
+    [self.view addSubview:lb];
+    lb.textVerticalAlignment = YYTextVerticalAlignmentCenter;
+    lb.font = [UIFont boldSystemFontOfSize:14];
+    lb.textColor = [UIColor whiteColor];
+    lb.text = @"看控制台打印";
+    lb.frame = CGRectMake(10, 100, 100, 80);
+    
+    PPLabel *lb5 = [PPLabel new];
+    lb5.backgroundColor = [UIColor lightGrayColor];
+    [self.view addSubview:lb5];
+//    lb5.verticalAlignment = PPTextVerticalAlignmentCenter;
+    lb5.font = [UIFont boldSystemFontOfSize:14];
+    lb5.textColor = [UIColor whiteColor];
+    lb5.text = @"看控制台打印";
+    lb5.frame = CGRectMake(110, 100, 280, 80);
+    
+    
+    YYLabel *lb1 = [YYLabel new];
+    lb1.backgroundColor = [UIColor lightGrayColor];
+    [self.view addSubview:lb1];
+    lb1.textVerticalAlignment = YYTextVerticalAlignmentCenter;
+    lb1.font = [UIFont boldSystemFontOfSize:14];
+    lb1.textColor = [UIColor whiteColor];
+    lb1.text = @"看控制台打印2";
+    lb1.frame = CGRectMake(10, 200, 100, 28);
+    
+    
+    
+    UILabel *lb2 = [UILabel new];
+    lb2.backgroundColor = [UIColor lightGrayColor];
+    [self.view addSubview:lb2];
+    lb2.font = [UIFont boldSystemFontOfSize:14];
+    lb2.textColor = [UIColor whiteColor];
+    lb2.text = @"看控制台打印3";
+    lb2.frame = CGRectMake(110, 200, 100, 28);
+    
+    
+    PPLabel *lb4 = [PPLabel new];
+    lb4.backgroundColor = [UIColor lightGrayColor];
+    [self.view addSubview:lb4];
+    lb4.font = [UIFont boldSystemFontOfSize:14];
+    lb4.textColor = [UIColor whiteColor];
+    lb4.text = @"看控制台打印4";
+    lb4.frame = CGRectMake(220, 200, 100, 28);
+    lb4.verticalAlignment = PPTextVerticalAlignmentCenter;
+    
+    UILabel *lb3 = [UILabel new];
+    lb3.backgroundColor = [UIColor lightGrayColor];
+    [self.view addSubview:lb3];
+    lb3.font = [UIFont boldSystemFontOfSize:14];
+    lb3.textColor = [UIColor whiteColor];
+    lb3.text = @"看控制台打印21";
+    lb3.frame = CGRectMake(10, 240, 100, 28);
     
     
     
@@ -193,8 +252,11 @@
      */
     
     //yy
-    NSDictionary *statusDict_yy = [status yy_modelToJSONObject];
-    NSLog(@"statusDict_yy----%@", statusDict_yy);
+#warning pp605 yy start
+//    NSDictionary *statusDict_yy = [status yy_modelToJSONObject];
+//    NSLog(@"statusDict_yy----%@", statusDict_yy);
+#warning pp605 yy start
+
 }
 
 
@@ -272,15 +334,17 @@
     }
     // name=null, icon=lufy.png
     // name=null, icon=nami.png
-    
+#warning pp605 yy start
+
     //yymodel解析
-    NSArray *userArray1 = [NSArray yy_modelArrayWithClass:[User class] json:dictArray];
-    for (User *user in userArray1) {
-        NSLog(@"yy---name=%@, icon=%@", user.name, user.icon);
-    }
+//    NSArray *userArray1 = [NSArray yy_modelArrayWithClass:[User class] json:dictArray];
+//    for (User *user in userArray1) {
+//        NSLog(@"yy---name=%@, icon=%@", user.name, user.icon);
+//    }
     // name=Jack, icon=lufy.png
     // name=Rose, icon=nami.png
-    
+#warning pp605 yy start
+
 }
 
 
@@ -360,19 +424,23 @@
 }
 -(void)dict882model_yy
 {
-    //字典转模型，支持模型的数组属性里面又装着模型
-    StatusResult *result = [StatusResult yy_modelWithDictionary:dict_m8a];
-    //打印博主信息
-    for (Status *status in result.statuses) {
-        NSString *text = status.text;
-        NSString *name = status.user.name;
-        NSString *icon = status.user.icon;
-        NSLog(@"yy---text=%@, name=%@, icon=%@", text, name, icon);
-    }
-    //打印广告
-    for (Ad *ad in result.ads) {
-        NSLog(@"yy---image=%@, url=%@", ad.image, ad.url);
-    }
+#warning pp605 yy start
+
+//    //字典转模型，支持模型的数组属性里面又装着模型
+//    StatusResult *result = [StatusResult yy_modelWithDictionary:dict_m8a];
+//    //打印博主信息
+//    for (Status *status in result.statuses) {
+//        NSString *text = status.text;
+//        NSString *name = status.user.name;
+//        NSString *icon = status.user.icon;
+//        NSLog(@"yy---text=%@, name=%@, icon=%@", text, name, icon);
+//    }
+//    //打印广告
+//    for (Ad *ad in result.ads) {
+//        NSLog(@"yy---image=%@, url=%@", ad.image, ad.url);
+//    }
+#warning pp605 yy start
+
     
     /*
      2016-07-04 13:47:58.994 PPDemos[3353:113055] mj---text=Nice weather!, name=Rose, icon=nami.png
@@ -407,17 +475,20 @@
 #pragma mark --3- 使用YYModel实现“复杂的字典”转“模型”
 -(void)dict82model_yy
 {
-    //字典转模型，模型里面含有模型
-    Status *status = [Status yy_modelWithDictionary:dict_m8m];
-    NSString *text = status.text;
-    NSString *name = status.user.name;
-    NSString *icon = status.user.icon;
-    NSLog(@"yy-----text=%@, name=%@, icon=%@", text, name, icon);
-    NSString *text2 = status.retweetedStatus.text;
-    NSString *name2 = status.retweetedStatus.user.name;
-    NSString *icon2 = status.retweetedStatus.user.icon;
-    NSLog(@"yy-----text2=%@, name2=%@, icon2=%@", text2, name2, icon2);
-    
+#warning pp605 yy start
+
+//    //字典转模型，模型里面含有模型
+//    Status *status = [Status yy_modelWithDictionary:dict_m8m];
+//    NSString *text = status.text;
+//    NSString *name = status.user.name;
+//    NSString *icon = status.user.icon;
+//    NSLog(@"yy-----text=%@, name=%@, icon=%@", text, name, icon);
+//    NSString *text2 = status.retweetedStatus.text;
+//    NSString *name2 = status.retweetedStatus.user.name;
+//    NSString *icon2 = status.retweetedStatus.user.icon;
+//    NSLog(@"yy-----text2=%@, name2=%@, icon2=%@", text2, name2, icon2);
+#warning pp605 yy start
+
     //打印结果
     //2016-07-04 11:45:39.675 PPDemos[2781:87089] mj-----text=Agree!Nice weather!, name=Jack, icon=lufy.png
     //2016-07-04 11:45:39.675 PPDemos[2781:87089] mj-----text2=Nice weather!, name2=Rose, icon2=nami.png
@@ -435,11 +506,15 @@
 #pragma mark --2- 使用YYModel实现“json”转“模型”
 -(void)json2model_yy
 {
-    User *user = [User yy_modelWithJSON:jsonStr];
-    NSLog(@"YY---%@----%@---%u",user.name,user.icon,user.age);
-    //打印结果
-    //2016-07-04 11:16:04.655 PPDemos[2563:78561] MJ---Jack----lufy.png---20
-    //2016-07-04 11:16:04.698 PPDemos[2563:78561] YY---Jack----lufy.png---20
+#warning pp605 yy start
+
+//    User *user = [User yy_modelWithJSON:jsonStr];
+//    NSLog(@"YY---%@----%@---%u",user.name,user.icon,user.age);
+//    //打印结果
+//    //2016-07-04 11:16:04.655 PPDemos[2563:78561] MJ---Jack----lufy.png---20
+//    //2016-07-04 11:16:04.698 PPDemos[2563:78561] YY---Jack----lufy.png---20
+#warning pp605 yy start
+
 }
 
 
@@ -456,8 +531,12 @@
 #pragma mark --1- 使用YYModel实现“字典”转“模型”
 -(void)dict2model_yy
 {
-    User *user = [User yy_modelWithDictionary:dict_user];
-    NSLog(@"YY---%@----%@---%u---%@---%@---%u----%d",user.name,user.icon,user.age,user.height,user.money,user.sex,user.gay);
+#warning pp605 yy start
+
+//    User *user = [User yy_modelWithDictionary:dict_user];
+//    NSLog(@"YY---%@----%@---%u---%@---%@---%u----%d",user.name,user.icon,user.age,user.height,user.money,user.sex,user.gay);
+#warning pp605 yy start
+
     //打印结果
     //2016-07-04 11:06:59.746 PPDemos[2432:73824] MJ---Jack----lufy.png---20---1.55---100.9---1----1
     //2016-07-04 11:06:59.814 PPDemos[2432:73824] YY---Jack----lufy.png---20---1.55---100.9---1----1

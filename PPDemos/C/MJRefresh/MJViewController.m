@@ -75,7 +75,7 @@
 //    }
     PPBaiSiRequest *request = [[PPBaiSiRequest alloc]initWithCategoryType:PPMissBaiSiCategoryTypePicture maxtime:self.maxtime currentPage:page perPageCount:20];
     [request startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
-        PPLog(@"success--%@---responseJSONObject--%@--responseObject-%@---%@",request,request.responseJSONObject,request.responseObject,[NSThread currentThread]);
+//        PPLog(@"success--%@---responseJSONObject--%@--responseObject-%@---%@",request,request.responseJSONObject,request.responseObject,[NSThread currentThread]);
         [self endRefresh];
         isJuhua = NO; //数据获取成功后，设置为NO
         
@@ -112,7 +112,7 @@
         //获取成功一次就判断
         isFirstCome = NO;
     } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
-        PPLog(@"请求失败---%@",request.error);
+//        PPLog(@"请求失败---%@",request.error);
         [self endRefresh];
     }];
 

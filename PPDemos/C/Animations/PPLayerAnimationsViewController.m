@@ -45,9 +45,9 @@
 //    [_imgV.layer setValue:[NSValue valueWithCATransform3D:CATransform3DMakeRotation(pAngleToRadian(45), 0, 1, 0)] forKey:Transform];
     
     //平易
-    [UIView animateWithDuration:0.8 animations:^{
-        [_imgV.layer setValue:[NSValue valueWithCGSize:CGSizeMake(200, 200)] forKeyPath:TransformTranslation];
-    }];
+//    [UIView animateWithDuration:0.8 animations:^{
+//        [_imgV.layer setValue:[NSValue valueWithCGSize:CGSizeMake(200, 200)] forKeyPath:TransformTranslation];
+//    }];
     
     //forKey 和 forKeyPath的区别
    //forKey 后面是单个key

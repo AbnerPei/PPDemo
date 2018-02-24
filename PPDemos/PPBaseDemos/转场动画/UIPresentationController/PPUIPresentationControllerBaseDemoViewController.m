@@ -38,7 +38,7 @@
     
     PPPresentationController *p = [[PPPresentationController alloc]initWithPresentedViewController:presentedVC presentingViewController:self];
     //默认是CGRectMake(0, ScreenHeight-300, ScreenWidth, 300);
-    p.presentedViewFrame = CGRectMake(0, ScreenHeight-100, ScreenWidth, 100);
+//    p.presentedViewFrame = CGRectMake(0, ScreenHeight-100, ScreenWidth, 100);
     [p present];
     
 }

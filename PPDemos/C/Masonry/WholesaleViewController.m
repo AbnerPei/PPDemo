@@ -164,7 +164,13 @@
 
 #pragma mark - tableView显示内容
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    WholesaleCell *cell = [WholesaleCell pp_cellMakeWithTableView:nil];
+#warning pp605 img start
+
+    WholesaleCell *cell =nil;
+#warning pp605 img start
+
+//    [WholesaleCell pp_cellMakeWithTableView:nil];
+#warning pp605 img start
 
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     if (indexPath.row == 0) {

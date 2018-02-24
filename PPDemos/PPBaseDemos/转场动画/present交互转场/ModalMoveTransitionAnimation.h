@@ -10,4 +10,15 @@
 
 @interface ModalMoveTransitionAnimation : NSObject<UIViewControllerAnimatedTransitioning>
 
+/*
+ 
+typedef NS_ENUM(NSInteger, UIViewAnimationCurve) {
+    UIViewAnimationCurveEaseInOut,         // 开始和结束时慢，中间快
+    UIViewAnimationCurveEaseIn,            // 开始慢
+    UIViewAnimationCurveEaseOut,           // 结束慢
+    UIViewAnimationCurveLinear,            //匀速的
+};
+ 
+ */
+
 @end

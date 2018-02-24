@@ -18,7 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.view.backgroundColor = [UIColor pp_cyanColor];
+    self.view.backgroundColor = [UIColor cyanColor];
     
     
 }
