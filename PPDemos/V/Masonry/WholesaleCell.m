@@ -66,18 +66,18 @@
 {
     [self.leftV mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.left.equalTo(self.contentView).offset(0);
-        make.size.equalTo(CGSizeMake(ScreenWidth/2-0.5, 104));
+        make.size.mas_equalTo(CGSizeMake(ScreenWidth/2-0.5, 104));
     }];
     
     [self.rightV makeConstraints:^(MASConstraintMaker *make) {
         make.top.right.equalTo(self.contentView).offset(0);
-        make.size.equalTo(CGSizeMake(ScreenWidth/2-0.5, 104));
+        make.size.mas_equalTo(CGSizeMake(ScreenWidth/2-0.5, 104));
     }];
     
     [self.middleLine makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.contentView).offset(0);
         make.centerX.equalTo(self.contentView.centerX);
-        make.size.equalTo(CGSizeMake(1, 104));
+        make.size.mas_equalTo(CGSizeMake(1, 104));
     }];
     
     [self.bottomLine makeConstraints:^(MASConstraintMaker *make) {
@@ -148,7 +148,7 @@
     [self.imgV mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(@15);
         make.centerX.equalTo(self);
-        make.size.equalTo(CGSizeMake(50, 50));
+        make.size.mas_equalTo(CGSizeMake(50, 50));
     }];
     
     [self.textLB makeConstraints:^(MASConstraintMaker *make) {

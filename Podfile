@@ -24,7 +24,8 @@ target 'PPDemos' do
 
 
        
-       
+       pod 'WCDB'
+
 
 
 end

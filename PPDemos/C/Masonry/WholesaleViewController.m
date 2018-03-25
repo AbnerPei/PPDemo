@@ -164,13 +164,12 @@
 
 #pragma mark - tableView显示内容
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-#warning pp605 img start
 
-    WholesaleCell *cell =nil;
-#warning pp605 img start
-
-//    [WholesaleCell pp_cellMakeWithTableView:nil];
-#warning pp605 img start
+    static NSString *cellIdentifier = @"wholesalecell";
+    WholesaleCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (!cell) {
+        cell = [[WholesaleCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    }
 
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     if (indexPath.row == 0) {

@@ -120,6 +120,8 @@
 		579ABC351F2ED36D0002E099 /* ModalTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 579ABC341F2ED36D0002E099 /* ModalTransitionAnimation.m */; };
 		579ABC391F2EF7DC0002E099 /* PPCustomLayer01.m in Sources */ = {isa = PBXBuildFile; fileRef = 579ABC381F2EF7DC0002E099 /* PPCustomLayer01.m */; };
 		579D2DEB1F384E6C0000C301 /* PersonBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 579D2DEA1F384E6C0000C301 /* PersonBlock.m */; };
+		579E29D52057B24B00A14F8A /* PPWCDBMessage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 579E29D02057B24A00A14F8A /* PPWCDBMessage.mm */; };
+		579E29D62057B24B00A14F8A /* PPWCDBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579E29D32057B24A00A14F8A /* PPWCDBBaseViewController.m */; };
 		579E2BCD20089A12007ACCA5 /* PPLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 579E2BCC20089A12007ACCA5 /* PPLabel.m */; };
 		57B0530C1F14608300F1CFB9 /* PPFaceBookBaswViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B0530B1F14608300F1CFB9 /* PPFaceBookBaswViewController.m */; };
 		57B053101F14610600F1CFB9 /* PPFBShimmeringDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B0530F1F14610600F1CFB9 /* PPFBShimmeringDemoViewController.m */; };
@@ -457,6 +459,11 @@
 		579ABC381F2EF7DC0002E099 /* PPCustomLayer01.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCustomLayer01.m; sourceTree = "<group>"; };
 		579D2DE91F384E6C0000C301 /* PersonBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonBlock.h; sourceTree = "<group>"; };
 		579D2DEA1F384E6C0000C301 /* PersonBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonBlock.m; sourceTree = "<group>"; };
+		579E29CE2057B24A00A14F8A /* PPWCDBMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPWCDBMessage.h; sourceTree = "<group>"; };
+		579E29CF2057B24A00A14F8A /* PPWCDBMessage+WCTTableCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PPWCDBMessage+WCTTableCoding.h"; sourceTree = "<group>"; };
+		579E29D02057B24A00A14F8A /* PPWCDBMessage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PPWCDBMessage.mm; sourceTree = "<group>"; };
+		579E29D22057B24A00A14F8A /* PPWCDBBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPWCDBBaseViewController.h; sourceTree = "<group>"; };
+		579E29D32057B24A00A14F8A /* PPWCDBBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPWCDBBaseViewController.m; sourceTree = "<group>"; };
 		579E2BCB20089A12007ACCA5 /* PPLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPLabel.h; sourceTree = "<group>"; };
 		579E2BCC20089A12007ACCA5 /* PPLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPLabel.m; sourceTree = "<group>"; };
 		57B0530A1F14608300F1CFB9 /* PPFaceBookBaswViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPFaceBookBaswViewController.h; sourceTree = "<group>"; };
@@ -1019,21 +1026,6 @@
 			path = thirdlibs;
 			sourceTree = "<group>";
 		};
-		573B00BF1FF94C9D0008903E /* PPSelfDemos */ = {
-			isa = PBXGroup;
-			children = (
-				573B00C01FF94C9D0008903E /* PPSectionTitileIndexViewDemo */,
-			);
-			path = PPSelfDemos;
-			sourceTree = "<group>";
-		};
-		573B00C01FF94C9D0008903E /* PPSectionTitileIndexViewDemo */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = PPSectionTitileIndexViewDemo;
-			sourceTree = "<group>";
-		};
 		573B00C11FFB19BC0008903E /* PPOtherBlogDemos */ = {
 			isa = PBXGroup;
 			children = (
@@ -1488,6 +1480,42 @@
 			path = "CALayer相关";
 			sourceTree = "<group>";
 		};
+		579E29CC2057B24A00A14F8A /* WCDB */ = {
+			isa = PBXGroup;
+			children = (
+				579E29CD2057B24A00A14F8A /* M */,
+				579E29D12057B24A00A14F8A /* C */,
+				579E29D42057B24A00A14F8A /* V */,
+			);
+			path = WCDB;
+			sourceTree = "<group>";
+		};
+		579E29CD2057B24A00A14F8A /* M */ = {
+			isa = PBXGroup;
+			children = (
+				579E29CE2057B24A00A14F8A /* PPWCDBMessage.h */,
+				579E29D02057B24A00A14F8A /* PPWCDBMessage.mm */,
+				579E29CF2057B24A00A14F8A /* PPWCDBMessage+WCTTableCoding.h */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		579E29D12057B24A00A14F8A /* C */ = {
+			isa = PBXGroup;
+			children = (
+				579E29D22057B24A00A14F8A /* PPWCDBBaseViewController.h */,
+				579E29D32057B24A00A14F8A /* PPWCDBBaseViewController.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		579E29D42057B24A00A14F8A /* V */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
 		579E2BCA200899F8007ACCA5 /* PPLabel */ = {
 			isa = PBXGroup;
 			children = (
@@ -1619,17 +1647,10 @@
 		57C227891EF3B82B00BE2A30 /* 数据库 */ = {
 			isa = PBXGroup;
 			children = (
+				579E29CC2057B24A00A14F8A /* WCDB */,
 				57B0FBD21FC2792C00FD1CCD /* Realm */,
-				57C2278A1EF3B82C00BE2A30 /* WCDB */,
 			);
 			path = "数据库";
-			sourceTree = "<group>";
-		};
-		57C2278A1EF3B82C00BE2A30 /* WCDB */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = WCDB;
 			sourceTree = "<group>";
 		};
 		57C227EE1EF3B95C00BE2A30 /* MapEngine */ = {
@@ -2142,7 +2163,6 @@
 			children = (
 				57E575CC20108B4400F5474C /* PPLearning */,
 				573B00C11FFB19BC0008903E /* PPOtherBlogDemos */,
-				573B00BF1FF94C9D0008903E /* PPSelfDemos */,
 				576CE1DB1FBEBD9A0051186B /* DataSources */,
 				57C227891EF3B82B00BE2A30 /* 数据库 */,
 				5791AC961EED7C81006BB7D8 /* 架构 */,
@@ -2415,6 +2435,7 @@
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/Shimmer/Shimmer.framework",
+				"${BUILT_PRODUCTS_DIR}/WCDB/WCDB.framework",
 				"${BUILT_PRODUCTS_DIR}/YTKNetwork/YTKNetwork.framework",
 				"${BUILT_PRODUCTS_DIR}/YYText/YYText.framework",
 			);
@@ -2430,6 +2451,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Shimmer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WCDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YTKNetwork.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYText.framework",
 			);
@@ -2446,6 +2468,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57E575EB2011EA4E00F5474C /* PPSectionTitleIndexDemo2ViewController.m in Sources */,
+				579E29D52057B24B00A14F8A /* PPWCDBMessage.mm in Sources */,
 				578C9C611F29B82100235B92 /* RegistViewController.m in Sources */,
 				C683FBCB1D2A00AF00D1BF6A /* User.m in Sources */,
 				570F724C1E82A4C5006BCAFC /* Quartz2DFirstCustomView.m in Sources */,
@@ -2549,6 +2572,7 @@
 				57F415CA200339A90079D809 /* PPRuntimeStudent.m in Sources */,
 				57F3CD9F200DA84A00D616E3 /* NSDateFormatter+Helper.m in Sources */,
 				5785B4F41F15F1D100D47461 /* PPUIPresentationControllerPresentedViewController.m in Sources */,
+				579E29D62057B24B00A14F8A /* PPWCDBBaseViewController.m in Sources */,
 				5711AE211F0E1BB4004D93F4 /* ACEViewController.m in Sources */,
 				57DAAB2F1E703DF4001C127E /* PPFirstViewController.m in Sources */,
 				57BFD0B51F34735900AFDB69 /* PPRedView.m in Sources */,

@@ -63,6 +63,9 @@ PODS:
     - SDWebImage/Core (= 4.3.0)
   - SDWebImage/Core (4.3.0)
   - Shimmer (1.0.2)
+  - WCDB (1.0.6):
+    - WCDB/sqlcipher (= 1.0.6)
+  - WCDB/sqlcipher (1.0.6)
   - YTKNetwork (2.0.4):
     - AFNetworking (~> 3.0)
   - YYText (1.0.7)
@@ -78,6 +81,7 @@ DEPENDENCIES:
   - Realm
   - SDWebImage
   - Shimmer (~> 1.0.2)
+  - WCDB
   - YTKNetwork
 
 SPEC CHECKSUMS:
@@ -91,9 +95,10 @@ SPEC CHECKSUMS:
   Realm: 42d1c38a5b1bbcc828b48a7ce702cb86fc68adf4
   SDWebImage: 6da6c8bca115addc4de8613362e1b15f66333825
   Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
+  WCDB: 4d2926bf695b2e00d785b50afd32c2dcc8cbbd98
   YTKNetwork: df8a7a5597bda1664a4efaa7ef871a818a887fe0
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 9154223dba3e11489deb543917616fc0a9da2e0f
+PODFILE CHECKSUM: 68f2e92a68c8576be42498df93d2044242e93dec
 
 COCOAPODS: 1.3.1

@@ -29,7 +29,7 @@
 //define this constant if you want to use Masonry without the 'mas_' prefix
 #define MAS_SHORTHAND
 //define this constant if you want to enable auto-boxing for default syntax
-#define MAS_SHORTHAND_GLOBALS
+//#define MAS_SHORTHAND_GLOBALS
 
 #ifdef DEBUG
 #define PPLog(...) NSLog(__VA_ARGS__)
