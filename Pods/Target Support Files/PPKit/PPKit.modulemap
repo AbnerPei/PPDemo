@@ -1,6 +1,0 @@
-framework module PPKit {
-  umbrella header "PPKit-umbrella.h"
-
-  export *
-  module * { export * }
-}

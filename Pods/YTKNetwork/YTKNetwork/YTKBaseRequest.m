@@ -25,12 +25,6 @@
 #import "YTKNetworkAgent.h"
 #import "YTKNetworkPrivate.h"
 
-#if __has_include(<AFNetworking/AFNetworking.h>)
-#import <AFNetworking/AFNetworking.h>
-#else
-#import "AFNetworking.h"
-#endif
-
 NSString *const YTKRequestValidationErrorDomain = @"com.yuantiku.request.validation";
 
 @interface YTKBaseRequest ()
@@ -94,6 +88,7 @@ NSString *const YTKRequestValidationErrorDomain = @"com.yuantiku.request.validat
     // nil out to break the retain cycle.
     self.successCompletionBlock = nil;
     self.failureCompletionBlock = nil;
+    self.uploadProgressBlock = nil;
 }
 
 - (void)addAccessory:(id<YTKRequestAccessory>)accessory {

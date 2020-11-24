@@ -1,0 +1,6 @@
+framework module PPMaker {
+  umbrella header "PPMaker-umbrella.h"
+
+  export *
+  module * { export * }
+}

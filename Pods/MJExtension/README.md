@@ -1,14 +1,31 @@
-
-![Logo](http://images.cnitblog.com/blog2015/497279/201505/051004316736641.png)
 MJExtension
 ===
-- A fast, convenient and nonintrusive conversion between JSON and model.
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+![podversion](https://img.shields.io/cocoapods/v/MJExtension.svg)
+- A fast, convenient and nonintrusive conversion framework between JSON and model.
 - 转换速度快、使用简单方便的字典转模型框架
 
-GitHub：[CoderMJLee](https://github.com/CoderMJLee) ｜ Blog：[mjios(Chinese)](http://www.cnblogs.com/mjios) ｜ PR is welcome，or [feedback](mailto:richermj123go@vip.qq.com)
+[📜✍🏻**Release Notes**: more details](https://github.com/CoderMJLee/MJExtension/releases)
+
+### ‼️ 纯Swift版的JSON与Model转换框架已经开源上架 ‼️
+
+- [KakaJSON](https://github.com/kakaopensource/KakaJSON)
+- [中文教程](https://www.cnblogs.com/mjios/p/11352776.html)
+- 如果你的项目是用Swift写的Model，墙裂推荐使用[KakaJSON](https://github.com/kakaopensource/KakaJSON)
+  - 已经对各种常用的数据场景进行了大量的单元测试
+  - 简单易用、功能丰富、转换快速
+
+
+
+### 关于在Swift中使用MJExtension ‼️
+
+#### ‼️ `@objc` attributes should be added to class and property for declaration of Objc accessibility [在 Swift4 之后, 请在属性前加 `@objc` 修饰. 以保证 Swift 的属性能够暴露给 Objc 使用. ]‼️
+#### ‼️ Use `NSNumber` instead of `Bool`, which is not bridged to `BOOL`. [请勿使用 `Bool` 类型, 因为在 Swift 中并没有桥接该类型, 不能显式的对应 `BOOL`, 请使用 `NSNumber` 替代] ‼️
+
 
 
 ## Contents
+
 * [Getting Started 【开始使用】](#Getting_Started)
 	* [Features 【能做什么】](#Features)
 	* [Installation 【安装】](#Installation)
@@ -25,6 +42,7 @@ GitHub：[CoderMJLee](https://github.com/CoderMJLee) ｜ Blog：[mjios(Chinese)]
 	* [Coding](#Coding)
 	* [Camel -> underline](#Camel_underline)
 	* [NSString -> NSDate, nil -> @""](#NSString_NSDate)
+	* [NSDate -> NSString](#NSDate_NSString)
 	* [More use cases](#More_use_cases)
 
 ---
@@ -39,7 +57,7 @@ GitHub：[CoderMJLee](https://github.com/CoderMJLee) ｜ Blog：[mjios(Chinese)]
 * `JSON Array` --> `Model Array`、`Core Data Model Array`
 * `JSONString` --> `Model Array`、`Core Data Model Array`
 * `Model Array`、`Core Data Model Array` --> `JSON Array`
-* Coding all properties of model in one line code.
+* Coding all properties of a model with only one line of code.
     * 只需要一行代码，就能实现模型的所有属性进行Coding（归档和解档）
 
 ## <a id="Installation"></a> Installation【安装】
@@ -51,7 +69,7 @@ pod 'MJExtension'
 ```
 
 ### Manually【手动导入】
-- Drag all source files under floder `MJExtension` to your project.【将`MJExtension`文件夹中的所有源代码拽入项目中】
+- Drag all source files under folder `MJExtension` to your project.【将`MJExtension`文件夹中的所有源代码拽入项目中】
 - Import the main header file：`#import "MJExtension.h"`【导入主头文件：`#import "MJExtension.h"`】
 
 ```objc
@@ -66,6 +84,8 @@ NSObject+MJKeyValue.h   NSObject+MJKeyValue.m
 ```
 
 # <a id="Examples"></a> Examples【示例】
+
+**Add `MJKeyValue` protocol to your model if needed【如果有需要, 请在模型中加入 `MJKeyValue` 协议】**
 
 ### <a id="JSON_Model"></a> The most simple JSON -> Model【最简单的字典转模型】
 
@@ -180,7 +200,7 @@ NSLog(@"text2=%@, name2=%@, icon2=%@", text2, name2, icon2);
 
 /***********************************************/
 
-// Tell MJExtension what type model will be contained in statuses and ads.
+// Tell MJExtension what type of model will be contained in statuses and ads.
 [StatusResult mj_setupObjectClassInArray:^NSDictionary *{
     return @{
                @"statuses" : @"Status",
@@ -268,7 +288,7 @@ for (Ad *ad in result.ads) {
 [Student mj_setupReplacedKeyFromPropertyName:^NSDictionary *{
     return @{
                @"ID" : @"id",
-               @"desc" : @"desciption",
+               @"desc" : @"description",
                @"oldName" : @"name.oldName",
                @"nowName" : @"name.newName",
                @"nameChangedTime" : @"name.info[1].nameChangedTime",
@@ -279,7 +299,7 @@ for (Ad *ad in result.ads) {
 
 NSDictionary *dict = @{
     @"id" : @"20",
-    @"desciption" : @"kids",
+    @"description" : @"kids",
     @"name" : @{
         @"newName" : @"lufy",
         @"oldName" : @"kitty",
@@ -531,7 +551,21 @@ Book *book = [Book mj_objectWithKeyValues:dict];
 NSLog(@"name=%@, publisher=%@, publishedTime=%@", book.name, book.publisher, book.publishedTime);
 ```
 
+### <a id="NSDate_NSString"></a> NSDate -> NSString【模型转字典时, 修改 Date 类型至 String】
+
+```objc
+- (void)mj_objectDidConvertToKeyValues:(NSMutableDictionary *)keyValues {
+    // NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    // formatter.dateFormat = @"yyy-MM-dd";
+    // should use sharedFormatter for better performance  
+    keyValues[@"publishedTime"] = [sharedFormatter stringFromDate:self.publishedTime];
+}
+```
+
+
+
 ### <a id="More_use_cases"></a> More use cases【更多用法】
+
 - Please reference to `NSObject+MJKeyValue.h` and `NSObject+MJCoding.h`
 
 
@@ -539,3 +573,4 @@ NSLog(@"name=%@, publisher=%@, publishedTime=%@", book.name, book.publisher, boo
 * 如果在使用过程中遇到BUG，希望你能Issues我，谢谢（或者尝试下载最新的框架代码看看BUG修复没有）
 * 如果在使用过程中发现功能不够用，希望你能Issues我，我非常想为这个框架增加更多好用的功能，谢谢
 * 如果你想为MJExtension输出代码，请拼命Pull Requests我
+

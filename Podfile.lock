@@ -1,104 +1,117 @@
 PODS:
-  - AFNetworking (3.2.0):
-    - AFNetworking/NSURLSession (= 3.2.0)
-    - AFNetworking/Reachability (= 3.2.0)
-    - AFNetworking/Security (= 3.2.0)
-    - AFNetworking/Serialization (= 3.2.0)
-    - AFNetworking/UIKit (= 3.2.0)
-  - AFNetworking/NSURLSession (3.2.0):
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.2.0)
-  - AFNetworking/Security (3.2.0)
-  - AFNetworking/Serialization (3.2.0)
-  - AFNetworking/UIKit (3.2.0):
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - IQKeyboardManager (5.0.7)
-  - Masonry (1.1.0)
-  - MJExtension (3.0.13)
-  - MJRefresh (3.1.15.3)
-  - PPKit (0.0.00060):
-    - PPKit/PPCategories (= 0.0.00060)
-    - PPKit/PPDependencyCategories (= 0.0.00060)
-    - PPKit/PPHelpers (= 0.0.00060)
-  - PPKit/PPCategories (0.0.00060):
-    - PPKit/PPCategories/NS (= 0.0.00060)
-    - PPKit/PPCategories/UI (= 0.0.00060)
-  - PPKit/PPCategories/NS (0.0.00060):
-    - PPKit/PPCategories/NS/NSArray (= 0.0.00060)
-    - PPKit/PPCategories/NS/NSData (= 0.0.00060)
-    - PPKit/PPCategories/NS/NSObject (= 0.0.00060)
-    - PPKit/PPCategories/NS/NSString (= 0.0.00060)
-  - PPKit/PPCategories/NS/NSArray (0.0.00060)
-  - PPKit/PPCategories/NS/NSData (0.0.00060)
-  - PPKit/PPCategories/NS/NSObject (0.0.00060)
-  - PPKit/PPCategories/NS/NSString (0.0.00060):
-    - PPKit/PPHelpers
-  - PPKit/PPCategories/UI (0.0.00060):
-    - PPKit/PPCategories/UI/UIButton (= 0.0.00060)
-    - PPKit/PPCategories/UI/UIColor (= 0.0.00060)
-    - PPKit/PPCategories/UI/UIControl (= 0.0.00060)
-    - PPKit/PPCategories/UI/UIScreen (= 0.0.00060)
-    - PPKit/PPCategories/UI/UITableView (= 0.0.00060)
-    - PPKit/PPCategories/UI/UIView (= 0.0.00060)
-    - PPKit/PPCategories/UI/UIViewController (= 0.0.00060)
-  - PPKit/PPCategories/UI/UIButton (0.0.00060)
-  - PPKit/PPCategories/UI/UIColor (0.0.00060)
-  - PPKit/PPCategories/UI/UIControl (0.0.00060):
-    - PPKit/PPCategories/NS/NSObject
-  - PPKit/PPCategories/UI/UIScreen (0.0.00060)
-  - PPKit/PPCategories/UI/UITableView (0.0.00060)
-  - PPKit/PPCategories/UI/UIView (0.0.00060)
-  - PPKit/PPCategories/UI/UIViewController (0.0.00060):
-    - PPKit/PPCategories/NS/NSObject
-  - PPKit/PPDependencyCategories (0.0.00060):
-    - YYText (~> 1.0.7)
-  - PPKit/PPHelpers (0.0.00060)
-  - ReactiveObjC (3.0.0)
-  - Realm (3.1.1):
-    - Realm/Headers (= 3.1.1)
-  - Realm/Headers (3.1.1)
-  - SDWebImage (4.3.0):
-    - SDWebImage/Core (= 4.3.0)
-  - SDWebImage/Core (4.3.0)
-  - Shimmer (1.0.2)
-  - WCDB (1.0.6):
-    - WCDB/sqlcipher (= 1.0.6)
-  - WCDB/sqlcipher (1.0.6)
-  - YTKNetwork (2.0.4):
-    - AFNetworking (~> 3.0)
-  - YYText (1.0.7)
+  - Down (0.9.4)
+  - MJExtension (3.2.2)
+  - MJRefresh (3.5.0)
+  - PPMaker (0.0.260):
+    - PPMaker/PPMake (= 0.0.260)
+    - PPMaker/PPMakeCategory (= 0.0.260)
+    - PPMaker/PPMutAttributedStringMaker (= 0.0.260)
+    - PPMaker/PPToolMaker (= 0.0.260)
+  - PPMaker/PPMake (0.0.260):
+    - PPMaker/PPMakeCategory
+  - PPMaker/PPMakeCategory (0.0.260):
+    - PPMaker/PPMakeCategory/Foundation (= 0.0.260)
+    - PPMaker/PPMakeCategory/UIKit (= 0.0.260)
+  - PPMaker/PPMakeCategory/Foundation (0.0.260):
+    - PPMaker/PPMakeCategory/Foundation/NSMutableAttributedString (= 0.0.260)
+    - PPMaker/PPMakeCategory/Foundation/NSObject (= 0.0.260)
+    - PPMaker/PPMakeCategory/Foundation/NSString (= 0.0.260)
+  - PPMaker/PPMakeCategory/Foundation/NSMutableAttributedString (0.0.260)
+  - PPMaker/PPMakeCategory/Foundation/NSObject (0.0.260)
+  - PPMaker/PPMakeCategory/Foundation/NSString (0.0.260)
+  - PPMaker/PPMakeCategory/UIKit (0.0.260):
+    - PPMaker/PPMakeCategory/UIKit/UIButton (= 0.0.260)
+    - PPMaker/PPMakeCategory/UIKit/UIDevice (= 0.0.260)
+    - PPMaker/PPMakeCategory/UIKit/UIImage (= 0.0.260)
+    - PPMaker/PPMakeCategory/UIKit/UIScrollView (= 0.0.260)
+    - PPMaker/PPMakeCategory/UIKit/UITableViewCell (= 0.0.260)
+    - PPMaker/PPMakeCategory/UIKit/UIView (= 0.0.260)
+  - PPMaker/PPMakeCategory/UIKit/UIButton (0.0.260):
+    - PPMaker/PPMakeCategory/Foundation/NSObject
+  - PPMaker/PPMakeCategory/UIKit/UIDevice (0.0.260)
+  - PPMaker/PPMakeCategory/UIKit/UIImage (0.0.260)
+  - PPMaker/PPMakeCategory/UIKit/UIScrollView (0.0.260)
+  - PPMaker/PPMakeCategory/UIKit/UITableViewCell (0.0.260)
+  - PPMaker/PPMakeCategory/UIKit/UIView (0.0.260):
+    - PPMaker/PPMakeCategory/Foundation/NSObject
+  - PPMaker/PPMutAttributedStringMaker (0.0.260)
+  - PPMaker/PPToolMaker (0.0.260)
+  - SDWebImage (5.10.0):
+    - SDWebImage/Core (= 5.10.0)
+  - SDWebImage/Core (5.10.0)
+  - SQLiteRepairKit (1.2.2):
+    - WCDBOptimizedSQLCipher (~> 1.2.0)
+  - Toast (4.0.0)
+  - WCDB (1.0.7.5):
+    - SQLiteRepairKit (~> 1.2.0)
+    - WCDBOptimizedSQLCipher (~> 1.2.0)
+  - WCDBOptimizedSQLCipher (1.2.1)
+  - YTKNetwork (3.0.4):
+    - AFNetworking/NSURLSession (~> 4.0)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
   - AFNetworking
-  - IQKeyboardManager
-  - Masonry
+  - Down
   - MJExtension
   - MJRefresh
-  - PPKit (= 0.0.00060)
-  - ReactiveObjC (~> 3.0.0)
-  - Realm
-  - SDWebImage
-  - Shimmer (~> 1.0.2)
+  - PPMaker (from `../PPMaker`)
+  - SDWebImage (from `../SDWebImage`)
+  - Toast
   - WCDB
   - YTKNetwork
+  - YYKit
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - Down
+    - MJExtension
+    - MJRefresh
+    - SQLiteRepairKit
+    - Toast
+    - WCDB
+    - WCDBOptimizedSQLCipher
+    - YTKNetwork
+    - YYKit
+
+EXTERNAL SOURCES:
+  PPMaker:
+    :path: "../PPMaker"
+  SDWebImage:
+    :path: "../SDWebImage"
 
 SPEC CHECKSUMS:
-  AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
-  IQKeyboardManager: 0bfa4607d39924116b5c0c8b55b5d789288b5cba
-  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MJExtension: 5932755f451458eefa24239358817f8d291240c7
-  MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
-  PPKit: 6b3f660dae8d29b98c93808b45457816d05e19f7
-  ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
-  Realm: 42d1c38a5b1bbcc828b48a7ce702cb86fc68adf4
-  SDWebImage: 6da6c8bca115addc4de8613362e1b15f66333825
-  Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
-  WCDB: 4d2926bf695b2e00d785b50afd32c2dcc8cbbd98
-  YTKNetwork: df8a7a5597bda1664a4efaa7ef871a818a887fe0
-  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  Down: 276f2c3eeeaf30345873bdad25f44b2640fcfa3a
+  MJExtension: d9b9c74cbdeb724c1e9ecbb157b318276e62e876
+  MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
+  PPMaker: 9a41cc42ae1fea4ec22a24a94e3f8b98c36e55a6
+  SDWebImage: 9169792e9eec3e45bba2a0c02f74bf8bd922d1ee
+  SQLiteRepairKit: 35aaae5a8838adb85f5b1eb4d796055be6060a4b
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+  WCDB: 8e90babdeb7784c569353a4bd22a66c0a175a882
+  WCDBOptimizedSQLCipher: baf44493b0c7a3d49e97bc5b64a3856f6428ddd1
+  YTKNetwork: a096f80c18c7e7cc0e623a0fbea0a1bfd3f5bcf2
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 68f2e92a68c8576be42498df93d2044242e93dec
+PODFILE CHECKSUM: 49c7ae1dfc91faf6f2043a0b23a5c355e4f36929
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.10.0

@@ -24,10 +24,10 @@
 #import <CommonCrypto/CommonDigest.h>
 #import "YTKNetworkPrivate.h"
 
-#if __has_include(<AFNetworking/AFNetworking.h>)
+#if __has_include(<AFNetworking/AFURLRequestSerialization.h>)
 #import <AFNetworking/AFURLRequestSerialization.h>
 #else
-#import "AFURLRequestSerialization.h"
+#import <AFNetworking/AFURLRequestSerialization.h>
 #endif
 
 void YTKLog(NSString *format, ...) {
@@ -123,8 +123,9 @@ void YTKLog(NSString *format, ...) {
 + (NSStringEncoding)stringEncodingWithRequest:(YTKBaseRequest *)request {
     // From AFNetworking 2.6.3
     NSStringEncoding stringEncoding = NSUTF8StringEncoding;
-    if (request.response.textEncodingName) {
-        CFStringEncoding encoding = CFStringConvertIANACharSetNameToEncoding((CFStringRef)request.response.textEncodingName);
+    NSString *encodingName = [request.response.textEncodingName copy];
+    if (encodingName) {
+        CFStringEncoding encoding = CFStringConvertIANACharSetNameToEncoding((CFStringRef)encodingName);
         if (encoding != kCFStringEncodingInvalidId) {
             stringEncoding = CFStringConvertEncodingToNSStringEncoding(encoding);
         }
@@ -148,7 +149,7 @@ void YTKLog(NSString *format, ...) {
     return [[NSFileManager defaultManager] fileExistsAtPath:localFilePath];
 #endif
     // After iOS 9 we can not actually detects if the cache file exists. This plist file has a somehow
-    // complicated structue. Besides, the plist structure is different between iOS 9 and iOS 10.
+    // complicated structure. Besides, the plist structure is different between iOS 9 and iOS 10.
     // We can only assume that the plist being successfully parsed means the resume data is valid.
     return YES;
 }

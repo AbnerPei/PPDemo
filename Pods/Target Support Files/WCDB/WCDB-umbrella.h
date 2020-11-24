@@ -160,8 +160,6 @@
 #import "ticker.hpp"
 #import "timed_queue.hpp"
 #import "utility.hpp"
-#import "sqlite3.h"
-#import "fts3_tokenizer.h"
 
 FOUNDATION_EXPORT double WCDBVersionNumber;
 FOUNDATION_EXPORT const unsigned char WCDBVersionString[];

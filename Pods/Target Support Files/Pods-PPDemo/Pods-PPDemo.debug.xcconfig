@@ -1,0 +1,14 @@
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking" "${PODS_CONFIGURATION_BUILD_DIR}/Down" "${PODS_CONFIGURATION_BUILD_DIR}/MJExtension" "${PODS_CONFIGURATION_BUILD_DIR}/MJRefresh" "${PODS_CONFIGURATION_BUILD_DIR}/PPMaker" "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage" "${PODS_CONFIGURATION_BUILD_DIR}/SQLiteRepairKit" "${PODS_CONFIGURATION_BUILD_DIR}/Toast" "${PODS_CONFIGURATION_BUILD_DIR}/WCDB" "${PODS_CONFIGURATION_BUILD_DIR}/WCDBOptimizedSQLCipher" "${PODS_CONFIGURATION_BUILD_DIR}/YTKNetwork" "${PODS_CONFIGURATION_BUILD_DIR}/YYKit" "${PODS_ROOT}/YYKit/Vendor"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Down/Down.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/MJExtension/MJExtension.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/MJRefresh/MJRefresh.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/PPMaker/PPMaker.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SQLiteRepairKit/sqliterk.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Toast/Toast.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/WCDB/WCDB.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/WCDBOptimizedSQLCipher/sqlcipher.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/YTKNetwork/YTKNetwork.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/YYKit/YYKit.framework/Headers"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_LDFLAGS = $(inherited) -ObjC -l"c++" -l"sqlite3" -l"z" -framework "AFNetworking" -framework "Accelerate" -framework "AssetsLibrary" -framework "CFNetwork" -framework "CoreFoundation" -framework "CoreGraphics" -framework "CoreImage" -framework "CoreText" -framework "Down" -framework "Foundation" -framework "ImageIO" -framework "MJExtension" -framework "MJRefresh" -framework "MobileCoreServices" -framework "PPMaker" -framework "QuartzCore" -framework "SDWebImage" -framework "Security" -framework "SystemConfiguration" -framework "Toast" -framework "UIKit" -framework "WCDB" -framework "YTKNetwork" -framework "YYKit" -framework "sqlcipher" -framework "sqliterk"
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
+PODS_XCFRAMEWORKS_BUILD_DIR = $(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES
