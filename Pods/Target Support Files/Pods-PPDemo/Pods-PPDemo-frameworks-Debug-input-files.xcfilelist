@@ -4,6 +4,7 @@ ${BUILT_PRODUCTS_DIR}/Down/Down.framework
 ${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework
 ${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework
 ${BUILT_PRODUCTS_DIR}/PPMaker/PPMaker.framework
+${BUILT_PRODUCTS_DIR}/PPTextField/PPTextField.framework
 ${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
 ${BUILT_PRODUCTS_DIR}/SQLiteRepairKit/sqliterk.framework
 ${BUILT_PRODUCTS_DIR}/Toast/Toast.framework

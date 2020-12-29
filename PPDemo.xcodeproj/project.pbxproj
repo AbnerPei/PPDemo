@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841AD220258AFF4900DA4731 /* UICollectionViewBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841AD21F258AFF4900DA4731 /* UICollectionViewBaseTableViewController.m */; };
+		841AD227258AFFC800DA4731 /* MinimumXXSpacingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841AD226258AFFC800DA4731 /* MinimumXXSpacingViewController.m */; };
 		848AD289256CAADA006FC2C6 /* GCD_BarrierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848AD288256CAADA006FC2C6 /* GCD_BarrierViewController.m */; };
 		848AD290256CAB66006FC2C6 /* GCD_SemaphoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848AD28F256CAB66006FC2C6 /* GCD_SemaphoreViewController.m */; };
+		8490EEEB258743D200E4A1C4 /* ContextMenusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8490EEEA258743D200E4A1C4 /* ContextMenusViewController.m */; };
+		8490EEF12587468200E4A1C4 /* PPMakerInfiniteLoopVerifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8490EEF02587468200E4A1C4 /* PPMakerInfiniteLoopVerifyViewController.m */; };
+		84D101DB258FA1D600BD01DB /* CodeVerificationBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D101DA258FA1D600BD01DB /* CodeVerificationBaseTableViewController.m */; };
+		84D101E1258FA22500BD01DB /* CV_AtomicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D101E0258FA22500BD01DB /* CV_AtomicViewController.m */; };
 		84FDE157256796CA002B32A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FDE156256796CA002B32A1 /* AppDelegate.m */; };
 		84FDE15A256796CA002B32A1 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FDE159256796CA002B32A1 /* SceneDelegate.m */; };
 		84FDE15D256796CA002B32A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FDE15C256796CA002B32A1 /* ViewController.m */; };
@@ -34,12 +40,24 @@
 
 /* Begin PBXFileReference section */
 		3F6C27860A0EC74CFF106F2F /* Pods-PPDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PPDemo.debug.xcconfig"; path = "Target Support Files/Pods-PPDemo/Pods-PPDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		841AD21E258AFF4900DA4731 /* UICollectionViewBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UICollectionViewBaseTableViewController.h; sourceTree = "<group>"; };
+		841AD21F258AFF4900DA4731 /* UICollectionViewBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewBaseTableViewController.m; sourceTree = "<group>"; };
+		841AD225258AFFC800DA4731 /* MinimumXXSpacingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MinimumXXSpacingViewController.h; sourceTree = "<group>"; };
+		841AD226258AFFC800DA4731 /* MinimumXXSpacingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MinimumXXSpacingViewController.m; sourceTree = "<group>"; };
 		848AD287256CAADA006FC2C6 /* GCD_BarrierViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCD_BarrierViewController.h; sourceTree = "<group>"; };
 		848AD288256CAADA006FC2C6 /* GCD_BarrierViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCD_BarrierViewController.m; sourceTree = "<group>"; };
 		848AD28E256CAB66006FC2C6 /* GCD_SemaphoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCD_SemaphoreViewController.h; sourceTree = "<group>"; };
 		848AD28F256CAB66006FC2C6 /* GCD_SemaphoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCD_SemaphoreViewController.m; sourceTree = "<group>"; };
 		848AD298256CADE7006FC2C6 /* 【设计模式】职责链模式.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "【设计模式】职责链模式.md"; sourceTree = "<group>"; };
 		848AD299256CAEAB006FC2C6 /* 【GCD】栅栏函数.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "【GCD】栅栏函数.md"; sourceTree = "<group>"; };
+		8490EEE9258743D200E4A1C4 /* ContextMenusViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContextMenusViewController.h; sourceTree = "<group>"; };
+		8490EEEA258743D200E4A1C4 /* ContextMenusViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContextMenusViewController.m; sourceTree = "<group>"; };
+		8490EEEF2587468200E4A1C4 /* PPMakerInfiniteLoopVerifyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPMakerInfiniteLoopVerifyViewController.h; sourceTree = "<group>"; };
+		8490EEF02587468200E4A1C4 /* PPMakerInfiniteLoopVerifyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPMakerInfiniteLoopVerifyViewController.m; sourceTree = "<group>"; };
+		84D101D9258FA1D600BD01DB /* CodeVerificationBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeVerificationBaseTableViewController.h; sourceTree = "<group>"; };
+		84D101DA258FA1D600BD01DB /* CodeVerificationBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeVerificationBaseTableViewController.m; sourceTree = "<group>"; };
+		84D101DF258FA22500BD01DB /* CV_AtomicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CV_AtomicViewController.h; sourceTree = "<group>"; };
+		84D101E0258FA22500BD01DB /* CV_AtomicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CV_AtomicViewController.m; sourceTree = "<group>"; };
 		84E9AE5B256CB3E2006843D0 /* 【GCD】信号量.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "【GCD】信号量.md"; sourceTree = "<group>"; };
 		84E9AF5D256D0D98006843D0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		84FDE152256796CA002B32A1 /* PPDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PPDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +125,32 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		841AD21D258AFF1200DA4731 /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				841AD223258AFF5A00DA4731 /* FlowLayout */,
+				841AD21E258AFF4900DA4731 /* UICollectionViewBaseTableViewController.h */,
+				841AD21F258AFF4900DA4731 /* UICollectionViewBaseTableViewController.m */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		841AD223258AFF5A00DA4731 /* FlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				841AD225258AFFC800DA4731 /* MinimumXXSpacingViewController.h */,
+				841AD226258AFFC800DA4731 /* MinimumXXSpacingViewController.m */,
+			);
+			path = FlowLayout;
+			sourceTree = "<group>";
+		};
+		84315CCB258C80A000AB8C33 /* UIDatePicker和UIPickerView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "UIDatePicker和UIPickerView";
+			sourceTree = "<group>";
+		};
 		848AD286256CAAA4006FC2C6 /* 栅栏函数 */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +212,43 @@
 			path = "职责链模式「Chain of responsibility」";
 			sourceTree = "<group>";
 		};
+		8490EEE8258743B600E4A1C4 /* ContextMenus「iOS 13.0」 */ = {
+			isa = PBXGroup;
+			children = (
+				8490EEE9258743D200E4A1C4 /* ContextMenusViewController.h */,
+				8490EEEA258743D200E4A1C4 /* ContextMenusViewController.m */,
+			);
+			path = "ContextMenus「iOS 13.0」";
+			sourceTree = "<group>";
+		};
+		8490EEEE2587460F00E4A1C4 /* PPMakerInfiniteLoopVerifyViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8490EEEF2587468200E4A1C4 /* PPMakerInfiniteLoopVerifyViewController.h */,
+				8490EEF02587468200E4A1C4 /* PPMakerInfiniteLoopVerifyViewController.m */,
+			);
+			path = PPMakerInfiniteLoopVerifyViewController;
+			sourceTree = "<group>";
+		};
+		84D101D7258FA12800BD01DB /* 实践是检验真理的唯一标准「Code Verification」 */ = {
+			isa = PBXGroup;
+			children = (
+				84D101DE258FA1DE00BD01DB /* atomic */,
+				84D101D9258FA1D600BD01DB /* CodeVerificationBaseTableViewController.h */,
+				84D101DA258FA1D600BD01DB /* CodeVerificationBaseTableViewController.m */,
+			);
+			path = "实践是检验真理的唯一标准「Code Verification」";
+			sourceTree = "<group>";
+		};
+		84D101DE258FA1DE00BD01DB /* atomic */ = {
+			isa = PBXGroup;
+			children = (
+				84D101DF258FA22500BD01DB /* CV_AtomicViewController.h */,
+				84D101E0258FA22500BD01DB /* CV_AtomicViewController.m */,
+			);
+			path = atomic;
+			sourceTree = "<group>";
+		};
 		84E9AF4E256D00AF006843D0 /* SDWebImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +300,7 @@
 		84FDE18025679946002B32A1 /* Summary「总览」 */ = {
 			isa = PBXGroup;
 			children = (
+				84D101D7258FA12800BD01DB /* 实践是检验真理的唯一标准「Code Verification」 */,
 				848AD293256CABE0006FC2C6 /* 拓展学习，夯实基础 */,
 				84FDE181256799A4002B32A1 /* SystemAPI「系统API」 */,
 				84FDE182256799BD002B32A1 /* Special「专题」 */,
@@ -231,6 +313,9 @@
 		84FDE181256799A4002B32A1 /* SystemAPI「系统API」 */ = {
 			isa = PBXGroup;
 			children = (
+				84315CCB258C80A000AB8C33 /* UIDatePicker和UIPickerView */,
+				841AD21D258AFF1200DA4731 /* UICollectionView */,
+				8490EEE8258743B600E4A1C4 /* ContextMenus「iOS 13.0」 */,
 				84FDE1AD2567B1DA002B32A1 /* SystemAPIBaseTableViewController.h */,
 				84FDE1AE2567B1DA002B32A1 /* SystemAPIBaseTableViewController.m */,
 			);
@@ -284,6 +369,7 @@
 		84FDE18625679A47002B32A1 /* PPMaker「快速开发」 */ = {
 			isa = PBXGroup;
 			children = (
+				8490EEEE2587460F00E4A1C4 /* PPMakerInfiniteLoopVerifyViewController */,
 				84FDE1D82567B98A002B32A1 /* PPMakerBaseTableViewController.h */,
 				84FDE1D92567B98A002B32A1 /* PPMakerBaseTableViewController.m */,
 			);
@@ -505,13 +591,17 @@
 				84FDE275256B41A3002B32A1 /* OpenGLESBaseTableViewController.m in Sources */,
 				84FDE1CA2567B80A002B32A1 /* CoreAnimationBaseTableViewController.m in Sources */,
 				84FDE15D256796CA002B32A1 /* ViewController.m in Sources */,
+				84D101DB258FA1D600BD01DB /* CodeVerificationBaseTableViewController.m in Sources */,
 				84FDE27A256B41B6002B32A1 /* MetalBaseTableViewController.m in Sources */,
 				84FDE157256796CA002B32A1 /* AppDelegate.m in Sources */,
 				84FDE168256796CC002B32A1 /* main.m in Sources */,
 				84FDE1CE2567B850002B32A1 /* MutipleThreadBaseTableViewController.m in Sources */,
 				84FDE15A256796CA002B32A1 /* SceneDelegate.m in Sources */,
+				841AD227258AFFC800DA4731 /* MinimumXXSpacingViewController.m in Sources */,
+				8490EEF12587468200E4A1C4 /* PPMakerInfiniteLoopVerifyViewController.m in Sources */,
 				848AD289256CAADA006FC2C6 /* GCD_BarrierViewController.m in Sources */,
 				84FDE1DA2567B98A002B32A1 /* PPMakerBaseTableViewController.m in Sources */,
+				84D101E1258FA22500BD01DB /* CV_AtomicViewController.m in Sources */,
 				84FDE1952567AD25002B32A1 /* BaseTableViewController.m in Sources */,
 				84FDE1D62567B94A002B32A1 /* PPCarouselBaseTableViewController.m in Sources */,
 				84FDE19A2567AEE1002B32A1 /* OpenSourceLibsBaseTableViewController.m in Sources */,
@@ -520,6 +610,8 @@
 				84FDE1B42567B25D002B32A1 /* MyLibsBaseTableViewController.m in Sources */,
 				84FDE1D22567B912002B32A1 /* PPTextFieldBaseTableViewController.m in Sources */,
 				84FDE1AB2567B1AD002B32A1 /* SpecialBaseTableViewController.m in Sources */,
+				8490EEEB258743D200E4A1C4 /* ContextMenusViewController.m in Sources */,
+				841AD220258AFF4900DA4731 /* UICollectionViewBaseTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,7 +688,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -649,10 +741,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -666,6 +759,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AC8HSLRJXT;
 				INFOPLIST_FILE = PPDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -689,6 +783,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AC8HSLRJXT;
 				INFOPLIST_FILE = PPDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

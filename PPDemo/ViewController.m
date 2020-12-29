@@ -7,6 +7,7 @@
 
 #import "ViewController.h"
 #import "PPDemo-Swift.h"
+#import <PPMaker/PPMaker.h>
 
 @interface ViewController ()
 
@@ -29,7 +30,8 @@
         @"MyLibs「我的开源库」",
         @"SystemAPI「系统API」",
         @"Special「专题」",
-        @"OpenSourceLibs「开源库」"
+        @"OpenSourceLibs「开源库」",
+        @"实践是检验真理的唯一标准「Code Verification」"
     ];
 }
 
@@ -39,7 +41,8 @@
         @"MyLibsBaseTableViewController",
         @"SystemAPIBaseTableViewController",
         @"SpecialBaseTableViewController",
-        @"OpenSourceLibsBaseTableViewController"
+        @"OpenSourceLibsBaseTableViewController",
+        @"CodeVerificationBaseTableViewController"
     ];
 }
 

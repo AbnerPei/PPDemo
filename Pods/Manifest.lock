@@ -28,29 +28,40 @@ PODS:
     - PPMaker/PPMakeCategory/Foundation (= 0.0.260)
     - PPMaker/PPMakeCategory/UIKit (= 0.0.260)
   - PPMaker/PPMakeCategory/Foundation (0.0.260):
+    - PPMaker/PPMakeCategory/Foundation/NSDate (= 0.0.260)
+    - PPMaker/PPMakeCategory/Foundation/NSMutableArray (= 0.0.260)
     - PPMaker/PPMakeCategory/Foundation/NSMutableAttributedString (= 0.0.260)
     - PPMaker/PPMakeCategory/Foundation/NSObject (= 0.0.260)
     - PPMaker/PPMakeCategory/Foundation/NSString (= 0.0.260)
+  - PPMaker/PPMakeCategory/Foundation/NSDate (0.0.260)
+  - PPMaker/PPMakeCategory/Foundation/NSMutableArray (0.0.260)
   - PPMaker/PPMakeCategory/Foundation/NSMutableAttributedString (0.0.260)
   - PPMaker/PPMakeCategory/Foundation/NSObject (0.0.260)
   - PPMaker/PPMakeCategory/Foundation/NSString (0.0.260)
   - PPMaker/PPMakeCategory/UIKit (0.0.260):
     - PPMaker/PPMakeCategory/UIKit/UIButton (= 0.0.260)
+    - PPMaker/PPMakeCategory/UIKit/UIColor (= 0.0.260)
     - PPMaker/PPMakeCategory/UIKit/UIDevice (= 0.0.260)
     - PPMaker/PPMakeCategory/UIKit/UIImage (= 0.0.260)
     - PPMaker/PPMakeCategory/UIKit/UIScrollView (= 0.0.260)
+    - PPMaker/PPMakeCategory/UIKit/UITableView (= 0.0.260)
     - PPMaker/PPMakeCategory/UIKit/UITableViewCell (= 0.0.260)
     - PPMaker/PPMakeCategory/UIKit/UIView (= 0.0.260)
+    - PPMaker/PPMakeCategory/UIKit/UIViewController (= 0.0.260)
   - PPMaker/PPMakeCategory/UIKit/UIButton (0.0.260):
     - PPMaker/PPMakeCategory/Foundation/NSObject
+  - PPMaker/PPMakeCategory/UIKit/UIColor (0.0.260)
   - PPMaker/PPMakeCategory/UIKit/UIDevice (0.0.260)
   - PPMaker/PPMakeCategory/UIKit/UIImage (0.0.260)
   - PPMaker/PPMakeCategory/UIKit/UIScrollView (0.0.260)
+  - PPMaker/PPMakeCategory/UIKit/UITableView (0.0.260)
   - PPMaker/PPMakeCategory/UIKit/UITableViewCell (0.0.260)
   - PPMaker/PPMakeCategory/UIKit/UIView (0.0.260):
     - PPMaker/PPMakeCategory/Foundation/NSObject
+  - PPMaker/PPMakeCategory/UIKit/UIViewController (0.0.260)
   - PPMaker/PPMutAttributedStringMaker (0.0.260)
   - PPMaker/PPToolMaker (0.0.260)
+  - PPTextField (0.0.2)
   - SDWebImage (5.10.0):
     - SDWebImage/Core (= 5.10.0)
   - SDWebImage/Core (5.10.0)
@@ -73,6 +84,7 @@ DEPENDENCIES:
   - MJExtension
   - MJRefresh
   - PPMaker (from `../PPMaker`)
+  - PPTextField (from `../PPTextField`)
   - SDWebImage (from `../SDWebImage`)
   - Toast
   - WCDB
@@ -80,7 +92,7 @@ DEPENDENCIES:
   - YYKit
 
 SPEC REPOS:
-  trunk:
+  https://github.com/CocoaPods/Specs.git:
     - AFNetworking
     - Down
     - MJExtension
@@ -95,6 +107,8 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   PPMaker:
     :path: "../PPMaker"
+  PPTextField:
+    :path: "../PPTextField"
   SDWebImage:
     :path: "../SDWebImage"
 
@@ -103,7 +117,8 @@ SPEC CHECKSUMS:
   Down: 276f2c3eeeaf30345873bdad25f44b2640fcfa3a
   MJExtension: d9b9c74cbdeb724c1e9ecbb157b318276e62e876
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
-  PPMaker: 9a41cc42ae1fea4ec22a24a94e3f8b98c36e55a6
+  PPMaker: f213d92b8b742dcec7dd2fe516034db4183aac34
+  PPTextField: 34b5e67ba9892575134f6c351f11010503ea465c
   SDWebImage: 9169792e9eec3e45bba2a0c02f74bf8bd922d1ee
   SQLiteRepairKit: 35aaae5a8838adb85f5b1eb4d796055be6060a4b
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
@@ -112,6 +127,6 @@ SPEC CHECKSUMS:
   YTKNetwork: a096f80c18c7e7cc0e623a0fbea0a1bfd3f5bcf2
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 49c7ae1dfc91faf6f2043a0b23a5c355e4f36929
+PODFILE CHECKSUM: a142cd3e203895d08a2fc8836743d91adb7fbc50
 
 COCOAPODS: 1.10.0

@@ -25,10 +25,20 @@
   "subspecs": [
     {
       "name": "PPMakeCategory",
+      "source_files": "PPMaker/PPMakeCategory/*.{h,m}",
       "subspecs": [
         {
           "name": "Foundation",
+          "source_files": "PPMaker/PPMakeCategory/Foundation/*.{h,m}",
           "subspecs": [
+            {
+              "name": "NSMutableArray",
+              "source_files": "PPMaker/PPMakeCategory/Foundation/NSMutableArray/*.{h,m}"
+            },
+            {
+              "name": "NSDate",
+              "source_files": "PPMaker/PPMakeCategory/Foundation/NSDate/*.{h,m}"
+            },
             {
               "name": "NSString",
               "source_files": "PPMaker/PPMakeCategory/Foundation/NSString/*.{h,m}"
@@ -45,10 +55,19 @@
         },
         {
           "name": "UIKit",
+          "source_files": "PPMaker/PPMakeCategory/UIKit/*.{h,m}",
           "subspecs": [
             {
               "name": "UITableViewCell",
               "source_files": "PPMaker/PPMakeCategory/UIKit/UITableViewCell/*.{h,m}"
+            },
+            {
+              "name": "UITableView",
+              "source_files": "PPMaker/PPMakeCategory/UIKit/UITableView/*.{h,m}"
+            },
+            {
+              "name": "UIColor",
+              "source_files": "PPMaker/PPMakeCategory/UIKit/UIColor/*.{h,m}"
             },
             {
               "name": "UIScrollView",
@@ -79,6 +98,10 @@
 
                 ]
               }
+            },
+            {
+              "name": "UIViewController",
+              "source_files": "PPMaker/PPMakeCategory/UIKit/UIViewController/*.{h,m}"
             }
           ]
         }
