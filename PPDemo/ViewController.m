@@ -28,6 +28,7 @@
 {
     return @[
         @"MyLibs「我的开源库」",
+        @"iOS基础知识",
         @"SystemAPI「系统API」",
         @"Special「专题」",
         @"OpenSourceLibs「开源库」",
@@ -39,6 +40,7 @@
 {
     return @[
         @"MyLibsBaseTableViewController",
+        @"iOSBasicKnowledgeBaseTableViewController",
         @"SystemAPIBaseTableViewController",
         @"SpecialBaseTableViewController",
         @"OpenSourceLibsBaseTableViewController",

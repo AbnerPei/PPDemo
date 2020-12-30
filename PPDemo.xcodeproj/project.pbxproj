@@ -15,6 +15,9 @@
 		8490EEF12587468200E4A1C4 /* PPMakerInfiniteLoopVerifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8490EEF02587468200E4A1C4 /* PPMakerInfiniteLoopVerifyViewController.m */; };
 		84D101DB258FA1D600BD01DB /* CodeVerificationBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D101DA258FA1D600BD01DB /* CodeVerificationBaseTableViewController.m */; };
 		84D101E1258FA22500BD01DB /* CV_AtomicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D101E0258FA22500BD01DB /* CV_AtomicViewController.m */; };
+		84EF72CE259C0D9C002662F3 /* iOSBasicKnowledgeBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EF72CD259C0D9C002662F3 /* iOSBasicKnowledgeBaseTableViewController.m */; };
+		84EF72DA259C0E8B002662F3 /* PointGrammarAndLineArrowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EF72D9259C0E8B002662F3 /* PointGrammarAndLineArrowViewController.m */; };
+		84EF72DE259C0EE6002662F3 /* PGLAStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EF72DD259C0EE6002662F3 /* PGLAStudent.m */; };
 		84FDE157256796CA002B32A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FDE156256796CA002B32A1 /* AppDelegate.m */; };
 		84FDE15A256796CA002B32A1 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FDE159256796CA002B32A1 /* SceneDelegate.m */; };
 		84FDE15D256796CA002B32A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FDE15C256796CA002B32A1 /* ViewController.m */; };
@@ -60,6 +63,12 @@
 		84D101E0258FA22500BD01DB /* CV_AtomicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CV_AtomicViewController.m; sourceTree = "<group>"; };
 		84E9AE5B256CB3E2006843D0 /* 【GCD】信号量.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "【GCD】信号量.md"; sourceTree = "<group>"; };
 		84E9AF5D256D0D98006843D0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		84EF72CC259C0D9C002662F3 /* iOSBasicKnowledgeBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSBasicKnowledgeBaseTableViewController.h; sourceTree = "<group>"; };
+		84EF72CD259C0D9C002662F3 /* iOSBasicKnowledgeBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSBasicKnowledgeBaseTableViewController.m; sourceTree = "<group>"; };
+		84EF72D8259C0E8B002662F3 /* PointGrammarAndLineArrowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointGrammarAndLineArrowViewController.h; sourceTree = "<group>"; };
+		84EF72D9259C0E8B002662F3 /* PointGrammarAndLineArrowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PointGrammarAndLineArrowViewController.m; sourceTree = "<group>"; };
+		84EF72DC259C0EE6002662F3 /* PGLAStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGLAStudent.h; sourceTree = "<group>"; };
+		84EF72DD259C0EE6002662F3 /* PGLAStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGLAStudent.m; sourceTree = "<group>"; };
 		84FDE152256796CA002B32A1 /* PPDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PPDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FDE155256796CA002B32A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84FDE156256796CA002B32A1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -256,6 +265,27 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
+		84EF72CA259C0D21002662F3 /* iOS基础知识 */ = {
+			isa = PBXGroup;
+			children = (
+				84EF72CC259C0D9C002662F3 /* iOSBasicKnowledgeBaseTableViewController.h */,
+				84EF72CD259C0D9C002662F3 /* iOSBasicKnowledgeBaseTableViewController.m */,
+				84EF72CB259C0D31002662F3 /* 点语法与—>的区别 */,
+			);
+			path = "iOS基础知识";
+			sourceTree = "<group>";
+		};
+		84EF72CB259C0D31002662F3 /* 点语法与—>的区别 */ = {
+			isa = PBXGroup;
+			children = (
+				84EF72D8259C0E8B002662F3 /* PointGrammarAndLineArrowViewController.h */,
+				84EF72D9259C0E8B002662F3 /* PointGrammarAndLineArrowViewController.m */,
+				84EF72DC259C0EE6002662F3 /* PGLAStudent.h */,
+				84EF72DD259C0EE6002662F3 /* PGLAStudent.m */,
+			);
+			path = "点语法与—>的区别";
+			sourceTree = "<group>";
+		};
 		84FDE149256796CA002B32A1 = {
 			isa = PBXGroup;
 			children = (
@@ -300,6 +330,7 @@
 		84FDE18025679946002B32A1 /* Summary「总览」 */ = {
 			isa = PBXGroup;
 			children = (
+				84EF72CA259C0D21002662F3 /* iOS基础知识 */,
 				84D101D7258FA12800BD01DB /* 实践是检验真理的唯一标准「Code Verification」 */,
 				848AD293256CABE0006FC2C6 /* 拓展学习，夯实基础 */,
 				84FDE181256799A4002B32A1 /* SystemAPI「系统API」 */,
@@ -590,11 +621,13 @@
 				84FDE1FD2567C260002B32A1 /* Person.swift in Sources */,
 				84FDE275256B41A3002B32A1 /* OpenGLESBaseTableViewController.m in Sources */,
 				84FDE1CA2567B80A002B32A1 /* CoreAnimationBaseTableViewController.m in Sources */,
+				84EF72DE259C0EE6002662F3 /* PGLAStudent.m in Sources */,
 				84FDE15D256796CA002B32A1 /* ViewController.m in Sources */,
 				84D101DB258FA1D600BD01DB /* CodeVerificationBaseTableViewController.m in Sources */,
 				84FDE27A256B41B6002B32A1 /* MetalBaseTableViewController.m in Sources */,
 				84FDE157256796CA002B32A1 /* AppDelegate.m in Sources */,
 				84FDE168256796CC002B32A1 /* main.m in Sources */,
+				84EF72CE259C0D9C002662F3 /* iOSBasicKnowledgeBaseTableViewController.m in Sources */,
 				84FDE1CE2567B850002B32A1 /* MutipleThreadBaseTableViewController.m in Sources */,
 				84FDE15A256796CA002B32A1 /* SceneDelegate.m in Sources */,
 				841AD227258AFFC800DA4731 /* MinimumXXSpacingViewController.m in Sources */,
@@ -612,6 +645,7 @@
 				84FDE1AB2567B1AD002B32A1 /* SpecialBaseTableViewController.m in Sources */,
 				8490EEEB258743D200E4A1C4 /* ContextMenusViewController.m in Sources */,
 				841AD220258AFF4900DA4731 /* UICollectionViewBaseTableViewController.m in Sources */,
+				84EF72DA259C0E8B002662F3 /* PointGrammarAndLineArrowViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
