@@ -23,7 +23,7 @@
 {
     return @[
         @"点语法和->的区别",
-        @"Context Menus",
+        @"掌握layoutSubviews、setNeedsLayout、layoutIfNeeded",
     ];
 }
 
@@ -31,7 +31,7 @@
 {
     return @[
         @"PointGrammarAndLineArrowViewController",
-        @"ContextMenusViewController",
+        @"LS_SNL_LIN_ViewController",
     ];
 }
 

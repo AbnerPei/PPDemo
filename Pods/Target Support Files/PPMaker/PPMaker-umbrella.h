@@ -35,10 +35,10 @@
 #import "UITableView+PPMakeDidSelectedBlock.h"
 #import "UITableView+PPMakeSupport.h"
 #import "UITableViewCell+PPMakeSupport.h"
+#import "UIView+HandyFrame.h"
 #import "UIView+PPMakeSupport.h"
 #import "UIView+PPMakeSupportCornerAndShadow.h"
 #import "UIViewController+UIScreenBrightness.h"
-#import "PPMutAttributedStringMaker.h"
 #import "PPTool.h"
 
 FOUNDATION_EXPORT double PPMakerVersionNumber;

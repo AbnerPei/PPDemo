@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		841AD220258AFF4900DA4731 /* UICollectionViewBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841AD21F258AFF4900DA4731 /* UICollectionViewBaseTableViewController.m */; };
 		841AD227258AFFC800DA4731 /* MinimumXXSpacingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841AD226258AFFC800DA4731 /* MinimumXXSpacingViewController.m */; };
+		8436201725F5D75300A71712 /* CV_ObjectCopyingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8436201625F5D75300A71712 /* CV_ObjectCopyingViewController.m */; };
+		8436201D25F5F1D700A71712 /* CV_Coder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8436201C25F5F1D700A71712 /* CV_Coder.m */; };
 		848AD289256CAADA006FC2C6 /* GCD_BarrierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848AD288256CAADA006FC2C6 /* GCD_BarrierViewController.m */; };
 		848AD290256CAB66006FC2C6 /* GCD_SemaphoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848AD28F256CAB66006FC2C6 /* GCD_SemaphoreViewController.m */; };
 		8490EEEB258743D200E4A1C4 /* ContextMenusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8490EEEA258743D200E4A1C4 /* ContextMenusViewController.m */; };
@@ -18,6 +20,7 @@
 		84EF72CE259C0D9C002662F3 /* iOSBasicKnowledgeBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EF72CD259C0D9C002662F3 /* iOSBasicKnowledgeBaseTableViewController.m */; };
 		84EF72DA259C0E8B002662F3 /* PointGrammarAndLineArrowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EF72D9259C0E8B002662F3 /* PointGrammarAndLineArrowViewController.m */; };
 		84EF72DE259C0EE6002662F3 /* PGLAStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EF72DD259C0EE6002662F3 /* PGLAStudent.m */; };
+		84EF733A259DD1AB002662F3 /* LS_SNL_LIN_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EF7339259DD1AB002662F3 /* LS_SNL_LIN_ViewController.m */; };
 		84FDE157256796CA002B32A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FDE156256796CA002B32A1 /* AppDelegate.m */; };
 		84FDE15A256796CA002B32A1 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FDE159256796CA002B32A1 /* SceneDelegate.m */; };
 		84FDE15D256796CA002B32A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FDE15C256796CA002B32A1 /* ViewController.m */; };
@@ -47,6 +50,10 @@
 		841AD21F258AFF4900DA4731 /* UICollectionViewBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewBaseTableViewController.m; sourceTree = "<group>"; };
 		841AD225258AFFC800DA4731 /* MinimumXXSpacingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MinimumXXSpacingViewController.h; sourceTree = "<group>"; };
 		841AD226258AFFC800DA4731 /* MinimumXXSpacingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MinimumXXSpacingViewController.m; sourceTree = "<group>"; };
+		8436201525F5D75300A71712 /* CV_ObjectCopyingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CV_ObjectCopyingViewController.h; sourceTree = "<group>"; };
+		8436201625F5D75300A71712 /* CV_ObjectCopyingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CV_ObjectCopyingViewController.m; sourceTree = "<group>"; };
+		8436201B25F5F1D700A71712 /* CV_Coder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CV_Coder.h; sourceTree = "<group>"; };
+		8436201C25F5F1D700A71712 /* CV_Coder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CV_Coder.m; sourceTree = "<group>"; };
 		848AD287256CAADA006FC2C6 /* GCD_BarrierViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCD_BarrierViewController.h; sourceTree = "<group>"; };
 		848AD288256CAADA006FC2C6 /* GCD_BarrierViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCD_BarrierViewController.m; sourceTree = "<group>"; };
 		848AD28E256CAB66006FC2C6 /* GCD_SemaphoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCD_SemaphoreViewController.h; sourceTree = "<group>"; };
@@ -69,6 +76,8 @@
 		84EF72D9259C0E8B002662F3 /* PointGrammarAndLineArrowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PointGrammarAndLineArrowViewController.m; sourceTree = "<group>"; };
 		84EF72DC259C0EE6002662F3 /* PGLAStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGLAStudent.h; sourceTree = "<group>"; };
 		84EF72DD259C0EE6002662F3 /* PGLAStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGLAStudent.m; sourceTree = "<group>"; };
+		84EF7338259DD1AB002662F3 /* LS_SNL_LIN_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LS_SNL_LIN_ViewController.h; sourceTree = "<group>"; };
+		84EF7339259DD1AB002662F3 /* LS_SNL_LIN_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LS_SNL_LIN_ViewController.m; sourceTree = "<group>"; };
 		84FDE152256796CA002B32A1 /* PPDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PPDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FDE155256796CA002B32A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84FDE156256796CA002B32A1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -160,6 +169,17 @@
 			path = "UIDatePicker和UIPickerView";
 			sourceTree = "<group>";
 		};
+		8436201425F5D6AC00A71712 /* 深拷贝和浅拷贝 */ = {
+			isa = PBXGroup;
+			children = (
+				8436201525F5D75300A71712 /* CV_ObjectCopyingViewController.h */,
+				8436201625F5D75300A71712 /* CV_ObjectCopyingViewController.m */,
+				8436201B25F5F1D700A71712 /* CV_Coder.h */,
+				8436201C25F5F1D700A71712 /* CV_Coder.m */,
+			);
+			path = "深拷贝和浅拷贝";
+			sourceTree = "<group>";
+		};
 		848AD286256CAAA4006FC2C6 /* 栅栏函数 */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,14 +259,15 @@
 			path = PPMakerInfiniteLoopVerifyViewController;
 			sourceTree = "<group>";
 		};
-		84D101D7258FA12800BD01DB /* 实践是检验真理的唯一标准「Code Verification」 */ = {
+		84D101D7258FA12800BD01DB /* Code Verification「实践是检验真理的唯一标准」 */ = {
 			isa = PBXGroup;
 			children = (
+				8436201425F5D6AC00A71712 /* 深拷贝和浅拷贝 */,
 				84D101DE258FA1DE00BD01DB /* atomic */,
 				84D101D9258FA1D600BD01DB /* CodeVerificationBaseTableViewController.h */,
 				84D101DA258FA1D600BD01DB /* CodeVerificationBaseTableViewController.m */,
 			);
-			path = "实践是检验真理的唯一标准「Code Verification」";
+			path = "Code Verification「实践是检验真理的唯一标准」";
 			sourceTree = "<group>";
 		};
 		84D101DE258FA1DE00BD01DB /* atomic */ = {
@@ -268,6 +289,7 @@
 		84EF72CA259C0D21002662F3 /* iOS基础知识 */ = {
 			isa = PBXGroup;
 			children = (
+				84EF7336259DD09E002662F3 /* layoutSubviews_setNeedsLayout_layoutIfNeeded */,
 				84EF72CC259C0D9C002662F3 /* iOSBasicKnowledgeBaseTableViewController.h */,
 				84EF72CD259C0D9C002662F3 /* iOSBasicKnowledgeBaseTableViewController.m */,
 				84EF72CB259C0D31002662F3 /* 点语法与—>的区别 */,
@@ -284,6 +306,23 @@
 				84EF72DD259C0EE6002662F3 /* PGLAStudent.m */,
 			);
 			path = "点语法与—>的区别";
+			sourceTree = "<group>";
+		};
+		84EF7336259DD09E002662F3 /* layoutSubviews_setNeedsLayout_layoutIfNeeded */ = {
+			isa = PBXGroup;
+			children = (
+				84EF733C259DD1F4002662F3 /* Views */,
+				84EF7338259DD1AB002662F3 /* LS_SNL_LIN_ViewController.h */,
+				84EF7339259DD1AB002662F3 /* LS_SNL_LIN_ViewController.m */,
+			);
+			path = layoutSubviews_setNeedsLayout_layoutIfNeeded;
+			sourceTree = "<group>";
+		};
+		84EF733C259DD1F4002662F3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		84FDE149256796CA002B32A1 = {
@@ -331,7 +370,7 @@
 			isa = PBXGroup;
 			children = (
 				84EF72CA259C0D21002662F3 /* iOS基础知识 */,
-				84D101D7258FA12800BD01DB /* 实践是检验真理的唯一标准「Code Verification」 */,
+				84D101D7258FA12800BD01DB /* Code Verification「实践是检验真理的唯一标准」 */,
 				848AD293256CABE0006FC2C6 /* 拓展学习，夯实基础 */,
 				84FDE181256799A4002B32A1 /* SystemAPI「系统API」 */,
 				84FDE182256799BD002B32A1 /* Special「专题」 */,
@@ -624,6 +663,7 @@
 				84EF72DE259C0EE6002662F3 /* PGLAStudent.m in Sources */,
 				84FDE15D256796CA002B32A1 /* ViewController.m in Sources */,
 				84D101DB258FA1D600BD01DB /* CodeVerificationBaseTableViewController.m in Sources */,
+				84EF733A259DD1AB002662F3 /* LS_SNL_LIN_ViewController.m in Sources */,
 				84FDE27A256B41B6002B32A1 /* MetalBaseTableViewController.m in Sources */,
 				84FDE157256796CA002B32A1 /* AppDelegate.m in Sources */,
 				84FDE168256796CC002B32A1 /* main.m in Sources */,
@@ -633,6 +673,8 @@
 				841AD227258AFFC800DA4731 /* MinimumXXSpacingViewController.m in Sources */,
 				8490EEF12587468200E4A1C4 /* PPMakerInfiniteLoopVerifyViewController.m in Sources */,
 				848AD289256CAADA006FC2C6 /* GCD_BarrierViewController.m in Sources */,
+				8436201D25F5F1D700A71712 /* CV_Coder.m in Sources */,
+				8436201725F5D75300A71712 /* CV_ObjectCopyingViewController.m in Sources */,
 				84FDE1DA2567B98A002B32A1 /* PPMakerBaseTableViewController.m in Sources */,
 				84D101E1258FA22500BD01DB /* CV_AtomicViewController.m in Sources */,
 				84FDE1952567AD25002B32A1 /* BaseTableViewController.m in Sources */,

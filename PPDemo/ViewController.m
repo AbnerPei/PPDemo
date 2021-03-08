@@ -20,8 +20,8 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = UIColor.whiteColor;
     
-    Person *p = [[Person alloc] init];
-    [p sayHelloWorld];
+//    Person *p = [[Person alloc] init];
+//    [p sayHelloWorld];
 }
 
 - (NSArray *)titles
@@ -32,7 +32,7 @@
         @"SystemAPI「系统API」",
         @"Special「专题」",
         @"OpenSourceLibs「开源库」",
-        @"实践是检验真理的唯一标准「Code Verification」"
+        @"Code Verification「实践是检验真理的唯一标准」"
     ];
 }
 

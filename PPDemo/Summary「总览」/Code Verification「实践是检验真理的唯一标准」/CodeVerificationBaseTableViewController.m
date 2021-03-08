@@ -23,6 +23,7 @@
 {
     return @[
         @"atomic 修饰的属性是绝对安全的吗？为什么？",
+        @"深拷贝和浅拷贝",
         @"Context Menus",
     ];
 }
@@ -31,6 +32,7 @@
 {
     return @[
         @"CV_AtomicViewController",
+        @"CV_ObjectCopyingViewController",
         @"ContextMenusViewController",
     ];
 }
