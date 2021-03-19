@@ -24,6 +24,7 @@
     return @[
         @"UICollectionView",
         @"Context Menus",
+        @"WebKit"
     ];
 }
 
@@ -32,6 +33,7 @@
     return @[
         @"UICollectionViewBaseTableViewController",
         @"ContextMenusViewController",
+        @"WebKitBaseTableViewController"
     ];
 }
 
