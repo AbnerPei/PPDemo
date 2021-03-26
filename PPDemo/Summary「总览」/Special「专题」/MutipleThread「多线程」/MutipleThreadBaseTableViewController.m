@@ -24,6 +24,7 @@
 - (NSArray *)titles
 {
     return @[
+        @"iOS的锁",
         @"栅栏函数",
         @"信号量"
     ];
@@ -33,6 +34,7 @@
 - (NSArray *)vcs
 {
     return @[
+        @"LockBaseTableViewController",
         @"GCD_BarrierViewController",
         @"GCD_SemaphoreViewController"
     ];

@@ -19,6 +19,8 @@
 		8490EEF12587468200E4A1C4 /* PPMakerInfiniteLoopVerifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8490EEF02587468200E4A1C4 /* PPMakerInfiniteLoopVerifyViewController.m */; };
 		84D101DB258FA1D600BD01DB /* CodeVerificationBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D101DA258FA1D600BD01DB /* CodeVerificationBaseTableViewController.m */; };
 		84D101E1258FA22500BD01DB /* CV_AtomicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D101E0258FA22500BD01DB /* CV_AtomicViewController.m */; };
+		84D970DF2606D95D0063F8CA /* LockBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D970DE2606D95D0063F8CA /* LockBaseTableViewController.m */; };
+		84D970E42606EC930063F8CA /* dispatch_semaphore_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D970E32606EC930063F8CA /* dispatch_semaphore_ViewController.m */; };
 		84EF72CE259C0D9C002662F3 /* iOSBasicKnowledgeBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EF72CD259C0D9C002662F3 /* iOSBasicKnowledgeBaseTableViewController.m */; };
 		84EF72DA259C0E8B002662F3 /* PointGrammarAndLineArrowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EF72D9259C0E8B002662F3 /* PointGrammarAndLineArrowViewController.m */; };
 		84EF72DE259C0EE6002662F3 /* PGLAStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EF72DD259C0EE6002662F3 /* PGLAStudent.m */; };
@@ -74,6 +76,10 @@
 		84D101DA258FA1D600BD01DB /* CodeVerificationBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeVerificationBaseTableViewController.m; sourceTree = "<group>"; };
 		84D101DF258FA22500BD01DB /* CV_AtomicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CV_AtomicViewController.h; sourceTree = "<group>"; };
 		84D101E0258FA22500BD01DB /* CV_AtomicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CV_AtomicViewController.m; sourceTree = "<group>"; };
+		84D970DD2606D95D0063F8CA /* LockBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LockBaseTableViewController.h; sourceTree = "<group>"; };
+		84D970DE2606D95D0063F8CA /* LockBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LockBaseTableViewController.m; sourceTree = "<group>"; };
+		84D970E22606EC930063F8CA /* dispatch_semaphore_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dispatch_semaphore_ViewController.h; sourceTree = "<group>"; };
+		84D970E32606EC930063F8CA /* dispatch_semaphore_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dispatch_semaphore_ViewController.m; sourceTree = "<group>"; };
 		84E9AE5B256CB3E2006843D0 /* 【GCD】信号量.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "【GCD】信号量.md"; sourceTree = "<group>"; };
 		84E9AF5D256D0D98006843D0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		84EF72CC259C0D9C002662F3 /* iOSBasicKnowledgeBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSBasicKnowledgeBaseTableViewController.h; sourceTree = "<group>"; };
@@ -304,6 +310,25 @@
 			path = atomic;
 			sourceTree = "<group>";
 		};
+		84D970DB2606D90F0063F8CA /* 锁 */ = {
+			isa = PBXGroup;
+			children = (
+				84D970DC2606D9350063F8CA /* 自旋锁 */,
+				84D970DD2606D95D0063F8CA /* LockBaseTableViewController.h */,
+				84D970DE2606D95D0063F8CA /* LockBaseTableViewController.m */,
+				84D970E22606EC930063F8CA /* dispatch_semaphore_ViewController.h */,
+				84D970E32606EC930063F8CA /* dispatch_semaphore_ViewController.m */,
+			);
+			path = "锁";
+			sourceTree = "<group>";
+		};
+		84D970DC2606D9350063F8CA /* 自旋锁 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "自旋锁";
+			sourceTree = "<group>";
+		};
 		84E9AF4E256D00AF006843D0 /* SDWebImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -512,6 +537,7 @@
 		84FDE18C25679FB3002B32A1 /* MutipleThread「多线程」 */ = {
 			isa = PBXGroup;
 			children = (
+				84D970DB2606D90F0063F8CA /* 锁 */,
 				848AD28C256CAAE3006FC2C6 /* GCD */,
 				84FDE1CC2567B850002B32A1 /* MutipleThreadBaseTableViewController.h */,
 				84FDE1CD2567B850002B32A1 /* MutipleThreadBaseTableViewController.m */,
@@ -684,6 +710,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84FDE1FD2567C260002B32A1 /* Person.swift in Sources */,
+				84D970DF2606D95D0063F8CA /* LockBaseTableViewController.m in Sources */,
 				84FDE275256B41A3002B32A1 /* OpenGLESBaseTableViewController.m in Sources */,
 				8456CAF426049CE5007FD41C /* WebKitBaseTableViewController.m in Sources */,
 				84FDE1CA2567B80A002B32A1 /* CoreAnimationBaseTableViewController.m in Sources */,
@@ -708,6 +735,7 @@
 				84FDE1D62567B94A002B32A1 /* PPCarouselBaseTableViewController.m in Sources */,
 				84FDE19A2567AEE1002B32A1 /* OpenSourceLibsBaseTableViewController.m in Sources */,
 				84FDE1AF2567B1DA002B32A1 /* SystemAPIBaseTableViewController.m in Sources */,
+				84D970E42606EC930063F8CA /* dispatch_semaphore_ViewController.m in Sources */,
 				848AD290256CAB66006FC2C6 /* GCD_SemaphoreViewController.m in Sources */,
 				84FDE1B42567B25D002B32A1 /* MyLibsBaseTableViewController.m in Sources */,
 				84FDE1D22567B912002B32A1 /* PPTextFieldBaseTableViewController.m in Sources */,
