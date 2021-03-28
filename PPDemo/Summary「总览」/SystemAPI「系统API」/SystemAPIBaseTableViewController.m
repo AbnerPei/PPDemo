@@ -25,6 +25,7 @@
         @"多线程",
         @"UICollectionView",
         @"Context Menus",
+        @"WebKit"
     ];
 }
 
@@ -34,6 +35,7 @@
         @"MultiThreadingBaseTableViewController",
         @"UICollectionViewBaseTableViewController",
         @"ContextMenusViewController",
+        @"WebKitBaseTableViewController"
     ];
 }
 
