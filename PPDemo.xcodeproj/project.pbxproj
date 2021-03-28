@@ -7,6 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07141B9925FD79E300001AA7 /* OtherBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07141B9825FD79E300001AA7 /* OtherBaseTableViewController.m */; };
+		07141B9F25FD7A8900001AA7 /* SingletonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07141B9E25FD7A8900001AA7 /* SingletonViewController.m */; };
+		07141BA525FD7ACC00001AA7 /* SubSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 07141BA125FD7ACB00001AA7 /* SubSingleton.m */; };
+		07141BA625FD7ACC00001AA7 /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 07141BA325FD7ACC00001AA7 /* Singleton.m */; };
+		0734A62F25FD92B70008B9BD /* UnderlyingInquiryBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0734A62E25FD92B70008B9BD /* UnderlyingInquiryBaseTableViewController.m */; };
+		0734A63425FD94940008B9BD /* LI_Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 0734A63325FD94940008B9BD /* LI_Person.m */; };
+		0734A63825FD94B10008B9BD /* LI_Man.m in Sources */ = {isa = PBXBuildFile; fileRef = 0734A63725FD94B10008B9BD /* LI_Man.m */; };
+		0734A63C25FD94DF0008B9BD /* LI_Man+One.m in Sources */ = {isa = PBXBuildFile; fileRef = 0734A63B25FD94DF0008B9BD /* LI_Man+One.m */; };
+		0734A64025FD94F20008B9BD /* LI_Man+Two.m in Sources */ = {isa = PBXBuildFile; fileRef = 0734A63F25FD94F20008B9BD /* LI_Man+Two.m */; };
+		0734A64425FD95080008B9BD /* LI_Person+One.m in Sources */ = {isa = PBXBuildFile; fileRef = 0734A64325FD95080008B9BD /* LI_Person+One.m */; };
+		0734A64825FD95180008B9BD /* LI_Person+Two.m in Sources */ = {isa = PBXBuildFile; fileRef = 0734A64725FD95180008B9BD /* LI_Person+Two.m */; };
+		0734A65125FDA9E00008B9BD /* PPDemoDebugConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 0734A65025FDA9E00008B9BD /* PPDemoDebugConfiguration.m */; };
+		0734A65625FE19800008B9BD /* UI_LoadAndInitializeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0734A65525FE19800008B9BD /* UI_LoadAndInitializeViewController.m */; };
+		0734A66526038EEA0008B9BD /* MultiThreadingBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0734A66426038EEA0008B9BD /* MultiThreadingBaseTableViewController.m */; };
+		0734A66926038F0D0008B9BD /* NSOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0734A66826038F0D0008B9BD /* NSOperationViewController.m */; };
+		0734A673260ED3300008B9BD /* UI_BlockBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0734A672260ED3300008B9BD /* UI_BlockBaseTableViewController.m */; };
+		0734A67A260ED3A60008B9BD /* CategoriesOfBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0734A679260ED3A60008B9BD /* CategoriesOfBlockViewController.m */; };
+		0734A67F260ED3C40008B9BD /* __blockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0734A67E260ED3C40008B9BD /* __blockViewController.m */; };
+		0734A688260EE1D80008B9BD /* PerformSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0734A687260EE1D80008B9BD /* PerformSelectorViewController.m */; };
+		0734A68D260EF10E0008B9BD /* Block1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0734A68C260EF10E0008B9BD /* Block1ViewController.m */; };
+		0734A692260EF11E0008B9BD /* Block2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0734A691260EF11E0008B9BD /* Block2ViewController.m */; };
 		841AD220258AFF4900DA4731 /* UICollectionViewBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841AD21F258AFF4900DA4731 /* UICollectionViewBaseTableViewController.m */; };
 		841AD227258AFFC800DA4731 /* MinimumXXSpacingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841AD226258AFFC800DA4731 /* MinimumXXSpacingViewController.m */; };
 		8436201725F5D75300A71712 /* CV_ObjectCopyingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8436201625F5D75300A71712 /* CV_ObjectCopyingViewController.m */; };
@@ -45,6 +66,50 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07141B9725FD79E300001AA7 /* OtherBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtherBaseTableViewController.h; sourceTree = "<group>"; };
+		07141B9825FD79E300001AA7 /* OtherBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherBaseTableViewController.m; sourceTree = "<group>"; };
+		07141B9D25FD7A8900001AA7 /* SingletonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingletonViewController.h; sourceTree = "<group>"; };
+		07141B9E25FD7A8900001AA7 /* SingletonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingletonViewController.m; sourceTree = "<group>"; };
+		07141BA125FD7ACB00001AA7 /* SubSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubSingleton.m; sourceTree = "<group>"; };
+		07141BA225FD7ACC00001AA7 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		07141BA325FD7ACC00001AA7 /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
+		07141BA425FD7ACC00001AA7 /* SubSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubSingleton.h; sourceTree = "<group>"; };
+		0734A62D25FD92B70008B9BD /* UnderlyingInquiryBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnderlyingInquiryBaseTableViewController.h; sourceTree = "<group>"; };
+		0734A62E25FD92B70008B9BD /* UnderlyingInquiryBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnderlyingInquiryBaseTableViewController.m; sourceTree = "<group>"; };
+		0734A63225FD94940008B9BD /* LI_Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LI_Person.h; sourceTree = "<group>"; };
+		0734A63325FD94940008B9BD /* LI_Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LI_Person.m; sourceTree = "<group>"; };
+		0734A63625FD94B10008B9BD /* LI_Man.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LI_Man.h; sourceTree = "<group>"; };
+		0734A63725FD94B10008B9BD /* LI_Man.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LI_Man.m; sourceTree = "<group>"; };
+		0734A63A25FD94DF0008B9BD /* LI_Man+One.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LI_Man+One.h"; sourceTree = "<group>"; };
+		0734A63B25FD94DF0008B9BD /* LI_Man+One.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LI_Man+One.m"; sourceTree = "<group>"; };
+		0734A63E25FD94F20008B9BD /* LI_Man+Two.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LI_Man+Two.h"; sourceTree = "<group>"; };
+		0734A63F25FD94F20008B9BD /* LI_Man+Two.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LI_Man+Two.m"; sourceTree = "<group>"; };
+		0734A64225FD95080008B9BD /* LI_Person+One.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LI_Person+One.h"; sourceTree = "<group>"; };
+		0734A64325FD95080008B9BD /* LI_Person+One.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LI_Person+One.m"; sourceTree = "<group>"; };
+		0734A64625FD95180008B9BD /* LI_Person+Two.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LI_Person+Two.h"; sourceTree = "<group>"; };
+		0734A64725FD95180008B9BD /* LI_Person+Two.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LI_Person+Two.m"; sourceTree = "<group>"; };
+		0734A64F25FDA9E00008B9BD /* PPDemoDebugConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPDemoDebugConfiguration.h; sourceTree = "<group>"; };
+		0734A65025FDA9E00008B9BD /* PPDemoDebugConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPDemoDebugConfiguration.m; sourceTree = "<group>"; };
+		0734A65425FE19800008B9BD /* UI_LoadAndInitializeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UI_LoadAndInitializeViewController.h; sourceTree = "<group>"; };
+		0734A65525FE19800008B9BD /* UI_LoadAndInitializeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UI_LoadAndInitializeViewController.m; sourceTree = "<group>"; };
+		0734A65D25FE2B760008B9BD /* person_one.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = person_one.cpp; sourceTree = "<group>"; };
+		0734A66326038EEA0008B9BD /* MultiThreadingBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiThreadingBaseTableViewController.h; sourceTree = "<group>"; };
+		0734A66426038EEA0008B9BD /* MultiThreadingBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiThreadingBaseTableViewController.m; sourceTree = "<group>"; };
+		0734A66726038F0D0008B9BD /* NSOperationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSOperationViewController.h; sourceTree = "<group>"; };
+		0734A66826038F0D0008B9BD /* NSOperationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSOperationViewController.m; sourceTree = "<group>"; };
+		0734A671260ED3300008B9BD /* UI_BlockBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UI_BlockBaseTableViewController.h; sourceTree = "<group>"; };
+		0734A672260ED3300008B9BD /* UI_BlockBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UI_BlockBaseTableViewController.m; sourceTree = "<group>"; };
+		0734A678260ED3A60008B9BD /* CategoriesOfBlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoriesOfBlockViewController.h; sourceTree = "<group>"; };
+		0734A679260ED3A60008B9BD /* CategoriesOfBlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoriesOfBlockViewController.m; sourceTree = "<group>"; };
+		0734A67D260ED3C40008B9BD /* __blockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = __blockViewController.h; sourceTree = "<group>"; };
+		0734A67E260ED3C40008B9BD /* __blockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __blockViewController.m; sourceTree = "<group>"; };
+		0734A681260ED57A0008B9BD /* __blockViewController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = __blockViewController.cpp; sourceTree = "<group>"; };
+		0734A686260EE1D80008B9BD /* PerformSelectorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PerformSelectorViewController.h; sourceTree = "<group>"; };
+		0734A687260EE1D80008B9BD /* PerformSelectorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PerformSelectorViewController.m; sourceTree = "<group>"; };
+		0734A68B260EF10E0008B9BD /* Block1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Block1ViewController.h; sourceTree = "<group>"; };
+		0734A68C260EF10E0008B9BD /* Block1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Block1ViewController.m; sourceTree = "<group>"; };
+		0734A690260EF11E0008B9BD /* Block2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Block2ViewController.h; sourceTree = "<group>"; };
+		0734A691260EF11E0008B9BD /* Block2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Block2ViewController.m; sourceTree = "<group>"; };
 		3F6C27860A0EC74CFF106F2F /* Pods-PPDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PPDemo.debug.xcconfig"; path = "Target Support Files/Pods-PPDemo/Pods-PPDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		841AD21E258AFF4900DA4731 /* UICollectionViewBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UICollectionViewBaseTableViewController.h; sourceTree = "<group>"; };
 		841AD21F258AFF4900DA4731 /* UICollectionViewBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewBaseTableViewController.m; sourceTree = "<group>"; };
@@ -134,6 +199,149 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07141B9625FD79A600001AA7 /* Other「其它」 */ = {
+			isa = PBXGroup;
+			children = (
+				07141B9C25FD7A1000001AA7 /* 单例「严谨的单例和可继承的单例」 */,
+				07141B9725FD79E300001AA7 /* OtherBaseTableViewController.h */,
+				07141B9825FD79E300001AA7 /* OtherBaseTableViewController.m */,
+			);
+			path = "Other「其它」";
+			sourceTree = "<group>";
+		};
+		07141B9C25FD7A1000001AA7 /* 单例「严谨的单例和可继承的单例」 */ = {
+			isa = PBXGroup;
+			children = (
+				07141BA225FD7ACC00001AA7 /* Singleton.h */,
+				07141BA325FD7ACC00001AA7 /* Singleton.m */,
+				07141BA425FD7ACC00001AA7 /* SubSingleton.h */,
+				07141BA125FD7ACB00001AA7 /* SubSingleton.m */,
+				07141B9D25FD7A8900001AA7 /* SingletonViewController.h */,
+				07141B9E25FD7A8900001AA7 /* SingletonViewController.m */,
+			);
+			path = "单例「严谨的单例和可继承的单例」";
+			sourceTree = "<group>";
+		};
+		0734A62C25FD925C0008B9BD /* UnderlyingInquiry「底层探究」 */ = {
+			isa = PBXGroup;
+			children = (
+				0734A685260EE16B0008B9BD /* performSelector */,
+				0734A670260ED2770008B9BD /* Block */,
+				0734A63125FD93BB0008B9BD /* load和initialize */,
+				0734A62D25FD92B70008B9BD /* UnderlyingInquiryBaseTableViewController.h */,
+				0734A62E25FD92B70008B9BD /* UnderlyingInquiryBaseTableViewController.m */,
+			);
+			path = "UnderlyingInquiry「底层探究」";
+			sourceTree = "<group>";
+		};
+		0734A63125FD93BB0008B9BD /* load和initialize */ = {
+			isa = PBXGroup;
+			children = (
+				0734A65825FE19870008B9BD /* Models */,
+				0734A65425FE19800008B9BD /* UI_LoadAndInitializeViewController.h */,
+				0734A65525FE19800008B9BD /* UI_LoadAndInitializeViewController.m */,
+			);
+			path = "load和initialize";
+			sourceTree = "<group>";
+		};
+		0734A65825FE19870008B9BD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0734A65C25FE2B760008B9BD /* CPPs */,
+				0734A63225FD94940008B9BD /* LI_Person.h */,
+				0734A63325FD94940008B9BD /* LI_Person.m */,
+				0734A63625FD94B10008B9BD /* LI_Man.h */,
+				0734A63725FD94B10008B9BD /* LI_Man.m */,
+				0734A63A25FD94DF0008B9BD /* LI_Man+One.h */,
+				0734A63B25FD94DF0008B9BD /* LI_Man+One.m */,
+				0734A63E25FD94F20008B9BD /* LI_Man+Two.h */,
+				0734A63F25FD94F20008B9BD /* LI_Man+Two.m */,
+				0734A64225FD95080008B9BD /* LI_Person+One.h */,
+				0734A64325FD95080008B9BD /* LI_Person+One.m */,
+				0734A64625FD95180008B9BD /* LI_Person+Two.h */,
+				0734A64725FD95180008B9BD /* LI_Person+Two.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0734A65C25FE2B760008B9BD /* CPPs */ = {
+			isa = PBXGroup;
+			children = (
+				0734A65D25FE2B760008B9BD /* person_one.cpp */,
+			);
+			path = CPPs;
+			sourceTree = "<group>";
+		};
+		0734A66126038E0E0008B9BD /* 多线程 */ = {
+			isa = PBXGroup;
+			children = (
+				0734A66226038E1C0008B9BD /* NSOperation */,
+				0734A66326038EEA0008B9BD /* MultiThreadingBaseTableViewController.h */,
+				0734A66426038EEA0008B9BD /* MultiThreadingBaseTableViewController.m */,
+			);
+			path = "多线程";
+			sourceTree = "<group>";
+		};
+		0734A66226038E1C0008B9BD /* NSOperation */ = {
+			isa = PBXGroup;
+			children = (
+				0734A66726038F0D0008B9BD /* NSOperationViewController.h */,
+				0734A66826038F0D0008B9BD /* NSOperationViewController.m */,
+			);
+			path = NSOperation;
+			sourceTree = "<group>";
+		};
+		0734A670260ED2770008B9BD /* Block */ = {
+			isa = PBXGroup;
+			children = (
+				0734A68A260EF0F00008B9BD /* Block实战 */,
+				0734A677260ED3640008B9BD /* __block */,
+				0734A676260ED3360008B9BD /* Block的分类 */,
+				0734A671260ED3300008B9BD /* UI_BlockBaseTableViewController.h */,
+				0734A672260ED3300008B9BD /* UI_BlockBaseTableViewController.m */,
+			);
+			path = Block;
+			sourceTree = "<group>";
+		};
+		0734A676260ED3360008B9BD /* Block的分类 */ = {
+			isa = PBXGroup;
+			children = (
+				0734A678260ED3A60008B9BD /* CategoriesOfBlockViewController.h */,
+				0734A679260ED3A60008B9BD /* CategoriesOfBlockViewController.m */,
+			);
+			path = "Block的分类";
+			sourceTree = "<group>";
+		};
+		0734A677260ED3640008B9BD /* __block */ = {
+			isa = PBXGroup;
+			children = (
+				0734A681260ED57A0008B9BD /* __blockViewController.cpp */,
+				0734A67D260ED3C40008B9BD /* __blockViewController.h */,
+				0734A67E260ED3C40008B9BD /* __blockViewController.m */,
+			);
+			path = __block;
+			sourceTree = "<group>";
+		};
+		0734A685260EE16B0008B9BD /* performSelector */ = {
+			isa = PBXGroup;
+			children = (
+				0734A686260EE1D80008B9BD /* PerformSelectorViewController.h */,
+				0734A687260EE1D80008B9BD /* PerformSelectorViewController.m */,
+			);
+			path = performSelector;
+			sourceTree = "<group>";
+		};
+		0734A68A260EF0F00008B9BD /* Block实战 */ = {
+			isa = PBXGroup;
+			children = (
+				0734A68B260EF10E0008B9BD /* Block1ViewController.h */,
+				0734A68C260EF10E0008B9BD /* Block1ViewController.m */,
+				0734A690260EF11E0008B9BD /* Block2ViewController.h */,
+				0734A691260EF11E0008B9BD /* Block2ViewController.m */,
+			);
+			path = "Block实战";
+			sourceTree = "<group>";
+		};
 		1FEF9E9911DB5E97F8630B39 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,6 +470,7 @@
 		84D101D7258FA12800BD01DB /* Code Verification「实践是检验真理的唯一标准」 */ = {
 			isa = PBXGroup;
 			children = (
+				0734A62C25FD925C0008B9BD /* UnderlyingInquiry「底层探究」 */,
 				8436201425F5D6AC00A71712 /* 深拷贝和浅拷贝 */,
 				84D101DE258FA1DE00BD01DB /* atomic */,
 				84D101D9258FA1D600BD01DB /* CodeVerificationBaseTableViewController.h */,
@@ -369,6 +578,7 @@
 		84FDE18025679946002B32A1 /* Summary「总览」 */ = {
 			isa = PBXGroup;
 			children = (
+				07141B9625FD79A600001AA7 /* Other「其它」 */,
 				84EF72CA259C0D21002662F3 /* iOS基础知识 */,
 				84D101D7258FA12800BD01DB /* Code Verification「实践是检验真理的唯一标准」 */,
 				848AD293256CABE0006FC2C6 /* 拓展学习，夯实基础 */,
@@ -376,6 +586,8 @@
 				84FDE182256799BD002B32A1 /* Special「专题」 */,
 				84FDE183256799DD002B32A1 /* OpenSourceLibs「开源库」 */,
 				84FDE1922567ACA5002B32A1 /* ExampleBaseUI */,
+				0734A64F25FDA9E00008B9BD /* PPDemoDebugConfiguration.h */,
+				0734A65025FDA9E00008B9BD /* PPDemoDebugConfiguration.m */,
 			);
 			path = "Summary「总览」";
 			sourceTree = "<group>";
@@ -383,6 +595,7 @@
 		84FDE181256799A4002B32A1 /* SystemAPI「系统API」 */ = {
 			isa = PBXGroup;
 			children = (
+				0734A66126038E0E0008B9BD /* 多线程 */,
 				84315CCB258C80A000AB8C33 /* UIDatePicker和UIPickerView */,
 				841AD21D258AFF1200DA4731 /* UICollectionView */,
 				8490EEE8258743B600E4A1C4 /* ContextMenus「iOS 13.0」 */,
@@ -657,28 +870,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0734A66526038EEA0008B9BD /* MultiThreadingBaseTableViewController.m in Sources */,
+				0734A64025FD94F20008B9BD /* LI_Man+Two.m in Sources */,
+				0734A63425FD94940008B9BD /* LI_Person.m in Sources */,
+				0734A67A260ED3A60008B9BD /* CategoriesOfBlockViewController.m in Sources */,
+				0734A63C25FD94DF0008B9BD /* LI_Man+One.m in Sources */,
+				0734A63825FD94B10008B9BD /* LI_Man.m in Sources */,
+				0734A64825FD95180008B9BD /* LI_Person+Two.m in Sources */,
+				0734A64425FD95080008B9BD /* LI_Person+One.m in Sources */,
 				84FDE1FD2567C260002B32A1 /* Person.swift in Sources */,
 				84FDE275256B41A3002B32A1 /* OpenGLESBaseTableViewController.m in Sources */,
 				84FDE1CA2567B80A002B32A1 /* CoreAnimationBaseTableViewController.m in Sources */,
 				84EF72DE259C0EE6002662F3 /* PGLAStudent.m in Sources */,
+				07141BA625FD7ACC00001AA7 /* Singleton.m in Sources */,
 				84FDE15D256796CA002B32A1 /* ViewController.m in Sources */,
 				84D101DB258FA1D600BD01DB /* CodeVerificationBaseTableViewController.m in Sources */,
+				0734A65125FDA9E00008B9BD /* PPDemoDebugConfiguration.m in Sources */,
+				0734A67F260ED3C40008B9BD /* __blockViewController.m in Sources */,
 				84EF733A259DD1AB002662F3 /* LS_SNL_LIN_ViewController.m in Sources */,
 				84FDE27A256B41B6002B32A1 /* MetalBaseTableViewController.m in Sources */,
 				84FDE157256796CA002B32A1 /* AppDelegate.m in Sources */,
 				84FDE168256796CC002B32A1 /* main.m in Sources */,
 				84EF72CE259C0D9C002662F3 /* iOSBasicKnowledgeBaseTableViewController.m in Sources */,
 				84FDE1CE2567B850002B32A1 /* MutipleThreadBaseTableViewController.m in Sources */,
+				07141BA525FD7ACC00001AA7 /* SubSingleton.m in Sources */,
 				84FDE15A256796CA002B32A1 /* SceneDelegate.m in Sources */,
 				841AD227258AFFC800DA4731 /* MinimumXXSpacingViewController.m in Sources */,
 				8490EEF12587468200E4A1C4 /* PPMakerInfiniteLoopVerifyViewController.m in Sources */,
 				848AD289256CAADA006FC2C6 /* GCD_BarrierViewController.m in Sources */,
 				8436201D25F5F1D700A71712 /* CV_Coder.m in Sources */,
+				0734A673260ED3300008B9BD /* UI_BlockBaseTableViewController.m in Sources */,
+				0734A68D260EF10E0008B9BD /* Block1ViewController.m in Sources */,
 				8436201725F5D75300A71712 /* CV_ObjectCopyingViewController.m in Sources */,
+				07141B9F25FD7A8900001AA7 /* SingletonViewController.m in Sources */,
 				84FDE1DA2567B98A002B32A1 /* PPMakerBaseTableViewController.m in Sources */,
 				84D101E1258FA22500BD01DB /* CV_AtomicViewController.m in Sources */,
 				84FDE1952567AD25002B32A1 /* BaseTableViewController.m in Sources */,
 				84FDE1D62567B94A002B32A1 /* PPCarouselBaseTableViewController.m in Sources */,
+				0734A692260EF11E0008B9BD /* Block2ViewController.m in Sources */,
+				0734A65625FE19800008B9BD /* UI_LoadAndInitializeViewController.m in Sources */,
 				84FDE19A2567AEE1002B32A1 /* OpenSourceLibsBaseTableViewController.m in Sources */,
 				84FDE1AF2567B1DA002B32A1 /* SystemAPIBaseTableViewController.m in Sources */,
 				848AD290256CAB66006FC2C6 /* GCD_SemaphoreViewController.m in Sources */,
@@ -686,8 +916,12 @@
 				84FDE1D22567B912002B32A1 /* PPTextFieldBaseTableViewController.m in Sources */,
 				84FDE1AB2567B1AD002B32A1 /* SpecialBaseTableViewController.m in Sources */,
 				8490EEEB258743D200E4A1C4 /* ContextMenusViewController.m in Sources */,
+				07141B9925FD79E300001AA7 /* OtherBaseTableViewController.m in Sources */,
+				0734A62F25FD92B70008B9BD /* UnderlyingInquiryBaseTableViewController.m in Sources */,
 				841AD220258AFF4900DA4731 /* UICollectionViewBaseTableViewController.m in Sources */,
+				0734A688260EE1D80008B9BD /* PerformSelectorViewController.m in Sources */,
 				84EF72DA259C0E8B002662F3 /* PointGrammarAndLineArrowViewController.m in Sources */,
+				0734A66926038F0D0008B9BD /* NSOperationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

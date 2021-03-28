@@ -22,6 +22,7 @@
 - (NSArray *)titles
 {
     return @[
+        @"UnderlyingInquiry「底层探究」",
         @"atomic 修饰的属性是绝对安全的吗？为什么？",
         @"深拷贝和浅拷贝",
         @"Context Menus",
@@ -31,6 +32,7 @@
 - (NSArray *)vcs
 {
     return @[
+        @"UnderlyingInquiryBaseTableViewController",
         @"CV_AtomicViewController",
         @"CV_ObjectCopyingViewController",
         @"ContextMenusViewController",

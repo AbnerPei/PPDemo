@@ -32,7 +32,8 @@
         @"SystemAPI「系统API」",
         @"Special「专题」",
         @"OpenSourceLibs「开源库」",
-        @"Code Verification「实践是检验真理的唯一标准」"
+        @"Code Verification「实践是检验真理的唯一标准」",
+        @"Other「其它」"
     ];
 }
 
@@ -44,7 +45,8 @@
         @"SystemAPIBaseTableViewController",
         @"SpecialBaseTableViewController",
         @"OpenSourceLibsBaseTableViewController",
-        @"CodeVerificationBaseTableViewController"
+        @"CodeVerificationBaseTableViewController",
+        @"OtherBaseTableViewController"
     ];
 }
 

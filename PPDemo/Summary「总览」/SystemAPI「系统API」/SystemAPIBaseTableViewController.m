@@ -22,6 +22,7 @@
 - (NSArray *)titles
 {
     return @[
+        @"多线程",
         @"UICollectionView",
         @"Context Menus",
     ];
@@ -30,6 +31,7 @@
 - (NSArray *)vcs
 {
     return @[
+        @"MultiThreadingBaseTableViewController",
         @"UICollectionViewBaseTableViewController",
         @"ContextMenusViewController",
     ];
