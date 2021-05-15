@@ -27,4 +27,13 @@
     return _##btName;\
 }
 
+#define PPLazyGenArray(GenClass, arr) - (NSMutableArray<GenClass *> *)arr\
+{\
+    if (!_##arr) {\
+        _##arr = [NSMutableArray array];\
+    }\
+    return _##arr;\
+}
+
+
 #endif /* PPMacros_h */

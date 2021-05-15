@@ -12,6 +12,7 @@
 
 @interface ViewController ()
 @property (nonatomic, strong) UIButton *okButton;
+@property (nonatomic, strong) NSMutableArray<NSString *> *studentNameMArray;
 @end
 
 @implementation ViewController
@@ -31,6 +32,10 @@
         [self.okButton removeFromSuperview];
         self.okButton = nil;
     });
+    
+    [self.studentNameMArray addObject:@"张三"];
+    [self.studentNameMArray addObjectsFromArray:@[@"李四",@"王五"]];
+    NSLog(@"%@",self.studentNameMArray);
 }
 
 - (NSArray *)titles
@@ -70,5 +75,8 @@
 PPLazyButton(okButton, {
     [_okButton setTitle:@"AbnerPei:4秒后消失" forState:(UIControlStateNormal)];
 })
+
+
+PPLazyGenArray(NSString, studentNameMArray)
 
 @end
