@@ -8,9 +8,10 @@
 #import "ViewController.h"
 #import "PPDemo-Swift.h"
 #import <PPMaker/PPMaker.h>
+#import "PPMacros.h"
 
 @interface ViewController ()
-
+@property (nonatomic, strong) UIButton *okButton;
 @end
 
 @implementation ViewController
@@ -22,6 +23,14 @@
     
 //    Person *p = [[Person alloc] init];
 //    [p sayHelloWorld];
+    
+    [self.tableView addSubview:self.okButton];
+    self.okButton.frame = CGRectMake(100, 100, 200, 200);
+    self.okButton.backgroundColor = UIColor.redColor;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(4 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.okButton removeFromSuperview];
+        self.okButton = nil;
+    });
 }
 
 - (NSArray *)titles
@@ -52,5 +61,14 @@
     ];
 }
 
+
+
+//PPLazy(UIButton, okButton, {
+//    [_okButton setTitle:@"AbnerPei:4秒后消失" forState:(UIControlStateNormal)];
+//})
+
+PPLazyButton(okButton, {
+    [_okButton setTitle:@"AbnerPei:4秒后消失" forState:(UIControlStateNormal)];
+})
 
 @end
