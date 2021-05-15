@@ -27,6 +27,7 @@
 - (NSArray *)titles
 {
     return @[
+        @"Swift",
         @"MyLibs「我的开源库」",
         @"iOS基础知识",
         @"SystemAPI「系统API」",
@@ -40,6 +41,7 @@
 - (NSArray *)vcs
 {
     return @[
+        @"SwiftBaseTableViewController",
         @"MyLibsBaseTableViewController",
         @"iOSBasicKnowledgeBaseTableViewController",
         @"SystemAPIBaseTableViewController",
