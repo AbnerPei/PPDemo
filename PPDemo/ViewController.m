@@ -8,9 +8,11 @@
 #import "ViewController.h"
 #import "PPDemo-Swift.h"
 #import <PPMaker/PPMaker.h>
+#import "PPMacros.h"
 
 @interface ViewController ()
-
+@property (nonatomic, strong) UIButton *okButton;
+@property (nonatomic, strong) NSMutableArray<NSString *> *studentNameMArray;
 @end
 
 @implementation ViewController
@@ -22,11 +24,24 @@
     
 //    Person *p = [[Person alloc] init];
 //    [p sayHelloWorld];
+    
+    [self.tableView addSubview:self.okButton];
+    self.okButton.frame = CGRectMake(100, 100, 200, 200);
+    self.okButton.backgroundColor = UIColor.redColor;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(4 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.okButton removeFromSuperview];
+        self.okButton = nil;
+    });
+    
+    [self.studentNameMArray addObject:@"张三"];
+    [self.studentNameMArray addObjectsFromArray:@[@"李四",@"王五"]];
+    NSLog(@"%@",self.studentNameMArray);
 }
 
 - (NSArray *)titles
 {
     return @[
+        @"Swift",
         @"MyLibs「我的开源库」",
         @"iOS基础知识",
         @"SystemAPI「系统API」",
@@ -40,6 +55,7 @@
 - (NSArray *)vcs
 {
     return @[
+        @"SwiftBaseTableViewController",
         @"MyLibsBaseTableViewController",
         @"iOSBasicKnowledgeBaseTableViewController",
         @"SystemAPIBaseTableViewController",
@@ -50,5 +66,17 @@
     ];
 }
 
+
+
+//PPLazy(UIButton, okButton, {
+//    [_okButton setTitle:@"AbnerPei:4秒后消失" forState:(UIControlStateNormal)];
+//})
+
+PPLazyButton(okButton, {
+    [_okButton setTitle:@"AbnerPei:4秒后消失" forState:(UIControlStateNormal)];
+})
+
+
+PPLazyGenArray(NSString, studentNameMArray)
 
 @end

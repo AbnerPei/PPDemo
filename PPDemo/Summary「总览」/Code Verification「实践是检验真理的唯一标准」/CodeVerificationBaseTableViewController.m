@@ -25,6 +25,7 @@
         @"UnderlyingInquiry「底层探究」",
         @"atomic 修饰的属性是绝对安全的吗？为什么？",
         @"深拷贝和浅拷贝",
+        @"layoutSubviews调用时机",
         @"Context Menus",
     ];
 }
@@ -35,6 +36,7 @@
         @"UnderlyingInquiryBaseTableViewController",
         @"CV_AtomicViewController",
         @"CV_ObjectCopyingViewController",
+        @"CV_layoutSubviewsViewController",
         @"ContextMenusViewController",
     ];
 }

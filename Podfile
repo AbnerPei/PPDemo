@@ -22,6 +22,9 @@ target 'PPDemo' do
   
 #  pod 'Down'
   
+  # BDD单元测试
+  pod "Kiwi"
+  
   #开源库「我自己本地用」
   pod 'SDWebImage' #, :path => '../SDWebImage'
   

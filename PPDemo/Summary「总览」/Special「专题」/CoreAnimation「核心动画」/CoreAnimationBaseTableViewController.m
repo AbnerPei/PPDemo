@@ -21,16 +21,14 @@
 - (NSArray *)titles
 {
     return @[
-        @"CoreAnimation「核心动画」",
-        @"MutipleThread「多线程」",
+        @"CABasicAnimation",
     ];
 }
 
 - (NSArray *)vcs
 {
     return @[
-        @"CoreAnimationBaseTableViewController",
-        @"MutipleThreadBaseTableViewController",
+        @"CABasicAnimationViewController",
     ];
 }
 

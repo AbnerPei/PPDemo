@@ -64,9 +64,20 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (self.vcs.count == 0) {
+        return;
+    }
+    
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    NSString *nextVCString = [NSString stringWithFormat:@"%@", self.vcs[indexPath.row]];
-    UIViewController *nextVC =[NSClassFromString(nextVCString) new];
+
+    UIViewController *nextVC = nil;
+    if ([self.vcs[indexPath.row] isKindOfClass:[UIViewController class]]) {
+        nextVC = self.vcs[indexPath.row];
+    }else{
+        NSString *nextVCString = [NSString stringWithFormat:@"%@", self.vcs[indexPath.row]];
+        nextVC =[NSClassFromString(nextVCString) new];
+    }
+    
     nextVC.view.backgroundColor = UIColor.whiteColor;
     nextVC.title = [NSString stringWithFormat:@"%@",self.titles[indexPath.row]];
     [self.navigationController pushViewController:nextVC animated:YES];
