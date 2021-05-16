@@ -731,7 +731,6 @@
 		84FDE18925679B46002B32A1 /* Notes「笔记&经验&杂谈」 */ = {
 			isa = PBXGroup;
 			children = (
-				84FDE1DC2567BA29002B32A1 /* Interview「面试」 */,
 				84FDE18F2567A535002B32A1 /* SetOfMeat「干货集中营」 */,
 				84FDE18A25679CF5002B32A1 /* DevelopmentExperience「开发经验」 */,
 				84E9AF5D256D0D98006843D0 /* README.md */,
@@ -773,13 +772,6 @@
 				84FDE1942567AD25002B32A1 /* BaseTableViewController.m */,
 			);
 			path = ExampleBaseUI;
-			sourceTree = "<group>";
-		};
-		84FDE1DC2567BA29002B32A1 /* Interview「面试」 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Interview「面试」";
 			sourceTree = "<group>";
 		};
 		84FDE271256B415A002B32A1 /* OpenGL ES */ = {

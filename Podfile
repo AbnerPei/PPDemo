@@ -17,13 +17,13 @@ target 'PPDemo' do
   pod 'YTKNetwork'
   pod 'Toast'
   
-  pod 'PPMaker', :path => "../PPMaker"
-  pod 'PPTextField', :path => "../PPTextField"
+  pod 'PPMaker' #, :path => "../PPMaker"
+  pod 'PPTextField' #, :path => "../PPTextField"
   
-  pod 'Down'
+#  pod 'Down'
   
   #开源库「我自己本地用」
-  pod 'SDWebImage', :path => '../SDWebImage'
+  pod 'SDWebImage' #, :path => '../SDWebImage'
   
   #开源库「网友用」
 #  pod 'SDWebImage', :git => 'https://github.com/PPAbner/SDWebImage'

@@ -14,7 +14,6 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - Down (0.9.4)
   - MJExtension (3.2.2)
   - MJRefresh (3.5.0)
   - PPMaker (0.0.265):
@@ -60,9 +59,9 @@ PODS:
   - PPMaker/PPMakeCategory/UIKit/UIViewController (0.0.265)
   - PPMaker/PPToolMaker (0.0.265)
   - PPTextField (0.0.2)
-  - SDWebImage (5.10.0):
-    - SDWebImage/Core (= 5.10.0)
-  - SDWebImage/Core (5.10.0)
+  - SDWebImage (5.11.1):
+    - SDWebImage/Core (= 5.11.1)
+  - SDWebImage/Core (5.11.1)
   - SQLiteRepairKit (1.2.2):
     - WCDBOptimizedSQLCipher (~> 1.2.0)
   - Toast (4.0.0)
@@ -78,12 +77,11 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
-  - Down
   - MJExtension
   - MJRefresh
-  - PPMaker (from `../PPMaker`)
-  - PPTextField (from `../PPTextField`)
-  - SDWebImage (from `../SDWebImage`)
+  - PPMaker
+  - PPTextField
+  - SDWebImage
   - Toast
   - WCDB
   - YTKNetwork
@@ -92,9 +90,11 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
-    - Down
     - MJExtension
     - MJRefresh
+    - PPMaker
+    - PPTextField
+    - SDWebImage
     - SQLiteRepairKit
     - Toast
     - WCDB
@@ -102,22 +102,13 @@ SPEC REPOS:
     - YTKNetwork
     - YYKit
 
-EXTERNAL SOURCES:
-  PPMaker:
-    :path: "../PPMaker"
-  PPTextField:
-    :path: "../PPTextField"
-  SDWebImage:
-    :path: "../SDWebImage"
-
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  Down: 276f2c3eeeaf30345873bdad25f44b2640fcfa3a
   MJExtension: d9b9c74cbdeb724c1e9ecbb157b318276e62e876
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
   PPMaker: ae625f87d2332b5f286734c15622a9feb9343c06
   PPTextField: 34b5e67ba9892575134f6c351f11010503ea465c
-  SDWebImage: 9169792e9eec3e45bba2a0c02f74bf8bd922d1ee
+  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
   SQLiteRepairKit: 35aaae5a8838adb85f5b1eb4d796055be6060a4b
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
   WCDB: 8e90babdeb7784c569353a4bd22a66c0a175a882
@@ -125,6 +116,6 @@ SPEC CHECKSUMS:
   YTKNetwork: a096f80c18c7e7cc0e623a0fbea0a1bfd3f5bcf2
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: a142cd3e203895d08a2fc8836743d91adb7fbc50
+PODFILE CHECKSUM: a92f63cf695859aa59b4e85f6d5004fce8d54550
 
 COCOAPODS: 1.10.1
