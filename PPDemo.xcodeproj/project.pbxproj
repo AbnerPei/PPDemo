@@ -36,6 +36,7 @@
 		0734A68D260EF10E0008B9BD /* Block1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0734A68C260EF10E0008B9BD /* Block1ViewController.m */; };
 		0734A692260EF11E0008B9BD /* Block2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0734A691260EF11E0008B9BD /* Block2ViewController.m */; };
 		076540DA263C501E003F61EE /* Function(函数).swift in Sources */ = {isa = PBXBuildFile; fileRef = 076540D9263C501E003F61EE /* Function(函数).swift */; };
+		07822BE92652C2370023AC1D /* VVStandardizedCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07822BE82652C2370023AC1D /* VVStandardizedCodeViewController.m */; };
 		841AD220258AFF4900DA4731 /* UICollectionViewBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841AD21F258AFF4900DA4731 /* UICollectionViewBaseTableViewController.m */; };
 		841AD227258AFFC800DA4731 /* MinimumXXSpacingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841AD226258AFFC800DA4731 /* MinimumXXSpacingViewController.m */; };
 		8436201725F5D75300A71712 /* CV_ObjectCopyingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8436201625F5D75300A71712 /* CV_ObjectCopyingViewController.m */; };
@@ -156,6 +157,8 @@
 		0734A691260EF11E0008B9BD /* Block2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Block2ViewController.m; sourceTree = "<group>"; };
 		0752611B264F8DB7000F3CB3 /* PPMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPMacros.h; sourceTree = "<group>"; };
 		076540D9263C501E003F61EE /* Function(函数).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Function(函数).swift"; sourceTree = "<group>"; };
+		07822BE72652C2370023AC1D /* VVStandardizedCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVStandardizedCodeViewController.h; sourceTree = "<group>"; };
+		07822BE82652C2370023AC1D /* VVStandardizedCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVStandardizedCodeViewController.m; sourceTree = "<group>"; };
 		3F6C27860A0EC74CFF106F2F /* Pods-PPDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PPDemo.debug.xcconfig"; path = "Target Support Files/Pods-PPDemo/Pods-PPDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		841AD21E258AFF4900DA4731 /* UICollectionViewBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UICollectionViewBaseTableViewController.h; sourceTree = "<group>"; };
 		841AD21F258AFF4900DA4731 /* UICollectionViewBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewBaseTableViewController.m; sourceTree = "<group>"; };
@@ -472,6 +475,23 @@
 				0752611B264F8DB7000F3CB3 /* PPMacros.h */,
 			);
 			path = "Macros「宏」";
+			sourceTree = "<group>";
+		};
+		07822BE62652C1930023AC1D /* VVStandardizedCode「标准化代码」 */ = {
+			isa = PBXGroup;
+			children = (
+				07822BEA2652C2420023AC1D /* VV_SC */,
+				07822BE72652C2370023AC1D /* VVStandardizedCodeViewController.h */,
+				07822BE82652C2370023AC1D /* VVStandardizedCodeViewController.m */,
+			);
+			path = "VVStandardizedCode「标准化代码」";
+			sourceTree = "<group>";
+		};
+		07822BEA2652C2420023AC1D /* VV_SC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VV_SC;
 			sourceTree = "<group>";
 		};
 		1FEF9E9911DB5E97F8630B39 /* Pods */ = {
@@ -820,6 +840,7 @@
 		84FDE18525679A33002B32A1 /* MyLibs「我的开源库」 */ = {
 			isa = PBXGroup;
 			children = (
+				07822BE62652C1930023AC1D /* VVStandardizedCode「标准化代码」 */,
 				84FDE18825679AD7002B32A1 /* PPTextField「设置各种输入限制」 */,
 				84FDE18725679A54002B32A1 /* PPCarousel「万能轮播」 */,
 				84FDE18625679A47002B32A1 /* PPMaker「快速开发」 */,
@@ -1180,6 +1201,7 @@
 				0734A688260EE1D80008B9BD /* PerformSelectorViewController.m in Sources */,
 				84EF72DA259C0E8B002662F3 /* PointGrammarAndLineArrowViewController.m in Sources */,
 				0734A66926038F0D0008B9BD /* NSOperationViewController.m in Sources */,
+				07822BE92652C2370023AC1D /* VVStandardizedCodeViewController.m in Sources */,
 				070F03B8261045EB0019B3C3 /* CV_layoutSubviewsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
