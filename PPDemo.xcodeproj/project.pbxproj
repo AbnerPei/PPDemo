@@ -37,6 +37,9 @@
 		0734A692260EF11E0008B9BD /* Block2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0734A691260EF11E0008B9BD /* Block2ViewController.m */; };
 		076540DA263C501E003F61EE /* Function(函数).swift in Sources */ = {isa = PBXBuildFile; fileRef = 076540D9263C501E003F61EE /* Function(函数).swift */; };
 		07822BE92652C2370023AC1D /* VVStandardizedCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07822BE82652C2370023AC1D /* VVStandardizedCodeViewController.m */; };
+		07822BF1265338D90023AC1D /* VVBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07822BF0265338D90023AC1D /* VVBaseViewController.m */; };
+		07822BF4265340B50023AC1D /* VVBaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07822BF3265340B50023AC1D /* VVBaseCollectionViewController.m */; };
+		07822BF7265340CA0023AC1D /* VVBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07822BF6265340CA0023AC1D /* VVBaseTableViewController.m */; };
 		841AD220258AFF4900DA4731 /* UICollectionViewBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841AD21F258AFF4900DA4731 /* UICollectionViewBaseTableViewController.m */; };
 		841AD227258AFFC800DA4731 /* MinimumXXSpacingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841AD226258AFFC800DA4731 /* MinimumXXSpacingViewController.m */; };
 		8436201725F5D75300A71712 /* CV_ObjectCopyingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8436201625F5D75300A71712 /* CV_ObjectCopyingViewController.m */; };
@@ -159,6 +162,12 @@
 		076540D9263C501E003F61EE /* Function(函数).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Function(函数).swift"; sourceTree = "<group>"; };
 		07822BE72652C2370023AC1D /* VVStandardizedCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVStandardizedCodeViewController.h; sourceTree = "<group>"; };
 		07822BE82652C2370023AC1D /* VVStandardizedCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVStandardizedCodeViewController.m; sourceTree = "<group>"; };
+		07822BEF265338D90023AC1D /* VVBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVBaseViewController.h; sourceTree = "<group>"; };
+		07822BF0265338D90023AC1D /* VVBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVBaseViewController.m; sourceTree = "<group>"; };
+		07822BF2265340B50023AC1D /* VVBaseCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVBaseCollectionViewController.h; sourceTree = "<group>"; };
+		07822BF3265340B50023AC1D /* VVBaseCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVBaseCollectionViewController.m; sourceTree = "<group>"; };
+		07822BF5265340CA0023AC1D /* VVBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVBaseTableViewController.h; sourceTree = "<group>"; };
+		07822BF6265340CA0023AC1D /* VVBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVBaseTableViewController.m; sourceTree = "<group>"; };
 		3F6C27860A0EC74CFF106F2F /* Pods-PPDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PPDemo.debug.xcconfig"; path = "Target Support Files/Pods-PPDemo/Pods-PPDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		841AD21E258AFF4900DA4731 /* UICollectionViewBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UICollectionViewBaseTableViewController.h; sourceTree = "<group>"; };
 		841AD21F258AFF4900DA4731 /* UICollectionViewBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewBaseTableViewController.m; sourceTree = "<group>"; };
@@ -490,8 +499,46 @@
 		07822BEA2652C2420023AC1D /* VV_SC */ = {
 			isa = PBXGroup;
 			children = (
+				07822BEE265338920023AC1D /* UIViewController */,
+				07822BEB265337900023AC1D /* UIScrollView */,
 			);
 			path = VV_SC;
+			sourceTree = "<group>";
+		};
+		07822BEB265337900023AC1D /* UIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				07822BED265337B20023AC1D /* UICollectionView */,
+				07822BEC265337A70023AC1D /* UITableView */,
+			);
+			path = UIScrollView;
+			sourceTree = "<group>";
+		};
+		07822BEC265337A70023AC1D /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				07822BF5265340CA0023AC1D /* VVBaseTableViewController.h */,
+				07822BF6265340CA0023AC1D /* VVBaseTableViewController.m */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		07822BED265337B20023AC1D /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				07822BF2265340B50023AC1D /* VVBaseCollectionViewController.h */,
+				07822BF3265340B50023AC1D /* VVBaseCollectionViewController.m */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		07822BEE265338920023AC1D /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				07822BEF265338D90023AC1D /* VVBaseViewController.h */,
+				07822BF0265338D90023AC1D /* VVBaseViewController.m */,
+			);
+			path = UIViewController;
 			sourceTree = "<group>";
 		};
 		1FEF9E9911DB5E97F8630B39 /* Pods */ = {
@@ -1154,6 +1201,7 @@
 				84FDE1FD2567C260002B32A1 /* Person.swift in Sources */,
 				84D970DF2606D95D0063F8CA /* LockBaseTableViewController.m in Sources */,
 				84FDE275256B41A3002B32A1 /* OpenGLESBaseTableViewController.m in Sources */,
+				07822BF7265340CA0023AC1D /* VVBaseTableViewController.m in Sources */,
 				8456CAF426049CE5007FD41C /* WebKitBaseTableViewController.m in Sources */,
 				84FDE1CA2567B80A002B32A1 /* CoreAnimationBaseTableViewController.m in Sources */,
 				84EF72DE259C0EE6002662F3 /* PGLAStudent.m in Sources */,
@@ -1163,6 +1211,7 @@
 				84D101DB258FA1D600BD01DB /* CodeVerificationBaseTableViewController.m in Sources */,
 				0734A65125FDA9E00008B9BD /* PPDemoDebugConfiguration.m in Sources */,
 				0734A67F260ED3C40008B9BD /* __blockViewController.m in Sources */,
+				07822BF1265338D90023AC1D /* VVBaseViewController.m in Sources */,
 				84EF733A259DD1AB002662F3 /* LS_SNL_LIN_ViewController.m in Sources */,
 				84FDE27A256B41B6002B32A1 /* MetalBaseTableViewController.m in Sources */,
 				84FDE157256796CA002B32A1 /* AppDelegate.m in Sources */,
@@ -1173,6 +1222,7 @@
 				84FDE15A256796CA002B32A1 /* SceneDelegate.m in Sources */,
 				841AD227258AFFC800DA4731 /* MinimumXXSpacingViewController.m in Sources */,
 				8490EEF12587468200E4A1C4 /* PPMakerInfiniteLoopVerifyViewController.m in Sources */,
+				07822BF4265340B50023AC1D /* VVBaseCollectionViewController.m in Sources */,
 				848AD289256CAADA006FC2C6 /* GCD_BarrierViewController.m in Sources */,
 				8436201D25F5F1D700A71712 /* CV_Coder.m in Sources */,
 				0734A673260ED3300008B9BD /* UI_BlockBaseTableViewController.m in Sources */,
