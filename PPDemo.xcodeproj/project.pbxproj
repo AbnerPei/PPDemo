@@ -40,6 +40,7 @@
 		07822BF1265338D90023AC1D /* VVBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07822BF0265338D90023AC1D /* VVBaseViewController.m */; };
 		07822BF4265340B50023AC1D /* VVBaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07822BF3265340B50023AC1D /* VVBaseCollectionViewController.m */; };
 		07822BF7265340CA0023AC1D /* VVBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07822BF6265340CA0023AC1D /* VVBaseTableViewController.m */; };
+		07822BFD2653D4500023AC1D /* MasonryBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07822BFC2653D4500023AC1D /* MasonryBaseTableViewController.m */; };
 		841AD220258AFF4900DA4731 /* UICollectionViewBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841AD21F258AFF4900DA4731 /* UICollectionViewBaseTableViewController.m */; };
 		841AD227258AFFC800DA4731 /* MinimumXXSpacingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841AD226258AFFC800DA4731 /* MinimumXXSpacingViewController.m */; };
 		8436201725F5D75300A71712 /* CV_ObjectCopyingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8436201625F5D75300A71712 /* CV_ObjectCopyingViewController.m */; };
@@ -160,6 +161,8 @@
 		0734A691260EF11E0008B9BD /* Block2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Block2ViewController.m; sourceTree = "<group>"; };
 		0752611B264F8DB7000F3CB3 /* PPMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPMacros.h; sourceTree = "<group>"; };
 		076540D9263C501E003F61EE /* Function(函数).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Function(函数).swift"; sourceTree = "<group>"; };
+		077DAC512653E01A007A6D6B /* VVScrollViewContainerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVScrollViewContainerProtocol.h; sourceTree = "<group>"; };
+		077DAC522653E0B2007A6D6B /* VVScrollViewVMProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVScrollViewVMProtocol.h; sourceTree = "<group>"; };
 		07822BE72652C2370023AC1D /* VVStandardizedCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVStandardizedCodeViewController.h; sourceTree = "<group>"; };
 		07822BE82652C2370023AC1D /* VVStandardizedCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVStandardizedCodeViewController.m; sourceTree = "<group>"; };
 		07822BEF265338D90023AC1D /* VVBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVBaseViewController.h; sourceTree = "<group>"; };
@@ -168,6 +171,9 @@
 		07822BF3265340B50023AC1D /* VVBaseCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVBaseCollectionViewController.m; sourceTree = "<group>"; };
 		07822BF5265340CA0023AC1D /* VVBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVBaseTableViewController.h; sourceTree = "<group>"; };
 		07822BF6265340CA0023AC1D /* VVBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVBaseTableViewController.m; sourceTree = "<group>"; };
+		07822BF9265343030023AC1D /* VVViewControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVViewControllerProtocol.h; sourceTree = "<group>"; };
+		07822BFB2653D4500023AC1D /* MasonryBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasonryBaseTableViewController.h; sourceTree = "<group>"; };
+		07822BFC2653D4500023AC1D /* MasonryBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasonryBaseTableViewController.m; sourceTree = "<group>"; };
 		3F6C27860A0EC74CFF106F2F /* Pods-PPDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PPDemo.debug.xcconfig"; path = "Target Support Files/Pods-PPDemo/Pods-PPDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		841AD21E258AFF4900DA4731 /* UICollectionViewBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UICollectionViewBaseTableViewController.h; sourceTree = "<group>"; };
 		841AD21F258AFF4900DA4731 /* UICollectionViewBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewBaseTableViewController.m; sourceTree = "<group>"; };
@@ -320,13 +326,6 @@
 				072D4CC9263315C8003E9CED /* CABasicAnimationViewController.m */,
 			);
 			path = CABasicAnimation;
-			sourceTree = "<group>";
-		};
-		072D4CCB263320BC003E9CED /* Kiwi「BDD-单元测试」 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Kiwi「BDD-单元测试」";
 			sourceTree = "<group>";
 		};
 		072D4CD22633D110003E9CED /* PPDemoTests */ = {
@@ -486,6 +485,15 @@
 			path = "Macros「宏」";
 			sourceTree = "<group>";
 		};
+		077DAC502653DFDF007A6D6B /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				077DAC512653E01A007A6D6B /* VVScrollViewContainerProtocol.h */,
+				077DAC522653E0B2007A6D6B /* VVScrollViewVMProtocol.h */,
+			);
+			path = ScrollView;
+			sourceTree = "<group>";
+		};
 		07822BE62652C1930023AC1D /* VVStandardizedCode「标准化代码」 */ = {
 			isa = PBXGroup;
 			children = (
@@ -499,6 +507,7 @@
 		07822BEA2652C2420023AC1D /* VV_SC */ = {
 			isa = PBXGroup;
 			children = (
+				07822BF8265342CD0023AC1D /* Protocols */,
 				07822BEE265338920023AC1D /* UIViewController */,
 				07822BEB265337900023AC1D /* UIScrollView */,
 			);
@@ -539,6 +548,32 @@
 				07822BF0265338D90023AC1D /* VVBaseViewController.m */,
 			);
 			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		07822BF8265342CD0023AC1D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				077DAC502653DFDF007A6D6B /* ScrollView */,
+				07822BF9265343030023AC1D /* VVViewControllerProtocol.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		07822BFA2653D2850023AC1D /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				07822BFF2653D5870023AC1D /* Masonry简单位移动画 */,
+				07822BFB2653D4500023AC1D /* MasonryBaseTableViewController.h */,
+				07822BFC2653D4500023AC1D /* MasonryBaseTableViewController.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		07822BFF2653D5870023AC1D /* Masonry简单位移动画 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Masonry简单位移动画";
 			sourceTree = "<group>";
 		};
 		1FEF9E9911DB5E97F8630B39 /* Pods */ = {
@@ -726,13 +761,6 @@
 			path = "自旋锁";
 			sourceTree = "<group>";
 		};
-		84E9AF4E256D00AF006843D0 /* SDWebImage */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SDWebImage;
-			sourceTree = "<group>";
-		};
 		84EF72CA259C0D21002662F3 /* iOS基础知识 */ = {
 			isa = PBXGroup;
 			children = (
@@ -866,8 +894,7 @@
 		84FDE183256799DD002B32A1 /* OpenSourceLibs「开源库」 */ = {
 			isa = PBXGroup;
 			children = (
-				072D4CCB263320BC003E9CED /* Kiwi「BDD-单元测试」 */,
-				84E9AF4E256D00AF006843D0 /* SDWebImage */,
+				07822BFA2653D2850023AC1D /* Masonry */,
 				84FDE1982567AEE1002B32A1 /* OpenSourceLibsBaseTableViewController.h */,
 				84FDE1992567AEE1002B32A1 /* OpenSourceLibsBaseTableViewController.m */,
 			);
@@ -1242,6 +1269,7 @@
 				84FDE1B42567B25D002B32A1 /* MyLibsBaseTableViewController.m in Sources */,
 				84FDE1D22567B912002B32A1 /* PPTextFieldBaseTableViewController.m in Sources */,
 				8456CAFA2604A0B5007FD41C /* JSContextAndJSValueViewController.m in Sources */,
+				07822BFD2653D4500023AC1D /* MasonryBaseTableViewController.m in Sources */,
 				84FDE1AB2567B1AD002B32A1 /* SpecialBaseTableViewController.m in Sources */,
 				8490EEEB258743D200E4A1C4 /* ContextMenusViewController.m in Sources */,
 				07141B9925FD79E300001AA7 /* OtherBaseTableViewController.m in Sources */,

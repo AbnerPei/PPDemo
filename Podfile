@@ -10,6 +10,7 @@ target 'PPDemo' do
   # Pods for PPDemo
   pod 'AFNetworking'
 #  pod 'SDWebImage'
+  pod 'Masonry'
   pod 'MJExtension'
   pod 'MJRefresh'
   pod 'WCDB'
@@ -19,11 +20,6 @@ target 'PPDemo' do
   
   pod 'PPMaker' #, :path => "../PPMaker"
   pod 'PPTextField' #, :path => "../PPTextField"
-  
-#  pod 'Down'
-  
-  # BDD单元测试
-  pod "Kiwi"
   
   #开源库「我自己本地用」
   pod 'SDWebImage' #, :path => '../SDWebImage'

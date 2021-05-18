@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
+  - Masonry (1.1.0)
   - MJExtension (3.2.2)
   - MJRefresh (3.5.0)
   - PPMaker (0.0.265):
@@ -77,6 +78,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - Masonry
   - MJExtension
   - MJRefresh
   - PPMaker
@@ -90,6 +92,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
+    - Masonry
     - MJExtension
     - MJRefresh
     - PPMaker
@@ -104,6 +107,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: d9b9c74cbdeb724c1e9ecbb157b318276e62e876
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
   PPMaker: ae625f87d2332b5f286734c15622a9feb9343c06
@@ -116,6 +120,6 @@ SPEC CHECKSUMS:
   YTKNetwork: a096f80c18c7e7cc0e623a0fbea0a1bfd3f5bcf2
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: a92f63cf695859aa59b4e85f6d5004fce8d54550
+PODFILE CHECKSUM: 7436e047523225bb0e169a466cea110b3b1b95af
 
 COCOAPODS: 1.10.1
