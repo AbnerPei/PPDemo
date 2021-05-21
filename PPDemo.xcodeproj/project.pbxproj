@@ -35,7 +35,14 @@
 		0734A688260EE1D80008B9BD /* PerformSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0734A687260EE1D80008B9BD /* PerformSelectorViewController.m */; };
 		0734A68D260EF10E0008B9BD /* Block1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0734A68C260EF10E0008B9BD /* Block1ViewController.m */; };
 		0734A692260EF11E0008B9BD /* Block2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0734A691260EF11E0008B9BD /* Block2ViewController.m */; };
+		07510B0B265813A800B129F6 /* MAS_TwoViewHiddenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07510B0A265813A800B129F6 /* MAS_TwoViewHiddenViewController.m */; };
+		07510B0E265813E500B129F6 /* MAS_CommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 07510B0D265813E500B129F6 /* MAS_CommentModel.m */; };
 		076540DA263C501E003F61EE /* Function(函数).swift in Sources */ = {isa = PBXBuildFile; fileRef = 076540D9263C501E003F61EE /* Function(函数).swift */; };
+		077DAC5626540E82007A6D6B /* MAS_JDGoodsDetailCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 077DAC5526540E82007A6D6B /* MAS_JDGoodsDetailCommentViewController.m */; };
+		077DAC5A26540FCF007A6D6B /* MAS_JDGoodsDetailContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 077DAC5926540FCF007A6D6B /* MAS_JDGoodsDetailContainerView.m */; };
+		077DAC5D26540FFD007A6D6B /* MAS_JDGoodsDetailCommentListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 077DAC5C26540FFD007A6D6B /* MAS_JDGoodsDetailCommentListView.m */; };
+		077DAC612656647E007A6D6B /* MAS_AutoSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 077DAC602656647E007A6D6B /* MAS_AutoSizeViewController.m */; };
+		077DAC64265664CD007A6D6B /* MAS_AutoSizeContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 077DAC63265664CD007A6D6B /* MAS_AutoSizeContentView.m */; };
 		07822BE92652C2370023AC1D /* VVStandardizedCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07822BE82652C2370023AC1D /* VVStandardizedCodeViewController.m */; };
 		07822BF1265338D90023AC1D /* VVBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07822BF0265338D90023AC1D /* VVBaseViewController.m */; };
 		07822BF4265340B50023AC1D /* VVBaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07822BF3265340B50023AC1D /* VVBaseCollectionViewController.m */; };
@@ -159,10 +166,24 @@
 		0734A68C260EF10E0008B9BD /* Block1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Block1ViewController.m; sourceTree = "<group>"; };
 		0734A690260EF11E0008B9BD /* Block2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Block2ViewController.h; sourceTree = "<group>"; };
 		0734A691260EF11E0008B9BD /* Block2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Block2ViewController.m; sourceTree = "<group>"; };
+		07510B09265813A800B129F6 /* MAS_TwoViewHiddenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAS_TwoViewHiddenViewController.h; sourceTree = "<group>"; };
+		07510B0A265813A800B129F6 /* MAS_TwoViewHiddenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAS_TwoViewHiddenViewController.m; sourceTree = "<group>"; };
+		07510B0C265813E500B129F6 /* MAS_CommentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAS_CommentModel.h; sourceTree = "<group>"; };
+		07510B0D265813E500B129F6 /* MAS_CommentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAS_CommentModel.m; sourceTree = "<group>"; };
 		0752611B264F8DB7000F3CB3 /* PPMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPMacros.h; sourceTree = "<group>"; };
 		076540D9263C501E003F61EE /* Function(函数).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Function(函数).swift"; sourceTree = "<group>"; };
 		077DAC512653E01A007A6D6B /* VVScrollViewContainerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVScrollViewContainerProtocol.h; sourceTree = "<group>"; };
 		077DAC522653E0B2007A6D6B /* VVScrollViewVMProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVScrollViewVMProtocol.h; sourceTree = "<group>"; };
+		077DAC5426540E82007A6D6B /* MAS_JDGoodsDetailCommentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAS_JDGoodsDetailCommentViewController.h; sourceTree = "<group>"; };
+		077DAC5526540E82007A6D6B /* MAS_JDGoodsDetailCommentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAS_JDGoodsDetailCommentViewController.m; sourceTree = "<group>"; };
+		077DAC5826540FCF007A6D6B /* MAS_JDGoodsDetailContainerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAS_JDGoodsDetailContainerView.h; sourceTree = "<group>"; };
+		077DAC5926540FCF007A6D6B /* MAS_JDGoodsDetailContainerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAS_JDGoodsDetailContainerView.m; sourceTree = "<group>"; };
+		077DAC5B26540FFD007A6D6B /* MAS_JDGoodsDetailCommentListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAS_JDGoodsDetailCommentListView.h; sourceTree = "<group>"; };
+		077DAC5C26540FFD007A6D6B /* MAS_JDGoodsDetailCommentListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAS_JDGoodsDetailCommentListView.m; sourceTree = "<group>"; };
+		077DAC5F2656647E007A6D6B /* MAS_AutoSizeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAS_AutoSizeViewController.h; sourceTree = "<group>"; };
+		077DAC602656647E007A6D6B /* MAS_AutoSizeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAS_AutoSizeViewController.m; sourceTree = "<group>"; };
+		077DAC62265664CD007A6D6B /* MAS_AutoSizeContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAS_AutoSizeContentView.h; sourceTree = "<group>"; };
+		077DAC63265664CD007A6D6B /* MAS_AutoSizeContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAS_AutoSizeContentView.m; sourceTree = "<group>"; };
 		07822BE72652C2370023AC1D /* VVStandardizedCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVStandardizedCodeViewController.h; sourceTree = "<group>"; };
 		07822BE82652C2370023AC1D /* VVStandardizedCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVStandardizedCodeViewController.m; sourceTree = "<group>"; };
 		07822BEF265338D90023AC1D /* VVBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVBaseViewController.h; sourceTree = "<group>"; };
@@ -477,6 +498,17 @@
 			path = "Block实战";
 			sourceTree = "<group>";
 		};
+		07510B082658132700B129F6 /* 两个view(前者隐藏,后者前移) */ = {
+			isa = PBXGroup;
+			children = (
+				07510B09265813A800B129F6 /* MAS_TwoViewHiddenViewController.h */,
+				07510B0A265813A800B129F6 /* MAS_TwoViewHiddenViewController.m */,
+				07510B0C265813E500B129F6 /* MAS_CommentModel.h */,
+				07510B0D265813E500B129F6 /* MAS_CommentModel.m */,
+			);
+			path = "两个view(前者隐藏,后者前移)";
+			sourceTree = "<group>";
+		};
 		07526117264F8C44000F3CB3 /* Macros「宏」 */ = {
 			isa = PBXGroup;
 			children = (
@@ -492,6 +524,38 @@
 				077DAC522653E0B2007A6D6B /* VVScrollViewVMProtocol.h */,
 			);
 			path = ScrollView;
+			sourceTree = "<group>";
+		};
+		077DAC5326540E04007A6D6B /* 仿JD|TB商详跳转评价 */ = {
+			isa = PBXGroup;
+			children = (
+				077DAC5726540F7C007A6D6B /* Views */,
+				077DAC5426540E82007A6D6B /* MAS_JDGoodsDetailCommentViewController.h */,
+				077DAC5526540E82007A6D6B /* MAS_JDGoodsDetailCommentViewController.m */,
+			);
+			path = "仿JD|TB商详跳转评价";
+			sourceTree = "<group>";
+		};
+		077DAC5726540F7C007A6D6B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				077DAC5826540FCF007A6D6B /* MAS_JDGoodsDetailContainerView.h */,
+				077DAC5926540FCF007A6D6B /* MAS_JDGoodsDetailContainerView.m */,
+				077DAC5B26540FFD007A6D6B /* MAS_JDGoodsDetailCommentListView.h */,
+				077DAC5C26540FFD007A6D6B /* MAS_JDGoodsDetailCommentListView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		077DAC5E2656612C007A6D6B /* 自动撑开 */ = {
+			isa = PBXGroup;
+			children = (
+				077DAC5F2656647E007A6D6B /* MAS_AutoSizeViewController.h */,
+				077DAC602656647E007A6D6B /* MAS_AutoSizeViewController.m */,
+				077DAC62265664CD007A6D6B /* MAS_AutoSizeContentView.h */,
+				077DAC63265664CD007A6D6B /* MAS_AutoSizeContentView.m */,
+			);
+			path = "自动撑开";
 			sourceTree = "<group>";
 		};
 		07822BE62652C1930023AC1D /* VVStandardizedCode「标准化代码」 */ = {
@@ -562,6 +626,9 @@
 		07822BFA2653D2850023AC1D /* Masonry */ = {
 			isa = PBXGroup;
 			children = (
+				07510B082658132700B129F6 /* 两个view(前者隐藏,后者前移) */,
+				077DAC5E2656612C007A6D6B /* 自动撑开 */,
+				077DAC5326540E04007A6D6B /* 仿JD|TB商详跳转评价 */,
 				07822BFF2653D5870023AC1D /* Masonry简单位移动画 */,
 				07822BFB2653D4500023AC1D /* MasonryBaseTableViewController.h */,
 				07822BFC2653D4500023AC1D /* MasonryBaseTableViewController.m */,
@@ -1214,10 +1281,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				077DAC5D26540FFD007A6D6B /* MAS_JDGoodsDetailCommentListView.m in Sources */,
 				0734A66526038EEA0008B9BD /* MultiThreadingBaseTableViewController.m in Sources */,
 				0734A64025FD94F20008B9BD /* LI_Man+Two.m in Sources */,
 				0734A63425FD94940008B9BD /* LI_Person.m in Sources */,
+				077DAC612656647E007A6D6B /* MAS_AutoSizeViewController.m in Sources */,
 				076540DA263C501E003F61EE /* Function(函数).swift in Sources */,
+				077DAC64265664CD007A6D6B /* MAS_AutoSizeContentView.m in Sources */,
 				0734A67A260ED3A60008B9BD /* CategoriesOfBlockViewController.m in Sources */,
 				0734A63C25FD94DF0008B9BD /* LI_Man+One.m in Sources */,
 				072D4CCA263315C8003E9CED /* CABasicAnimationViewController.m in Sources */,
@@ -1228,6 +1298,8 @@
 				84FDE1FD2567C260002B32A1 /* Person.swift in Sources */,
 				84D970DF2606D95D0063F8CA /* LockBaseTableViewController.m in Sources */,
 				84FDE275256B41A3002B32A1 /* OpenGLESBaseTableViewController.m in Sources */,
+				077DAC5626540E82007A6D6B /* MAS_JDGoodsDetailCommentViewController.m in Sources */,
+				077DAC5A26540FCF007A6D6B /* MAS_JDGoodsDetailContainerView.m in Sources */,
 				07822BF7265340CA0023AC1D /* VVBaseTableViewController.m in Sources */,
 				8456CAF426049CE5007FD41C /* WebKitBaseTableViewController.m in Sources */,
 				84FDE1CA2567B80A002B32A1 /* CoreAnimationBaseTableViewController.m in Sources */,
@@ -1250,6 +1322,7 @@
 				841AD227258AFFC800DA4731 /* MinimumXXSpacingViewController.m in Sources */,
 				8490EEF12587468200E4A1C4 /* PPMakerInfiniteLoopVerifyViewController.m in Sources */,
 				07822BF4265340B50023AC1D /* VVBaseCollectionViewController.m in Sources */,
+				07510B0E265813E500B129F6 /* MAS_CommentModel.m in Sources */,
 				848AD289256CAADA006FC2C6 /* GCD_BarrierViewController.m in Sources */,
 				8436201D25F5F1D700A71712 /* CV_Coder.m in Sources */,
 				0734A673260ED3300008B9BD /* UI_BlockBaseTableViewController.m in Sources */,
@@ -1266,6 +1339,7 @@
 				84FDE1AF2567B1DA002B32A1 /* SystemAPIBaseTableViewController.m in Sources */,
 				84D970E42606EC930063F8CA /* dispatch_semaphore_ViewController.m in Sources */,
 				848AD290256CAB66006FC2C6 /* GCD_SemaphoreViewController.m in Sources */,
+				07510B0B265813A800B129F6 /* MAS_TwoViewHiddenViewController.m in Sources */,
 				84FDE1B42567B25D002B32A1 /* MyLibsBaseTableViewController.m in Sources */,
 				84FDE1D22567B912002B32A1 /* PPTextFieldBaseTableViewController.m in Sources */,
 				8456CAFA2604A0B5007FD41C /* JSContextAndJSValueViewController.m in Sources */,
