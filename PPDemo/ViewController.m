@@ -25,6 +25,9 @@
 //    Person *p = [[Person alloc] init];
 //    [p sayHelloWorld];
     
+    UITableViewHeaderFooterView *h = nil;
+    UICollectionReusableView *c = nil;
+    
     [self.tableView addSubview:self.okButton];
     self.okButton.frame = CGRectMake(100, 100, 200, 200);
     self.okButton.backgroundColor = UIColor.redColor;
