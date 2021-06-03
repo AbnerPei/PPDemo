@@ -9,7 +9,7 @@ target 'PPDemo' do
 
   # Pods for PPDemo
   pod 'AFNetworking'
-#  pod 'SDWebImage'
+  pod 'SDWebImage', :git => "https://github.com/AbnerPei/SDWebImage.git"
   pod 'Masonry'
   pod 'MJExtension'
   pod 'MJRefresh'
@@ -21,9 +21,12 @@ target 'PPDemo' do
   pod 'PPMaker' #, :path => "../PPMaker"
   pod 'PPTextField' #, :path => "../PPTextField"
   
-  #开源库「我自己本地用」
-  pod 'SDWebImage' #, :path => '../SDWebImage'
-  
-  #开源库「网友用」
-#  pod 'SDWebImage', :git => 'https://github.com/PPAbner/SDWebImage'
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+    config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
+    end
+  end
 end

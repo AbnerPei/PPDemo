@@ -1066,6 +1066,7 @@
 		84FDE183256799DD002B32A1 /* OpenSourceLibs「开源库」 */ = {
 			isa = PBXGroup;
 			children = (
+				EE65F7C12668514900A49ECD /* SDWebImage */,
 				07822BFA2653D2850023AC1D /* Masonry */,
 				84FDE1982567AEE1002B32A1 /* OpenSourceLibsBaseTableViewController.h */,
 				84FDE1992567AEE1002B32A1 /* OpenSourceLibsBaseTableViewController.m */,
@@ -1194,6 +1195,13 @@
 				F463FB598E99F95E95B15EF0 /* Pods_PPDemo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE65F7C12668514900A49ECD /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SDWebImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1700,11 +1708,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = AC8HSLRJXT;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = PPDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = ppabner.com.PPDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PPDemo/PPDemo-Bridging-Header.h";
@@ -1724,11 +1735,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = AC8HSLRJXT;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = PPDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = ppabner.com.PPDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PPDemo/PPDemo-Bridging-Header.h";

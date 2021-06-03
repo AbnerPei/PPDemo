@@ -361,13 +361,7 @@ static NSString * _defaultDiskCacheDirectory;
 - (nullable UIImage *)imageFromDiskCacheForKey:(nullable NSString *)key options:(SDImageCacheOptions)options context:(nullable SDWebImageContext *)context {
     NSData *data = [self diskImageDataForKey:key];
     UIImage *diskImage = [self diskImageForKey:key data:data options:options context:context];
-    
-    BOOL shouldCacheToMomery = YES;
-    if (context[SDWebImageContextStoreCacheType]) {
-        SDImageCacheType cacheType = [context[SDWebImageContextStoreCacheType] integerValue];
-        shouldCacheToMomery = (cacheType == SDImageCacheTypeAll || cacheType == SDImageCacheTypeMemory);
-    }
-    if (diskImage && self.config.shouldCacheImagesInMemory && shouldCacheToMomery) {
+    if (diskImage && self.config.shouldCacheImagesInMemory) {
         NSUInteger cost = diskImage.sd_memoryCost;
         [self.memoryCache setObject:diskImage forKey:key cost:cost];
     }
@@ -672,14 +666,7 @@ static NSString * _defaultDiskCacheDirectory;
 
 #if SD_UIKIT || SD_MAC
 - (void)applicationWillTerminate:(NSNotification *)notification {
-    // On iOS/macOS, the async opeartion to remove exipred data will be terminated quickly
-    // Try using the sync operation to ensure we reomve the exipred data
-    if (!self.config.shouldRemoveExpiredDataWhenTerminate) {
-        return;
-    }
-    dispatch_sync(self.ioQueue, ^{
-        [self.diskCache removeExpiredData];
-    });
+    [self deleteOldFilesWithCompletionBlock:nil];
 }
 #endif
 

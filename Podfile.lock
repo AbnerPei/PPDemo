@@ -60,9 +60,9 @@ PODS:
   - PPMaker/PPMakeCategory/UIKit/UIViewController (0.0.265)
   - PPMaker/PPToolMaker (0.0.265)
   - PPTextField (0.0.2)
-  - SDWebImage (5.11.1):
-    - SDWebImage/Core (= 5.11.1)
-  - SDWebImage/Core (5.11.1)
+  - SDWebImage (5.10.0):
+    - SDWebImage/Core (= 5.10.0)
+  - SDWebImage/Core (5.10.0)
   - SQLiteRepairKit (1.2.2):
     - WCDBOptimizedSQLCipher (~> 1.2.0)
   - Toast (4.0.0)
@@ -83,7 +83,7 @@ DEPENDENCIES:
   - MJRefresh
   - PPMaker
   - PPTextField
-  - SDWebImage
+  - SDWebImage (from `https://github.com/AbnerPei/SDWebImage.git`)
   - Toast
   - WCDB
   - YTKNetwork
@@ -97,13 +97,21 @@ SPEC REPOS:
     - MJRefresh
     - PPMaker
     - PPTextField
-    - SDWebImage
     - SQLiteRepairKit
     - Toast
     - WCDB
     - WCDBOptimizedSQLCipher
     - YTKNetwork
     - YYKit
+
+EXTERNAL SOURCES:
+  SDWebImage:
+    :git: https://github.com/AbnerPei/SDWebImage.git
+
+CHECKOUT OPTIONS:
+  SDWebImage:
+    :commit: e857b78ca4c8afe616b794aeb090d40f4e348072
+    :git: https://github.com/AbnerPei/SDWebImage.git
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
@@ -112,7 +120,7 @@ SPEC CHECKSUMS:
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
   PPMaker: ae625f87d2332b5f286734c15622a9feb9343c06
   PPTextField: 34b5e67ba9892575134f6c351f11010503ea465c
-  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
+  SDWebImage: 9169792e9eec3e45bba2a0c02f74bf8bd922d1ee
   SQLiteRepairKit: 35aaae5a8838adb85f5b1eb4d796055be6060a4b
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
   WCDB: 8e90babdeb7784c569353a4bd22a66c0a175a882
@@ -120,6 +128,6 @@ SPEC CHECKSUMS:
   YTKNetwork: a096f80c18c7e7cc0e623a0fbea0a1bfd3f5bcf2
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 7436e047523225bb0e169a466cea110b3b1b95af
+PODFILE CHECKSUM: fdc38577f43308261466407a0862bc8bbad67992
 
 COCOAPODS: 1.10.1

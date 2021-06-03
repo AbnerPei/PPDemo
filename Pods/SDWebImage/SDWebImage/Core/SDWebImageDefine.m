@@ -131,7 +131,6 @@ SDWebImageContextOption const SDWebImageContextQueryCacheType = @"queryCacheType
 SDWebImageContextOption const SDWebImageContextStoreCacheType = @"storeCacheType";
 SDWebImageContextOption const SDWebImageContextOriginalQueryCacheType = @"originalQueryCacheType";
 SDWebImageContextOption const SDWebImageContextOriginalStoreCacheType = @"originalStoreCacheType";
-SDWebImageContextOption const SDWebImageContextOriginalImageCache = @"originalImageCache";
 SDWebImageContextOption const SDWebImageContextAnimatedImageClass = @"animatedImageClass";
 SDWebImageContextOption const SDWebImageContextDownloadRequestModifier = @"downloadRequestModifier";
 SDWebImageContextOption const SDWebImageContextDownloadResponseModifier = @"downloadResponseModifier";

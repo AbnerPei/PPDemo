@@ -144,7 +144,7 @@ typedef NSMutableDictionary<NSString *, id> SDCallbacksDictionary;
 - (void)start {
     @synchronized (self) {
         if (self.isCancelled) {
-            if (!self.isFinished) self.finished = YES;
+            self.finished = YES;
             // Operation cancelled by user before sending the request
             [self callCompletionBlocksWithError:[NSError errorWithDomain:SDWebImageErrorDomain code:SDWebImageErrorCancelled userInfo:@{NSLocalizedDescriptionKey : @"Operation cancelled by user before sending the request"}]];
             [self reset];
@@ -194,13 +194,6 @@ typedef NSMutableDictionary<NSString *, id> SDCallbacksDictionary;
             }
         }
         
-        if (!session.delegate) {
-            // Session been invalid and has no delegate at all
-            [self callCompletionBlocksWithError:[NSError errorWithDomain:SDWebImageErrorDomain code:SDWebImageErrorInvalidDownloadOperation userInfo:@{NSLocalizedDescriptionKey : @"Session delegate is nil and invalid"}]];
-            [self reset];
-            return;
-        }
-        
         self.dataTask = [session dataTaskWithRequest:self.request];
         self.executing = YES;
     }
@@ -225,9 +218,8 @@ typedef NSMutableDictionary<NSString *, id> SDCallbacksDictionary;
             [[NSNotificationCenter defaultCenter] postNotificationName:SDWebImageDownloadStartNotification object:strongSelf];
         });
     } else {
-        if (!self.isFinished) self.finished = YES;
         [self callCompletionBlocksWithError:[NSError errorWithDomain:SDWebImageErrorDomain code:SDWebImageErrorInvalidDownloadOperation userInfo:@{NSLocalizedDescriptionKey : @"Task can't be initialized"}]];
-        [self reset];
+        [self done];
     }
 }
 
@@ -240,28 +232,22 @@ typedef NSMutableDictionary<NSString *, id> SDCallbacksDictionary;
 - (void)cancelInternal {
     if (self.isFinished) return;
     [super cancel];
-    
-    __block typeof(self) strongSelf = self;
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [[NSNotificationCenter defaultCenter] postNotificationName:SDWebImageDownloadStopNotification object:strongSelf];
-    });
 
     if (self.dataTask) {
-        // Cancel the URLSession, `URLSession:task:didCompleteWithError:` delegate callback will be ignored
         [self.dataTask cancel];
-        self.dataTask = nil;
-    }
-    
-    // NSOperation disallow setFinished=YES **before** operation's start method been called
-    // We check for the initialized status, which is isExecuting == NO && isFinished = NO
-    // Ony update for non-intialized status, which is !(isExecuting == NO && isFinished = NO), or if (self.isExecuting || self.isFinished) {...}
-    if (self.isExecuting || self.isFinished) {
+        __block typeof(self) strongSelf = self;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [[NSNotificationCenter defaultCenter] postNotificationName:SDWebImageDownloadStopNotification object:strongSelf];
+        });
+
+        // As we cancelled the task, its callback won't be called and thus won't
+        // maintain the isFinished and isExecuting flags.
         if (self.isExecuting) self.executing = NO;
         if (!self.isFinished) self.finished = YES;
+    } else {
+        // Operation cancelled by user during sending the request
+        [self callCompletionBlocksWithError:[NSError errorWithDomain:SDWebImageErrorDomain code:SDWebImageErrorCancelled userInfo:@{NSLocalizedDescriptionKey : @"Operation cancelled by user during sending the request"}]];
     }
-    
-    // Operation cancelled by user during sending the request
-    [self callCompletionBlocksWithError:[NSError errorWithDomain:SDWebImageErrorDomain code:SDWebImageErrorCancelled userInfo:@{NSLocalizedDescriptionKey : @"Operation cancelled by user during sending the request"}]];
 
     [self reset];
 }
@@ -393,21 +379,15 @@ didReceiveResponse:(NSURLResponse *)response
     
     // Using data decryptor will disable the progressive decoding, since there are no support for progressive decrypt
     BOOL supportProgressive = (self.options & SDWebImageDownloaderProgressiveLoad) && !self.decryptor;
-    // Progressive decoding Only decode partial image, full image in `URLSession:task:didCompleteWithError:`
-    if (supportProgressive && !finished) {
+    if (supportProgressive) {
         // Get the image data
         NSData *imageData = [self.imageData copy];
         
         // keep maximum one progressive decode process during download
         if (self.coderQueue.operationCount == 0) {
             // NSOperation have autoreleasepool, don't need to create extra one
-            @weakify(self);
             [self.coderQueue addOperationWithBlock:^{
-                @strongify(self);
-                if (!self) {
-                    return;
-                }
-                UIImage *image = SDImageLoaderDecodeProgressiveImageData(imageData, self.request.URL, NO, self, [[self class] imageOptionsFromDownloaderOptions:self.options], self.context);
+                UIImage *image = SDImageLoaderDecodeProgressiveImageData(imageData, self.request.URL, finished, self, [[self class] imageOptionsFromDownloaderOptions:self.options], self.context);
                 if (image) {
                     // We do not keep the progressive decoding image even when `finished`=YES. Because they are for view rendering but not take full function from downloader options. And some coders implementation may not keep consistent between progressive decoding and normal decoding.
                     
@@ -465,7 +445,7 @@ didReceiveResponse:(NSURLResponse *)response
         [self done];
     } else {
         if ([self callbacksForKey:kCompletedCallbackKey].count > 0) {
-            NSData *imageData = self.imageData;
+            NSData *imageData = [self.imageData copy];
             self.imageData = nil;
             // data decryptor
             if (imageData && self.decryptor) {
@@ -483,20 +463,8 @@ didReceiveResponse:(NSURLResponse *)response
                 } else {
                     // decode the image in coder queue, cancel all previous decoding process
                     [self.coderQueue cancelAllOperations];
-                    @weakify(self);
                     [self.coderQueue addOperationWithBlock:^{
-                        @strongify(self);
-                        if (!self) {
-                            return;
-                        }
-                        // check if we already use progressive decoding, use that to produce faster decoding
-                        id<SDProgressiveImageCoder> progressiveCoder = SDImageLoaderGetProgressiveCoder(self);
-                        UIImage *image;
-                        if (progressiveCoder) {
-                            image = SDImageLoaderDecodeProgressiveImageData(imageData, self.request.URL, YES, self, [[self class] imageOptionsFromDownloaderOptions:self.options], self.context);
-                        } else {
-                            image = SDImageLoaderDecodeImageData(imageData, self.request.URL, [[self class] imageOptionsFromDownloaderOptions:self.options], self.context);
-                        }
+                        UIImage *image = SDImageLoaderDecodeImageData(imageData, self.request.URL, [[self class] imageOptionsFromDownloaderOptions:self.options], self.context);
                         CGSize imageSize = image.size;
                         if (imageSize.width == 0 || imageSize.height == 0) {
                             NSString *description = image == nil ? @"Downloaded image decode failed" : @"Downloaded image has 0 pixels";
